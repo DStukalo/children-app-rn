@@ -14,7 +14,7 @@
     "tag": "v0.81.4"
   },
   "source_files": "**/*.{c,h,m,mm,S,cpp}",
-  "compiler_flags": "$(inherited) -DUSE_HERMES=1",
+  "compiler_flags": "$(inherited)  -DRCT_NEW_ARCH_ENABLED=1-DUSE_HERMES=1",
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": [
       "$(PODS_TARGET_SRCROOT)/../../ReactCommon",
@@ -52,7 +52,7 @@
       "$(PODS_ROOT)/SocketRocket",
       "$(PODS_ROOT)/RCT-Folly"
     ],
-    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DUSE_HERMES=1",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited)  -DRCT_NEW_ARCH_ENABLED=1-DUSE_HERMES=1",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "DEFINES_MODULE": "YES"
   },
@@ -60,104 +60,38 @@
     "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/React-Core\" \"$(PODS_ROOT)/Headers/Private/Yoga\""
   },
   "dependencies": {
-    "React-Core": [
-
-    ],
-    "RCTRequired": [
-
-    ],
-    "RCTTypeSafety": [
-
-    ],
-    "React-RCTNetwork": [
-
-    ],
-    "React-RCTImage": [
-
-    ],
-    "React-CoreModules": [
-
-    ],
-    "React-RCTFBReactNativeSpec": [
-
-    ],
-    "React-defaultsnativemodule": [
-
-    ],
-    "React-hermes": [
-
-    ],
-    "React-runtimeexecutor": [
-
-    ],
-    "ReactCommon": [
-
-    ],
-    "React-NativeModulesApple": [
-
-    ],
-    "React-runtimescheduler": [
-
-    ],
-    "React-RCTFabric": [
-
-    ],
-    "React-RuntimeCore": [
-
-    ],
-    "React-RuntimeApple": [
-
-    ],
-    "React-Fabric": [
-
-    ],
-    "React-graphics": [
-
-    ],
-    "React-utils": [
-
-    ],
-    "React-debug": [
-
-    ],
-    "React-rendererdebug": [
-
-    ],
-    "React-featureflags": [
-
-    ],
-    "React-jsitooling": [
-
-    ],
-    "React-RCTRuntime": [
-
-    ],
-    "hermes-engine": [
-
-    ],
-    "glog": [
-
-    ],
-    "boost": [
-
-    ],
-    "DoubleConversion": [
-
-    ],
-    "fast_float": [
-
-    ],
-    "fmt": [
-
-    ],
-    "RCT-Folly": [
-
-    ],
-    "SocketRocket": [
-
-    ],
-    "RCT-Folly/Fabric": [
-
-    ]
+    "React-Core": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [],
+    "React-RCTNetwork": [],
+    "React-RCTImage": [],
+    "React-CoreModules": [],
+    "React-RCTFBReactNativeSpec": [],
+    "React-defaultsnativemodule": [],
+    "React-hermes": [],
+    "React-runtimeexecutor": [],
+    "ReactCommon": [],
+    "React-NativeModulesApple": [],
+    "React-runtimescheduler": [],
+    "React-RCTFabric": [],
+    "React-RuntimeCore": [],
+    "React-RuntimeApple": [],
+    "React-Fabric": [],
+    "React-graphics": [],
+    "React-utils": [],
+    "React-debug": [],
+    "React-rendererdebug": [],
+    "React-featureflags": [],
+    "React-jsitooling": [],
+    "React-RCTRuntime": [],
+    "hermes-engine": [],
+    "glog": [],
+    "boost": [],
+    "DoubleConversion": [],
+    "fast_float": [],
+    "fmt": [],
+    "RCT-Folly": [],
+    "SocketRocket": [],
+    "RCT-Folly/Fabric": []
   }
 }

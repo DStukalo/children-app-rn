@@ -1,0 +1,1 @@
+/Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/build/intermediates/cxx/Debug/453o1v32/obj/arm64-v8a

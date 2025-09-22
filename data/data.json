@@ -1,0 +1,1130 @@
+{
+	"courses": [
+		{
+			"id": 1,
+			"title": {
+				"en-US": "Basic Skills АВА",
+				"ru": "Базовые Навыки АВА"
+			},
+			"subtitle": {
+				"en-US": "Block 1. Basic Skills",
+				"ru": "Блок 1. Базовые Навыки"
+			},
+			"image": "https://i.ibb.co/JwqtTfC7/block-1.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": [
+					{
+						"lessonId": 1,
+						"title": {
+							"en-US": "About me",
+							"ru": "О себе"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/_%EF%B8%8F%E2%83%A3%20%D1%81%D0%B5%D0%B1%D0%B5.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/_%EF%B8%8F%E2%83%A3%20%D1%81%D0%B5%D0%B1%D0%B5.mp4"
+						},
+						"materials": {
+							"en-US": [
+								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip",
+								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip"
+							],
+							"ru": [
+								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip",
+								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip"
+							]
+						},
+						"access": "free"
+					},
+					{
+						"lessonId": 2,
+						"title": {
+							"en-US": "The author's professional path",
+							"ru": "Профессиональный путь автора"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%E2%9C%8D%EF%B8%8F%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BF%D1%83%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%E2%9C%8D%EF%B8%8F%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BF%D1%83%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0.mp4"
+						},
+						"access": "free"
+					},
+					{
+						"lessonId": 3,
+						"title": {
+							"en-US": "What is ABA?",
+							"ru": "Что такое АВА?"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "free"
+					},
+					{
+						"lessonId": 4,
+						"title": {
+							"en-US": "Author's method of Olga Filistovich",
+							"ru": "Авторская методика Ольги Филистович"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/2.%20%F0%9F%93%9A%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8%20%D0%A4%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B8%D1%87.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/2.%20%F0%9F%93%9A%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8%20%D0%A4%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B8%D1%87.mp4"
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 5,
+						"title": {
+							"en-US": "Preparing for ABA therapy",
+							"ru": "Подготовка к АВА-терапии"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/3.%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%20%D0%90%D0%92%D0%90-%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D0%B8.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/3.%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%20%D0%90%D0%92%D0%90-%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D0%B8.mp4"
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 6,
+						"title": {
+							"en-US": "Preparing the environment",
+							"ru": "Подготовка среды"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 7,
+						"title": {
+							"en-US": "Intervention",
+							"ru": "Вмешательство"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 8,
+						"title": {
+							"en-US": "Significant incentives",
+							"ru": "Значимые стимулы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 9,
+						"title": {
+							"en-US": "Motivators",
+							"ru": "Мотиваторы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 10,
+						"title": {
+							"en-US": "Alternative communication system",
+							"ru": "Альтернативная система коммуникации"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 11,
+						"title": {
+							"en-US": "Eye contact",
+							"ru": "Зрительный контакт"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/9.%20%D0%97%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/9.%20%D0%97%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.mp4"
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 12,
+						"title": {
+							"en-US": "Token system",
+							"ru": "Система жетонов"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 13,
+						"title": {
+							"en-US": "What are rhythm patterns?",
+							"ru": "Что такое Аверсивный стимул"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 14,
+						"title": {
+							"en-US": "Application of an aversive stimulus",
+							"ru": "Применение аверсивного стимула"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 15,
+						"title": {
+							"en-US": "Aversive Stimulus and Speech Triggering",
+							"ru": "Аверсивный стимул и Запуск речи"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 16,
+						"title": {
+							"en-US": "Seat at the table",
+							"ru": "Усадить за стол"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 17,
+						"title": {
+							"en-US": "Gymnastics",
+							"ru": "Гимнастика"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 18,
+						"title": {
+							"en-US": "First and then",
+							"ru": "Сначала-потом"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 19,
+						"title": {
+							"en-US": "Public places",
+							"ru": "Общественные места"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 20,
+						"title": {
+							"en-US": "Environment",
+							"ru": "Окружение"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 21,
+						"title": {
+							"en-US": "Family of a special child",
+							"ru": "Семья особенного ребенка"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 22,
+						"title": {
+							"en-US": "Eating behavior",
+							"ru": "Пищевое поведение"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 2,
+			"title": {
+				"en-US": "Correction Plan",
+				"ru": "План коррекции"
+			},
+			"subtitle": {
+				"en-US": "Block 2. Behavior Correction",
+				"ru": "Блок 2. Коррекция Поведения"
+			},
+			"image": "https://i.ibb.co/n8Yn3sYB/block-2.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": [
+					{
+						"lessonId": 23,
+						"title": {
+							"en-US": "Strategy",
+							"ru": "Стратегия"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "free"
+					},
+
+					{
+						"lessonId": 24,
+						"title": {
+							"en-US": "Three functions",
+							"ru": "Три функции"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 25,
+						"title": {
+							"en-US": "Avoiding Demands",
+							"ru": "Избегание требований"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 26,
+						"title": {
+							"en-US": "Access to what you want",
+							"ru": "Доступ к желаемому"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 27,
+						"title": {
+							"en-US": "Why do children run away from their parents?",
+							"ru": "Почему дети убегают от родителей"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 28,
+						"title": {
+							"en-US": "What will they think of me?",
+							"ru": "Что обо мне подумают"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 3,
+			"title": {
+				"en-US": "Speech launch system",
+				"ru": "Система запуска речи"
+			},
+			"subtitle": {
+				"en-US": "Block 3. Speech launch system",
+				"ru": "Блок 3. Система запуска речи"
+			},
+			"image": "https://i.ibb.co/ymq1V5H4/block-3.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": [
+					{
+						"lessonId": 29,
+						"title": {
+							"en-US": "Rhythm schemes",
+							"ru": "Ритмосхемы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 30,
+						"title": {
+							"en-US": "Imitation",
+							"ru": "Имитация"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 31,
+						"title": {
+							"en-US": "Echo schemes",
+							"ru": "Эхо-схемы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 32,
+						"title": {
+							"en-US": "Drum complex",
+							"ru": "Барабанный комплекс"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 33,
+						"title": {
+							"en-US": "Independent work at home",
+							"ru": "Самостоятельная работа дома"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 34,
+						"title": {
+							"en-US": "Acceptance of the diagnosis",
+							"ru": "Принятие диагноза"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 4,
+			"title": {
+				"en-US": "Structure of developmental disorders",
+				"ru": "Структура нарушений развития"
+			},
+			"subtitle": {
+				"en-US": "Block 4. Structure of developmental disorders",
+				"ru": "Блок 4. Структура нарушений развития"
+			},
+			"image": "https://i.ibb.co/RpG7Bt4P/block-4.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": [
+					{
+						"lessonId": 35,
+						"title": {
+							"en-US": "Why the child does not speak",
+							"ru": "Почему ребенок не разговаривает"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "free"
+					},
+					{
+						"lessonId": 36,
+						"title": {
+							"en-US": "Autism, alalia or schizophrenia",
+							"ru": "Аутизм, алалия или шизофрения"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 37,
+						"title": {
+							"en-US": "Bilingualism or which language to start speech in",
+							"ru": "Билингвизм или на каком языке запускать речь"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 38,
+						"title": {
+							"en-US": "A child who does not speak",
+							"ru": "Неговорящий ребенок"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 39,
+						"title": {
+							"en-US": "The Non-Speaking Child. Alalia",
+							"ru": "Неговорящий ребенок. Алалия"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 40,
+						"title": {
+							"en-US": "The Non-Speaking Child. Alalia 2",
+							"ru": "Неговорящий ребенок. Алалия 2"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 41,
+						"title": {
+							"en-US": "The Non-Speaking Child. Root",
+							"ru": "Неговорящий ребенок. Корень"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 42,
+						"title": {
+							"en-US": "The Silent Child. The Trunk",
+							"ru": "Неговорящий ребенок. Ствол"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 43,
+						"title": {
+							"en-US": "Massage",
+							"ru": "Массаж"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 44,
+						"title": {
+							"en-US": "Masturbation",
+							"ru": "Мастурбация"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 45,
+						"title": {
+							"en-US": "Breastfeeding children",
+							"ru": "Грудное вскармливание детей"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 46,
+						"title": {
+							"en-US": "The Non-Speaking Child. Twigs",
+							"ru": "Неговорящий ребенок. Веточки"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 5,
+			"title": {
+				"en-US": "Speech initiation and development",
+				"ru": "Запуск и развитие речи"
+			},
+			"subtitle": {
+				"en-US": "Block 5. Speech initiation and development",
+				"ru": "Блок 5. Запуск и развитие речи"
+			},
+			"image": "https://i.ibb.co/rRBPRkqx/block-5.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"lessons": [
+					{
+						"lessonId": 47,
+						"title": {
+							"en-US": "Sounds",
+							"ru": "Звуки"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 48,
+						"title": {
+							"en-US": "Onomatopoeia",
+							"ru": "Звукоподражание"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 49,
+						"title": {
+							"en-US": "Stages of speech development of a child",
+							"ru": " Этапы речевого развития ребёнка"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 50,
+						"title": {
+							"en-US": "Speaking",
+							"ru": "Говорение"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 51,
+						"title": {
+							"en-US": "Socialization",
+							"ru": "Социализация"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 52,
+						"title": {
+							"en-US": "Why Children with ASD Don't Want to Make Friends",
+							"ru": "Почему дети с РАС не хотят дружить"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 6,
+			"title": {
+				"en-US": "Development prospects",
+				"ru": "Перспектива развития"
+			},
+			"subtitle": {
+				"en-US": "Block 6. Development prospects",
+				"ru": "Блок 6. Перспектива развития"
+			},
+			"image": "https://i.ibb.co/SXhphkZN/block-6.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": [
+					{
+						"lessonId": 53,
+						"title": {
+							"en-US": "The child lines everything up",
+							"ru": "Ребенок выстраивает все в ряд"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 54,
+						"title": {
+							"en-US": "Check",
+							"ru": "Счет"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 55,
+						"title": {
+							"en-US": "Should a non-speaking child be taught to read?",
+							"ru": "Нужно ли неговорящего ребенка учить читать?"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 56,
+						"title": {
+							"en-US": "Playing with letters",
+							"ru": "Игра с буквами"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 57,
+						"title": {
+							"en-US": "Reading by example",
+							"ru": "Чтение по образцу"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 58,
+						"title": {
+							"en-US": "Mnemonic diagrams",
+							"ru": "Мнемосхемы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 59,
+						"title": {
+							"en-US": "Choosing a Profession for Special Children",
+							"ru": "Выбор профессии для особенных детей"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 60,
+						"title": {
+							"en-US": "Giftedness of children with autism",
+							"ru": "Одаренность детей с аутизмом"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 61,
+						"title": {
+							"en-US": "How to choose a kindergarten and school",
+							"ru": "Как выбрать детский сад и школу"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 62,
+						"title": {
+							"en-US": "Why supervision is necessary",
+							"ru": "Почему нужна супервизия"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 63,
+						"title": {
+							"en-US": "What is an offline intensive?",
+							"ru": "Что такое офлайн-интенсив?"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					}
+				]
+			}
+		},
+		{
+			"id": 7,
+			"title": {
+				"en-US": "Structure of developmental disorders",
+				"ru": "Структура нарушения развития"
+			},
+			"subtitle": {
+				"en-US": "Block 7. Structure of developmental disorders",
+				"ru": "Блок 7. Структура нарушения развития"
+			},
+			"image": "https://i.ibb.co/fGyvRz23/block-7.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "Prepare the materials and sit behind the child. The child sits at the table. In front of them place the token board, the hemisphere and the board corresponding to the lesson number.\n\nShow the child the first video lesson, helping them perform all movements hand-in-hand to the music. *Exercises are demonstrated in mirror image. Use the audio file with the voice.\n\nThen perform the exercise without video and distracting sounds. Let the child hear only your voice. To do this, sit opposite the child at the table, take their dominant hand and, using an index gesture, guide the child's hand across the board from left to right, sequentially pointing to the symbols and tracing/imitating them.\n\nRepeat the same with the other hand from left to right. The child should memorize the sounds and understand the symbols shown on the panels. *If in your culture writing is from right to left, inform us and we will send you the corresponding video, because the process of performing rhythm schemes lays the foundations of reading and writing.\n\nRepeat the exercise following the instructions of the video lesson, using the audio tracks with voice and karaoke.",
+					"ru": "Подготовьте материалы и расположитесь за спиной ребёнка. Ребёнок сидит за столом. Перед ним разместите планшетку с жетонами, полусферу и соответствующую номеру урока планшетку.\n\nПродемонстрируйте ребёнку первый видеоурок, помогая ему выполнять все движения «рука в руку» под музыку. *Упражнения демонстрируются в зеркальном отображении. Используется файл с голосом.\n\nВыполните упражнение без видео и отвлекающих звуков. Пусть ребёнок слышит только ваш голос. Для этого сядьте напротив ребёнка за столом, возьмите его ведущую руку и с помощью указательного жеста проводите рукой ребёнка по планшетке слева направо, последовательно указывая на символы и изображая их.\n\nПовторите то же второй рукой слева направо. Ребёнок должен запомнить звучание и понять символы, изображённые на панелях. *Если в вашей культуре принято писать справа налево, сообщите нам и мы отправим вам соответствующее видео, поскольку в процессе выполнения ритмосхем закладываются основы чтения и письма.\n\nПовторите упражнение, следуя инструкциям видеоурока, используя аудиотреки с голосом и караоке."
+				},
+				"video": {
+					"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4",
+					"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4"
+				},
+				"materials": {
+					"en-US": [
+						"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip"
+					],
+					"ru": [
+						"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.zip"
+					]
+				},
+				"lessons": [
+					{
+						"lessonId": 118,
+						"title": {
+							"en-US": "What are rhythm patterns?",
+							"ru": "Что такое ритмосхемы?"
+						},
+						"video": {
+							"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4",
+							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4"
+						},
+						"access": "free"
+					},
+					{
+						"lessonId": 119,
+						"title": {
+							"en-US": "Application of rhythm schemes",
+							"ru": "Применение ритмосхем"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 120,
+						"title": {
+							"en-US": "Preparation of speech motor centers",
+							"ru": "Подготовка речевых моторных центров"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 121,
+						"title": {
+							"en-US": "Application of rhythm schemes",
+							"ru": "Запуск речи через ритмосхемы"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 122,
+						"title": {
+							"en-US": "Guide to the application of the Rhythm Scheme method",
+							"ru": "Руководство по применению методики Ритмосхем"
+						},
+						"video": {
+							"en-US": "",
+							"ru": ""
+						},
+						"access": "locked"
+					},
+					{
+						"lessonId": 123,
+						"title": {
+							"en-US": "RHYTHMOLOGICAL SCHEMES. Block 1.",
+							"ru": "РИТМОСХЕМЫ. Блок 1."
+						},
+						"subtitle": {
+							"en-US": "Forming an open hand position",
+							"ru": "Формирование позиции открытой руки"
+						},
+						"description": {
+							"en-US": "During the exercise, a signal to remember the sound occurs simultaneously with the motor movement. We sound the palm of the hand «slap». For each exercise, the child receives a token. At first, we can use a hint, it can be full and/or partial. Full - hand in hand, partial - the adult's hand guides the child's hand from the side of the forearm. Then the adult asks the child to do the exercise independently, giving the instruction: «do the task». In this case, the instruction should not be accompanied by a visual hint (by imitation). The first exercise is considered mastered when the child begins to do the tasks independently, without any hint.",
+							"ru": "Во время упражнения происходит сигнал запоминания звука одновременно с моторным движением. Ладошку озвучиваем «шлёп». За каждое упражнение ребенок получает жетон. Сначала мы можем использовать подсказку, она может быть полной и/или частичной. Полная – рука в руке, частичная – рука взрослого направляет кисть ребёнка со стороны предплечья. Затем взрослый просит ребёнка выполнить упражнение самостоятельно, давая инструкцию: «выполни задание». При этом, инструкция не должна сопровождаться визуальной подсказкой (по подражанию). Первое упражнение считается освоенным, когда ребенок начинает выполнять задания самостоятельно, без какой-либо подсказки."
+						},
+						"audio": [
+							{
+								"audioId": 1,
+								"title": {
+									"en-US": "Slap slap slap plus",
+									"ru": "Шлёп шлёп шлёп плюс"
+								},
+								"audio": {
+									"en-US": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3",
+									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3"
+								}
+							},
+							{
+								"audioId": 2,
+								"title": {
+									"en-US": "Slap slap slap minus",
+									"ru": "Шлёп шлёп шлёп минус"
+								},
+								"audio": {
+									"en-US": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3",
+									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3"
+								}
+							}
+						],
+						"video": [
+							{
+								"videoId": 1,
+								"title": {
+									"en-US": "What are rhythm patterns?",
+									"ru": "Что такое ритмосхемы?"
+								},
+								"video": {
+									"en-US": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4",
+									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4"
+								}
+							},
+							{
+								"videoId": 2,
+								"title": {
+									"en-US": "Application of rhythm schemes",
+									"ru": "Применение ритмосхем"
+								},
+								"video": {
+									"en-US": "",
+									"ru": ""
+								}
+							}
+						],
+						"access": "free"
+					}
+				]
+			}
+		},
+		{
+			"id": 8,
+			"title": {
+				"en-US": "Correction Plan",
+				"ru": "План коррекции"
+			},
+			"subtitle": {
+				"en-US": "Block 8. Behavior Correction",
+				"ru": "Блок 8. Коррекция Поведения"
+			},
+			"image": "https://i.ibb.co/8gGGMTRz/block-8.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "The didactic manual \"Echo Schemes\" is intended for children and their parents, as well as for special education teachers, speech therapists, psychologists, and musicians. The method consists of a set of 25 musical correction exercises aimed at initiating and correcting speech in children with alalia, speech delay, autism, and other disorders.\n\n16 exercises focus on activating the speech apparatus and are performed using graphic panels (Echo Schemes), and 9 exercises involve playing percussion instruments (darbuka or djembe) and are performed using a visual score depicting palms, letters, and symbols for sound imitation.",
+					"ru": "Дидактическое пособие «Эхо-схемы» предназначено для детей и их родителей, а также для учителей-дефектологов, логопедов, психологов и музыкантов. Методика представляет собой комплекс из 25 музыкальных коррекционных упражнений, направленных на запуск и коррекцию речи у детей с алалией, задержкой речи, аутизмом и другими нарушениями.\n\n16 упражнений направлены на активизацию речевого аппарата и исполняются с помощью графических панелей (Эхосхем), а 9 упражнений предполагают игру на ударных инструментах (дарбука или дjembe) и исполняются с помощью визуальной партитуры с изображением ладошек, букв и символов на звукоподражание."
+				},
+				"video": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": []
+			}
+		},
+		{
+			"id": 9,
+			"title": {
+				"en-US": "Additional Materials",
+				"ru": "Дополнительные материалы"
+			},
+			"subtitle": {
+				"en-US": "Block 9. Additional Materials",
+				"ru": "Блок 9. Дополнительные материалы"
+			},
+			"image": "https://i.ibb.co/4wW2qX8d/block-9.jpg",
+			"isCompleted": false,
+			"details": {
+				"description": {
+					"en-US": "The drum complex can be performed sitting opposite the child or by placing the child on your lap in front of a mirror (so the child can see their own and your reflection). The adult secures the drum with their legs.\n\nThus, during the exercises, while positioned behind the child, the adult can provide full or partial physical guidance to the child if needed.",
+					"ru": "Барабанный комплекс можно выполнять сидя напротив ребёнка или усадив ребёнка себе на колени перед зеркалом (чтобы ребёнок видел в зеркало своё и Ваше отражение). При этом взрослый фиксирует барабан своими ногами.\n\nТаким образом, в процессе выполнения заданий, находясь за спиной у ребёнка, взрослый способен (при необходимости) оказать полную или частичную физическую подсказку ребёнку."
+				},
+				"video": {
+					"en-US": "",
+					"ru": ""
+				},
+				"materials": {
+					"en-US": [],
+					"ru": []
+				},
+				"lessons": []
+			}
+		}
+	]
+}
