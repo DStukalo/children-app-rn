@@ -10,6 +10,7 @@
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-share/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-sound/android/build/generated/source/codegen/jni/CMakeLists.txt",
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
     "/Users/dmytrostukalo/Documents/GitHub/ChildApp/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
@@ -73,6 +74,11 @@
       "toolchain": "toolchain",
       "abi": "x86",
       "artifactName": "react_codegen_RNShareSpec"
+    },
+    "react_codegen_RNSoundSpec::@a7dfabff99aa762d23e8": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "react_codegen_RNSoundSpec"
     },
     "react_codegen_RNVectorIconsSpec::@479809fae146501fd34d": {
       "toolchain": "toolchain",

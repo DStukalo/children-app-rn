@@ -10,10 +10,10 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/Ionicons";
-import i18n, { initI18n } from "./localization/i18n"; 
+import i18n, { initI18n } from "./localization/i18n";
 import { I18nextProvider } from "react-i18next";
 import HomeStack from "./src/navigation/HomeStack";
-import ProfileScreen from "./src/screens/ProfileScreen";
+import ProfileStack from "./src/navigation/ProfileStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -100,7 +100,7 @@ export default function App() {
 						/>
 						<Tab.Screen
 							name='Profile'
-							component={ProfileScreen}
+							component={ProfileStack}
 						/>
 					</Tab.Navigator>
 				</NavigationContainer>

@@ -136,8 +136,7 @@ const styles = StyleSheet.create({
 	headerTextBlock: { maxWidth: 90 },
 	headerTitle: {
 		fontSize: 12,
-		fontFamily: "Nunito",
-		fontWeight: "700",
+		fontFamily: "Nunito-Bold",
 		color: "#000",
 		paddingLeft: 10,
 		lineHeight: 14,
@@ -154,7 +153,7 @@ const styles = StyleSheet.create({
 		paddingVertical: 6,
 		borderRadius: 8,
 	},
-	langSwitchText: { color: "#fff", fontFamily: "Nunito", fontSize: 14 },
+	langSwitchText: { color: "#fff", fontFamily: "Nunito-Regular", fontSize: 14 },
 	heroSection: {
 		backgroundColor: "#86B4CA",
 		paddingHorizontal: 20,
@@ -165,15 +164,15 @@ const styles = StyleSheet.create({
 	heroImage: { width: 210, height: 210, resizeMode: "contain" },
 	heroAuthor: {
 		fontSize: 24,
-		fontFamily: "Nunito",
-		fontWeight: "700",
+		fontFamily: "Nunito-Bold",
+		fontWeight: "bold",
 		color: "#fff",
 		marginBottom: 10,
 	},
 	heroText: {
 		fontSize: 20,
-		fontFamily: "Nunito",
-		fontWeight: "700",
+		fontFamily: "Nunito-Bold",
+		fontWeight: "bold",
 		color: "#fff",
 	},
 	heroBtn: {
@@ -185,7 +184,7 @@ const styles = StyleSheet.create({
 		width: 200,
 		alignItems: "center",
 	},
-	heroBtnTitle: { fontSize: 14, fontFamily: "Nunito", color: "#fff" },
+	heroBtnTitle: { fontSize: 14, fontFamily: "Nunito-Regular", color: "#fff" },
 	methodicSection: {
 		backgroundColor: "#FBFBFB",
 		paddingHorizontal: 20,
@@ -196,15 +195,14 @@ const styles = StyleSheet.create({
 	methodicSectionDescription: { gap: 10 },
 	methodicTitle: {
 		fontSize: 24,
-		fontFamily: "Nunito",
+		fontFamily: "Nunito-Bold",
+		fontWeight: "bold",
 		color: "#2D2D33",
-		fontWeight: "700",
 		marginBottom: 10,
 	},
 	methodicText: {
 		fontSize: 20,
-		fontFamily: "Nunito",
-		fontWeight: "400",
+		fontFamily: "Nunito-Regular",
 		color: "#2D2D33",
 	},
 	methodicImageSection: { alignItems: "center" },

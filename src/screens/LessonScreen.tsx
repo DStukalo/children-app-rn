@@ -14,7 +14,7 @@ import { StackScreenProps } from "@react-navigation/stack";
 import coursesData from "../../data/data.json";
 import AudioPlayer from "../components/AudioPlayer";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { RootStackParamList } from '../navigation/HomeStack';
+import { RootStackParamList } from '../navigation/Stack';
 
 const { width } = Dimensions.get("window");
 
@@ -45,12 +45,12 @@ export default function LessonScreen({ route, navigation }: Props) {
 
 	const handleToPayment = () => {
 		if (isLocked) {
-			navigation.navigate("Payment", {
-				courseId: String(courseId),
+			navigation.navigate("PaymentScreen", {
 				showAllAccess: true,
+				courseId: String(courseId),
 			});
 		} else {
-			navigation.navigate("Video", {
+			navigation.navigate("VideoScreen", {
 				videoId: String(lesson?.lessonId),
 				courseId: String(courseId),
 			});
