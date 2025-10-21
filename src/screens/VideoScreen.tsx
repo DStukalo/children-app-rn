@@ -12,7 +12,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import axios from "axios";
 import coursesData from "../../data/data.json";
 import { useTranslation } from "react-i18next";
-import CustomVideoPlayer from '../components/CustomVideoPlayer';
+import CustomVideoPlayer from "../components/CustomVideoPlayer";
 
 const { width } = Dimensions.get("window");
 
@@ -45,9 +45,7 @@ export default function VideoScreen() {
 	const currentLanguage = i18n.language;
 
 	const course = coursesData.courses.find((c) => c.id === Number(courseId));
-	const lesson = course?.details.lessons.find(
-		(l) => l.lessonId === Number(id)
-	);
+	const lesson = course?.details.lessons.find((l) => l.lessonId === Number(id));
 
 	const [fetchedVideoData, setFetchedVideoData] = useState<YouTubeVideo | null>(
 		null
@@ -100,7 +98,10 @@ export default function VideoScreen() {
 	if (loading) {
 		return (
 			<SafeAreaView style={styles.loaderContainer}>
-				<ActivityIndicator size="large" color="#6366F1" />
+				<ActivityIndicator
+					size='large'
+					color='#6366F1'
+				/>
 			</SafeAreaView>
 		);
 	}
@@ -112,13 +113,15 @@ export default function VideoScreen() {
 				<View style={styles.videoContainer}>
 					<CustomVideoPlayer
 						videoSource={`${
-							lesson?.video[currentLanguage as keyof typeof lesson.video]
+							lesson?.video[
+								(currentLanguage as keyof typeof lesson.video) || "ru"
+							]
 						}`}
 					/>
 				</View>
 
 				{/* Video Info */}
-				<View style={styles.videoInfo}>
+				{/* <View style={styles.videoInfo}>
 					<Text style={styles.videoTitle}>
 						{fetchedVideoData?.snippet.localized.title}
 					</Text>
@@ -129,7 +132,7 @@ export default function VideoScreen() {
 						👀 {fetchedVideoData?.statistics.viewCount} просмотров | 👍{" "}
 						{fetchedVideoData?.statistics.likeCount} лайков
 					</Text>
-				</View>
+				</View> */}
 			</ScrollView>
 		</SafeAreaView>
 	);

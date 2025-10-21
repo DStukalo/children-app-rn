@@ -53,11 +53,14 @@ export default function Course() {
 		isLocked: boolean,
 		courseId: number
 	) => {
-		// if (isLocked) {
-		//   navigation.navigate("Payment", { courseId, showAllAccess: true });
-		// } else {
-		navigation.navigate("LessonScreen", { lessonId, courseId });
-		// }
+		if (isLocked) {
+			navigation.navigate("PaymentScreen", {
+				courseId: courseId,
+				showAllAccess: false,
+			});
+		} else {
+			navigation.navigate("LessonScreen", { lessonId, courseId });
+		}
 	};
 
 	return (
@@ -84,7 +87,7 @@ export default function Course() {
 
 				<View style={styles.courseInfo}>
 					{(course.details.description["ru"].length > 0 ||
-						course.details.description["en-US"]) && (
+						course.details.description["en"]) && (
 						<Text style={styles.courseDescription}>
 							{course.details.description[
 								currentLanguage as keyof typeof course.details.description
@@ -140,14 +143,14 @@ export default function Course() {
 
 				{course?.details?.materials &&
 					Array.isArray(
-						course.details.materials[currentLanguage as "en-US" | "ru"]
+						course.details.materials[currentLanguage as "en" | "ru"]
 					) &&
-					course.details.materials[currentLanguage as "en-US" | "ru"].length >
+					course.details.materials[currentLanguage as "en" | "ru"].length >
 						0 && (
 						<View style={styles.materialsBlock}>
 							<Text style={styles.materialsTitle}>{t("lesson.materials")}</Text>
 
-							{course.details.materials[currentLanguage as "en-US" | "ru"]?.map(
+							{course.details.materials[currentLanguage as "en" | "ru"]?.map(
 								(url, idx) => (
 									<TouchableOpacity
 										key={idx}

@@ -32,16 +32,16 @@
 #   # people speaking Catalan also speak Spanish as spoken in Spain
 #   fallbacks = I18n.fallbacks
 #   fallbacks.map(:ca => :"es-ES")
-#   fallbacks[:ca] # => [:ca, :"es-ES", :es, :"en-US", :en]
+#   fallbacks[:ca] # => [:ca, :"es-ES", :es, :"en", :en]
 #
 #   # people speaking Arabian as spoken in Palestine also speak Hebrew as spoken in Israel
 #   fallbacks.map(:"ar-PS" => :"he-IL")
-#   fallbacks[:"ar-PS"] # => [:"ar-PS", :ar, :"he-IL", :he, :"en-US", :en]
-#   fallbacks[:"ar-EG"] # => [:"ar-EG", :ar, :"en-US", :en]
+#   fallbacks[:"ar-PS"] # => [:"ar-PS", :ar, :"he-IL", :he, :"en", :en]
+#   fallbacks[:"ar-EG"] # => [:"ar-EG", :ar, :"en", :en]
 #
 #   # people speaking Sami as spoken in Finland also speak Swedish and Finnish as spoken in Finland
 #   fallbacks.map(:sms => [:"se-FI", :"fi-FI"])
-#   fallbacks[:sms] # => [:sms, :"se-FI", :se, :"fi-FI", :fi, :"en-US", :en]
+#   fallbacks[:sms] # => [:sms, :"se-FI", :se, :"fi-FI", :fi, :"en", :en]
 
 module I18n
   module Locale

@@ -27,6 +27,7 @@ export default {
 		materials: "Материалы",
 		toPayment: "Оплатить",
 		downloadMaterials: "Скачать материалы",
+		otherLessons: "Уроки курса",
 	},
 	payment: {
 		title: "Приобрести доступ",
@@ -38,5 +39,14 @@ export default {
 		fullDescription:
 			"Купите полный доступ сразу ко всем курсам и видео. Это выгоднее, чем оплачивать категории по отдельности.",
 		fullAccessButton: "Купить полный доступ",
+	},
+	password: {
+		title: "Введите пароль",
+	},
+	drawerNav: {
+		courses: "Курсы",
+		dontHaveCourses: "Нет доступных курсов",
+		profile: "Профиль",
+		main: "Главная",
 	},
 };

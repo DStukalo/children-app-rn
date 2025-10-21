@@ -8,27 +8,40 @@ import {
 	View,
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 // import { typography } from "@/styles/typography";
 import coursesData from "../../data/data.json";
-import { RootStackParamList } from "../navigation/Stack";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
+import { MainStackParamList } from "../navigation/types";
 
-type Lang = "en-US" | "ru";
+type PaymentScreenNavigationProp = NativeStackNavigationProp<
+	MainStackParamList,
+	"PaymentScreen"
+>;
+
+type PaymentScreenRouteProp = RouteProp<MainStackParamList, "PaymentScreen">;
+type Lang = "en" | "ru";
 
 export default function PaymentScreen() {
 	const { i18n, t } = useTranslation();
-	const navigation = useNavigation();
-	const route = useRoute<RouteProp<RootStackParamList, "PaymentScreen">>();
+	const navigation = useNavigation<PaymentScreenNavigationProp>();
+	const route = useRoute<PaymentScreenRouteProp>();
 
-	const { showAllAccess, courseId } = route.params || {};
+	const { showAllAccess, courseId } = route.params;
 
-	const currentLang: Lang = i18n.language === "ru" ? "ru" : "en-US";
+	const currentLang: Lang = i18n.language === "ru" ? "ru" : "en";
 
-	const course = coursesData.courses.find(
-		(c) => String(c.id) === String(courseId)
-	);
-	const courseTitle = course?.title[currentLang] ?? "";
+	// const course = coursesData.courses.find(
+	// 	(c) => String(c.id) === String(courseId)
+	// );
+	// const courseTitle = course?.title[currentLang] ?? "";
+	const course = courseId
+  ? coursesData.courses.find((c) => String(c.id) === String(courseId))
+  : null;
+
+const courseTitle = course?.title[currentLang] ?? "";
+
 
 	const handleCategoryPayment = () => {
 		// navigation.navigate("AccessCode", { type: "category" });
@@ -45,7 +58,7 @@ export default function PaymentScreen() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<View style={styles.paymentCard}>
+				{course && <View style={styles.paymentCard}>
 					<View style={styles.paymentHeader}>
 						<View style={styles.paymentTitleLine}>
 							<View style={styles.paymentIcon}>
@@ -81,7 +94,7 @@ export default function PaymentScreen() {
 							</Text>
 						</TouchableOpacity>
 					</View>
-				</View>
+				</View>}
 
 				{showAllAccess !== false && (
 					<View style={styles.paymentCard}>

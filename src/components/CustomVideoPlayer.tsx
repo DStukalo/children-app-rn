@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { StyleSheet, View, Button } from "react-native";
+import { StyleSheet, View, Button, Text } from "react-native";
 import Video, { OnLoadData, OnProgressData } from "react-native-video";
 
 export default function CustomVideoPlayer({
@@ -29,19 +29,23 @@ export default function CustomVideoPlayer({
 			<Video
 				ref={playerRef}
 				source={{ uri: videoSource }}
+				// source={{ uri: "https://www.w3schools.com/html/mov_bbb.mp4" }}
 				style={styles.video}
-				resizeMode="contain"
+				resizeMode='cover'
 				repeat={true} // loop
-				paused={!isPlaying} // якщо false → відео відтворюється
+				paused={!isPlaying}
 				onLoad={handleLoad}
 				onProgress={handleProgress}
+				controls
 			/>
-			<View style={styles.controlsContainer}>
+			{/* <View style={styles.controlsContainer}>
 				<Button
 					title={isPlaying ? "Pause" : "Play"}
 					onPress={togglePlayPause}
 				/>
-			</View>
+			</View> */}
+
+			{/* <Text>{videoSource}</Text> */}
 		</View>
 	);
 }
@@ -52,11 +56,11 @@ const styles = StyleSheet.create({
 		padding: 10,
 		alignItems: "center",
 		justifyContent: "center",
-		paddingHorizontal: 50,
+		marginHorizontal: 10,
 	},
 	video: {
-		width: 350,
-		height: 275,
+		width: "100%",
+		height: "100%",
 		backgroundColor: "black",
 	},
 	controlsContainer: {

@@ -28,6 +28,7 @@ export default {
 		materials: "Materials",
 		toPayment: "Pay",
 		downloadMaterials: "Download materials",
+		otherLessons: "Course lessons",
 	},
 	payment: {
 		title: "Purchase Access",
@@ -39,5 +40,14 @@ export default {
 		fullDescription:
 			"Get full access to all courses and videos. Cheaper than paying for each category separately.",
 		fullAccessButton: "Buy full access",
+	},
+	password: {
+		title: "Enter password",
+	},
+	drawerNav: {
+		courses: "Courses",
+		dontHaveCourses: "No available courses",
+		profile: "Profile",
+		main: "Main",
 	},
 };

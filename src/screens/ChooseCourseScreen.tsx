@@ -15,7 +15,7 @@ import coursesData from "../../data/data.json";
 
 const { width } = Dimensions.get("window");
 
-type LocalizedString = { "en-US": string; ru: string };
+type LocalizedString = { en: string; ru: string };
 
 type Audio = {
 	audioId: number;
@@ -53,7 +53,7 @@ type Lesson =
 
 type Details = {
 	description: LocalizedString;
-	materials?: { "en-US": unknown[]; ru: unknown[] };
+	materials?: { en: unknown[]; ru: unknown[] };
 	lessons: Lesson[];
 	video?: VideoSingle;
 };

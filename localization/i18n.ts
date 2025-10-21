@@ -6,24 +6,28 @@ import translationEn from "./en";
 import translationRu from "./ru";
 
 const resources = {
-	"en-US": { translation: translationEn },
+	en: { translation: translationEn },
 	ru: { translation: translationRu },
 };
 
 i18n.use(initReactI18next).init({
 	resources,
-	lng: "en-US",
-	fallbackLng: "en-US",
+	lng: "ru",
+	fallbackLng: "ru",
 	interpolation: { escapeValue: false },
 });
 
 export const initI18n = async () => {
 	const savedLang = await AsyncStorage.getItem("language");
-	const deviceLang = RNLocalize.getLocales()[0]?.languageTag || "en-US";
-
+	const deviceLang = RNLocalize.getLocales()[0]?.languageCode || "ru";
 	const lang = savedLang || deviceLang;
 
-	await i18n.changeLanguage(lang);
+	await i18n.init({
+		resources,
+		lng: lang,
+		fallbackLng: "ru",
+		supportedLngs: ["en", "ru"],
+		interpolation: { escapeValue: false },
+	});
 };
-
 export default i18n;
