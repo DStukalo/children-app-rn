@@ -8,10 +8,11 @@ import {
 	PartialState,
 } from "@react-navigation/native";
 import { DrawerNavigationProp } from "@react-navigation/drawer";
+import { CommonActions } from "@react-navigation/native";
+import { navigationRef } from "../../App";
 
 type DrawerNavProp = DrawerNavigationProp<any>;
 
-// Допоміжна функція для отримання поточного route
 function getCurrentRouteName(
 	state: NavigationState | PartialState<NavigationState> | undefined
 ): string {
@@ -28,7 +29,7 @@ function getCurrentRouteName(
 	return route.name;
 }
 
-export function CustomTabBar() {
+export function CustomTabBar(props: any) {
 	const navigation = useNavigation<any>();
 
 	const currentRoute = useNavigationState((state) =>
@@ -41,12 +42,16 @@ export function CustomTabBar() {
 	const activeColor = "#F7543E";
 	const inactiveColor = "#999";
 
+	const navigateToScreen = (screenName: string) => {
+		if (navigationRef.isReady()) {
+			navigationRef.navigate(screenName as never);
+		}
+	};
+
 	return (
 		<View style={styles.tabContainer}>
 			<TouchableOpacity
-				onPress={() => {
-					navigation.navigate("HomeScreen");
-				}}
+				onPress={() => navigateToScreen("HomeScreen")}
 				style={styles.tabButton}
 			>
 				<Icon
@@ -57,9 +62,7 @@ export function CustomTabBar() {
 			</TouchableOpacity>
 
 			<TouchableOpacity
-				onPress={() => {
-					navigation.navigate("ProfileScreen");
-				}}
+				onPress={() => navigateToScreen("ProfileScreen")}
 				style={styles.tabButton}
 			>
 				<Icon

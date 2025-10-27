@@ -40,13 +40,52 @@ export default {
 			"Купите полный доступ сразу ко всем курсам и видео. Это выгоднее, чем оплачивать категории по отдельности.",
 		fullAccessButton: "Купить полный доступ",
 	},
-	password: {
-		title: "Введите пароль",
+
+	profile: {
+		profile: "Профиль",
+		logout: "Выход",
+		chooseAvatar: "Выберите аватар",
+		cancel: "Отменить",
+		payment: "Оплата и подписка",
+		login: "Перейти к входу",
 	},
+
+	login: {
+		title: "Вход",
+		email: "Email",
+		password: "Пароль",
+		button: "Вход",
+		error: "Ошибка",
+		incorrectEmailOrPassword: "Неверный адрес электронной почты или пароль",
+		emptyFields: "Пожалуйста, заполните все поля",
+		somethingWentWrong: "Что-то пошло не так",
+		success: "Успех",
+		successLogin: "Вы успешно вошли!",
+		registration: "Еще нет учетной записи? Зарегистрироваться",
+	},
+
+	registration: {
+		title: "Регистрация",
+		email: "Email",
+		password: "Пароль",
+		button: "Регистрация",
+		incorrectEmailOrPassword: "Неверный адрес электронной почты или пароль",
+		emptyFields: "Пожалуйста, заполните все поля",
+		somethingWentWrong: "Что-то пошло не так",
+		success: "Успех",
+		successLogin: "Вы успешно зарегистрировались!",
+		login: "Уже есть учетная запись? Войти",
+	},
+
 	drawerNav: {
 		courses: "Курсы",
 		dontHaveCourses: "Нет доступных курсов",
 		profile: "Профиль",
 		main: "Главная",
+	},
+
+	customVideoPlayer: {
+		loading: "Загрузка...",
+		notFound: "Видео не найдено",
 	},
 };

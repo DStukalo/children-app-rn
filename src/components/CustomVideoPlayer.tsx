@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Button, Text } from "react-native";
 import Video, { OnLoadData, OnProgressData } from "react-native-video";
 
@@ -12,6 +13,8 @@ export default function CustomVideoPlayer({
 	const [duration, setDuration] = useState(0);
 	const [currentTime, setCurrentTime] = useState(0);
 
+	const { i18n, t } = useTranslation();
+
 	const handleLoad = (data: OnLoadData) => {
 		setDuration(data.duration);
 	};
@@ -23,6 +26,13 @@ export default function CustomVideoPlayer({
 	const togglePlayPause = () => {
 		setIsPlaying((prev) => !prev);
 	};
+
+	if (!videoSource)
+		return (
+			<View style={styles.contentContainer}>
+				<Text>{t("customVideoPlayer.notFound")}</Text>
+			</View>
+		);
 
 	return (
 		<View style={styles.contentContainer}>

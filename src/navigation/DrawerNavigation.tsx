@@ -39,35 +39,7 @@ export function CustomDrawerContent(props: any) {
 				}}
 				labelStyle={styles.drawerTitle}
 			/>
-
 			<View style={styles.divider} />
-			{/* <Dropdown
-				item={{ title: t("drawerNav.courses") }}
-				initiallyOpen={true}
-				renderLabel={() => (
-					<DrawerItem
-						label={t("drawerNav.courses")}
-						onPress={() => {
-							props.navigation.closeDrawer();
-							navigation.navigate("ChooseCourseScreen");
-						}}
-						labelStyle={styles.drawerTitle}
-					/>
-				)}
-				renderContent={() =>
-					courses.map((course) => (
-						<DrawerItem
-							key={course.id}
-							label={course.title[currentLang] || course.title.ru}
-							onPress={() => {
-								props.navigation.closeDrawer();
-								navigation.navigate("CourseScreen", { id: course.id });
-							}}
-							labelStyle={{ margin: 0, color: "#333", padding: 0 }}
-						/>
-					))
-				}
-			/> */}
 			<DrawerItem
 				label={t("drawerNav.courses")}
 				onPress={() => {
@@ -90,7 +62,6 @@ export function CustomDrawerContent(props: any) {
 				))}
 			</View>
 			<View style={styles.divider} />
-
 			<DrawerItem
 				label={t("drawerNav.profile")}
 				onPress={() => {
@@ -107,7 +78,7 @@ export default function Tabs() {
 	return (
 		<Tab.Navigator
 			screenOptions={{ headerShown: false }}
-			tabBar={() => <CustomTabBar />}
+			tabBar={(props) => <CustomTabBar {...props} />}
 		>
 			<Tab.Screen
 				name='Tabs'

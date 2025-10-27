@@ -106,3 +106,9 @@ adb devices - look you emulator id
 
 
 after change the 5554 for you id
+
+# Create apk file
+
+ cd android  
+
+./gradlew assembleRelease 

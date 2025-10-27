@@ -10,6 +10,9 @@
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/RNCSlider_autolinked_build/CMakeFiles/edit_cache.dir
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/RNCSlider_autolinked_build/CMakeFiles/rebuild_cache.dir
+/Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir
+/Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rnpicker_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rnpicker_autolinked_build/CMakeFiles/rebuild_cache.dir
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/edit_cache.dir
 /Users/dmytrostukalo/Documents/GitHub/ChildApp/android/app/.cxx/RelWithDebInfo/3e5m5l1t/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/rebuild_cache.dir

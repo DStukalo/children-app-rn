@@ -17,6 +17,8 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { MainStackParamList } from "../navigation/types";
 import { Dropdown } from "../components/Dropdown";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
+import { useAuthCheck } from "../hooks/useAuthCheck";
+import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
 
 const { width } = Dimensions.get("window");
 const videoContainerWidth = width - 16;
@@ -32,16 +34,18 @@ const getLocalizedValue = <T extends Record<string, any>>(
 
 export default function LessonScreen({ route, navigation }: Props) {
 	const { lessonId, courseId } = route.params;
-
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
+
+	const { isAuthenticated } = useAuthCheck();
+	const isPremiumUser = useIsPremiumUser();
 
 	const course = coursesData.courses.find((c) => c.id === Number(courseId));
 	const lesson = course?.details.lessons.find(
 		(l) => l.lessonId === Number(lessonId)
 	);
 
-	const isLocked = lesson?.access === "locked";
+	const isLocked = lesson?.access === "locked" && !isPremiumUser;
 
 	useEffect(() => {
 		if (lesson) {
@@ -53,21 +57,19 @@ export default function LessonScreen({ route, navigation }: Props) {
 		}
 	}, [lessonId, currentLanguage]);
 
-	// const handleToPayment = () => {
-	// 	if (isLocked) {
-	// 		navigation.navigate("PaymentScreen", {
-	// 			courseId: courseId,
-	// 			showAllAccess: true,
-	// 		});
-	// 		console.log("handleToPayment");
-	// 	} else {
-	// 		navigation.navigate("VideoScreen", {
-	// 			id: String(lesson?.lessonId),
-	// 			courseId: String(courseId),
-	// 		});
-	// 		console.log("handleToPayment");
-	// 	}
-	// };
+	const handleToPayment = () => {
+		if (!isAuthenticated) {
+			navigation.navigate("CheckLoginWhenPayScreen", {
+				courseId: courseId,
+				showAllAccess: true,
+			});
+		} else {
+			navigation.navigate("PaymentScreen", {
+				courseId: courseId,
+				showAllAccess: true,
+			});
+		}
+	};
 
 	if (!course || !lesson) {
 		return (
@@ -83,23 +85,90 @@ export default function LessonScreen({ route, navigation }: Props) {
 				{Array.isArray(lesson.video) ? (
 					<View style={styles.videoList}>
 						{lesson.video.map((vid) => {
-							const isVideoLocked = lesson.access === "locked";
+							const isVideoLocked =
+								lesson.access === "locked" && !isPremiumUser;
 							return (
-								<View style={{ aspectRatio: 16 / 9 }}>
-									<CustomVideoPlayer
-										videoSource={getLocalizedValue(
-											vid.video,
-											currentLanguage,
-											"ru"
-										)}
-									/>
+								<View key={vid.videoId}>
+									{isVideoLocked ? (
+										<View style={styles.lockedVideoContainer}>
+											<View style={styles.videoContainer}>
+												<Ionicons
+													name='lock-closed'
+													size={20}
+													color='#9CA3AF'
+													style={{ marginLeft: 8 }}
+												/>
+											</View>
+											<View style={styles.paymentButtonSection}>
+												<TouchableOpacity
+													style={[
+														styles.paymentButton,
+														{ backgroundColor: "#F7543E" },
+													]}
+													onPress={handleToPayment}
+												>
+													<View style={styles.button}>
+														<Ionicons
+															name='card'
+															size={20}
+															color='#FFFFFF'
+														/>
+														<Text style={styles.buttonText}>
+															{t("lesson.toPayment")}
+														</Text>
+													</View>
+												</TouchableOpacity>
+											</View>
+										</View>
+									) : (
+										<View style={{ aspectRatio: 16 / 9 }}>
+											<CustomVideoPlayer
+												videoSource={getLocalizedValue(
+													vid.video,
+													currentLanguage,
+													"ru"
+												)}
+											/>
+										</View>
+									)}
 								</View>
 							);
 						})}
 					</View>
-				) : (
-					lesson.video && (
-						<View style={styles.videoList}>
+				) : lesson.video ? (
+					<View style={styles.videoList}>
+						{isLocked ? (
+							<View style={styles.lockedVideoContainer}>
+								<View style={styles.videoContainer}>
+									<Ionicons
+										name='lock-closed'
+										size={20}
+										color='#9CA3AF'
+										style={{ marginLeft: 8 }}
+									/>
+								</View>
+								<View style={styles.paymentButtonSection}>
+									<TouchableOpacity
+										style={[
+											styles.paymentButton,
+											{ backgroundColor: "#F7543E" },
+										]}
+										onPress={handleToPayment}
+									>
+										<View style={styles.button}>
+											<Ionicons
+												name='card'
+												size={20}
+												color='#FFFFFF'
+											/>
+											<Text style={styles.buttonText}>
+												{t("lesson.toPayment")}
+											</Text>
+										</View>
+									</TouchableOpacity>
+								</View>
+							</View>
+						) : (
 							<View style={{ aspectRatio: 16 / 9 }}>
 								<CustomVideoPlayer
 									videoSource={`${
@@ -109,9 +178,9 @@ export default function LessonScreen({ route, navigation }: Props) {
 									}`}
 								/>
 							</View>
-						</View>
-					)
-				)}
+						)}
+					</View>
+				) : null}
 
 				{"audio" in lesson &&
 					Array.isArray(lesson.audio) &&
@@ -178,7 +247,7 @@ export default function LessonScreen({ route, navigation }: Props) {
 				<View style={styles.lessonsBlock}>
 					<Dropdown
 						item={{ title: t("lesson.otherLessons") }}
-						initiallyOpen={false}
+						initiallyOpen={true}
 						renderLabel={() => (
 							<View style={styles.lessonsHeader}>
 								<Text style={styles.lessonsTitle}>
@@ -204,13 +273,13 @@ export default function LessonScreen({ route, navigation }: Props) {
 										}}
 										style={[
 											styles.lessonItem,
-											isCurrent && styles.currentLessonItem,
+											// isCurrent && styles.currentLessonItem,
 										]}
 									>
 										<Ionicons
 											name={isCurrent ? "book" : "play-outline"}
 											size={20}
-											color={isCurrent ? "#FFFFFF" : "#1F2937"}
+											color={isCurrent ? "#F7543E" : "#1F2937"}
 										/>
 										<Text
 											style={[
@@ -234,6 +303,9 @@ export default function LessonScreen({ route, navigation }: Props) {
 
 const styles = StyleSheet.create({
 	container: { flex: 1, backgroundColor: "#F8FAFC" },
+	lockedVideoContainer: {
+		justifyContent: "center",
+	},
 	loaderContainer: {
 		flex: 1,
 		justifyContent: "center",
@@ -244,10 +316,10 @@ const styles = StyleSheet.create({
 		backgroundColor: "#000",
 		aspectRatio: 16 / 9,
 		width: videoContainerWidth,
-		// height: "100%",
 		alignItems: "center",
 		marginLeft: 4,
-		marginBottom: 8,
+		// marginBottom: 8,
+		justifyContent: "center",
 	},
 	videoTitle: {
 		fontSize: 20,
@@ -338,8 +410,12 @@ const styles = StyleSheet.create({
 	},
 	currentLessonItem: {
 		backgroundColor: "#F7543E",
+		borderBottomColor: "#F7543E",
+		// opacity: 0.8,
 	},
 	currentLessonItemText: {
-		color: "#FFF",
+		color: "#F7543E",
+		// textDecorationLine: "underline",
+		// textDecorationColor: "#F7543E",
 	},
 });

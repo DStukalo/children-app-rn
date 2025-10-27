@@ -1,3 +1,5 @@
+import LoginScreen from "../../src/screens/LoginScreen";
+
 export default {
 	language: "Language",
 	home: {
@@ -41,13 +43,52 @@ export default {
 			"Get full access to all courses and videos. Cheaper than paying for each category separately.",
 		fullAccessButton: "Buy full access",
 	},
-	password: {
-		title: "Enter password",
+
+	profile: {
+		profile: "Profile",
+		logout: "Logout",
+		chooseAvatar: "Choose avatar",
+		cancel: "Cancel",
+		payment: "Payment & Subscription",
+		login: "Go to Login",
 	},
+
+	login: {
+		title: "Login",
+		email: "Email",
+		password: "Password",
+		button: "Login",
+		registration: "Don't have an account yet? Sign up",
+		error: "Error",
+		incorrectEmailOrPassword: "Incorrect email or password",
+		emptyFields: "Please fill in all fields",
+		somethingWentWrong: "Something went wrong",
+		success: "Success",
+		successLogin: "You have successfully logged in!",
+	},
+
+	registration: {
+		title: "Registration",
+		email: "Email",
+		password: "Password",
+		button: "Registration",
+		incorrectEmailOrPassword: "Incorrect email or password",
+		emptyFields: "Please fill in all fields",
+		somethingWentWrong: "Something went wrong",
+		success: "Success",
+		successLogin: "You have successfully registered!",
+		login: "Already have an account? Log in",
+	},
+
 	drawerNav: {
 		courses: "Courses",
 		dontHaveCourses: "No available courses",
 		profile: "Profile",
 		main: "Main",
+	},
+
+	customVideoPlayer: {
+		loading: "Loading...",
+		notFound: "Video not found",
 	},
 };

@@ -15,18 +15,22 @@ import coursesData from "../../data/data.json";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { useAuthCheck } from "../hooks/useAuthCheck";
+import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
 
 export default function Course() {
 	const route = useRoute<any>();
 	const navigation = useNavigation<any>();
-
-	const { id } = route.params; // отримуємо id з params
+	const { id } = route.params;
 	const numericId = parseInt(id, 10);
 
 	const course = coursesData.courses.find((c) => c.id === numericId);
 
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
+
+	const { isAuthenticated } = useAuthCheck();
+	const isPremiumUser = useIsPremiumUser();
 
 	useEffect(() => {
 		if (course) {
@@ -53,14 +57,31 @@ export default function Course() {
 		isLocked: boolean,
 		courseId: number
 	) => {
-		if (isLocked) {
-			navigation.navigate("PaymentScreen", {
-				courseId: courseId,
-				showAllAccess: false,
-			});
-		} else {
+		if (isPremiumUser || !isLocked) {
 			navigation.navigate("LessonScreen", { lessonId, courseId });
+			return;
 		}
+
+		if (isLocked) {
+			// navigation.navigate("PaymentScreen", {
+			// 	courseId: courseId,
+			// 	showAllAccess: false,
+			// });
+			if (!isAuthenticated) {
+				navigation.navigate("CheckLoginWhenPayScreen", {
+					courseId: courseId,
+					showAllAccess: true,
+				});
+			} else {
+				navigation.navigate("PaymentScreen", {
+					courseId: courseId,
+					showAllAccess: true,
+				});
+			}
+		}
+		// else {
+		// 	navigation.navigate("LessonScreen", { lessonId, courseId });
+		// }
 	};
 
 	return (
@@ -128,7 +149,7 @@ export default function Course() {
 									</Text>
 								</View>
 
-								{isLocked && (
+								{isLocked && !isPremiumUser && (
 									<Ionicons
 										name='lock-closed'
 										size={20}

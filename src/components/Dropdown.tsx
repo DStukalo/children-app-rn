@@ -23,11 +23,16 @@ export function Dropdown<T>({
 		<View>
 			<View style={styles.itemContainer}>
 				<View style={{ flex: 1 }}>{renderLabel(item)}</View>
-				<TouchableOpacity onPress={toggle}>
+				<TouchableOpacity
+					onPress={toggle}
+					// style={{ alignItems: "center", justifyContent: "center" }}
+				>
 					<Icon
 						name={open ? "chevron-up" : "chevron-down"}
 						size={20}
 						color='#333'
+						// style={{ alignItems: "center", justifyContent: "center" }}
+						style={{ paddingTop: open ? 0 : 5 }}
 					/>
 				</TouchableOpacity>
 			</View>
@@ -39,7 +44,7 @@ export function Dropdown<T>({
 const styles = StyleSheet.create({
 	itemContainer: {
 		flexDirection: "row",
-		alignItems: "baseline",
+		alignItems: "center",
 		paddingRight: 20,
 	},
 	content: { paddingLeft: 5, paddingBottom: 5 },
