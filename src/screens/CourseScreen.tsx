@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
 	Image,
 	Linking,
@@ -17,6 +17,9 @@ import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { useAuthCheck } from "../hooks/useAuthCheck";
 import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
+import { UserData } from "../types/types";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import AudioPlayer from "../components/AudioPlayer";
 
 export default function Course() {
 	const route = useRoute<any>();
@@ -31,6 +34,31 @@ export default function Course() {
 
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
+
+	const [user, setUser] = useState<UserData | null>(null);
+
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const handleNext = (index: number) => {
+		const audios = course?.details?.audio;
+		if (!audios || index >= audios.length - 1) return;
+		setCurrentIndex(index + 1);
+	};
+
+	useEffect(() => {
+		const loadUser = async () => {
+			const jsonValue = await AsyncStorage.getItem("user_data");
+			if (jsonValue) {
+				setUser(JSON.parse(jsonValue));
+			}
+		};
+		loadUser();
+	}, []);
+
+	const hasPartialPremiumAccess =
+		user?.role === "User with party premium access" &&
+		Array.isArray(user.openCategories) &&
+		course?.id !== undefined &&
+		user.openCategories.includes(course?.id);
 
 	useEffect(() => {
 		if (course) {
@@ -123,10 +151,15 @@ export default function Course() {
 				</View>
 
 				<View style={styles.lessonsSection}>
-					<Text style={styles.sectionTitle}>{t("course.lessons")}</Text>
+					{course.details.lessons && (
+						<Text style={styles.sectionTitle}>{t("course.lessons")}</Text>
+					)}
 
-					{course.details.lessons.map((lesson, index) => {
-						const isLocked = lesson.access === "locked";
+					{course.details.lessons?.map((lesson, index) => {
+						const isLocked =
+							lesson?.access === "locked" &&
+							!isPremiumUser &&
+							!hasPartialPremiumAccess;
 
 						return (
 							<TouchableOpacity
@@ -169,7 +202,7 @@ export default function Course() {
 					course.details.materials[currentLanguage as "en" | "ru"].length >
 						0 && (
 						<View style={styles.materialsBlock}>
-							<Text style={styles.materialsTitle}>{t("lesson.materials")}</Text>
+							<Text style={styles.materialsTitle}>{t("course.materials")}</Text>
 
 							{course.details.materials[currentLanguage as "en" | "ru"]?.map(
 								(url, idx) => (
@@ -197,6 +230,33 @@ export default function Course() {
 							)}
 						</View>
 					)}
+
+				{course?.details?.audio && course.details.audio.length > 0 && (
+					<View style={styles.audioSection}>
+						<Text style={styles.sectionTitle}>{t("course.audioLessons")}</Text>
+
+						{course.details.audio.map((item, index) => (
+							<View
+								key={item.audioId}
+								style={{ marginBottom: 16 }}
+							>
+								<Text style={{ fontSize: 16, marginBottom: 6 }}>
+									{item.title[currentLanguage as keyof typeof item.title] ||
+										item.title["ru"]}
+								</Text>
+								<AudioPlayer
+									source={
+										item.audio[currentLanguage as keyof typeof item.audio] ||
+										item.audio["ru"]
+									}
+									autoPlay={index === currentIndex}
+									onEnd={() => handleNext(index)}
+									isPlayingFromCourse={index === currentIndex}
+								/>
+							</View>
+						))}
+					</View>
+				)}
 			</ScrollView>
 		</SafeAreaView>
 	);
@@ -306,5 +366,18 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		// fontFamily: typography.bold,
 		marginLeft: 8,
+	},
+	audioSection: {
+		backgroundColor: "#FFF",
+		padding: 16,
+		margin: 12,
+		borderRadius: 12,
+		gap: 12,
+	},
+	audioTitle: {
+		fontSize: 18,
+		// fontFamily: typography.bold,
+		marginBottom: 8,
+		color: "#1F2937",
 	},
 });

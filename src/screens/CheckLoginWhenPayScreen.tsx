@@ -12,34 +12,26 @@ import {
 import { StackScreenProps } from "@react-navigation/stack";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { MainStackParamList } from "../navigation/types";
-import i18n from '../../localization/i18n';
+import i18n from "../../localization/i18n";
+import { useTranslation } from "react-i18next";
 
 const { width } = Dimensions.get("window");
 const videoContainerWidth = width - 16;
 type Props = StackScreenProps<MainStackParamList, "CheckLoginWhenPayScreen">;
 
-const getLocalizedValue = <T extends Record<string, any>>(
-	obj: T,
-	lang: string,
-	fallback: keyof T = "ru" as keyof T
-): string => {
-	return obj[lang as keyof T] || obj[fallback];
-};
-
 export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
 	const { courseId, showAllAccess } = route.params;
 
-	// useEffect(() => {
-	// 	if (lesson) {
-	// 		navigation.setOptions({
-	// 			title:
-	// 				lesson.title[currentLanguage as keyof typeof lesson.title] ||
-	// 				lesson.title["ru"],
-	// 		});
-	// 	}
-	// }, [lessonId, currentLanguage]);
+	const { i18n, t } = useTranslation();
+	const currentLanguage = i18n.language;
 
-	const handleToPayment = () => {
+	useEffect(() => {
+		navigation.setOptions({
+			title: t("checkLogin.title"),
+		});
+	}, [currentLanguage]);
+
+	const handleToLogin = () => {
 		navigation.navigate("LoginScreen", {
 			courseId: courseId,
 			redirectTo: "PaymentScreen",
@@ -47,47 +39,50 @@ export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
 		});
 	};
 
-	// if (!course || !lesson) {
-	// 	return (
-	// 		<SafeAreaView style={styles.loaderContainer}>
-	// 			<Text style={{ fontSize: 16, padding: 20 }}>Урок не найден</Text>
-	// 		</SafeAreaView>
-	// 	);
-	// }
+	const handleToRegister = () => {
+		navigation.navigate("RegisterScreen", {
+			courseId: courseId,
+			redirectTo: "PaymentScreen",
+			showAllAccess: showAllAccess,
+		});
+	};
 
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<View style={styles.videoContainer}>
-					<Text style={styles.videoTitle}>
-						{getLocalizedValue(
-							{
-								ru: "Подписка",
-								en: "Subscription",
-							},
-							i18n.language
-						)}
-					</Text>
+				<View style={styles.textContainer}>
+					<Text style={styles.sectionTitle}>{t("checkLogin.text")}</Text>
+				</View>
+				<View style={styles.buttonContainer}>
 					<View style={styles.paymentButtonSection}>
 						<TouchableOpacity
 							style={styles.paymentButton}
-							onPress={handleToPayment}
+							onPress={handleToLogin}
 							activeOpacity={0.8}
 						>
-							<View style={styles.button}>
+							<View style={styles.paymentButton}>
 								<Ionicons
-									name='logo-paypal'
+									// name='logo-paypal'
+									name='log-in-outline'
 									size={24}
 									color='#fff'
 								/>
+								<Text style={styles.buttonText}>{t("checkLogin.login")}</Text>
+							</View>
+						</TouchableOpacity>
+						<TouchableOpacity
+							style={styles.paymentButton}
+							onPress={handleToRegister}
+							activeOpacity={0.8}
+						>
+							<View style={styles.paymentButton}>
+								<Ionicons
+									name='person-add-outline'
+									size={20}
+									color='#fff'
+								/>
 								<Text style={styles.buttonText}>
-									{getLocalizedValue(
-										{
-											ru: "Оплатить",
-											en: "Pay",
-										},
-										i18n.language
-									)}
+									{t("checkLogin.registration")}
 								</Text>
 							</View>
 						</TouchableOpacity>
@@ -100,116 +95,42 @@ export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
 
 const styles = StyleSheet.create({
 	container: { flex: 1, backgroundColor: "#F8FAFC" },
-	lockedVideoContainer: {
-		justifyContent: "center",
-	},
-	loaderContainer: {
-		flex: 1,
-		justifyContent: "center",
-		alignItems: "center",
-		backgroundColor: "#fff",
-	},
-	videoContainer: {
-		backgroundColor: "#000",
-		aspectRatio: 16 / 9,
-		width: videoContainerWidth,
-		alignItems: "center",
-		marginLeft: 4,
-		// marginBottom: 8,
-		justifyContent: "center",
-	},
-	videoTitle: {
-		fontSize: 20,
-		paddingLeft: 12,
-		fontFamily: "Inter-Bold",
-		color: "#1F2937",
-		marginBottom: 8,
-		marginTop: 8,
-	},
-	paymentButtonSection: { padding: 8 },
-	paymentButton: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "center",
+	textContainer: {
+		marginTop: 20,
+		paddingHorizontal: 28,
 		paddingVertical: 16,
-		borderRadius: 12,
 	},
-	button: { flexDirection: "row", alignItems: "center" },
-	buttonText: {
-		fontSize: 16,
-		// fontFamily: typography.bold,
-		color: "#FFFFFF",
-		marginLeft: 8,
+	sectionTitle: {
+		fontSize: 20,
+		fontFamily: "Nunito-Bold",
+		color: "#000",
+		textAlign: "center",
 	},
-	videoList: { padding: 4 },
-	videoCard: {
-		backgroundColor: "#FFFFFF",
-		marginBottom: 12,
-		borderRadius: 12,
-		overflow: "hidden",
+	buttonContainer: {
+		marginTop: 10,
+		paddingHorizontal: 28,
 	},
-	materialsBlock: {
-		backgroundColor: "#FFF",
-		padding: 16,
-		margin: 12,
-		borderRadius: 12,
-		gap: 12,
+	paymentButtonSection: {
+		gap: 10,
 	},
-	materialsTitle: {
-		fontSize: 18,
-		// fontFamily: typography.bold,
-		marginBottom: 8,
-		color: "#1F2937",
-	},
-	materialsButton: {
+	paymentButton: {
+		backgroundColor: "#F7543E",
+		paddingHorizontal: 4,
+		paddingVertical: 6,
+		borderRadius: 8,
+		gap: 10,
 		flexDirection: "row",
 		alignItems: "center",
 		justifyContent: "center",
-		backgroundColor: "#F7543E",
-		paddingVertical: 12,
-		borderRadius: 8,
+
+		flexWrap: "wrap",
 	},
-	materialsButtonText: {
-		color: "#FFF",
-		fontSize: 16,
-		// fontFamily: typography.bold,
-		marginLeft: 8,
-	},
-	lessonsHeader: {
-		backgroundColor: "#FFF",
-		paddingVertical: 12,
-		paddingHorizontal: 16,
-	},
-	lessonsBlock: {
-		backgroundColor: "#FFF",
-		padding: 8,
-		margin: 12,
-		borderRadius: 12,
-	},
-	lessonsTitle: {
-		fontSize: 18,
-		// fontWeight: "bold",
-		color: "#1F2937",
-	},
-	lessonItem: {
-		flexDirection: "row",
+	buttonText: {
+		color: "#fff",
+		fontFamily: "Nunito-Regular",
+		fontSize: 14,
 		alignItems: "center",
-		paddingVertical: 10,
-		paddingHorizontal: 12,
-		borderRadius: 8,
-		backgroundColor: "#F3F4F6",
-		marginBottom: 8,
-	},
-	lessonItemText: {
-		fontSize: 16,
-		color: "#1F2937",
-		marginLeft: 8,
-	},
-	currentLessonItem: {
-		// backgroundColor: "#F7543E",
-		opacity: 0.8,
-	},
-	currentLessonItemText: {
-		color: "#FFF",
+		justifyContent: "center",
+		flexWrap: "wrap",
 	},
 });

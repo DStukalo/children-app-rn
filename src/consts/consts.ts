@@ -9,7 +9,7 @@ const AVATAR_OPTIONS = [
 
 const DEFAULT_USER: Omit<UserData, "email"> = {
 	name: "John Doe",
-	role: "Premium User",
+	role: "Default User",
 	userId: "ID-193829",
 	avatar: AVATAR_OPTIONS[0],
 };
@@ -22,6 +22,7 @@ const USERS = [
 		avatar: AVATAR_OPTIONS[0],
 		userId: "ID-327756",
 		name: "John Doe",
+		openCategories: [1, 2],
 	},
 	{
 		email: "roman@gmail.com",
@@ -38,6 +39,14 @@ const USERS = [
 		avatar: AVATAR_OPTIONS[0],
 		name: "Dima",
 		userId: "ID-143221",
+	},
+	{
+		email: "default@example.com",
+		password: "123456",
+		role: "Default user",
+		avatar: AVATAR_OPTIONS[0],
+		userId: "ID-327756",
+		name: "John Doe",
 	},
 ];
 

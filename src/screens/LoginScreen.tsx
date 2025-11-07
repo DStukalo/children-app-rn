@@ -14,7 +14,6 @@ import { MainStackParamList } from "../navigation/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useTranslation } from "react-i18next";
 import { USERS } from "../consts/consts";
-import { useAuthCheck } from "../hooks/useAuthCheck";
 
 type Nav = NativeStackNavigationProp<MainStackParamList, "LoginScreen">;
 type Route = RouteProp<MainStackParamList, "LoginScreen">;
@@ -32,98 +31,11 @@ export default function LoginScreen() {
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
 
-	const { userEmail } = useAuthCheck();
-
 	useEffect(() => {
 		navigation.setOptions({
 			title: t("login.title"),
 		});
 	}, [currentLanguage]);
-
-	// const handleLogin = async () => {
-	// 	if (!email.trim() || !password.trim()) {
-	// 		return Alert.alert("Помилка", "Будь ласка, заповніть усі поля");
-	// 	}
-
-	// 	try {
-	// 		setLoading(true);
-
-	// 		await new Promise<void>((res) => setTimeout(res, 1500));
-
-	// 		if (email === "test@example.com" && password === "123456") {
-	// 			await AsyncStorage.setItem("auth_token", "dummy_token");
-	// 			await AsyncStorage.setItem("user_email", email);
-
-	// 			Alert.alert("Успіх", "Ви успішно увійшли!", [
-	// 				{
-	// 					text: "OK",
-	// 					onPress: () =>
-	// 						navigation.reset({
-	// 							index: 0,
-	// 							routes: [{ name: "ProfileScreen" as never }],
-	// 						}),
-	// 				},
-	// 			]);
-	// 		} else {
-	// 			Alert.alert("Помилка", "Невірний email або пароль");
-	// 		}
-	// 	} catch (err) {
-	// 		Alert.alert("Помилка", "Щось пішло не так");
-	// 	} finally {
-	// 		setLoading(false);
-	// 	}
-	// };
-
-	// const handleLogin = async () => {
-	// 	if (!email.trim() || !password.trim()) {
-	// 		return Alert.alert(t("login.error"), t("login.emptyFields"));
-	// 	}
-
-	// 	try {
-	// 		setLoading(true);
-
-	// 		await new Promise<void>((res) => setTimeout(res, 1500));
-
-	// 		const user = USERS.find(
-	// 			(u) => u.email === email.trim() && u.password === password.trim()
-	// 		);
-
-	// 		if (user) {
-	// 			await AsyncStorage.setItem("auth_token", "dummy_token");
-	// 			await AsyncStorage.setItem("user_email", user.email);
-
-	// 			Alert.alert(t("login.success"), t("login.successLogin"), [
-	// 				{
-	// 					text: "OK",
-	// 					onPress: () => {
-	// 						if (redirectTo === "PaymentScreen" && courseId) {
-	// 							navigation.reset({
-	// 								index: 0,
-	// 								routes: [
-	// 									{
-	// 										name: "PaymentScreen",
-	// 										params: { courseId, showAllAccess } as never,
-	// 									},
-	// 								],
-	// 							});
-	// 						} else {
-	// 							navigation.reset({
-	// 								index: 0,
-	// 								routes: [{ name: "ProfileScreen" as never }],
-	// 							});
-	// 						}
-	// 					},
-	// 				},
-	// 			]);
-	// 		} else {
-	// 			Alert.alert(t("login.error"), t("login.incorrectEmailOrPassword"));
-	// 		}
-	// 	} catch (err) {
-	// 		Alert.alert(t("login.error"), t("login.somethingWentWrong"));
-	// 	} finally {
-	// 		setLoading(false);
-	// 	}
-	// };
 
 	const handleLogin = async () => {
 		if (!email.trim() || !password.trim()) {

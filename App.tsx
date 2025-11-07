@@ -10,9 +10,11 @@ import {
 	createNavigationContainerRef,
 	NavigationContainer,
 } from "@react-navigation/native";
+import SystemNavigationBar from "react-native-system-navigation-bar";
 import { I18nextProvider } from "react-i18next";
 import i18n, { initI18n } from "./localization/i18n";
 import { DrawerNav } from "./src/navigation/DrawerNavigation";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export const navigationRef = createNavigationContainerRef();
 
@@ -28,6 +30,13 @@ export default function App() {
 		init();
 	}, []);
 
+	// useEffect(() => {
+	// 	SystemNavigationBar.stickyImmersive();
+	// 	return () => {
+	// 		SystemNavigationBar.navigationShow();
+	// 	};
+	// }, []);
+
 	if (!isI18nReady) {
 		return (
 			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -39,10 +48,18 @@ export default function App() {
 	return (
 		<I18nextProvider i18n={i18n}>
 			<SafeAreaProvider>
-				<StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
-				<NavigationContainer ref={navigationRef}>
-					<DrawerNav />
-				</NavigationContainer>
+				<SafeAreaView
+					style={{ flex: 1 }}
+					edges={["left", "right", "bottom"]}
+				>
+					<StatusBar
+						barStyle={isDarkMode ? "light-content" : "dark-content"}
+						backgroundColor={isDarkMode ? "#000" : "#fff"}
+					/>
+					<NavigationContainer ref={navigationRef}>
+						<DrawerNav />
+					</NavigationContainer>
+				</SafeAreaView>
 			</SafeAreaProvider>
 		</I18nextProvider>
 	);

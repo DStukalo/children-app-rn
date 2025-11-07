@@ -46,9 +46,11 @@ export default function RegisterScreen() {
 
 			await new Promise<void>((res) => setTimeout(res, 1500));
 
-			if (email === "test@example.com" && password === "123456") {
+			if (email && password) {
 				await AsyncStorage.setItem("auth_token", "dummy_token");
 				await AsyncStorage.setItem("user_email", email);
+				await AsyncStorage.setItem("user_password", password);
+
 
 				Alert.alert(t("registration.success"), t("registration.successLogin"), [
 					{

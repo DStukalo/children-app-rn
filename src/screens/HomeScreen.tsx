@@ -294,8 +294,8 @@ export default function HomeScreen() {
 							style={styles.logo}
 						/>
 						<View style={styles.headerTextBlock}>
-							<Text style={styles.headerSubtitle}>Школа</Text>
-							<Text style={styles.headerTitle}>Ольги Філістович</Text>
+							<Text style={styles.headerSubtitle}>{t("home.title1")}</Text>
+							<Text style={styles.headerTitle}>{t("home.title2")}</Text>
 						</View>
 					</View>
 
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
 		color: "#2e2e2e",
 		paddingLeft: 10,
 	},
-	logo: { width: 41, height: 44, borderRadius: 8 },
+	logo: { width: 35, height: 35, borderRadius: 8 },
 	langSwitch: {
 		backgroundColor: "#F7543E",
 		paddingHorizontal: 12,

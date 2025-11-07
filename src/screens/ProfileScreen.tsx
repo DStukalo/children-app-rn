@@ -38,6 +38,12 @@ const ProfileScreen = () => {
 	const currentLanguage = i18n.language;
 
 	useEffect(() => {
+		navigation.setOptions({
+			title: t("profile.title"),
+		});
+	}, [currentLanguage]);
+
+	useEffect(() => {
 		const loadUserData = async () => {
 			try {
 				if (!userEmail) return;
@@ -48,9 +54,15 @@ const ProfileScreen = () => {
 					setUser(existingUser);
 					await AsyncStorage.setItem("user_data", JSON.stringify(existingUser));
 				} else {
-					const newUser = { ...DEFAULT_USER, email: userEmail };
+					const userPass = await AsyncStorage.getItem("user_password");
+					const newUser = {
+						...DEFAULT_USER,
+						email: userEmail,
+						password: userPass || "",
+					};
 					setUser(newUser);
 					await AsyncStorage.setItem("user_data", JSON.stringify(newUser));
+					USERS.push(newUser);
 				}
 			} catch (e) {
 				console.error("Failed to load user data:", e);

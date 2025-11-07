@@ -43,4 +43,5 @@ export type UserData = {
 	role: string;
 	userId: string;
 	avatar: string;
+	openCategories?: number[];
 };

@@ -10,6 +10,7 @@ import {
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import { CommonActions } from "@react-navigation/native";
 import { navigationRef } from "../../App";
+import { Text } from "react-native-gesture-handler";
 
 type DrawerNavProp = DrawerNavigationProp<any>;
 
@@ -36,7 +37,11 @@ export function CustomTabBar(props: any) {
 		getCurrentRouteName(state)
 	);
 
-	const isHomeActive = currentRoute === "HomeScreen";
+	const isHomeActive =
+		currentRoute === "HomeScreen" ||
+		currentRoute === "Tabs" ||
+		currentRoute === "";
+
 	const isProfileActive = currentRoute === "ProfileScreen";
 
 	const activeColor = "#F7543E";
@@ -80,7 +85,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-around",
 		alignItems: "center",
-		paddingVertical: 12,
+		paddingVertical: 10,
 		borderTopWidth: 1,
 		borderTopColor: "#eee",
 		backgroundColor: "#fff",

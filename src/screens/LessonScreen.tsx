@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
 	Dimensions,
 	SafeAreaView,
@@ -19,6 +19,8 @@ import { Dropdown } from "../components/Dropdown";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import { useAuthCheck } from "../hooks/useAuthCheck";
 import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { UserData } from "../types/types";
 
 const { width } = Dimensions.get("window");
 const videoContainerWidth = width - 16;
@@ -41,11 +43,29 @@ export default function LessonScreen({ route, navigation }: Props) {
 	const isPremiumUser = useIsPremiumUser();
 
 	const course = coursesData.courses.find((c) => c.id === Number(courseId));
-	const lesson = course?.details.lessons.find(
+	const lesson = course?.details.lessons?.find(
 		(l) => l.lessonId === Number(lessonId)
 	);
+	const [user, setUser] = useState<UserData | null>(null);
 
-	const isLocked = lesson?.access === "locked" && !isPremiumUser;
+	useEffect(() => {
+		const loadUser = async () => {
+			const jsonValue = await AsyncStorage.getItem("user_data");
+			if (jsonValue) {
+				setUser(JSON.parse(jsonValue));
+			}
+		};
+		loadUser();
+	}, []);
+
+	const hasPartialPremiumAccess =
+		user?.role === "User with party premium access" &&
+		Array.isArray(user.openCategories) &&
+		course?.id !== undefined &&
+		user.openCategories.includes(course?.id);
+
+	const isLocked =
+		lesson?.access === "locked" && !isPremiumUser && !hasPartialPremiumAccess;
 
 	useEffect(() => {
 		if (lesson) {
@@ -86,7 +106,9 @@ export default function LessonScreen({ route, navigation }: Props) {
 					<View style={styles.videoList}>
 						{lesson.video.map((vid) => {
 							const isVideoLocked =
-								lesson.access === "locked" && !isPremiumUser;
+								lesson.access === "locked" &&
+								!isPremiumUser &&
+								!hasPartialPremiumAccess;
 							return (
 								<View key={vid.videoId}>
 									{isVideoLocked ? (
@@ -256,7 +278,7 @@ export default function LessonScreen({ route, navigation }: Props) {
 							</View>
 						)}
 						renderContent={() =>
-							course.details.lessons.map((l) => {
+							course.details.lessons?.map((l) => {
 								const isCurrent = l.lessonId === Number(lessonId);
 
 								return (

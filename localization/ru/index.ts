@@ -1,6 +1,10 @@
+import { t } from 'i18next';
+
 export default {
 	language: "Язык",
 	home: {
+		title1: "Школа",
+		title2: "Ольги Филистович",
 		proprietaryMethods: "Авторские методики запуска речи и коррекции поведения",
 		author: "Ольги Филистович",
 		chooseCourse: "Выбрать курс",
@@ -21,6 +25,8 @@ export default {
 	},
 	course: {
 		lessons: "Уроки",
+		audioLessons: "Аудиоуроки",
+		materials: "Материалы",
 	},
 	lesson: {
 		video: "Смотреть видео",
@@ -42,7 +48,7 @@ export default {
 	},
 
 	profile: {
-		profile: "Профиль",
+		title: "Профиль",
 		logout: "Выход",
 		chooseAvatar: "Выберите аватар",
 		cancel: "Отменить",
@@ -87,5 +93,12 @@ export default {
 	customVideoPlayer: {
 		loading: "Загрузка...",
 		notFound: "Видео не найдено",
+	},
+
+	checkLogin: {
+		title: "Проверка входа",
+		text: "Чтобы получить доступ к оплате, необходимо войти в систему или зарегистрироваться.",
+		login: "Уже есть учетная запись? Войти",
+		registration: "Ещё нет учетной записи? Зарегистрироваться",
 	},
 };

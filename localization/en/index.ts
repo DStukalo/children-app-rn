@@ -1,8 +1,8 @@
-import LoginScreen from "../../src/screens/LoginScreen";
-
 export default {
 	language: "Language",
 	home: {
+		title2: "School",
+		title1: "Olga Filistovich",
 		proprietaryMethods:
 			"Proprietary Methods for Speech Development and Behavior Correction",
 		author: "Olga Filistovich",
@@ -24,6 +24,8 @@ export default {
 	},
 	course: {
 		lessons: "Lessons",
+		audioLessons: "Audio lessons",
+		materials: "Materials",
 	},
 	lesson: {
 		video: "See Video",
@@ -45,7 +47,7 @@ export default {
 	},
 
 	profile: {
-		profile: "Profile",
+		title: "Profile",
 		logout: "Logout",
 		chooseAvatar: "Choose avatar",
 		cancel: "Cancel",
@@ -90,5 +92,12 @@ export default {
 	customVideoPlayer: {
 		loading: "Loading...",
 		notFound: "Video not found",
+	},
+
+	checkLogin: {
+		title: "Check Login",
+		text: "To access payment, you must log in or register.",
+		login: "Already have an account? Log in",
+		registration: "Don't have an account yet? Sign up",
 	},
 };
