@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
 	createDrawerNavigator,
 	DrawerContentScrollView,
 	DrawerItem,
 } from "@react-navigation/drawer";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MainStack from "./MainStack";
 import { CustomTabBar } from "../components/CustomTabBar";
 import { useTranslation } from "react-i18next";
-// import { Dropdown } from "../components/Dropdown";
+import { getStages } from "../utils/courseData";
+import { Dropdown } from "../components/Dropdown";
+import { Linking } from "react-native";
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
@@ -19,15 +21,10 @@ type Lang = "en" | "ru";
 
 export function CustomDrawerContent(props: any) {
 	const navigation = useNavigation<any>();
-	const [courses, setCourses] = useState<any[]>([]);
 
 	const { i18n, t } = useTranslation();
 	const currentLang: Lang = i18n.language === "ru" ? "ru" : "en";
-
-	useEffect(() => {
-		const data = require("../../data/data.json");
-		setCourses(data.courses || []);
-	}, []);
+	const stages = getStages();
 
 	return (
 		<DrawerContentScrollView {...props}>
@@ -44,22 +41,55 @@ export function CustomDrawerContent(props: any) {
 				label={t("drawerNav.courses")}
 				onPress={() => {
 					props.navigation.closeDrawer();
-					navigation.navigate("ChooseCourseScreen");
+					navigation.navigate("ChooseStageScreen");
 				}}
 				labelStyle={styles.drawerTitle}
 			/>
-			<View style={styles.coursesContainer}>
-				{courses.map((course) => (
-					<DrawerItem
-						key={course.id}
-						label={course.title[currentLang] || course.title.ru}
-						onPress={() => {
-							props.navigation.closeDrawer();
-							navigation.navigate("CourseScreen", { id: course.id });
-						}}
-						labelStyle={{ margin: 0, color: "#333", padding: 0 }}
-					/>
-				))}
+			<View style={styles.stagesContainer}>
+				{stages.map((stage) => {
+					const stageTitle = stage.title[currentLang] || stage.title.ru;
+					return (
+						<View
+							key={stage.id}
+							style={styles.stageSection}
+						>
+							<Dropdown
+								item={stage}
+								renderLabel={(stageItem) => (
+									<TouchableOpacity
+										style={styles.stageLabelRow}
+										onPress={() => {
+											props.navigation.closeDrawer();
+											navigation.navigate("StageScreen", {
+												stageId: stageItem.id,
+											});
+										}}
+									>
+										<Text style={styles.stageTitle}>{stageTitle}</Text>
+									</TouchableOpacity>
+								)}
+								renderContent={(stageItem) => (
+									<View style={styles.stageCourses}>
+										{stageItem.courses.map((course) => (
+											<DrawerItem
+												key={`${stageItem.id}-${course.id}`}
+												label={course.title[currentLang] || course.title.ru}
+												onPress={() => {
+													props.navigation.closeDrawer();
+													navigation.navigate("CourseScreen", {
+														id: course.id,
+													});
+												}}
+												labelStyle={styles.stageCourseTitle}
+												style={styles.stageCourseItem}
+											/>
+										))}
+									</View>
+								)}
+							/>
+						</View>
+					);
+				})}
 			</View>
 			<View style={styles.divider} />
 			<DrawerItem
@@ -70,6 +100,51 @@ export function CustomDrawerContent(props: any) {
 				}}
 				labelStyle={styles.drawerTitle}
 			/>
+			<View style={styles.divider} />
+			<View>
+				<TouchableOpacity
+					style={styles.btnRedirect}
+					onPress={() => {
+						props.navigation.closeDrawer();
+						Linking.openURL("https://example.com");
+					}}
+				>
+					<Text style={styles.btnRedirectText}>
+						ПОМОЩЬ КУРАТОРОВ В ОБУЧЕНИИ, подать заявку
+					</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					style={styles.btnRedirect}
+					onPress={() => {
+						props.navigation.closeDrawer();
+						Linking.openURL("https://aba-centr.by");
+					}}
+				>
+					<Text style={styles.btnRedirectText}>Официальный сайт центра</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					style={styles.btnRedirect}
+					onPress={() => {
+						props.navigation.closeDrawer();
+						Linking.openURL("https://aba-minks.by");
+					}}
+				>
+					<Text style={styles.btnRedirectText}>
+						Обучение специалистов и родителей
+					</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					style={styles.btnRedirect}
+					onPress={() => {
+						props.navigation.closeDrawer();
+						Linking.openURL("https://filistovich.com");
+					}}
+				>
+					<Text style={styles.btnRedirectText}>
+						Официальный сайт автора методики
+					</Text>
+				</TouchableOpacity>
+			</View>
 		</DrawerContentScrollView>
 	);
 }
@@ -167,8 +242,30 @@ const styles = StyleSheet.create({
 		color: "#333",
 		marginLeft: -16,
 	},
-	coursesContainer: {
-		paddingLeft: 8,
+	stagesContainer: {
+		paddingLeft: 18,
+	},
+	stageSection: {
+		marginBottom: 12,
+	},
+	stageLabelRow: {
+		paddingVertical: 8,
+	},
+	stageTitle: {
+		fontSize: 16,
+		color: "#111",
+	},
+	stageCourses: {
+		paddingLeft: 0,
+	},
+	stageCourseItem: {
+		marginVertical: 0,
+	},
+	stageCourseTitle: {
+		margin: 0,
+		color: "#333",
+		fontSize: 15,
+		padding: 0,
 	},
 	courseIcon: {
 		width: 28,
@@ -184,5 +281,20 @@ const styles = StyleSheet.create({
 		backgroundColor: "#e0e0e0",
 		marginVertical: 10,
 		marginHorizontal: 10,
+	},
+
+	btnRedirect: {
+		backgroundColor: "#F7543E",
+		paddingHorizontal: 6,
+		paddingVertical: 6,
+		borderRadius: 8,
+		marginVertical: 10,
+		alignItems: "center",
+	},
+	btnRedirectText: {
+		color: "#fff",
+		fontFamily: "Nunito-Regular",
+		fontSize: 14,
+		textAlign: "center",
 	},
 });

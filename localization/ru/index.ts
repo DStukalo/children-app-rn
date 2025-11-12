@@ -7,7 +7,7 @@ export default {
 		title2: "Ольги Филистович",
 		proprietaryMethods: "Авторские методики запуска речи и коррекции поведения",
 		author: "Ольги Филистович",
-		chooseCourse: "Выбрать курс",
+		chooseCourse: "Выбрать этап",
 		methodicSectionTitle: "Методики помогут вам если",
 		methodicSectionBlock1:
 			"Вас беспокоит, что ребёнок мало коммуницирует со сверстниками, излишне плаксив и чувствителен",
@@ -22,6 +22,26 @@ export default {
 	},
 	"choose-course": {
 		title: "Выбрать курс",
+	},
+	"choose-stage": {
+		title: "Выбрать этап",
+		stageNumber: "Этап {{number}}",
+		courseCount: "{{count}} курс(ов)",
+	},
+	stageScreen: {
+		stageLabel: "Этап",
+		coursesTitle: "Курсы этапа",
+		viewCourse: "Перейти к курсу",
+		noImage: "Нет изображения",
+		notFound: "Этап не найден",
+		stagePriceLabel: "Цена этапа: ${{price}}",
+		stageProgress: "Приобретено {{purchased}} из {{total}}",
+		buyStageButton: "Купить этап за ${{price}}",
+		stagePurchasedLabel: "Этап уже куплен",
+		coursePriceLabel: "Цена курса: ${{price}}",
+		coursePurchasedLabel: "Куплено",
+		courseLockedLabel: "Не куплено",
+		courseBuyButton: "Купить курс (${{price}})",
 	},
 	course: {
 		lessons: "Уроки",
@@ -41,10 +61,26 @@ export default {
 		categoryDescription:
 			"Оплатите доступ только к выбранной категории. Подходит, если вас интересует конкретная тема.",
 		categoryButton: "Оплатить категорию",
+		categoryButtonWithPrice: "Купить курс за ${{price}}",
 		fullTitle: "Полный доступ",
 		fullDescription:
 			"Купите полный доступ сразу ко всем курсам и видео. Это выгоднее, чем оплачивать категории по отдельности.",
 		fullAccessButton: "Купить полный доступ",
+		stageCardTitle: "Доступ к этапу",
+		stageDescription: "Откройте все курсы этапа (всего {{count}}).",
+		stagePriceLabel: "Цена этапа: ${{price}}",
+		stageButton: "Купить этап за ${{price}}",
+		coursePriceLabel: "Цена курса: ${{price}}",
+		successTitle: "Успех",
+		courseAlreadyPurchased: "Этот курс уже доступен.",
+		stageAlreadyPurchased: "Этап уже открыт.",
+		coursePurchaseSuccess: "Курс успешно открыт.",
+		stagePurchaseSuccess: "Этап успешно открыт.",
+		errorTitle: "Ошибка",
+		errorGeneric: "Не удалось завершить покупку. Попробуйте еще раз.",
+		prerequisiteTitle: "Сначала купите предыдущий курс",
+		prerequisiteDescription:
+			"Пожалуйста, сначала приобретите «{{course}}», чтобы открыть этот курс.",
 	},
 
 	profile: {
@@ -84,8 +120,8 @@ export default {
 	},
 
 	drawerNav: {
-		courses: "Курсы",
-		dontHaveCourses: "Нет доступных курсов",
+		courses: "Этапы",
+		dontHaveCourses: "Нет доступных этапов",
 		profile: "Профиль",
 		main: "Главная",
 	},

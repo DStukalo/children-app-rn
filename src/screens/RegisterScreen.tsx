@@ -21,7 +21,7 @@ export default function RegisterScreen() {
 	const navigation = useNavigation<Nav>();
 
 	const route = useRoute<Route>();
-	const { redirectTo, courseId, showAllAccess } = route.params || {};
+	const { redirectTo, courseId, stageId, showAllAccess } = route.params || {};
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -56,13 +56,20 @@ export default function RegisterScreen() {
 					{
 						text: "OK",
 						onPress: () => {
-							if (redirectTo === "PaymentScreen" && courseId) {
+							if (
+								redirectTo === "PaymentScreen" &&
+								(courseId || stageId)
+							) {
 								navigation.reset({
 									index: 0,
 									routes: [
 										{
 											name: "PaymentScreen",
-											params: { courseId, showAllAccess } as never,
+											params: {
+												courseId,
+												stageId,
+												showAllAccess,
+											} as never,
 										},
 									],
 								});

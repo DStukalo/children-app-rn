@@ -6,7 +6,7 @@ export default {
 		proprietaryMethods:
 			"Proprietary Methods for Speech Development and Behavior Correction",
 		author: "Olga Filistovich",
-		chooseCourse: "Choose course",
+		chooseCourse: "Choose stage",
 		methodicSectionTitle: "These techniques will help you",
 		methodicSectionBlock1:
 			"Are you concerned that your child does not communicate much with peers, is overly tearful, and sensitive?",
@@ -21,6 +21,26 @@ export default {
 	},
 	"choose-course": {
 		title: "Choose course",
+	},
+	"choose-stage": {
+		title: "Choose stage",
+		stageNumber: "Stage {{number}}",
+		courseCount: "{{count}} courses",
+	},
+	stageScreen: {
+		stageLabel: "Stage",
+		coursesTitle: "Courses in this stage",
+		viewCourse: "View course",
+		noImage: "Preview unavailable",
+		notFound: "Stage not found",
+		stagePriceLabel: "Stage price: ${{price}}",
+		stageProgress: "{{purchased}} of {{total}} purchased",
+		buyStageButton: "Buy stage for ${{price}}",
+		stagePurchasedLabel: "Stage already purchased",
+		coursePriceLabel: "Course price: ${{price}}",
+		coursePurchasedLabel: "Purchased",
+		courseLockedLabel: "Not purchased",
+		courseBuyButton: "Buy course (${{price}})",
 	},
 	course: {
 		lessons: "Lessons",
@@ -40,10 +60,27 @@ export default {
 		categoryDescription:
 			"Pay only for the selected category. Perfect if you are interested in a specific topic.",
 		categoryButton: "Pay for category",
+		categoryButtonWithPrice: "Buy course for ${{price}}",
 		fullTitle: "Full Access",
 		fullDescription:
 			"Get full access to all courses and videos. Cheaper than paying for each category separately.",
 		fullAccessButton: "Buy full access",
+		stageCardTitle: "Stage Access",
+		stageDescription:
+			"Unlock every course in this stage ({{count}} courses).",
+		stagePriceLabel: "Stage price: ${{price}}",
+		stageButton: "Buy stage for ${{price}}",
+		coursePriceLabel: "Course price: ${{price}}",
+		successTitle: "Success",
+		courseAlreadyPurchased: "You already own this course.",
+		stageAlreadyPurchased: "Stage already unlocked.",
+		coursePurchaseSuccess: "Course successfully unlocked.",
+		stagePurchaseSuccess: "Stage successfully unlocked.",
+		errorTitle: "Something went wrong",
+		errorGeneric: "Unable to complete the purchase. Please try again.",
+		prerequisiteTitle: "Previous course required",
+		prerequisiteDescription:
+			"Please purchase “{{course}}” before buying this course.",
 	},
 
 	profile: {

@@ -12,6 +12,8 @@ const DEFAULT_USER: Omit<UserData, "email"> = {
 	role: "Default User",
 	userId: "ID-193829",
 	avatar: AVATAR_OPTIONS[0],
+	openCategories: [],
+	purchasedStages: [],
 };
 
 const USERS = [
@@ -23,6 +25,7 @@ const USERS = [
 		userId: "ID-327756",
 		name: "John Doe",
 		openCategories: [1, 2],
+		purchasedStages: [],
 	},
 	{
 		email: "roman@gmail.com",
@@ -31,6 +34,8 @@ const USERS = [
 		role: "Premium User",
 		avatar: AVATAR_OPTIONS[0],
 		userId: "ID-459198",
+		openCategories: [],
+		purchasedStages: [],
 	},
 	{
 		email: "dima@gmail.com",
@@ -39,6 +44,8 @@ const USERS = [
 		avatar: AVATAR_OPTIONS[0],
 		name: "Dima",
 		userId: "ID-143221",
+		openCategories: [],
+		purchasedStages: [],
 	},
 	{
 		email: "default@example.com",
@@ -47,6 +54,8 @@ const USERS = [
 		avatar: AVATAR_OPTIONS[0],
 		userId: "ID-327756",
 		name: "John Doe",
+		openCategories: [],
+		purchasedStages: [],
 	},
 ];
 

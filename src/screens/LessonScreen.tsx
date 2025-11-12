@@ -11,7 +11,6 @@ import {
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import { StackScreenProps } from "@react-navigation/stack";
-import coursesData from "../../data/data.json";
 import AudioPlayer from "../components/AudioPlayer";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { MainStackParamList } from "../navigation/types";
@@ -21,6 +20,7 @@ import { useAuthCheck } from "../hooks/useAuthCheck";
 import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { UserData } from "../types/types";
+import { findCourseById } from "../utils/courseData";
 
 const { width } = Dimensions.get("window");
 const videoContainerWidth = width - 16;
@@ -42,10 +42,8 @@ export default function LessonScreen({ route, navigation }: Props) {
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
 
-	const course = coursesData.courses.find((c) => c.id === Number(courseId));
-	const lesson = course?.details.lessons?.find(
-		(l) => l.lessonId === Number(lessonId)
-	);
+	const course = findCourseById(courseId);
+	const lesson = course?.details.lessons?.find((l) => l.lessonId === lessonId);
 	const [user, setUser] = useState<UserData | null>(null);
 
 	useEffect(() => {
@@ -78,17 +76,17 @@ export default function LessonScreen({ route, navigation }: Props) {
 	}, [lessonId, currentLanguage]);
 
 	const handleToPayment = () => {
-		if (!isAuthenticated) {
-			navigation.navigate("CheckLoginWhenPayScreen", {
-				courseId: courseId,
-				showAllAccess: true,
-			});
-		} else {
-			navigation.navigate("PaymentScreen", {
-				courseId: courseId,
-				showAllAccess: true,
-			});
-		}
+		// if (!isAuthenticated) {
+		// 	navigation.navigate("CheckLoginWhenPayScreen", {
+		// 		courseId: courseId,
+		// 		showAllAccess: true,
+		// 	});
+		// } else {
+		navigation.navigate("PaymentScreen", {
+			courseId: String(courseId),
+			showAllAccess: true,
+		});
+		// }
 	};
 
 	if (!course || !lesson) {
@@ -288,8 +286,8 @@ export default function LessonScreen({ route, navigation }: Props) {
 										onPress={() => {
 											if (!isCurrent) {
 												navigation.navigate("LessonScreen", {
-													lessonId: String(l.lessonId),
-													courseId: String(courseId),
+													lessonId: l.lessonId,
+													courseId: courseId,
 												});
 											}
 										}}

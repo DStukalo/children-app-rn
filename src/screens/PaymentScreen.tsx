@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
+	ActivityIndicator,
+	Alert,
 	SafeAreaView,
 	ScrollView,
 	StyleSheet,
@@ -10,10 +12,30 @@ import {
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useTranslation } from "react-i18next";
 // import { typography } from "@/styles/typography";
-import coursesData from "../../data/data.json";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
+import {
+	RouteProp,
+	useFocusEffect,
+	useNavigation,
+	useRoute,
+} from "@react-navigation/native";
 import { MainStackParamList } from "../navigation/types";
+import {
+	findCourseAndStageByCourseId,
+	getStages,
+	LocalizedString,
+} from "../utils/courseData";
+import { useAuthCheck } from "../hooks/useAuthCheck";
+import {
+	getMissingPrerequisiteCourses,
+	getStoredUser,
+	isCoursePurchased,
+	isStagePurchased,
+	markCoursePurchased,
+	markStagePurchased,
+	UserWithPurchases,
+} from "../utils/purchaseStorage";
+import { formatPrice } from "../utils/price";
 
 type PaymentScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -23,32 +45,193 @@ type PaymentScreenNavigationProp = NativeStackNavigationProp<
 type PaymentScreenRouteProp = RouteProp<MainStackParamList, "PaymentScreen">;
 type Lang = "en" | "ru";
 
+const getLocalized = (value?: LocalizedString, lang: Lang = "en") => {
+	if (!value) {
+		return "";
+	}
+
+	return value[lang] ?? value.ru ?? value.en ?? "";
+};
+
 export default function PaymentScreen() {
 	const { i18n, t } = useTranslation();
 	const navigation = useNavigation<PaymentScreenNavigationProp>();
 	const route = useRoute<PaymentScreenRouteProp>();
 
-	const { showAllAccess, courseId } = route.params;
+	const { showAllAccess = true, courseId, stageId } = route.params;
+
+	const parseNumericParam = (value?: number | string) => {
+		if (value === undefined || value === null) {
+			return undefined;
+		}
+		const parsed = typeof value === "number" ? value : Number(value);
+		return Number.isNaN(parsed) ? undefined : parsed;
+	};
+
+	const normalizedCourseId = parseNumericParam(courseId);
+	const normalizedStageId = parseNumericParam(stageId);
 
 	const currentLang: Lang = i18n.language === "ru" ? "ru" : "en";
 
-	// const course = coursesData.courses.find(
-	// 	(c) => String(c.id) === String(courseId)
-	// );
-	// const courseTitle = course?.title[currentLang] ?? "";
-	const course = courseId
-  ? coursesData.courses.find((c) => String(c.id) === String(courseId))
-  : null;
+	const courseContext = normalizedCourseId
+		? findCourseAndStageByCourseId(normalizedCourseId)
+		: undefined;
 
-const courseTitle = course?.title[currentLang] ?? "";
+	const course = courseContext?.course;
+	const courseTitle = getLocalized(course?.title, currentLang);
 
+	const stageFromCourse = courseContext?.stage;
+	const stageFromParam =
+		normalizedStageId !== undefined
+			? getStages().find((stageItem) => stageItem.id === normalizedStageId)
+			: undefined;
+	const stage = stageFromParam ?? stageFromCourse;
+	const stageTitle = getLocalized(stage?.title, currentLang);
+	const stageSubtitle = getLocalized(stage?.subtitle, currentLang);
+	const stageCourseCount = stage?.courses.length ?? 0;
 
-	const handleCategoryPayment = () => {
-		// navigation.navigate("AccessCode", { type: "category" });
+	const { isAuthenticated } = useAuthCheck();
+	const [user, setUser] = useState<UserWithPurchases | null>(null);
+	const [courseLoading, setCourseLoading] = useState(false);
+	const [stageLoading, setStageLoading] = useState(false);
+
+	useFocusEffect(
+		useCallback(() => {
+			let isActive = true;
+
+			const loadUser = async () => {
+				const storedUser = await getStoredUser();
+				if (isActive) {
+					setUser(storedUser);
+				}
+			};
+
+			loadUser();
+
+			return () => {
+				isActive = false;
+			};
+		}, [])
+	);
+
+	const coursePurchased =
+		course && user ? isCoursePurchased(user, course.id) : false;
+	const stagePurchased =
+		stage && user ? isStagePurchased(user, stage.id) : false;
+
+	const redirectToAuth = () => {
+		navigation.navigate("CheckLoginWhenPayScreen", {
+			courseId: normalizedCourseId
+				? String(normalizedCourseId)
+				: undefined,
+			stageId: stage?.id ?? normalizedStageId,
+			showAllAccess: true,
+		});
+	};
+
+	const handleCoursePayment = async () => {
+		if (!course || !stage) {
+			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+			return;
+		}
+
+		if (!isAuthenticated) {
+			redirectToAuth();
+			return;
+		}
+
+		if (coursePurchased) {
+			Alert.alert(
+				t("payment.successTitle"),
+				t("payment.courseAlreadyPurchased")
+			);
+			return;
+		}
+
+		const missingCourses = getMissingPrerequisiteCourses(
+			user,
+			stage,
+			course.id
+		);
+
+		if (missingCourses.length > 0) {
+			const nextCourse = getLocalized(missingCourses[0].title, currentLang);
+
+			Alert.alert(
+				t("payment.prerequisiteTitle"),
+				t("payment.prerequisiteDescription", { course: nextCourse })
+			);
+			return;
+		}
+
+		try {
+			setCourseLoading(true);
+			const updatedUser = await markCoursePurchased(course.id);
+
+			if (!updatedUser) {
+				throw new Error("missing user data");
+			}
+
+			setUser(updatedUser);
+			Alert.alert(
+				t("payment.successTitle"),
+				t("payment.coursePurchaseSuccess")
+			);
+		} catch (err) {
+			console.error("Course purchase failed:", err);
+			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+		} finally {
+			setCourseLoading(false);
+		}
+	};
+
+	const handleStagePayment = async () => {
+		if (!stage) {
+			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+			return;
+		}
+
+		if (!isAuthenticated) {
+			redirectToAuth();
+			return;
+		}
+
+		if (stagePurchased) {
+			Alert.alert(
+				t("payment.successTitle"),
+				t("payment.stageAlreadyPurchased")
+			);
+			return;
+		}
+
+		try {
+			setStageLoading(true);
+			const updatedUser = await markStagePurchased(
+				stage.id,
+				stage.courses.map((item) => item.id)
+			);
+
+			if (!updatedUser) {
+				throw new Error("missing user data");
+			}
+
+			setUser(updatedUser);
+			Alert.alert(
+				t("payment.successTitle"),
+				t("payment.stagePurchaseSuccess")
+			);
+		} catch (err) {
+			console.error("Stage purchase failed:", err);
+			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+		} finally {
+			setStageLoading(false);
+		}
 	};
 
 	const handleFullAccessPayment = () => {
-		// navigation.navigate("AccessCode", { type: "full" });
+		if (!isAuthenticated) {
+			redirectToAuth();
+		}
 	};
 
 	useEffect(() => {
@@ -58,43 +241,142 @@ const courseTitle = course?.title[currentLang] ?? "";
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				{course && <View style={styles.paymentCard}>
-					<View style={styles.paymentHeader}>
-						<View style={styles.paymentTitleLine}>
-							<View style={styles.paymentIcon}>
-								<Ionicons
-									name='albums-outline'
-									size={24}
-									color='#6366F1'
-								/>
+				{stage && (
+					<View style={styles.paymentCard}>
+						<View style={styles.paymentHeader}>
+							<View style={styles.paymentTitleLine}>
+								<View style={styles.paymentIcon}>
+									<Ionicons
+										name='layers-outline'
+										size={24}
+										color='#2563EB'
+									/>
+								</View>
+								<Text style={styles.paymentTitle}>
+									{t("payment.stageCardTitle")}
+								</Text>
 							</View>
-							<Text style={styles.paymentTitle}>
-								{t("payment.categoryTitle")}
-							</Text>
 						</View>
-						<Text style={styles.paymentSubTitle}>{courseTitle}</Text>
-					</View>
 
-					<Text style={styles.paymentDescription}>
-						{t("payment.categoryDescription")}
-					</Text>
-
-					<View style={styles.paymentButtonSection}>
-						<TouchableOpacity
-							style={[styles.paymentButton, { backgroundColor: "#F7543E" }]}
-							onPress={handleCategoryPayment}
-						>
-							<Ionicons
-								name='card'
-								size={20}
-								color='#FFFFFF'
-							/>
-							<Text style={styles.paymentButtonText}>
-								{t("payment.categoryButton")}
+						<Text style={styles.paymentSubTitle}>{stageTitle}</Text>
+						{stageSubtitle ? (
+							<Text style={styles.stageSubtitleText}>
+								{stageSubtitle}
 							</Text>
-						</TouchableOpacity>
+						) : null}
+						<Text style={styles.paymentDescription}>
+							{t("payment.stageDescription", {
+								count: stageCourseCount,
+							})}
+						</Text>
+						<Text style={styles.priceLabel}>
+							{t("payment.stagePriceLabel", {
+								price: formatPrice(stage?.price),
+							})}
+						</Text>
+
+						{stagePurchased ? (
+							<Text style={styles.statusLabel}>
+								{t("payment.stageAlreadyPurchased")}
+							</Text>
+						) : null}
+
+						<View style={styles.paymentButtonSection}>
+							<TouchableOpacity
+								style={[
+									styles.paymentButton,
+									{ backgroundColor: "#1D4ED8" },
+									(stagePurchased || stageLoading) &&
+										styles.paymentButtonDisabled,
+								]}
+								onPress={handleStagePayment}
+								disabled={stagePurchased || stageLoading}
+							>
+								{stageLoading ? (
+									<ActivityIndicator color='#FFFFFF' />
+								) : (
+									<>
+										<Ionicons
+											name='layers'
+											size={20}
+											color='#FFFFFF'
+										/>
+										<Text style={styles.paymentButtonText}>
+											{t("payment.stageButton", {
+												price: formatPrice(stage?.price),
+											})}
+										</Text>
+									</>
+								)}
+							</TouchableOpacity>
+						</View>
 					</View>
-				</View>}
+				)}
+
+				{course && (
+					<View style={styles.paymentCard}>
+						<View style={styles.paymentHeader}>
+							<View style={styles.paymentTitleLine}>
+								<View style={styles.paymentIcon}>
+									<Ionicons
+										name='albums-outline'
+										size={24}
+										color='#6366F1'
+									/>
+								</View>
+								<Text style={styles.paymentTitle}>
+									{t("payment.categoryTitle")}
+								</Text>
+							</View>
+							<Text style={styles.paymentSubTitle}>{courseTitle}</Text>
+						</View>
+
+						<Text style={styles.paymentDescription}>
+							{t("payment.categoryDescription")}
+						</Text>
+						<Text style={styles.priceLabel}>
+							{t("payment.coursePriceLabel", {
+								price: formatPrice(course?.price),
+							})}
+						</Text>
+
+						{coursePurchased ? (
+							<Text style={styles.statusLabel}>
+								{t("payment.courseAlreadyPurchased")}
+							</Text>
+						) : null}
+
+						<View style={styles.paymentButtonSection}>
+							<TouchableOpacity
+								style={[
+									styles.paymentButton,
+									{ backgroundColor: "#F7543E" },
+									(coursePurchased || courseLoading) &&
+										styles.paymentButtonDisabled,
+								]}
+								onPress={handleCoursePayment}
+								disabled={coursePurchased || courseLoading}
+							>
+								{courseLoading ? (
+									<ActivityIndicator color='#FFFFFF' />
+								) : (
+									<>
+										<Ionicons
+											name='card'
+											size={20}
+											color='#FFFFFF'
+										/>
+										<Text style={styles.paymentButtonText}>
+											{t("payment.categoryButtonWithPrice", {
+												price: formatPrice(course?.price),
+											})}
+										</Text>
+									</>
+								)}
+							</TouchableOpacity>
+						</View>
+					</View>
+				)}
 
 				{showAllAccess !== false && (
 					<View style={styles.paymentCard}>
@@ -211,6 +493,30 @@ const styles = StyleSheet.create({
 		shadowOpacity: 0.2,
 		shadowRadius: 6,
 		elevation: 6,
+	},
+	stageSubtitleText: {
+		fontSize: 14,
+		fontFamily: "Nunito-Regular",
+		color: "#6B7280",
+		textAlign: "center",
+		marginBottom: 12,
+	},
+	priceLabel: {
+		fontSize: 15,
+		fontFamily: "Nunito-Regular",
+		color: "#1F2937",
+		textAlign: "center",
+		marginBottom: 6,
+	},
+	statusLabel: {
+		fontSize: 14,
+		fontFamily: "Nunito-Regular",
+		color: "#059669",
+		textAlign: "center",
+		marginBottom: 12,
+	},
+	paymentButtonDisabled: {
+		opacity: 0.6,
 	},
 	paymentButtonText: {
 		fontSize: 16,

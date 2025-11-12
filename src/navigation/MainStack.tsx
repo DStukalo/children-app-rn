@@ -4,12 +4,13 @@ import ProfileScreen from "../screens/ProfileScreen";
 import PaymentScreen from "../screens/PaymentScreen";
 import LoginScreen from "../screens/LoginScreen";
 import HomeScreen from "../screens/HomeScreen";
-import ChooseCourseScreen from "../screens/ChooseCourseScreen";
+import ChooseStageScreen from "../screens/ChooseStageScreen";
 import CourseScreen from "../screens/CourseScreen";
 import LessonScreen from "../screens/LessonScreen";
 import CheckLoginWhenPayScreen from "../screens/CheckLoginWhenPayScreen";
 import { MainStackParamList } from "./types";
 import RegisterScreen from '../screens/RegisterScreen';
+import StageScreen from "../screens/StageScreen";
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
@@ -43,8 +44,13 @@ export default function MainStack() {
 				options={{ headerShown: true, title: "Make a Login" }}
 			/>
 			<Stack.Screen
-				name='ChooseCourseScreen'
-				component={ChooseCourseScreen}
+				name='ChooseStageScreen'
+				component={ChooseStageScreen}
+				options={{ headerShown: true }}
+			/>
+			<Stack.Screen
+				name='StageScreen'
+				component={StageScreen}
 				options={{ headerShown: true }}
 			/>
 			<Stack.Screen

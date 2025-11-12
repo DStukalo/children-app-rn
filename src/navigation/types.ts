@@ -1,23 +1,34 @@
 import { NavigatorScreenParams } from "@react-navigation/native";
 export type MainStackParamList = {
 	HomeScreen: undefined;
-	ChooseCourseScreen: undefined;
-	CourseScreen: { courseId: string };
-	LessonScreen: { lessonId: string; courseId: string };
+	ChooseStageScreen: undefined;
+	StageScreen: { stageId: number };
+	CourseScreen: { id: number };
+	LessonScreen: { lessonId: number; courseId: number };
 	ProfileScreen: undefined;
-	PaymentScreen: { courseId?: string; showAllAccess?: boolean };
+	PaymentScreen: {
+		courseId?: number | string;
+		stageId?: number | string;
+		showAllAccess?: boolean;
+	};
 	LoginScreen:
 		| {
 				redirectTo?: keyof MainStackParamList;
-				courseId?: string;
+				courseId?: number | string;
+				stageId?: number | string;
 				showAllAccess?: boolean;
 		  }
 		| undefined;
-	CheckLoginWhenPayScreen: { courseId?: string; showAllAccess?: boolean };
+	CheckLoginWhenPayScreen: {
+		courseId?: number | string;
+		stageId?: number | string;
+		showAllAccess?: boolean;
+	};
 	RegisterScreen:
 		| {
 				redirectTo?: keyof MainStackParamList;
-				courseId?: string;
+				courseId?: number | string;
+				stageId?: number | string;
 				showAllAccess?: boolean;
 		  }
 		| undefined;

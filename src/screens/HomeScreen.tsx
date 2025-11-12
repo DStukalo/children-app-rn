@@ -224,10 +224,13 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation, DrawerActions } from "@react-navigation/native";
 import type { DrawerNavigationProp } from "@react-navigation/drawer";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import Footer from "../components/Footer";
 
 type RootDrawerParamList = {
 	HomeScreen: undefined;
-	CourseScreen: { id: string };
+	ChooseStageScreen: undefined;
+	StageScreen: { stageId: number };
+	CourseScreen: { id: number };
 };
 
 const { width } = Dimensions.get("window");
@@ -265,8 +268,8 @@ export default function HomeScreen() {
 		checkLang();
 	}, []);
 
-	const handleCoursePress = () => {
-		navigation.navigate("ChooseCourseScreen" as never);
+	const handleStagePress = () => {
+		navigation.navigate("ChooseStageScreen");
 	};
 
 	const openDrawerMenu = () => {
@@ -312,7 +315,7 @@ export default function HomeScreen() {
 					<Text style={styles.heroAuthor}>{t("home.author")}</Text>
 					<TouchableOpacity
 						style={styles.heroBtn}
-						onPress={handleCoursePress}
+						onPress={handleStagePress}
 						activeOpacity={0.8}
 					>
 						<Text style={styles.heroBtnTitle}>{t("home.chooseCourse")}</Text>
@@ -345,6 +348,8 @@ export default function HomeScreen() {
 						</View>
 					))}
 				</View>
+
+				<Footer />
 			</ScrollView>
 		</SafeAreaView>
 	);

@@ -20,7 +20,7 @@ const videoContainerWidth = width - 16;
 type Props = StackScreenProps<MainStackParamList, "CheckLoginWhenPayScreen">;
 
 export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
-	const { courseId, showAllAccess } = route.params;
+	const { courseId, showAllAccess, stageId } = route.params;
 
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
@@ -34,6 +34,7 @@ export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
 	const handleToLogin = () => {
 		navigation.navigate("LoginScreen", {
 			courseId: courseId,
+			stageId: stageId,
 			redirectTo: "PaymentScreen",
 			showAllAccess: showAllAccess,
 		});
@@ -42,6 +43,7 @@ export default function CheckLoginWhenPayScreen({ route, navigation }: Props) {
 	const handleToRegister = () => {
 		navigation.navigate("RegisterScreen", {
 			courseId: courseId,
+			stageId: stageId,
 			redirectTo: "PaymentScreen",
 			showAllAccess: showAllAccess,
 		});

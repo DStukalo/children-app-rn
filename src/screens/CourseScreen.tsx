@@ -11,23 +11,21 @@ import {
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import coursesData from "../../data/data.json";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
-
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { useAuthCheck } from "../hooks/useAuthCheck";
 import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
 import { UserData } from "../types/types";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import AudioPlayer from "../components/AudioPlayer";
+import { findCourseById } from "../utils/courseData";
+import { MainStackParamList } from "../navigation/types";
 
 export default function Course() {
-	const route = useRoute<any>();
+	const route = useRoute<RouteProp<MainStackParamList, "CourseScreen">>();
 	const navigation = useNavigation<any>();
 	const { id } = route.params;
-	const numericId = parseInt(id, 10);
-
-	const course = coursesData.courses.find((c) => c.id === numericId);
+	const course = findCourseById(id);
 
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
@@ -95,17 +93,17 @@ export default function Course() {
 			// 	courseId: courseId,
 			// 	showAllAccess: false,
 			// });
-			if (!isAuthenticated) {
-				navigation.navigate("CheckLoginWhenPayScreen", {
-					courseId: courseId,
-					showAllAccess: true,
-				});
-			} else {
-				navigation.navigate("PaymentScreen", {
-					courseId: courseId,
-					showAllAccess: true,
-				});
-			}
+			// if (!isAuthenticated) {
+			// 	navigation.navigate("CheckLoginWhenPayScreen", {
+			// 		courseId: courseId,
+			// 		showAllAccess: true,
+			// 	});
+			// } else {
+			navigation.navigate("PaymentScreen", {
+				courseId: courseId,
+				showAllAccess: true,
+			});
+			// }
 		}
 		// else {
 		// 	navigation.navigate("LessonScreen", { lessonId, courseId });

@@ -44,4 +44,5 @@ export type UserData = {
 	userId: string;
 	avatar: string;
 	openCategories?: number[];
+	purchasedStages?: number[];
 };
