@@ -38,7 +38,7 @@ export type Lesson = {
 };
 
 export type UserData = {
-	name: string;
+	userName: string;
 	email: string;
 	role: string;
 	userId: string;

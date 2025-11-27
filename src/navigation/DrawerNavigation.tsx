@@ -110,7 +110,7 @@ export function CustomDrawerContent(props: any) {
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
-						ПОМОЩЬ КУРАТОРОВ В ОБУЧЕНИИ, подать заявку
+						{t("drawerNav.btnRedirect1")}
 					</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
@@ -120,7 +120,10 @@ export function CustomDrawerContent(props: any) {
 						Linking.openURL("https://aba-centr.by");
 					}}
 				>
-					<Text style={styles.btnRedirectText}>Официальный сайт центра</Text>
+					<Text style={styles.btnRedirectText}>
+						{" "}
+						{t("drawerNav.btnRedirect2")}
+					</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
 					style={styles.btnRedirect}
@@ -130,7 +133,7 @@ export function CustomDrawerContent(props: any) {
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
-						Обучение специалистов и родителей
+						{t("drawerNav.btnRedirect3")}
 					</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
@@ -141,7 +144,7 @@ export function CustomDrawerContent(props: any) {
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
-						Официальный сайт автора методики
+						{t("drawerNav.btnRedirect4")}
 					</Text>
 				</TouchableOpacity>
 			</View>
@@ -289,7 +292,9 @@ const styles = StyleSheet.create({
 		paddingVertical: 6,
 		borderRadius: 8,
 		marginVertical: 10,
+		height: 60,
 		alignItems: "center",
+		justifyContent: "center",
 	},
 	btnRedirectText: {
 		color: "#fff",

@@ -13,6 +13,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { MainStackParamList } from "../navigation/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useTranslation } from "react-i18next";
+import { registerUser } from "../services/authService";
 
 type Nav = NativeStackNavigationProp<MainStackParamList, "RegisterScreen">;
 type Route = RouteProp<MainStackParamList, "RegisterScreen">;
@@ -44,54 +45,54 @@ export default function RegisterScreen() {
 		try {
 			setLoading(true);
 
-			await new Promise<void>((res) => setTimeout(res, 1500));
+			const trimmedEmail = email.trim();
+			const trimmedPassword = password.trim();
 
-			if (email && password) {
-				await AsyncStorage.setItem("auth_token", "dummy_token");
-				await AsyncStorage.setItem("user_email", email);
-				await AsyncStorage.setItem("user_password", password);
+			const { token, user } = await registerUser(
+				trimmedEmail,
+				trimmedPassword
+			);
 
+			await AsyncStorage.multiSet([
+				["auth_token", token || "dummy_token"],
+				["user_email", user.email],
+				["user_data", JSON.stringify(user)],
+				["user_password", trimmedPassword],
+			]);
 
-				Alert.alert(t("registration.success"), t("registration.successLogin"), [
-					{
-						text: "OK",
-						onPress: () => {
-							if (
-								redirectTo === "PaymentScreen" &&
-								(courseId || stageId)
-							) {
-								navigation.reset({
-									index: 0,
-									routes: [
-										{
-											name: "PaymentScreen",
-											params: {
-												courseId,
-												stageId,
-												showAllAccess,
-											} as never,
-										},
-									],
-								});
-							} else {
-								navigation.reset({
-									index: 0,
-									routes: [{ name: "ProfileScreen" as never }],
-								});
-							}
-						},
+			Alert.alert(t("registration.success"), t("registration.successLogin"), [
+				{
+					text: "OK",
+					onPress: () => {
+						if (redirectTo === "PaymentScreen" && (courseId || stageId)) {
+							navigation.reset({
+								index: 0,
+								routes: [
+									{
+										name: "PaymentScreen",
+										params: {
+											courseId,
+											stageId,
+											showAllAccess,
+										} as never,
+									},
+								],
+							});
+						} else {
+							navigation.reset({
+								index: 0,
+								routes: [{ name: "ProfileScreen" as never }],
+							});
+						}
 					},
-				]);
-			} else {
-				Alert.alert(
-					t("registration.error"),
-					t("registration.incorrectEmailOrPassword")
-				);
-			}
+				},
+			]);
 		} catch (err) {
 			Alert.alert(
 				t("registration.error"),
-				t("registration.somethingWentWrong")
+				err instanceof Error
+					? err.message
+					: t("registration.somethingWentWrong").toString()
 			);
 		} finally {
 			setLoading(false);

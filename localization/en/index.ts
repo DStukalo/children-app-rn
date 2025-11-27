@@ -66,8 +66,7 @@ export default {
 			"Get full access to all courses and videos. Cheaper than paying for each category separately.",
 		fullAccessButton: "Buy full access",
 		stageCardTitle: "Stage Access",
-		stageDescription:
-			"Unlock every course in this stage ({{count}} courses).",
+		stageDescription: "Unlock every course in this stage ({{count}} courses).",
 		stagePriceLabel: "Stage price: ${{price}}",
 		stageButton: "Buy stage for ${{price}}",
 		coursePriceLabel: "Course price: ${{price}}",
@@ -124,6 +123,10 @@ export default {
 		dontHaveCourses: "No available courses",
 		profile: "Profile",
 		main: "Main",
+		btnRedirect1: "ASSISTANCE FROM CURATORS IN TRAINING, submit an application",
+		btnRedirect2: "Official website of the author of the methodology",
+		btnRedirect3: "Training for professionals and parents",
+		btnRedirect4: "Official website of the author of the methodology",
 	},
 
 	customVideoPlayer: {

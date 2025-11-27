@@ -1,4 +1,4 @@
-import { t } from 'i18next';
+import { t } from "i18next";
 
 export default {
 	language: "Язык",
@@ -124,6 +124,10 @@ export default {
 		dontHaveCourses: "Нет доступных этапов",
 		profile: "Профиль",
 		main: "Главная",
+		btnRedirect1: "ПОМОЩЬ КУРАТОРОВ В ОБУЧЕНИИ, подать заявку",
+		btnRedirect2: "Официальный сайт автора методики",
+		btnRedirect3: "Обучение специалистов и родителей",
+		btnRedirect4: "Официальный сайт автора методики",
 	},
 
 	customVideoPlayer: {

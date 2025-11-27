@@ -1,9 +1,4 @@
-import React, {
-	useCallback,
-	useLayoutEffect,
-	useMemo,
-	useState,
-} from "react";
+import React, { useCallback, useLayoutEffect, useMemo, useState } from "react";
 import {
 	Image,
 	SafeAreaView,
@@ -111,13 +106,13 @@ export default function StageScreen() {
 		stage.subtitle.ru ||
 		stage.subtitle.en;
 
-	const stagePurchased = stage && user ? isStagePurchased(user, stage.id) : false;
+	const stagePurchased =
+		stage && user ? isStagePurchased(user, stage.id) : false;
 	const totalCourses = stage.courses.length;
 	const purchasedCourses =
 		stage && user
-			? stage.courses.filter((course) =>
-					isCoursePurchased(user, course.id)
-				).length
+			? stage.courses.filter((course) => isCoursePurchased(user, course.id))
+					.length
 			: 0;
 
 	return (
@@ -196,9 +191,9 @@ export default function StageScreen() {
 									<Text style={styles.courseTitle}>
 										{course.title[currentLanguage] || course.title.ru}
 									</Text>
-									<Text style={styles.courseSubtitle}>
+									{/* <Text style={styles.courseSubtitle}>
 										{course.subtitle[currentLanguage] || course.subtitle.ru}
-									</Text>
+									</Text> */}
 									<View style={styles.courseMetaRow}>
 										<Text style={styles.coursePrice}>
 											{t("stageScreen.coursePriceLabel", {
@@ -381,7 +376,7 @@ const styles = StyleSheet.create({
 	},
 	courseBuyButton: {
 		marginTop: 10,
-		backgroundColor: "#1D4ED8",
+		backgroundColor: "#F7543E",
 		borderRadius: 10,
 		paddingVertical: 10,
 		alignItems: "center",

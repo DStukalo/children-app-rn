@@ -33,7 +33,7 @@ class Object
   #
   #   I18n.with_options locale: user.locale, scope: 'newsletter' do |i18n|
   #     subject i18n.t :subject
-  #     body    i18n.t :body, user_name: user.name
+  #     body    i18n.t :body, userName: user.name
   #   end
   #
   # When you don't pass an explicit receiver, it executes the whole block

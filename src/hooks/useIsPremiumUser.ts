@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { USERS } from "../consts/consts";
+import { getStoredUser } from "../utils/purchaseStorage";
 
 export function useIsPremiumUser() {
 	const [isPremiumUser, setIsPremiumUser] = useState(false);
@@ -11,8 +11,13 @@ export function useIsPremiumUser() {
 				const email = await AsyncStorage.getItem("user_email");
 				if (!email) return;
 
-				const foundUser = USERS.find((u) => u.email === email);
-				setIsPremiumUser(foundUser?.role === "Premium User");
+				const storedUser = await getStoredUser();
+				if (storedUser && storedUser.email === email) {
+					setIsPremiumUser(storedUser.role === "Premium User");
+					return;
+				}
+
+				setIsPremiumUser(false);
 			} catch (err) {
 				console.error("Failed to check user role:", err);
 				setIsPremiumUser(false);

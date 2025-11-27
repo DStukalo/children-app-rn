@@ -17,8 +17,10 @@ import { MainStackParamList } from "../navigation/types";
 import { useAuthCheck } from "../hooks/useAuthCheck";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { UserData } from "../types/types";
-import { AVATAR_OPTIONS, DEFAULT_USER, USERS } from "../consts/consts";
+import { AVATAR_OPTIONS } from "../consts/consts";
 import { useTranslation } from "react-i18next";
+import { getStoredUser } from "../utils/purchaseStorage";
+import { fetchCurrentUser, updateCurrentUser } from "../services/userService";
 
 type ProfileScreenNavigationProp = StackNavigationProp<
 	MainStackParamList,
@@ -37,6 +39,11 @@ const ProfileScreen = () => {
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
 
+	const persistUserLocally = async (nextUser: UserData) => {
+		await AsyncStorage.setItem("user_data", JSON.stringify(nextUser));
+		setUser(nextUser);
+	};
+
 	useEffect(() => {
 		navigation.setOptions({
 			title: t("profile.title"),
@@ -45,27 +52,27 @@ const ProfileScreen = () => {
 
 	useEffect(() => {
 		const loadUserData = async () => {
+			if (!userEmail) {
+				setUser(null);
+				setLoading(false);
+				return;
+			}
+
+			setLoading(true);
+
 			try {
-				if (!userEmail) return;
-
-				const existingUser = USERS.find((u) => u.email === userEmail);
-
-				if (existingUser) {
-					setUser(existingUser);
-					await AsyncStorage.setItem("user_data", JSON.stringify(existingUser));
-				} else {
-					const userPass = await AsyncStorage.getItem("user_password");
-					const newUser = {
-						...DEFAULT_USER,
-						email: userEmail,
-						password: userPass || "",
-					};
-					setUser(newUser);
-					await AsyncStorage.setItem("user_data", JSON.stringify(newUser));
-					USERS.push(newUser);
+				const storedUser = await getStoredUser();
+				if (storedUser && storedUser.email === userEmail) {
+					setUser(storedUser);
 				}
-			} catch (e) {
-				console.error("Failed to load user data:", e);
+
+				const token = await AsyncStorage.getItem("auth_token");
+				if (token) {
+					const serverUser = await fetchCurrentUser();
+					await persistUserLocally(serverUser);
+				}
+			} catch (err) {
+				console.error("Failed to load user data:", err);
 			} finally {
 				setLoading(false);
 			}
@@ -75,14 +82,22 @@ const ProfileScreen = () => {
 
 	const updateUserData = async (updatedUser: UserData) => {
 		try {
-			await AsyncStorage.setItem("user_data", JSON.stringify(updatedUser));
-			setUser(updatedUser);
-			const index = USERS.findIndex((u) => u.email === updatedUser.email);
-			if (index !== -1) {
-				USERS[index] = { ...USERS[index], ...updatedUser };
+			const syncedUser = await updateCurrentUser({
+				email: updatedUser.email,
+				userName: updatedUser.userName,
+				avatar: updatedUser.avatar,
+				openCategories: updatedUser.openCategories,
+				purchasedStages: updatedUser.purchasedStages,
+			});
+			console.log("User updated successfully:", syncedUser);
+			await persistUserLocally(syncedUser);
+		} catch (err) {
+			console.error("Failed to update user on server:", err);
+			try {
+				await persistUserLocally(updatedUser);
+			} catch (storageError) {
+				console.error("Failed to save user data locally:", storageError);
 			}
-		} catch (e) {
-			console.error("Failed to save user data:", e);
 		}
 	};
 
@@ -90,6 +105,14 @@ const ProfileScreen = () => {
 		if (!user) return;
 		await updateUserData(user);
 		setIsEditing(false);
+	};
+
+	const handleAvatarSelect = async (nextAvatar: string) => {
+		if (!user) return;
+		const updatedUser = { ...user, avatar: nextAvatar };
+		setUser(updatedUser);
+		await updateUserData(updatedUser);
+		setAvatarModalVisible(false);
 	};
 
 	const handleLogout = async () => {
@@ -138,9 +161,9 @@ const ProfileScreen = () => {
 							<View style={styles.editContainer}>
 								<TextInput
 									style={styles.input}
-									value={user?.name}
+									value={user?.userName}
 									onChangeText={(text) =>
-										setUser((prev) => prev && { ...prev, name: text })
+										setUser((prev) => prev && { ...prev, userName: text })
 									}
 									autoFocus
 								/>
@@ -154,7 +177,7 @@ const ProfileScreen = () => {
 							</View>
 						) : (
 							<View style={styles.nameContainer}>
-								<Text style={styles.name}>{user?.name}</Text>
+								<Text style={styles.name}>{user?.userName}</Text>
 								<TouchableOpacity onPress={() => setIsEditing(true)}>
 									<Ionicons
 										name='pencil'
@@ -168,7 +191,7 @@ const ProfileScreen = () => {
 						<Text style={styles.role}>{user?.role}</Text>
 						<View style={styles.infoContainer}>
 							<Text style={styles.infoText}>📧 {userEmail}</Text>
-							<Text style={styles.infoText}>🆔 {user?.userId}</Text>
+							{/* <Text style={styles.infoText}>🆔 {user?.userId}</Text> */}
 						</View>
 					</View>
 				</View>
@@ -253,13 +276,7 @@ const ProfileScreen = () => {
 								keyExtractor={(item) => item}
 								contentContainerStyle={styles.avatarList}
 								renderItem={({ item }) => (
-									<TouchableOpacity
-										onPress={() => {
-											const updated = { ...user, avatar: item };
-											updateUserData(updated);
-											setAvatarModalVisible(false);
-										}}
-									>
+									<TouchableOpacity onPress={() => handleAvatarSelect(item)}>
 										<Image
 											source={{ uri: item }}
 											style={styles.avatarOption}

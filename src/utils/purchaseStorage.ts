@@ -1,7 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { UserData } from "../types/types";
-import { USERS } from "../consts/consts";
-import { Stage } from "./courseData";
+import { getAllCourses } from "./courseData";
 
 const USER_DATA_KEY = "user_data";
 
@@ -10,25 +9,25 @@ export type UserWithPurchases = UserData & {
 	purchasedStages: number[];
 };
 
-const ensurePurchaseFields = (user: UserData): UserWithPurchases => ({
+type StoredUser = UserData & { userName?: string };
+
+const ensurePurchaseFields = (user: StoredUser): UserWithPurchases => ({
 	...user,
+	name: user.name ?? user.userName ?? "",
 	openCategories: Array.isArray(user.openCategories)
 		? [...user.openCategories]
+		: Array.isArray((user as any).open_categories)
+		? [...(((user as any).open_categories as number[] | undefined) ?? [])]
 		: [],
 	purchasedStages: Array.isArray(user.purchasedStages)
 		? [...user.purchasedStages]
+		: Array.isArray((user as any).purchased_stages)
+		? [...(((user as any).purchased_stages as number[] | undefined) ?? [])]
 		: [],
 });
 
 const persistUser = async (user: UserWithPurchases) => {
 	await AsyncStorage.setItem(USER_DATA_KEY, JSON.stringify(user));
-
-	if (user.email) {
-		const index = USERS.findIndex((u) => u.email === user.email);
-		if (index !== -1) {
-			USERS[index] = { ...USERS[index], ...user };
-		}
-	}
 };
 
 export const getStoredUser = async (): Promise<UserWithPurchases | null> => {
@@ -38,7 +37,7 @@ export const getStoredUser = async (): Promise<UserWithPurchases | null> => {
 	}
 
 	try {
-		const parsed = JSON.parse(jsonValue) as UserData;
+		const parsed = JSON.parse(jsonValue) as StoredUser;
 		return ensurePurchaseFields(parsed);
 	} catch (err) {
 		console.error("Failed to parse stored user data", err);
@@ -111,16 +110,18 @@ export const isStagePurchased = (
 
 export const getMissingPrerequisiteCourses = (
 	user: UserWithPurchases | null,
-	stage: Stage,
 	targetCourseId: number
 ) => {
-	const targetIndex = stage.courses.findIndex((course) => course.id === targetCourseId);
+	const courses = [...getAllCourses()].sort((a, b) => a.id - b.id);
+	const targetIndex = courses.findIndex(
+		(course) => course.id === targetCourseId
+	);
 	if (targetIndex <= 0) {
 		return [];
 	}
 
-	const purchasedIds = user?.openCategories ?? [];
-	return stage.courses
+	const purchasedIds = new Set(user?.openCategories ?? []);
+	return courses
 		.slice(0, targetIndex)
-		.filter((course) => !purchasedIds.includes(course.id));
+		.filter((course) => !purchasedIds.has(course.id));
 };

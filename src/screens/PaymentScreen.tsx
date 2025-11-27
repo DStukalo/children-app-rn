@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
 	ActivityIndicator,
 	Alert,
@@ -118,12 +118,20 @@ export default function PaymentScreen() {
 		course && user ? isCoursePurchased(user, course.id) : false;
 	const stagePurchased =
 		stage && user ? isStagePurchased(user, stage.id) : false;
+	const missingPrerequisiteCourses = useMemo(() => {
+		if (!course) {
+			return [];
+		}
+		return getMissingPrerequisiteCourses(user, course.id);
+	}, [course, user]);
+	const hasMissingPrerequisites = missingPrerequisiteCourses.length > 0;
+	const nextPrerequisiteCourseTitle = hasMissingPrerequisites
+		? getLocalized(missingPrerequisiteCourses[0]?.title, currentLang)
+		: "";
 
 	const redirectToAuth = () => {
 		navigation.navigate("CheckLoginWhenPayScreen", {
-			courseId: normalizedCourseId
-				? String(normalizedCourseId)
-				: undefined,
+			courseId: normalizedCourseId ? String(normalizedCourseId) : undefined,
 			stageId: stage?.id ?? normalizedStageId,
 			showAllAccess: true,
 		});
@@ -148,11 +156,7 @@ export default function PaymentScreen() {
 			return;
 		}
 
-		const missingCourses = getMissingPrerequisiteCourses(
-			user,
-			stage,
-			course.id
-		);
+		const missingCourses = getMissingPrerequisiteCourses(user, course.id);
 
 		if (missingCourses.length > 0) {
 			const nextCourse = getLocalized(missingCourses[0].title, currentLang);
@@ -216,10 +220,7 @@ export default function PaymentScreen() {
 			}
 
 			setUser(updatedUser);
-			Alert.alert(
-				t("payment.successTitle"),
-				t("payment.stagePurchaseSuccess")
-			);
+			Alert.alert(t("payment.successTitle"), t("payment.stagePurchaseSuccess"));
 		} catch (err) {
 			console.error("Stage purchase failed:", err);
 			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
@@ -241,6 +242,7 @@ export default function PaymentScreen() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
+				{/* <Text>{user && JSON.stringify(user, null, 2)}</Text> */}
 				{stage && (
 					<View style={styles.paymentCard}>
 						<View style={styles.paymentHeader}>
@@ -260,9 +262,7 @@ export default function PaymentScreen() {
 
 						<Text style={styles.paymentSubTitle}>{stageTitle}</Text>
 						{stageSubtitle ? (
-							<Text style={styles.stageSubtitleText}>
-								{stageSubtitle}
-							</Text>
+							<Text style={styles.stageSubtitleText}>{stageSubtitle}</Text>
 						) : null}
 						<Text style={styles.paymentDescription}>
 							{t("payment.stageDescription", {
@@ -346,16 +346,28 @@ export default function PaymentScreen() {
 							</Text>
 						) : null}
 
+						{hasMissingPrerequisites ? (
+							<Text style={styles.prerequisiteLabel}>
+								{t("payment.prerequisiteDescription", {
+									course: nextPrerequisiteCourseTitle,
+								})}
+							</Text>
+						) : null}
+
 						<View style={styles.paymentButtonSection}>
 							<TouchableOpacity
 								style={[
 									styles.paymentButton,
 									{ backgroundColor: "#F7543E" },
-									(coursePurchased || courseLoading) &&
+									(coursePurchased ||
+										courseLoading ||
+										hasMissingPrerequisites) &&
 										styles.paymentButtonDisabled,
 								]}
 								onPress={handleCoursePayment}
-								disabled={coursePurchased || courseLoading}
+								disabled={
+									coursePurchased || courseLoading || hasMissingPrerequisites
+								}
 							>
 								{courseLoading ? (
 									<ActivityIndicator color='#FFFFFF' />
@@ -512,6 +524,13 @@ const styles = StyleSheet.create({
 		fontSize: 14,
 		fontFamily: "Nunito-Regular",
 		color: "#059669",
+		textAlign: "center",
+		marginBottom: 12,
+	},
+	prerequisiteLabel: {
+		fontSize: 14,
+		fontFamily: "Nunito-Regular",
+		color: "#DC2626",
 		textAlign: "center",
 		marginBottom: 12,
 	},

@@ -13,7 +13,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { MainStackParamList } from "../navigation/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useTranslation } from "react-i18next";
-import { USERS } from "../consts/consts";
+import { loginUser } from "../services/authService";
 
 type Nav = NativeStackNavigationProp<MainStackParamList, "LoginScreen">;
 type Route = RouteProp<MainStackParamList, "LoginScreen">;
@@ -45,61 +45,53 @@ export default function LoginScreen() {
 		try {
 			setLoading(true);
 
-			await new Promise<void>((res) => setTimeout(res, 1500));
+			const trimmedEmail = email.trim();
+			const trimmedPassword = password.trim();
 
-			const user = USERS.find(
-				(u) => u.email === email.trim() && u.password === password.trim()
-			);
+			const { token, user } = await loginUser(trimmedEmail, trimmedPassword);
 
 			await AsyncStorage.multiSet([
-				["auth_token", "dummy_token"],
-				["user_email", email],
+				["auth_token", token || "dummy_token"],
+				["user_email", user.email],
+				["user_data", JSON.stringify(user)],
+				["user_password", trimmedPassword],
 			]);
 
-			if (user) {
-				await AsyncStorage.multiSet([
-					["auth_token", "dummy_token"],
-					["user_email", user.email],
-				]);
-
-				setTimeout(() => {
-					Alert.alert(t("login.success"), t("login.successLogin"), [
-						{
-							text: "OK",
-							onPress: () => {
-								if (
-									redirectTo === "PaymentScreen" &&
-									(courseId || stageId)
-								) {
-									navigation.reset({
-										index: 0,
-										routes: [
-											{
-												name: "PaymentScreen",
-												params: {
-													courseId,
-													stageId,
-													showAllAccess,
-												} as never,
-											},
-										],
-									});
-								} else {
-									if (email)
-										navigation.reset({
-											index: 0,
-											routes: [{ name: "ProfileScreen" as never }],
-										});
-								}
-							},
+			setTimeout(() => {
+				Alert.alert(t("login.success"), t("login.successLogin"), [
+					{
+						text: "OK",
+						onPress: () => {
+							if (redirectTo === "PaymentScreen" && (courseId || stageId)) {
+								navigation.reset({
+									index: 0,
+									routes: [
+										{
+											name: "PaymentScreen",
+											params: {
+												courseId,
+												stageId,
+												showAllAccess,
+											} as never,
+										},
+									],
+								});
+							} else if (trimmedEmail) {
+								navigation.reset({
+									index: 0,
+									routes: [{ name: "ProfileScreen" as never }],
+								});
+							}
 						},
-					]);
-				}, 300);
-			} else {
-				Alert.alert(t("login.error"), t("login.incorrectEmailOrPassword"));
-			}
+					},
+				]);
+			}, 300);
 		} catch (err) {
-			Alert.alert(t("login.error"), t("login.somethingWentWrong"));
+			const message =
+				err instanceof Error
+					? err.message
+					: t("login.somethingWentWrong").toString();
+			Alert.alert(t("login.error"), message);
 		} finally {
 			setLoading(false);
 		}
