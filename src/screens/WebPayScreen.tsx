@@ -15,9 +15,9 @@ import { MainStackParamList } from "../navigation/types";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useTranslation } from "react-i18next";
 import { API_BASE_URL } from "../consts/consts";
-import { getStoredUser } from "../utils/purchaseStorage";
-import { markCoursePurchased, markStagePurchased } from "../utils/purchaseStorage";
+import { getStoredUser, markCoursePurchased, markStagePurchased } from "../utils/purchaseStorage";
 import { getStages, getAllCourses } from "../utils/courseData";
+import { updateCurrentUser } from "../services/userService";
 
 type WebPayScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -66,27 +66,80 @@ export default function WebPayScreen() {
 	};
 
 	const handlePaymentSuccess = async (paymentId?: string) => {
+		console.log("[WebPayScreen] handlePaymentSuccess called");
+		console.log("[WebPayScreen] isFullAccess:", isFullAccess);
+		console.log("[WebPayScreen] courseId:", courseId);
+		console.log("[WebPayScreen] stageId:", stageId);
+
 		try {
+			let updatedUser = await getStoredUser();
+			let newOpenCategories: number[] = [...(updatedUser?.openCategories ?? [])];
+			let newPurchasedStages: number[] = [...(updatedUser?.purchasedStages ?? [])];
+
 			if (isFullAccess) {
+				console.log("[WebPayScreen] Processing FULL ACCESS purchase");
 				const allStages = getStages();
-				const allCourses = getAllCourses();
 				
 				for (const stage of allStages) {
 					const courseIds = stage.courses.map(c => c.id);
+					// Add stage to purchasedStages
+					if (!newPurchasedStages.includes(stage.id)) {
+						newPurchasedStages.push(stage.id);
+					}
+					// Add all courses from stage
+					for (const cId of courseIds) {
+						if (!newOpenCategories.includes(cId)) {
+							newOpenCategories.push(cId);
+						}
+					}
 					await markStagePurchased(stage.id, courseIds);
 				}
+				console.log("[WebPayScreen] Full access marked successfully");
 			} else {
 				if (courseId) {
+					console.log(`[WebPayScreen] Marking course ${courseId} as purchased`);
+					if (!newOpenCategories.includes(courseId)) {
+						newOpenCategories.push(courseId);
+					}
 					await markCoursePurchased(courseId);
+					console.log("[WebPayScreen] Course marked successfully");
 				}
 				if (stageId) {
+					console.log(`[WebPayScreen] Marking stage ${stageId} as purchased`);
 					const allStages = getStages();
 					const stage = allStages.find(s => s.id === stageId);
 					if (stage) {
 						const courseIds = stage.courses.map(c => c.id);
+						// Add stage
+						if (!newPurchasedStages.includes(stageId)) {
+							newPurchasedStages.push(stageId);
+						}
+						// Add all courses from stage
+						for (const cId of courseIds) {
+							if (!newOpenCategories.includes(cId)) {
+								newOpenCategories.push(cId);
+							}
+						}
 						await markStagePurchased(stageId, courseIds);
+						console.log("[WebPayScreen] Stage marked successfully");
 					}
 				}
+			}
+
+			// Sync with server
+			try {
+				console.log("[WebPayScreen] Syncing with server...");
+				console.log("[WebPayScreen] openCategories:", newOpenCategories);
+				console.log("[WebPayScreen] purchasedStages:", newPurchasedStages);
+				
+				await updateCurrentUser({
+					openCategories: newOpenCategories,
+					purchasedStages: newPurchasedStages,
+				});
+				console.log("[WebPayScreen] Server sync successful");
+			} catch (syncError) {
+				console.error("[WebPayScreen] Server sync failed:", syncError);
+				// Don't fail the whole operation - local storage is updated
 			}
 
 			Alert.alert(
@@ -100,32 +153,48 @@ export default function WebPayScreen() {
 				]
 			);
 		} catch (error) {
-			console.error("Failed to save purchase:", error);
+			console.error("[WebPayScreen] Failed to save purchase:", error);
+			Alert.alert("Ошибка", "Не удалось сохранить покупку: " + String(error));
 		}
 	};
 
 	const handleNavigationStateChange = async (navState: any) => {
 		const url = navState.url;
+		console.log("[WebPayScreen] Navigation URL:", url);
 
-		if (url.includes("/api/payment/success") || url.includes("test-payment-success") || url.includes("payment-success") || url.includes("success")) {
-			if (paymentStatus === "pending") {
-				setPaymentStatus("success");
-				handlePaymentSuccess();
-			}
-		} else if (url.includes("/api/payment/cancel") || url.includes("test-payment-fail") || url.includes("payment-failed") || url.includes("fail") || url.includes("error")) {
-			if (paymentStatus === "pending") {
-				setPaymentStatus("failed");
-				Alert.alert(
-					t("payment.errorTitle") || "Ошибка",
-					t("payment.paymentFailed") || "Платеж не был обработан",
-					[
-						{
-							text: "OK",
-							onPress: () => navigation.goBack(),
-						},
-					]
-				);
-			}
+		// Check for success patterns
+		const isSuccess = 
+			url.includes("/api/payment/success") || 
+			url.includes("test-payment-success") || 
+			url.includes("payment-success") ||
+			url.includes("childapp://payment-success") ||
+			(url.includes("success") && !url.includes("fail"));
+
+		// Check for failure/cancel patterns
+		const isFailure = 
+			url.includes("/api/payment/cancel") || 
+			url.includes("test-payment-fail") || 
+			url.includes("payment-failed") ||
+			url.includes("payment-cancel") ||
+			url.includes("childapp://payment-cancel");
+
+		if (isSuccess && paymentStatus === "pending") {
+			console.log("[WebPayScreen] Payment SUCCESS detected!");
+			setPaymentStatus("success");
+			await handlePaymentSuccess();
+		} else if (isFailure && paymentStatus === "pending") {
+			console.log("[WebPayScreen] Payment FAILED/CANCELLED detected!");
+			setPaymentStatus("failed");
+			Alert.alert(
+				t("payment.errorTitle") || "Ошибка",
+				t("payment.paymentFailed") || "Платеж не был обработан",
+				[
+					{
+						text: "OK",
+						onPress: () => navigation.goBack(),
+					},
+				]
+			);
 		}
 	};
 

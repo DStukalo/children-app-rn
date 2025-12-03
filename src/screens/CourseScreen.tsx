@@ -14,9 +14,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { useAuthCheck } from "../hooks/useAuthCheck";
-import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
-import { UserData } from "../types/types";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useIsPremiumUser, useHasCourseAccess } from "../hooks/useIsPremiumUser";
 import AudioPlayer from "../components/AudioPlayer";
 import { findCourseById } from "../utils/courseData";
 import { MainStackParamList } from "../navigation/types";
@@ -32,8 +30,7 @@ export default function Course() {
 
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
-
-	const [user, setUser] = useState<UserData | null>(null);
+	const hasCourseAccess = useHasCourseAccess(id);
 
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const handleNext = (index: number) => {
@@ -41,22 +38,6 @@ export default function Course() {
 		if (!audios || index >= audios.length - 1) return;
 		setCurrentIndex(index + 1);
 	};
-
-	useEffect(() => {
-		const loadUser = async () => {
-			const jsonValue = await AsyncStorage.getItem("user_data");
-			if (jsonValue) {
-				setUser(JSON.parse(jsonValue));
-			}
-		};
-		loadUser();
-	}, []);
-
-	const hasPartialPremiumAccess =
-		user?.role === "User with party premium access" &&
-		Array.isArray(user.openCategories) &&
-		course?.id !== undefined &&
-		user.openCategories.includes(course?.id);
 
 	useEffect(() => {
 		if (course) {
@@ -157,7 +138,7 @@ export default function Course() {
 						const isLocked =
 							lesson?.access === "locked" &&
 							!isPremiumUser &&
-							!hasPartialPremiumAccess;
+							!hasCourseAccess;
 
 						return (
 							<TouchableOpacity

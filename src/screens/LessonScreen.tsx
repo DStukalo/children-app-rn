@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
 	Dimensions,
 	SafeAreaView,
@@ -17,9 +17,7 @@ import { MainStackParamList } from "../navigation/types";
 import { Dropdown } from "../components/Dropdown";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import { useAuthCheck } from "../hooks/useAuthCheck";
-import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { UserData } from "../types/types";
+import { useIsPremiumUser, useHasCourseAccess } from "../hooks/useIsPremiumUser";
 import { findCourseById } from "../utils/courseData";
 
 const { width } = Dimensions.get("window");
@@ -41,29 +39,13 @@ export default function LessonScreen({ route, navigation }: Props) {
 
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
+	const hasCourseAccess = useHasCourseAccess(courseId);
 
 	const course = findCourseById(courseId);
 	const lesson = course?.details.lessons?.find((l) => l.lessonId === lessonId);
-	const [user, setUser] = useState<UserData | null>(null);
-
-	useEffect(() => {
-		const loadUser = async () => {
-			const jsonValue = await AsyncStorage.getItem("user_data");
-			if (jsonValue) {
-				setUser(JSON.parse(jsonValue));
-			}
-		};
-		loadUser();
-	}, []);
-
-	const hasPartialPremiumAccess =
-		user?.role === "User with party premium access" &&
-		Array.isArray(user.openCategories) &&
-		course?.id !== undefined &&
-		user.openCategories.includes(course?.id);
 
 	const isLocked =
-		lesson?.access === "locked" && !isPremiumUser && !hasPartialPremiumAccess;
+		lesson?.access === "locked" && !isPremiumUser && !hasCourseAccess;
 
 	useEffect(() => {
 		if (lesson) {
