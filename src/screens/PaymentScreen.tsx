@@ -23,6 +23,7 @@ import { MainStackParamList } from "../navigation/types";
 import {
 	findCourseAndStageByCourseId,
 	getStages,
+	getAllCourses,
 	LocalizedString,
 } from "../utils/courseData";
 import { useAuthCheck } from "../hooks/useAuthCheck";
@@ -36,6 +37,7 @@ import {
 	UserWithPurchases,
 } from "../utils/purchaseStorage";
 import { formatPrice } from "../utils/price";
+import { createPayment } from "../utils/api";
 
 type PaymentScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -170,20 +172,31 @@ export default function PaymentScreen() {
 
 		try {
 			setCourseLoading(true);
-			const updatedUser = await markCoursePurchased(course.id);
 
-			if (!updatedUser) {
-				throw new Error("missing user data");
-			}
+			const orderId = `course_${course.id}_${Date.now()}`;
+			const description = getLocalized(course.title, currentLang);
 
-			setUser(updatedUser);
-			Alert.alert(
-				t("payment.successTitle"),
-				t("payment.coursePurchaseSuccess")
-			);
-		} catch (err) {
-			console.error("Course purchase failed:", err);
-			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+			const paymentResponse = await createPayment({
+				amount: course.price,
+				currency: "BYN",
+				description,
+				orderId,
+				courseId: course.id,
+			});
+
+			navigation.navigate("WebPayScreen", {
+				paymentUrl: paymentResponse.paymentUrl,
+				courseId: course.id,
+				amount: course.price,
+				description,
+			});
+		} catch (err: any) {
+			console.error("Course payment failed:", err);
+			const errorMessage =
+				err.response?.data?.message ||
+				err.message ||
+				t("payment.errorGeneric");
+			Alert.alert(t("payment.errorTitle"), errorMessage);
 		} finally {
 			setCourseLoading(false);
 		}
@@ -210,28 +223,79 @@ export default function PaymentScreen() {
 
 		try {
 			setStageLoading(true);
-			const updatedUser = await markStagePurchased(
-				stage.id,
-				stage.courses.map((item) => item.id)
-			);
 
-			if (!updatedUser) {
-				throw new Error("missing user data");
-			}
+			const orderId = `stage_${stage.id}_${Date.now()}`;
+			const description = getLocalized(stage.title, currentLang);
 
-			setUser(updatedUser);
-			Alert.alert(t("payment.successTitle"), t("payment.stagePurchaseSuccess"));
-		} catch (err) {
-			console.error("Stage purchase failed:", err);
-			Alert.alert(t("payment.errorTitle"), t("payment.errorGeneric"));
+			const paymentResponse = await createPayment({
+				amount: stage.price || 0,
+				currency: "BYN",
+				description,
+				orderId,
+				stageId: stage.id,
+			});
+
+			navigation.navigate("WebPayScreen", {
+				paymentUrl: paymentResponse.paymentUrl,
+				stageId: stage.id,
+				amount: stage.price || 0,
+				description,
+			});
+		} catch (err: any) {
+			console.error("Stage payment failed:", err);
+			const errorMessage =
+				err.response?.data?.message ||
+				err.message ||
+				t("payment.errorGeneric");
+			Alert.alert(t("payment.errorTitle"), errorMessage);
 		} finally {
 			setStageLoading(false);
 		}
 	};
 
-	const handleFullAccessPayment = () => {
+	const handleFullAccessPayment = async () => {
 		if (!isAuthenticated) {
 			redirectToAuth();
+			return;
+		}
+
+		try {
+			setCourseLoading(true);
+
+			const allStages = getStages();
+			const allCourses = getAllCourses();
+
+			const totalCoursePrice = allCourses.reduce((sum, course) => sum + (course.price || 0), 0);
+
+			const totalStagePrice = allStages.reduce((sum, stage) => sum + (stage.price || 0), 0);
+
+			const fullAccessPrice = totalCoursePrice || totalStagePrice || 100;
+
+			const orderId = `full_access_${Date.now()}`;
+			const description = t("payment.fullDescription") || "Полный доступ ко всем курсам";
+
+			const paymentResponse = await createPayment({
+				amount: fullAccessPrice,
+				currency: "BYN",
+				description,
+				orderId,
+			});
+
+			navigation.navigate("WebPayScreen", {
+				paymentUrl: paymentResponse.paymentUrl,
+				amount: fullAccessPrice,
+				description,
+				isFullAccess: true,
+			});
+		} catch (err: any) {
+			console.error("Full access payment failed:", err);
+			const errorMessage =
+				err.response?.data?.message ||
+				err.message ||
+				t("payment.errorGeneric");
+			Alert.alert(t("payment.errorTitle"), errorMessage);
+		} finally {
+			setCourseLoading(false);
 		}
 	};
 

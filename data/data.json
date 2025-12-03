@@ -2,7 +2,7 @@
 	"stages": [
 		{
 			"id": 1,
-			"price": 0,
+			"price": 100,
 			"title": {
 				"en": "Start",
 				"ru": "Старт"
@@ -326,7 +326,7 @@
 					},
 					"image": "https://i.ibb.co/n8Yn3sYB/block-2.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 15,
 					"details": {
 						"description": {
 							"en": "",
@@ -425,7 +425,7 @@
 					},
 					"image": "https://i.ibb.co/ymq1V5H4/block-3.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 20,
 					"details": {
 						"description": {
 							"en": "",
@@ -523,7 +523,7 @@
 					},
 					"image": "https://i.ibb.co/RpG7Bt4P/block-4.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 25,
 					"details": {
 						"description": {
 							"en": "",
@@ -693,6 +693,7 @@
 					},
 					"image": "https://i.ibb.co/rRBPRkqx/block-5.jpg",
 					"isCompleted": false,
+					"price": 30,
 					"details": {
 						"description": {
 							"en": "",
@@ -786,6 +787,7 @@
 					},
 					"image": "https://i.ibb.co/SXhphkZN/block-6.jpg",
 					"isCompleted": false,
+					"price": 35,
 					"details": {
 						"description": {
 							"en": "",
@@ -943,7 +945,7 @@
 					},
 					"image": "https://i.ibb.co/fGyvRz23/block-7.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 40,
 					"details": {
 						"description": {
 							"en": "Prepare the materials and sit behind the child. The child sits at the table. In front of them place the token board, the hemisphere and the board corresponding to the lesson number.\n\nShow the child the first video lesson, helping them perform all movements hand-in-hand to the music. *Exercises are demonstrated in mirror image. Use the audio file with the voice.\n\nThen perform the exercise without video and distracting sounds. Let the child hear only your voice. To do this, sit opposite the child at the table, take their dominant hand and, using an index gesture, guide the child's hand across the board from left to right, sequentially pointing to the symbols and tracing/imitating them.\n\nRepeat the same with the other hand from left to right. The child should memorize the sounds and understand the symbols shown on the panels. *If in your culture writing is from right to left, inform us and we will send you the corresponding video, because the process of performing rhythm schemes lays the foundations of reading and writing.\n\nRepeat the exercise following the instructions of the video lesson, using the audio tracks with voice and karaoke.",
@@ -1105,7 +1107,7 @@
 					},
 					"image": "https://i.ibb.co/8gGGMTRz/block-8.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 45,
 					"details": {
 						"description": {
 							"en": "The didactic manual \"Echo Schemes\" is intended for children and their parents, as well as for special education teachers, speech therapists, psychologists, and musicians. The method consists of a set of 25 musical correction exercises aimed at initiating and correcting speech in children with alalia, speech delay, autism, and other disorders.\n\n16 exercises focus on activating the speech apparatus and are performed using graphic panels (Echo Schemes), and 9 exercises involve playing percussion instruments (darbuka or djembe) and are performed using a visual score depicting palms, letters, and symbols for sound imitation.",
@@ -1134,7 +1136,7 @@
 					},
 					"image": "https://i.ibb.co/4wW2qX8d/block-9.jpg",
 					"isCompleted": false,
-					"price": 0,
+					"price": 50,
 					"details": {
 						"description": {
 							"en": "The drum complex can be performed sitting opposite the child or by placing the child on your lap in front of a mirror (so the child can see their own and your reflection). The adult secures the drum with their legs.\n\nThus, during the exercises, while positioned behind the child, the adult can provide full or partial physical guidance to the child if needed.",
@@ -1164,6 +1166,7 @@
 					},
 					"image": "",
 					"isCompleted": false,
+					"price": 55,
 					"details": {
 						"description": {
 							"en": "",

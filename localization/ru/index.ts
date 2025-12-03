@@ -89,7 +89,9 @@ export default {
 		chooseAvatar: "Выберите аватар",
 		cancel: "Отменить",
 		payment: "Оплата и подписка",
-		login: "Перейти к входу",
+		login: "Перейти к входу",
+		fullAccess: "Полный доступ активирован",
+		buyMore: "Докупить курсы",
 	},
 
 	login: {
@@ -132,7 +134,7 @@ export default {
 
 	customVideoPlayer: {
 		loading: "Загрузка...",
-		notFound: "Видео не найдено",
+		notFound: "Видео не найдено",
 	},
 
 	checkLogin: {

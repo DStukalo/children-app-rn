@@ -4,6 +4,8 @@ import {
 	useColorScheme,
 	View,
 	ActivityIndicator,
+	Linking,
+	Alert,
 } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import {
@@ -18,6 +20,19 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export const navigationRef = createNavigationContainerRef();
 
+const linking = {
+	prefixes: ["childapp://"],
+	config: {
+		screens: {
+			Main: {
+				screens: {
+					HomeScreen: "payment-success",
+				},
+			},
+		},
+	},
+};
+
 export default function App() {
 	const [isI18nReady, setIsI18nReady] = useState(false);
 	const isDarkMode = useColorScheme() === "dark";
@@ -28,6 +43,31 @@ export default function App() {
 			setIsI18nReady(true);
 		};
 		init();
+	}, []);
+
+	useEffect(() => {
+		const handleDeepLink = (event: { url: string }) => {
+			const url = event.url;
+			console.log("Deep link received:", url);
+			
+			if (url.includes("payment-success")) {
+				Alert.alert("Оплата успешна!", "Спасибо за покупку. Ваш доступ активирован.");
+			} else if (url.includes("payment-cancel")) {
+				Alert.alert("Оплата отменена", "Платеж не был завершен. Попробуйте снова.");
+			}
+		};
+
+		const subscription = Linking.addEventListener("url", handleDeepLink);
+
+		Linking.getInitialURL().then((url) => {
+			if (url) {
+				handleDeepLink({ url });
+			}
+		});
+
+		return () => {
+			subscription.remove();
+		};
 	}, []);
 
 	// useEffect(() => {
@@ -56,9 +96,9 @@ export default function App() {
 						barStyle={isDarkMode ? "light-content" : "dark-content"}
 						backgroundColor={isDarkMode ? "#000" : "#fff"}
 					/>
-					<NavigationContainer ref={navigationRef}>
-						<DrawerNav />
-					</NavigationContainer>
+				<NavigationContainer ref={navigationRef} linking={linking}>
+					<DrawerNav />
+				</NavigationContainer>
 				</SafeAreaView>
 			</SafeAreaProvider>
 		</I18nextProvider>

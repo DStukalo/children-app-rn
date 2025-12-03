@@ -1,3 +1,8 @@
+import { UserData } from "../types/types";
+import { Platform } from "react-native";
+
+export const API_BASE_URL = "https://children-server.onrender.com";
+
 const AVATAR_OPTIONS = [
 	"https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
 	"https://cdn-icons-png.flaticon.com/512/706/706830.png",
