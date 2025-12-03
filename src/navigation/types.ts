@@ -32,6 +32,14 @@ export type MainStackParamList = {
 				showAllAccess?: boolean;
 		  }
 		| undefined;
+	WebPayScreen: {
+		paymentUrl: string;
+		courseId?: number;
+		stageId?: number;
+		amount: number;
+		description: string;
+		isFullAccess?: boolean;
+	};
 };
 
 export type RootTabParamList = {

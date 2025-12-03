@@ -13,7 +13,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { MainStackParamList } from "../navigation/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useTranslation } from "react-i18next";
-import { loginUser } from "../services/authService";
+import { login } from "../utils/api";
 
 type Nav = NativeStackNavigationProp<MainStackParamList, "LoginScreen">;
 type Route = RouteProp<MainStackParamList, "LoginScreen">;
@@ -48,12 +48,15 @@ export default function LoginScreen() {
 			const trimmedEmail = email.trim();
 			const trimmedPassword = password.trim();
 
-			const { token, user } = await loginUser(trimmedEmail, trimmedPassword);
+			const response = await login({
+				email: trimmedEmail,
+				password: trimmedPassword,
+			});
 
 			await AsyncStorage.multiSet([
-				["auth_token", token || "dummy_token"],
-				["user_email", user.email],
-				["user_data", JSON.stringify(user)],
+				["auth_token", response.token || "dummy_token"],
+				["user_email", response.user.email],
+				["user_data", JSON.stringify(response.user)],
 				["user_password", trimmedPassword],
 			]);
 
@@ -86,12 +89,13 @@ export default function LoginScreen() {
 					},
 				]);
 			}, 300);
-		} catch (err) {
-			const message =
-				err instanceof Error
-					? err.message
-					: t("login.somethingWentWrong").toString();
-			Alert.alert(t("login.error"), message);
+		} catch (err: any) {
+			console.error("Login error:", err);
+			const errorMessage =
+				err.response?.data?.message ||
+				err.message ||
+				t("login.incorrectEmailOrPassword");
+			Alert.alert(t("login.error"), errorMessage);
 		} finally {
 			setLoading(false);
 		}

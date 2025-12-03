@@ -11,6 +11,7 @@ import CheckLoginWhenPayScreen from "../screens/CheckLoginWhenPayScreen";
 import { MainStackParamList } from "./types";
 import RegisterScreen from '../screens/RegisterScreen';
 import StageScreen from "../screens/StageScreen";
+import WebPayScreen from "../screens/WebPayScreen";
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
@@ -67,6 +68,11 @@ export default function MainStack() {
 				name='CheckLoginWhenPayScreen'
 				component={CheckLoginWhenPayScreen}
 				options={{ headerShown: true }}
+			/>
+			<Stack.Screen
+				name='WebPayScreen'
+				component={WebPayScreen}
+				options={{ headerShown: false }}
 			/>
 		</Stack.Navigator>
 	);
