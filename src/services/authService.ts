@@ -13,8 +13,8 @@ type AuthResult = {
 	user: UserData;
 };
 
-// const AUTH_BASE_URL = "http://localhost:54322";
-const AUTH_BASE_URL = "http://10.0.2.2:54322";
+// Use production server
+const AUTH_BASE_URL = "https://children-server.onrender.com";
 const LOGIN_PATH = "/login";
 const REGISTER_PATH = "/register";
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import {
 	View,
 	Text,
@@ -11,7 +11,7 @@ import {
 	FlatList,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { MainStackParamList } from "../navigation/types";
 import { useAuthCheck } from "../hooks/useAuthCheck";
@@ -61,35 +61,48 @@ const ProfileScreen = () => {
 		});
 	}, [currentLanguage]);
 
-	useEffect(() => {
-		const loadUserData = async () => {
-			if (!userEmail) {
-				setUser(null);
-				setLoading(false);
-				return;
-			}
+	const loadUserData = useCallback(async (showLoader = true) => {
+		if (!userEmail) {
+			setUser(null);
+			setLoading(false);
+			return;
+		}
 
+		if (showLoader) {
 			setLoading(true);
+		}
 
-			try {
-				const storedUser = await getStoredUser();
-				if (storedUser && storedUser.email === userEmail) {
-					setUser(storedUser);
-				}
-
-				const token = await AsyncStorage.getItem("auth_token");
-				if (token) {
-					const serverUser = await fetchCurrentUser();
-					await persistUserLocally(serverUser);
-				}
-			} catch (err) {
-				console.error("Failed to load user data:", err);
-			} finally {
-				setLoading(false);
+		try {
+			// First load from local storage for quick display
+			const storedUser = await getStoredUser();
+			if (storedUser && storedUser.email === userEmail) {
+				setUser(storedUser);
 			}
-		};
-		loadUserData();
+
+			// Then sync with server to get latest data
+			const token = await AsyncStorage.getItem("auth_token");
+			if (token) {
+				const serverUser = await fetchCurrentUser();
+				await persistUserLocally(serverUser);
+			}
+		} catch (err) {
+			console.error("Failed to load user data:", err);
+		} finally {
+			setLoading(false);
+		}
 	}, [userEmail]);
+
+	// Load on mount
+	useEffect(() => {
+		loadUserData(true);
+	}, [loadUserData]);
+
+	// Reload when screen comes into focus (e.g., after payment)
+	useFocusEffect(
+		useCallback(() => {
+			loadUserData(false); // Don't show loader on focus
+		}, [loadUserData])
+	);
 
 	const updateUserData = async (updatedUser: UserData) => {
 		try {

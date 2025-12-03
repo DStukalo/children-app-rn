@@ -36,7 +36,7 @@ import {
 	markStagePurchased,
 	UserWithPurchases,
 } from "../utils/purchaseStorage";
-import { formatPrice } from "../utils/price";
+import { formatPrice, calculateRemainingStagePrice, calculateFullAccessPrice } from "../utils/price";
 import { createPayment } from "../utils/api";
 
 type PaymentScreenNavigationProp = NativeStackNavigationProp<
@@ -116,6 +116,8 @@ export default function PaymentScreen() {
 		}, [])
 	);
 
+	const purchasedCourseIds = user?.openCategories ?? [];
+	
 	const coursePurchased =
 		course && user ? isCoursePurchased(user, course.id) : false;
 	const stagePurchased =
@@ -130,6 +132,22 @@ export default function PaymentScreen() {
 	const nextPrerequisiteCourseTitle = hasMissingPrerequisites
 		? getLocalized(missingPrerequisiteCourses[0]?.title, currentLang)
 		: "";
+
+	// Calculate dynamic prices based on purchased courses
+	const stageRemainingPrice = useMemo(() => {
+		if (!stage) return 0;
+		return calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
+	}, [stage, purchasedCourseIds]);
+
+	const unpurchasedCoursesInStage = useMemo(() => {
+		if (!stage) return 0;
+		return stage.courses.filter(c => !purchasedCourseIds.includes(c.id)).length;
+	}, [stage, purchasedCourseIds]);
+
+	const allCourses = useMemo(() => getAllCourses(), []);
+	const fullAccessPrice = useMemo(() => {
+		return calculateFullAccessPrice(allCourses, purchasedCourseIds);
+	}, [allCourses, purchasedCourseIds]);
 
 	const redirectToAuth = () => {
 		navigation.navigate("CheckLoginWhenPayScreen", {
@@ -213,7 +231,7 @@ export default function PaymentScreen() {
 			return;
 		}
 
-		if (stagePurchased) {
+		if (stagePurchased || unpurchasedCoursesInStage === 0) {
 			Alert.alert(
 				t("payment.successTitle"),
 				t("payment.stageAlreadyPurchased")
@@ -227,8 +245,9 @@ export default function PaymentScreen() {
 			const orderId = `stage_${stage.id}_${Date.now()}`;
 			const description = getLocalized(stage.title, currentLang);
 
+			// Use dynamic price based on remaining courses
 			const paymentResponse = await createPayment({
-				amount: stage.price || 0,
+				amount: stageRemainingPrice,
 				currency: "BYN",
 				description,
 				orderId,
@@ -238,7 +257,7 @@ export default function PaymentScreen() {
 			navigation.navigate("WebPayScreen", {
 				paymentUrl: paymentResponse.paymentUrl,
 				stageId: stage.id,
-				amount: stage.price || 0,
+				amount: stageRemainingPrice,
 				description,
 			});
 		} catch (err: any) {
@@ -259,17 +278,16 @@ export default function PaymentScreen() {
 			return;
 		}
 
+		if (fullAccessPrice === 0) {
+			Alert.alert(
+				t("payment.successTitle"),
+				t("payment.allCoursesAlreadyPurchased") || "Все курсы уже куплены"
+			);
+			return;
+		}
+
 		try {
 			setCourseLoading(true);
-
-			const allStages = getStages();
-			const allCourses = getAllCourses();
-
-			const totalCoursePrice = allCourses.reduce((sum, course) => sum + (course.price || 0), 0);
-
-			const totalStagePrice = allStages.reduce((sum, stage) => sum + (stage.price || 0), 0);
-
-			const fullAccessPrice = totalCoursePrice || totalStagePrice || 100;
 
 			const orderId = `full_access_${Date.now()}`;
 			const description = t("payment.fullDescription") || "Полный доступ ко всем курсам";
@@ -307,7 +325,7 @@ export default function PaymentScreen() {
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
 				{/* <Text>{user && JSON.stringify(user, null, 2)}</Text> */}
-				{stage && (
+				{stage && unpurchasedCoursesInStage > 0 && (
 					<View style={styles.paymentCard}>
 						<View style={styles.paymentHeader}>
 							<View style={styles.paymentTitleLine}>
@@ -329,14 +347,13 @@ export default function PaymentScreen() {
 							<Text style={styles.stageSubtitleText}>{stageSubtitle}</Text>
 						) : null}
 						<Text style={styles.paymentDescription}>
-							{t("payment.stageDescription", {
-								count: stageCourseCount,
-							})}
+							{t("payment.stageDescriptionRemaining", {
+								count: unpurchasedCoursesInStage,
+								total: stageCourseCount,
+							}) || `${unpurchasedCoursesInStage} из ${stageCourseCount} курсов`}
 						</Text>
 						<Text style={styles.priceLabel}>
-							{t("payment.stagePriceLabel", {
-								price: formatPrice(stage?.price),
-							})}
+							{formatPrice(stageRemainingPrice)}
 						</Text>
 
 						{stagePurchased ? (
@@ -366,9 +383,7 @@ export default function PaymentScreen() {
 											color='#FFFFFF'
 										/>
 										<Text style={styles.paymentButtonText}>
-											{t("payment.stageButton", {
-												price: formatPrice(stage?.price),
-											})}
+											{t("payment.buyStage") || "Купить этап"} ({formatPrice(stageRemainingPrice)})
 										</Text>
 									</>
 								)}
@@ -454,7 +469,7 @@ export default function PaymentScreen() {
 					</View>
 				)}
 
-				{showAllAccess !== false && (
+				{showAllAccess !== false && fullAccessPrice > 0 && (
 					<View style={styles.paymentCard}>
 						<View style={styles.paymentHeader}>
 							<View style={styles.paymentTitleLine}>
@@ -474,10 +489,13 @@ export default function PaymentScreen() {
 						<Text style={styles.paymentDescription}>
 							{t("payment.fullDescription")}
 						</Text>
+						<Text style={styles.priceLabel}>
+							{formatPrice(fullAccessPrice)}
+						</Text>
 
 						<View style={styles.paymentButtonSection}>
 							<TouchableOpacity
-								style={[styles.paymentButton, { backgroundColor: "#F7543E" }]}
+								style={[styles.paymentButton, { backgroundColor: "#10B981" }]}
 								onPress={handleFullAccessPayment}
 							>
 								<Ionicons
@@ -486,7 +504,7 @@ export default function PaymentScreen() {
 									color='#FFFFFF'
 								/>
 								<Text style={styles.paymentButtonText}>
-									{t("payment.fullAccessButton")}
+									{t("payment.buyFullAccess") || "Купить полный доступ"} ({formatPrice(fullAccessPrice)})
 								</Text>
 							</TouchableOpacity>
 						</View>

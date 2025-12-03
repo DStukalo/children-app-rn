@@ -2,7 +2,6 @@
 	"stages": [
 		{
 			"id": 1,
-			"price": 100,
 			"title": {
 				"en": "Start",
 				"ru": "Старт"
