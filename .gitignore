@@ -14,6 +14,9 @@ ios/Podfile.lock
 android/.gradle/
 android/app/build/
 android/build/
+android/local.properties
+android/app/.cxx/
+android/.cxx/
 
 # Expo
 .expo/

@@ -89,6 +89,8 @@ export default {
 		cancel: "Cancel",
 		payment: "Payment & Subscription",
 		login: "Go to Login",
+		fullAccess: "Full access activated",
+		buyMore: "Buy more courses",
 	},
 
 	login: {

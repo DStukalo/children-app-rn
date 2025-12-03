@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
 	View,
 	Text,
@@ -21,6 +21,7 @@ import { AVATAR_OPTIONS } from "../consts/consts";
 import { useTranslation } from "react-i18next";
 import { getStoredUser } from "../utils/purchaseStorage";
 import { fetchCurrentUser, updateCurrentUser } from "../services/userService";
+import { getAllCourses } from "../utils/courseData";
 
 type ProfileScreenNavigationProp = StackNavigationProp<
 	MainStackParamList,
@@ -38,6 +39,16 @@ const ProfileScreen = () => {
 
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language;
+
+	const allCourses = useMemo(() => getAllCourses(), []);
+	const allCourseIds = useMemo(() => allCourses.map(c => c.id), [allCourses]);
+	
+	const purchasedCourseIds = user?.openCategories ?? [];
+	const hasAllCourses = allCourseIds.length > 0 && purchasedCourseIds.length > 0 && allCourseIds.every(id => purchasedCourseIds.includes(id));
+	const hasSomeCourses = purchasedCourseIds.length > 0;
+	const unpurchasedCount = allCourseIds.filter(id => !purchasedCourseIds.includes(id)).length;
+
+	const displayRole = hasAllCourses ? "Premium User" : user?.role;
 
 	const persistUserLocally = async (nextUser: UserData) => {
 		await AsyncStorage.setItem("user_data", JSON.stringify(nextUser));
@@ -131,11 +142,6 @@ const ProfileScreen = () => {
 		);
 	}
 
-	// if (!userEmail) {
-	// 	navigation.navigate("LoginScreen");
-	// 	// return null;
-	// }
-
 	return (
 		<View style={styles.container}>
 			{userEmail ? (
@@ -188,10 +194,9 @@ const ProfileScreen = () => {
 							</View>
 						)}
 
-						<Text style={styles.role}>{user?.role}</Text>
+						<Text style={styles.role}>{displayRole}</Text>
 						<View style={styles.infoContainer}>
 							<Text style={styles.infoText}>📧 {userEmail}</Text>
-							{/* <Text style={styles.infoText}>🆔 {user?.userId}</Text> */}
 						</View>
 					</View>
 				</View>
@@ -212,7 +217,12 @@ const ProfileScreen = () => {
 			)}
 			{userEmail && (
 				<View style={styles.buttonsContainer}>
-					{user?.role !== "Premium User" && (
+					{hasAllCourses ? (
+						<View style={styles.premiumBadge}>
+							<Ionicons name='checkmark-circle' size={24} color='#10B981' />
+							<Text style={styles.premiumText}>{t("profile.fullAccess") || "Full access activated"}</Text>
+						</View>
+					) : (
 						<TouchableOpacity
 							style={styles.button}
 							onPress={() =>
@@ -224,27 +234,14 @@ const ProfileScreen = () => {
 								size={20}
 								color='#fff'
 							/>
-							<Text style={styles.buttonText}>{t("profile.payment")}</Text>
+							<Text style={styles.buttonText}>
+								{hasSomeCourses
+									? `${t("profile.buyMore") || "Buy more"} (${unpurchasedCount})`
+									: t("profile.payment")
+								}
+							</Text>
 						</TouchableOpacity>
 					)}
-
-					{/* <TouchableOpacity style={styles.button}>
-					<Ionicons
-						name='settings-outline'
-						size={20}
-						color='#fff'
-					/>
-					<Text style={styles.buttonText}>Profile Settings</Text>
-				</TouchableOpacity> */}
-
-					{/* <TouchableOpacity style={styles.button}>
-					<Ionicons
-						name='help-circle-outline'
-						size={20}
-						color='#fff'
-					/>
-					<Text style={styles.buttonText}>Support</Text>
-				</TouchableOpacity> */}
 
 					<TouchableOpacity
 						style={[styles.button, styles.logoutButton]}
@@ -409,6 +406,23 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "#FFFFFF",
+		fontSize: 16,
+		fontWeight: "bold",
+	},
+	premiumBadge: {
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "center",
+		backgroundColor: "#D1FAE5",
+		padding: 15,
+		borderRadius: 10,
+		marginBottom: 10,
+		gap: 8,
+		borderWidth: 1,
+		borderColor: "#10B981",
+	},
+	premiumText: {
+		color: "#065F46",
 		fontSize: 16,
 		fontWeight: "bold",
 	},
