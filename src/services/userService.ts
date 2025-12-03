@@ -83,10 +83,10 @@ export const updateCurrentUser = (updates: UserUpdatePayload) => {
 		payload.avatar = updates.avatar;
 	}
 	if (updates.openCategories !== undefined) {
-		payload.open_categories = updates.openCategories;
+		payload.openCategories = updates.openCategories;
 	}
 	if (updates.purchasedStages !== undefined) {
-		payload.purchased_stages = updates.purchasedStages;
+		payload.purchasedStages = updates.purchasedStages;
 	}
 
 	return requestUser("PATCH", payload);

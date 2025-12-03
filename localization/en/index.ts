@@ -10,12 +10,12 @@ export default {
 		methodicSectionTitle: "These techniques will help you",
 		methodicSectionBlock1:
 			"Are you concerned that your child does not communicate much with peers, is overly tearful, and sensitive?",
-		methodicSectionBlock2:
-			"A non-verbal child aged 1.5–12 years old with a “bunch of diagnoses,” but it is still unclear when the child will start talking and what to do to achieve this;",
+	methodicSectionBlock2:
+		"A non-verbal child aged 1.5–12 years old with a \"bunch of diagnoses,\" but it is still unclear when the child will start talking and what to do to achieve this;",
 		methodicSectionBlock3:
 			"A child aged between 2 and 18 years old has behavioral disorders: tantrums, masturbation, aggression and self-aggression, poor hygiene and self-care skills, and picky eating habits.",
-		methodicSectionBlock4:
-			"Child aged 1-4 years old. Something is bothering you, but everyone advises you to “relax,” and you still feel uneasy because your child is not responding to you properly and hardly looks you in the eye.",
+	methodicSectionBlock4:
+		"Child aged 1-4 years old. Something is bothering you, but everyone advises you to \"relax,\" and you still feel uneasy because your child is not responding to you properly and hardly looks you in the eye.",
 		methodicSectionBlock5:
 			"A child with any developmental disorder. You are not interested in the diagnosis, but you are concerned about why there is no positive progress in their development. You notice that your child selectively understands everyday instructions and tends to guess what you want from them.",
 	},
@@ -33,14 +33,14 @@ export default {
 		viewCourse: "View course",
 		noImage: "Preview unavailable",
 		notFound: "Stage not found",
-		stagePriceLabel: "Stage price: ${{price}}",
+		stagePriceLabel: "Stage price: {{price}}",
 		stageProgress: "{{purchased}} of {{total}} purchased",
-		buyStageButton: "Buy stage for ${{price}}",
+		buyStageButton: "Buy stage for {{price}}",
 		stagePurchasedLabel: "Stage already purchased",
-		coursePriceLabel: "Course price: ${{price}}",
+		coursePriceLabel: "Course price: {{price}}",
 		coursePurchasedLabel: "Purchased",
 		courseLockedLabel: "Not purchased",
-		courseBuyButton: "Buy course (${{price}})",
+		courseBuyButton: "Buy course ({{price}})",
 	},
 	course: {
 		lessons: "Lessons",
@@ -56,30 +56,42 @@ export default {
 	},
 	payment: {
 		title: "Purchase Access",
+		paymentTitle: "Payment",
+		loading: "Loading...",
 		categoryTitle: "Category Access:",
 		categoryDescription:
 			"Pay only for the selected category. Perfect if you are interested in a specific topic.",
 		categoryButton: "Pay for category",
-		categoryButtonWithPrice: "Buy course for ${{price}}",
+		categoryButtonWithPrice: "Buy course for {{price}}",
 		fullTitle: "Full Access",
 		fullDescription:
 			"Get full access to all courses and videos. Cheaper than paying for each category separately.",
 		fullAccessButton: "Buy full access",
 		stageCardTitle: "Stage Access",
 		stageDescription: "Unlock every course in this stage ({{count}} courses).",
-		stagePriceLabel: "Stage price: ${{price}}",
-		stageButton: "Buy stage for ${{price}}",
-		coursePriceLabel: "Course price: ${{price}}",
+		stageDescriptionRemaining: "{{count}} of {{total}} courses",
+		stagePriceLabel: "Stage price: {{price}}",
+		stageButton: "Buy stage for {{price}}",
+		buyStage: "Buy stage",
+		coursePriceLabel: "Course price: {{price}}",
 		successTitle: "Success",
 		courseAlreadyPurchased: "You already own this course.",
 		stageAlreadyPurchased: "Stage already unlocked.",
+		allCoursesAlreadyPurchased: "All courses already purchased",
+		buyFullAccess: "Buy full access",
+		purchaseSuccess: "Payment processed successfully",
+		paymentFailed: "Payment was not processed",
+		confirmClose: "Close payment?",
+		confirmCloseMessage: "Payment is not completed yet. Are you sure you want to close?",
+		cancel: "Cancel",
+		close: "Close",
 		coursePurchaseSuccess: "Course successfully unlocked.",
 		stagePurchaseSuccess: "Stage successfully unlocked.",
 		errorTitle: "Something went wrong",
 		errorGeneric: "Unable to complete the purchase. Please try again.",
 		prerequisiteTitle: "Previous course required",
 		prerequisiteDescription:
-			"Please purchase “{{course}}” before buying this course.",
+			"Please purchase \"{{course}}\" before buying this course.",
 	},
 
 	profile: {

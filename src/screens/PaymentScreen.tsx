@@ -38,6 +38,7 @@ import {
 } from "../utils/purchaseStorage";
 import { formatPrice, calculateRemainingStagePrice, calculateFullAccessPrice } from "../utils/price";
 import { createPayment } from "../utils/api";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 type PaymentScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -214,7 +215,28 @@ export default function PaymentScreen() {
 				err.response?.data?.message ||
 				err.message ||
 				t("payment.errorGeneric");
-			Alert.alert(t("payment.errorTitle"), errorMessage);
+			
+			// If token is invalid, redirect to login
+			if (errorMessage.includes("Invalid token") || 
+			    errorMessage.includes("token") ||
+			    err.response?.status === 401) {
+				Alert.alert(
+					t("payment.errorTitle"),
+					"Your session has expired. Please log in again.",
+					[
+						{
+							text: "OK",
+							onPress: () => {
+								AsyncStorage.removeItem("auth_token");
+								AsyncStorage.removeItem("user_email");
+								navigation.navigate("LoginScreen");
+							},
+						},
+					]
+				);
+			} else {
+				Alert.alert(t("payment.errorTitle"), errorMessage);
+			}
 		} finally {
 			setCourseLoading(false);
 		}
@@ -266,7 +288,28 @@ export default function PaymentScreen() {
 				err.response?.data?.message ||
 				err.message ||
 				t("payment.errorGeneric");
-			Alert.alert(t("payment.errorTitle"), errorMessage);
+			
+			// If token is invalid, redirect to login
+			if (errorMessage.includes("Invalid token") || 
+			    errorMessage.includes("token") ||
+			    err.response?.status === 401) {
+				Alert.alert(
+					t("payment.errorTitle"),
+					"Your session has expired. Please log in again.",
+					[
+						{
+							text: "OK",
+							onPress: () => {
+								AsyncStorage.removeItem("auth_token");
+								AsyncStorage.removeItem("user_email");
+								navigation.navigate("LoginScreen");
+							},
+						},
+					]
+				);
+			} else {
+				Alert.alert(t("payment.errorTitle"), errorMessage);
+			}
 		} finally {
 			setStageLoading(false);
 		}
@@ -281,7 +324,7 @@ export default function PaymentScreen() {
 		if (fullAccessPrice === 0) {
 			Alert.alert(
 				t("payment.successTitle"),
-				t("payment.allCoursesAlreadyPurchased") || "Все курсы уже куплены"
+				t("payment.allCoursesAlreadyPurchased")
 			);
 			return;
 		}
@@ -290,7 +333,7 @@ export default function PaymentScreen() {
 			setCourseLoading(true);
 
 			const orderId = `full_access_${Date.now()}`;
-			const description = t("payment.fullDescription") || "Полный доступ ко всем курсам";
+			const description = t("payment.fullDescription");
 
 			const paymentResponse = await createPayment({
 				amount: fullAccessPrice,
@@ -311,7 +354,28 @@ export default function PaymentScreen() {
 				err.response?.data?.message ||
 				err.message ||
 				t("payment.errorGeneric");
-			Alert.alert(t("payment.errorTitle"), errorMessage);
+			
+			// If token is invalid, redirect to login
+			if (errorMessage.includes("Invalid token") || 
+			    errorMessage.includes("token") ||
+			    err.response?.status === 401) {
+				Alert.alert(
+					t("payment.errorTitle"),
+					"Your session has expired. Please log in again.",
+					[
+						{
+							text: "OK",
+							onPress: () => {
+								AsyncStorage.removeItem("auth_token");
+								AsyncStorage.removeItem("user_email");
+								navigation.navigate("LoginScreen");
+							},
+						},
+					]
+				);
+			} else {
+				Alert.alert(t("payment.errorTitle"), errorMessage);
+			}
 		} finally {
 			setCourseLoading(false);
 		}
@@ -383,7 +447,7 @@ export default function PaymentScreen() {
 											color='#FFFFFF'
 										/>
 										<Text style={styles.paymentButtonText}>
-											{t("payment.buyStage") || "Купить этап"} ({formatPrice(stageRemainingPrice)})
+											{t("payment.buyStage")} ({formatPrice(stageRemainingPrice)})
 										</Text>
 									</>
 								)}
@@ -504,7 +568,7 @@ export default function PaymentScreen() {
 									color='#FFFFFF'
 								/>
 								<Text style={styles.paymentButtonText}>
-									{t("payment.buyFullAccess") || "Купить полный доступ"} ({formatPrice(fullAccessPrice)})
+										{t("payment.buyFullAccess")} ({formatPrice(fullAccessPrice)})
 								</Text>
 							</TouchableOpacity>
 						</View>

@@ -82,8 +82,21 @@ const ProfileScreen = () => {
 			// Then sync with server to get latest data
 			const token = await AsyncStorage.getItem("auth_token");
 			if (token) {
-				const serverUser = await fetchCurrentUser();
-				await persistUserLocally(serverUser);
+				try {
+					const serverUser = await fetchCurrentUser();
+					await persistUserLocally(serverUser);
+				} catch (serverErr: any) {
+					// If token is invalid, clear it and force re-login
+					if (serverErr?.message?.includes("Invalid token") || 
+					    serverErr?.message?.includes("token")) {
+						console.log("Token expired, clearing auth data");
+						await AsyncStorage.removeItem("auth_token");
+						await AsyncStorage.removeItem("user_email");
+						// Keep local data but don't crash
+					} else {
+						console.error("Failed to sync with server:", serverErr);
+					}
+				}
 			}
 		} catch (err) {
 			console.error("Failed to load user data:", err);

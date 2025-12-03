@@ -23,7 +23,7 @@ import {
 	isStagePurchased,
 	UserWithPurchases,
 } from "../utils/purchaseStorage";
-import { formatPrice } from "../utils/price";
+import { formatPrice, calculateRemainingStagePrice } from "../utils/price";
 
 export default function StageScreen() {
 	const route = useRoute<RouteProp<MainStackParamList, "StageScreen">>();
@@ -106,6 +106,7 @@ export default function StageScreen() {
 		stage.subtitle.ru ||
 		stage.subtitle.en;
 
+	const purchasedCourseIds = user?.openCategories ?? [];
 	const stagePurchased =
 		stage && user ? isStagePurchased(user, stage.id) : false;
 	const totalCourses = stage.courses.length;
@@ -114,6 +115,10 @@ export default function StageScreen() {
 			? stage.courses.filter((course) => isCoursePurchased(user, course.id))
 					.length
 			: 0;
+	
+	// Calculate dynamic stage price based on remaining courses
+	const stagePrice = calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
+	const allCoursesPurchased = purchasedCourses === totalCourses;
 
 	return (
 		<SafeAreaView style={styles.container}>
@@ -128,7 +133,7 @@ export default function StageScreen() {
 					<View style={styles.stageMetaRow}>
 						<Text style={styles.stageMetaText}>
 							{t("stageScreen.stagePriceLabel", {
-								price: formatPrice(stage.price),
+								price: formatPrice(stagePrice),
 							})}
 						</Text>
 						<Text style={styles.stageMetaText}>
@@ -139,22 +144,24 @@ export default function StageScreen() {
 						</Text>
 					</View>
 
-					<TouchableOpacity
-						style={[
-							styles.stagePurchaseButton,
-							stagePurchased && styles.disabledButton,
-						]}
-						onPress={handleStagePurchase}
-						disabled={stagePurchased}
-					>
-						<Text style={styles.stagePurchaseButtonText}>
-							{stagePurchased
-								? t("stageScreen.stagePurchasedLabel")
-								: t("stageScreen.buyStageButton", {
-										price: formatPrice(stage.price),
-								  })}
-						</Text>
-					</TouchableOpacity>
+					{!allCoursesPurchased && (
+						<TouchableOpacity
+							style={[
+								styles.stagePurchaseButton,
+								stagePurchased && styles.disabledButton,
+							]}
+							onPress={handleStagePurchase}
+							disabled={stagePurchased}
+						>
+							<Text style={styles.stagePurchaseButtonText}>
+								{stagePurchased
+									? t("stageScreen.stagePurchasedLabel")
+									: t("stageScreen.buyStageButton", {
+											price: formatPrice(stagePrice),
+									  })}
+							</Text>
+						</TouchableOpacity>
+					)}
 				</View>
 
 				<Text style={styles.sectionTitle}>{t("stageScreen.coursesTitle")}</Text>
