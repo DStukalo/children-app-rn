@@ -30,6 +30,10 @@ const persistUser = async (user: UserWithPurchases) => {
 	await AsyncStorage.setItem(USER_DATA_KEY, JSON.stringify(user));
 };
 
+export const persistUserLocally = async (user: UserWithPurchases) => {
+	await AsyncStorage.setItem(USER_DATA_KEY, JSON.stringify(user));
+};
+
 export const getStoredUser = async (): Promise<UserWithPurchases | null> => {
 	const jsonValue = await AsyncStorage.getItem(USER_DATA_KEY);
 	if (!jsonValue) {

@@ -19,7 +19,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { UserData } from "../types/types";
 import { AVATAR_OPTIONS } from "../consts/consts";
 import { useTranslation } from "react-i18next";
-import { getStoredUser } from "../utils/purchaseStorage";
+import { getStoredUser, persistUserLocally } from "../utils/purchaseStorage";
 import { fetchCurrentUser, updateCurrentUser } from "../services/userService";
 import { getAllCourses } from "../utils/courseData";
 
@@ -50,8 +50,8 @@ const ProfileScreen = () => {
 
 	const displayRole = hasAllCourses ? "Premium User" : user?.role;
 
-	const persistUserLocally = async (nextUser: UserData) => {
-		await AsyncStorage.setItem("user_data", JSON.stringify(nextUser));
+	const saveUserLocally = async (nextUser: UserData) => {
+		await persistUserLocally(nextUser);
 		setUser(nextUser);
 	};
 
@@ -84,7 +84,7 @@ const ProfileScreen = () => {
 			if (token) {
 				try {
 					const serverUser = await fetchCurrentUser();
-					await persistUserLocally(serverUser);
+					await saveUserLocally(serverUser);
 				} catch (serverErr: any) {
 					// If token is invalid, clear it and force re-login
 					if (serverErr?.message?.includes("Invalid token") || 
@@ -125,17 +125,17 @@ const ProfileScreen = () => {
 				avatar: updatedUser.avatar,
 				openCategories: updatedUser.openCategories,
 				purchasedStages: updatedUser.purchasedStages,
-			});
-			console.log("User updated successfully:", syncedUser);
-			await persistUserLocally(syncedUser);
-		} catch (err) {
-			console.error("Failed to update user on server:", err);
-			try {
-				await persistUserLocally(updatedUser);
-			} catch (storageError) {
-				console.error("Failed to save user data locally:", storageError);
-			}
+		});
+		console.log("User updated successfully:", syncedUser);
+		await saveUserLocally(syncedUser);
+	} catch (err) {
+		console.error("Failed to update user on server:", err);
+		try {
+			await saveUserLocally(updatedUser);
+		} catch (storageError) {
+			console.error("Failed to save user data locally:", storageError);
 		}
+	}
 	};
 
 	const handleSaveName = async () => {

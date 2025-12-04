@@ -15,9 +15,9 @@ import { MainStackParamList } from "../navigation/types";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useTranslation } from "react-i18next";
 import { API_BASE_URL } from "../consts/consts";
-import { getStoredUser, markCoursePurchased, markStagePurchased } from "../utils/purchaseStorage";
+import { getStoredUser, persistUserLocally } from "../utils/purchaseStorage";
 import { getStages, getAllCourses } from "../utils/courseData";
-import { updateCurrentUser } from "../services/userService";
+import { updateCurrentUser, fetchCurrentUser } from "../services/userService";
 
 type WebPayScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -92,20 +92,17 @@ export default function WebPayScreen() {
 							newOpenCategories.push(cId);
 						}
 					}
-					await markStagePurchased(stage.id, courseIds);
 				}
-				console.log("[WebPayScreen] Full access marked successfully");
+				console.log("[WebPayScreen] Full access prepared");
 			} else {
 				if (courseId) {
-					console.log(`[WebPayScreen] Marking course ${courseId} as purchased`);
+					console.log(`[WebPayScreen] Adding course ${courseId} to purchase`);
 					if (!newOpenCategories.includes(courseId)) {
 						newOpenCategories.push(courseId);
 					}
-					await markCoursePurchased(courseId);
-					console.log("[WebPayScreen] Course marked successfully");
 				}
 				if (stageId) {
-					console.log(`[WebPayScreen] Marking stage ${stageId} as purchased`);
+					console.log(`[WebPayScreen] Adding stage ${stageId} to purchase`);
 					const allStages = getStages();
 					const stage = allStages.find(s => s.id === stageId);
 					if (stage) {
@@ -120,27 +117,25 @@ export default function WebPayScreen() {
 								newOpenCategories.push(cId);
 							}
 						}
-						await markStagePurchased(stageId, courseIds);
-						console.log("[WebPayScreen] Stage marked successfully");
 					}
 				}
 			}
 
-			// Sync with server
-			try {
-				console.log("[WebPayScreen] Syncing with server...");
-				console.log("[WebPayScreen] openCategories:", newOpenCategories);
-				console.log("[WebPayScreen] purchasedStages:", newPurchasedStages);
-				
-				await updateCurrentUser({
-					openCategories: newOpenCategories,
-					purchasedStages: newPurchasedStages,
-				});
-				console.log("[WebPayScreen] Server sync successful");
-			} catch (syncError) {
-				console.error("[WebPayScreen] Server sync failed:", syncError);
-				// Don't fail the whole operation - local storage is updated
-			}
+			// Sync with server (PRIMARY SOURCE OF TRUTH)
+			console.log("[WebPayScreen] Syncing with server...");
+			console.log("[WebPayScreen] openCategories:", newOpenCategories);
+			console.log("[WebPayScreen] purchasedStages:", newPurchasedStages);
+			
+			await updateCurrentUser({
+				openCategories: newOpenCategories,
+				purchasedStages: newPurchasedStages,
+			});
+			console.log("[WebPayScreen] Server sync successful");
+			
+			// Fetch fresh data from server and cache locally
+			const freshUser = await fetchCurrentUser();
+			await persistUserLocally(freshUser);
+			console.log("[WebPayScreen] Local cache updated with server data");
 
 			Alert.alert(
 				t("payment.successTitle") || "Успешно",

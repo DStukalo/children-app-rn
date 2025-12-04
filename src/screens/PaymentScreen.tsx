@@ -39,6 +39,8 @@ import {
 import { formatPrice, calculateRemainingStagePrice, calculateFullAccessPrice } from "../utils/price";
 import { createPayment } from "../utils/api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { fetchCurrentUser } from "../services/userService";
+import { persistUserLocally } from "../utils/purchaseStorage";
 
 type PaymentScreenNavigationProp = NativeStackNavigationProp<
 	MainStackParamList,
@@ -103,9 +105,29 @@ export default function PaymentScreen() {
 			let isActive = true;
 
 			const loadUser = async () => {
-				const storedUser = await getStoredUser();
-				if (isActive) {
-					setUser(storedUser);
+				try {
+					// First try to load from server
+					const token = await AsyncStorage.getItem("auth_token");
+					if (token) {
+						try {
+							const serverUser = await fetchCurrentUser();
+							if (isActive) {
+								setUser(serverUser);
+								await persistUserLocally(serverUser);
+							}
+							return;
+						} catch (serverErr) {
+							console.error("Failed to load from server:", serverErr);
+						}
+					}
+					
+					// Fallback to local storage
+					const storedUser = await getStoredUser();
+					if (isActive) {
+						setUser(storedUser);
+					}
+				} catch (err) {
+					console.error("Failed to load user:", err);
 				}
 			};
 

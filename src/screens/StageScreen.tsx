@@ -22,8 +22,11 @@ import {
 	isCoursePurchased,
 	isStagePurchased,
 	UserWithPurchases,
+	persistUserLocally,
 } from "../utils/purchaseStorage";
 import { formatPrice, calculateRemainingStagePrice } from "../utils/price";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { fetchCurrentUser } from "../services/userService";
 
 export default function StageScreen() {
 	const route = useRoute<RouteProp<MainStackParamList, "StageScreen">>();
@@ -43,9 +46,29 @@ export default function StageScreen() {
 			let isActive = true;
 
 			const loadUser = async () => {
-				const storedUser = await getStoredUser();
-				if (isActive) {
-					setUser(storedUser);
+				try {
+					// First try to load from server
+					const token = await AsyncStorage.getItem("auth_token");
+					if (token) {
+						try {
+							const serverUser = await fetchCurrentUser();
+							if (isActive) {
+								setUser(serverUser);
+								await persistUserLocally(serverUser);
+							}
+							return;
+						} catch (serverErr) {
+							console.error("Failed to load from server:", serverErr);
+						}
+					}
+					
+					// Fallback to local storage
+					const storedUser = await getStoredUser();
+					if (isActive) {
+						setUser(storedUser);
+					}
+				} catch (err) {
+					console.error("Failed to load user:", err);
 				}
 			};
 
