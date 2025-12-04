@@ -92,7 +92,8 @@ const ProfileScreen = () => {
 						console.log("Token expired, clearing auth data");
 						await AsyncStorage.removeItem("auth_token");
 						await AsyncStorage.removeItem("user_email");
-						// Keep local data but don't crash
+						await AsyncStorage.removeItem("user_data");
+						setUser(null);
 					} else {
 						console.error("Failed to sync with server:", serverErr);
 					}

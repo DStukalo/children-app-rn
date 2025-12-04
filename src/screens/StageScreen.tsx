@@ -47,28 +47,36 @@ export default function StageScreen() {
 
 			const loadUser = async () => {
 				try {
-					// First try to load from server
+					// First check if user is authenticated
 					const token = await AsyncStorage.getItem("auth_token");
-					if (token) {
-						try {
-							const serverUser = await fetchCurrentUser();
-							if (isActive) {
-								setUser(serverUser);
-								await persistUserLocally(serverUser);
-							}
-							return;
-						} catch (serverErr) {
-							console.error("Failed to load from server:", serverErr);
+					if (!token) {
+						// No token - clear user data
+						if (isActive) {
+							setUser(null);
 						}
+						return;
 					}
 					
-					// Fallback to local storage
-					const storedUser = await getStoredUser();
-					if (isActive) {
-						setUser(storedUser);
+					// Try to load from server
+					try {
+						const serverUser = await fetchCurrentUser();
+						if (isActive) {
+							setUser(serverUser);
+							await persistUserLocally(serverUser);
+						}
+					} catch (serverErr) {
+						console.error("Failed to load from server:", serverErr);
+						// If server fails, try local cache as fallback
+						const storedUser = await getStoredUser();
+						if (isActive) {
+							setUser(storedUser);
+						}
 					}
 				} catch (err) {
 					console.error("Failed to load user:", err);
+					if (isActive) {
+						setUser(null);
+					}
 				}
 			};
 

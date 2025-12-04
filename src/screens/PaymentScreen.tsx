@@ -106,28 +106,36 @@ export default function PaymentScreen() {
 
 			const loadUser = async () => {
 				try {
-					// First try to load from server
+					// First check if user is authenticated
 					const token = await AsyncStorage.getItem("auth_token");
-					if (token) {
-						try {
-							const serverUser = await fetchCurrentUser();
-							if (isActive) {
-								setUser(serverUser);
-								await persistUserLocally(serverUser);
-							}
-							return;
-						} catch (serverErr) {
-							console.error("Failed to load from server:", serverErr);
+					if (!token) {
+						// No token - clear user data
+						if (isActive) {
+							setUser(null);
 						}
+						return;
 					}
 					
-					// Fallback to local storage
-					const storedUser = await getStoredUser();
-					if (isActive) {
-						setUser(storedUser);
+					// Try to load from server
+					try {
+						const serverUser = await fetchCurrentUser();
+						if (isActive) {
+							setUser(serverUser);
+							await persistUserLocally(serverUser);
+						}
+					} catch (serverErr) {
+						console.error("Failed to load from server:", serverErr);
+						// If server fails, try local cache as fallback
+						const storedUser = await getStoredUser();
+						if (isActive) {
+							setUser(storedUser);
+						}
 					}
 				} catch (err) {
 					console.error("Failed to load user:", err);
+					if (isActive) {
+						setUser(null);
+					}
 				}
 			};
 
@@ -246,14 +254,15 @@ export default function PaymentScreen() {
 					t("payment.errorTitle"),
 					"Your session has expired. Please log in again.",
 					[
-						{
-							text: "OK",
-							onPress: () => {
-								AsyncStorage.removeItem("auth_token");
-								AsyncStorage.removeItem("user_email");
-								navigation.navigate("LoginScreen");
-							},
+					{
+						text: "OK",
+						onPress: async () => {
+							await AsyncStorage.removeItem("auth_token");
+							await AsyncStorage.removeItem("user_email");
+							await AsyncStorage.removeItem("user_data");
+							navigation.navigate("LoginScreen");
 						},
+					},
 					]
 				);
 			} else {
@@ -319,14 +328,15 @@ export default function PaymentScreen() {
 					t("payment.errorTitle"),
 					"Your session has expired. Please log in again.",
 					[
-						{
-							text: "OK",
-							onPress: () => {
-								AsyncStorage.removeItem("auth_token");
-								AsyncStorage.removeItem("user_email");
-								navigation.navigate("LoginScreen");
-							},
+					{
+						text: "OK",
+						onPress: async () => {
+							await AsyncStorage.removeItem("auth_token");
+							await AsyncStorage.removeItem("user_email");
+							await AsyncStorage.removeItem("user_data");
+							navigation.navigate("LoginScreen");
 						},
+					},
 					]
 				);
 			} else {
@@ -385,14 +395,15 @@ export default function PaymentScreen() {
 					t("payment.errorTitle"),
 					"Your session has expired. Please log in again.",
 					[
-						{
-							text: "OK",
-							onPress: () => {
-								AsyncStorage.removeItem("auth_token");
-								AsyncStorage.removeItem("user_email");
-								navigation.navigate("LoginScreen");
-							},
+					{
+						text: "OK",
+						onPress: async () => {
+							await AsyncStorage.removeItem("auth_token");
+							await AsyncStorage.removeItem("user_email");
+							await AsyncStorage.removeItem("user_data");
+							navigation.navigate("LoginScreen");
 						},
+					},
 					]
 				);
 			} else {
