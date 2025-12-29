@@ -121,6 +121,9 @@ export default {
 
 	registration: {
 		title: "Registration",
+		error: "Error",
+		name: "Name",
+		surname: "Surname",
 		email: "Email",
 		password: "Password",
 		button: "Registration",

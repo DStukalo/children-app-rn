@@ -77,8 +77,14 @@ export const loginUser = (email: string, password: string) => {
 	return sendAuthRequest(LOGIN_PATH, { email, password });
 };
 
-export const registerUser = (email: string, password: string) => {
-	return sendAuthRequest(REGISTER_PATH, { email, password });
+export const registerUser = (
+	email: string,
+	password: string,
+	name: string,
+	surname: string
+) => {
+	const userName = [name, surname].map((value) => value.trim()).join(" ").trim();
+	return sendAuthRequest(REGISTER_PATH, { email, password, userName });
 };
 
 export { AUTH_BASE_URL, LOGIN_PATH, REGISTER_PATH, normalizeUser };

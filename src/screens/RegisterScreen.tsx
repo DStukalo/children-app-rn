@@ -24,6 +24,8 @@ export default function RegisterScreen() {
 	const route = useRoute<Route>();
 	const { redirectTo, courseId, stageId, showAllAccess } = route.params || {};
 
+	const [name, setName] = useState("");
+	const [surname, setSurname] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [loading, setLoading] = useState(false);
@@ -38,19 +40,26 @@ export default function RegisterScreen() {
 	}, [currentLanguage]);
 
 	const handleRegister = async () => {
-		if (!email.trim() || !password.trim()) {
-			return Alert.alert("Error", "Please fill in all fields");
+		if (!name.trim() || !surname.trim() || !email.trim() || !password.trim()) {
+			return Alert.alert(
+				t("registration.error"),
+				t("registration.emptyFields")
+			);
 		}
 
 		try {
 			setLoading(true);
 
+			const trimmedName = name.trim();
+			const trimmedSurname = surname.trim();
 			const trimmedEmail = email.trim();
 			const trimmedPassword = password.trim();
 
 			const { token, user } = await registerUser(
 				trimmedEmail,
-				trimmedPassword
+				trimmedPassword,
+				trimmedName,
+				trimmedSurname
 			);
 
 			await AsyncStorage.multiSet([
@@ -103,7 +112,25 @@ export default function RegisterScreen() {
 		<View style={styles.container}>
 			<TextInput
 				style={styles.input}
-				placeholder='Email'
+				placeholder={t("registration.name")}
+				placeholderTextColor='#aaa'
+				autoCapitalize='words'
+				value={name}
+				onChangeText={setName}
+			/>
+
+			<TextInput
+				style={styles.input}
+				placeholder={t("registration.surname")}
+				placeholderTextColor='#aaa'
+				autoCapitalize='words'
+				value={surname}
+				onChangeText={setSurname}
+			/>
+
+			<TextInput
+				style={styles.input}
+				placeholder={t("registration.email")}
 				placeholderTextColor='#aaa'
 				keyboardType='email-address'
 				autoCapitalize='none'
@@ -113,7 +140,7 @@ export default function RegisterScreen() {
 
 			<TextInput
 				style={styles.input}
-				placeholder='Password'
+				placeholder={t("registration.password")}
 				placeholderTextColor='#aaa'
 				secureTextEntry
 				value={password}

@@ -122,6 +122,9 @@ export default {
 
 	registration: {
 		title: "Регистрация",
+		error: "Ошибка",
+		name: "Имя",
+		surname: "Фамилия",
 		email: "Email",
 		password: "Пароль",
 		button: "Регистрация",
