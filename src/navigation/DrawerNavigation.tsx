@@ -42,9 +42,6 @@ export function CustomDrawerContent(props: any) {
 				labelStyle={styles.drawerTitle}
 			/>
 			<View style={styles.divider} />
-			<View style={styles.drawerHeader}>
-				<Text style={styles.drawerTitle}>{t("drawerNav.sections")}</Text>
-			</View>
 			<View style={styles.stagesContainer}>
 				{sectionIds.map((sectionId) => (
 					<DrawerItem
