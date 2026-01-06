@@ -1,4 +1,5 @@
 import rawData from "../../data/data.json";
+import type { SectionId } from "../navigation/types";
 
 export type LocalizedString = {
 	en: string;
@@ -51,16 +52,39 @@ export type Course = {
 	details: CourseDetails;
 };
 
+export type StageSubsection = {
+	id: string;
+	title: LocalizedString;
+	subsections?: StageSubsection[];
+	items?: Array<{
+		id: string;
+		title: LocalizedString;
+	}>;
+};
+
 export type Stage = {
 	id: number;
 	price?: number;
 	title: LocalizedString;
 	subtitle: LocalizedString;
 	courses: Course[];
+	sectionId?: SectionId;
+	subsections?: StageSubsection[];
 };
 
 type StageData = {
 	stages: Stage[];
+};
+
+type Section = {
+	id: SectionId;
+	title: LocalizedString;
+	courses?: Course[];
+	subsections?: StageSubsection[];
+};
+
+type SectionsData = {
+	sections: Section[];
 };
 
 export type CourseWithStage = Course & {
@@ -69,8 +93,21 @@ export type CourseWithStage = Course & {
 	stageSubtitle: LocalizedString;
 };
 
-const stageData = rawData as StageData;
-const stages: Stage[] = stageData.stages ?? [];
+const data = rawData as Partial<StageData & SectionsData>;
+const stagesFromStages: Stage[] = data.stages ?? [];
+const sections: Section[] = data.sections ?? [];
+
+const stages: Stage[] =
+	stagesFromStages.length > 0
+		? stagesFromStages
+		: sections.map((section, index) => ({
+				id: index + 1,
+				title: section.title,
+				subtitle: { en: "", ru: "" },
+				courses: section.courses ?? [],
+				sectionId: section.id,
+				subsections: section.subsections ?? [],
+		  }));
 
 const coursesCache: CourseWithStage[] = stages.flatMap((stage) =>
 	stage.courses.map((course) => ({

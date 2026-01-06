@@ -1,937 +1,12 @@
 {
-	"stages": [
+	"sections": [
 		{
-			"id": 1,
+			"id": "rhythmSchemes",
 			"title": {
-				"en": "Start",
-				"ru": "Старт"
-			},
-			"subtitle": {
-				"en": "Start",
-				"ru": "Старт"
+				"ru": "Ритмосхемы",
+				"en": "Rhythm schemes"
 			},
 			"courses": [
-				{
-					"id": 1,
-					"title": {
-						"en": "Basic Skills АВА",
-						"ru": "Базовые Навыки АВА" 
-					},
-					"subtitle": {
-						"en": "Block 1. Basic Skills",
-						"ru": "Блок 1. Базовые Навыки"
-					},
-					"image": "https://i.ibb.co/JwqtTfC7/block-1.jpg",
-					"isCompleted": false,
-					"price": 10,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [
-							{
-								"lessonId": 1,
-								"title": {
-									"en": "About me",
-									"ru": "О себе"
-								},
-								"video": {
-									"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/_%EF%B8%8F%E2%83%A3%20%D1%81%D0%B5%D0%B1%D0%B5.mp4",
-									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/_%EF%B8%8F%E2%83%A3%20%D1%81%D0%B5%D0%B1%D0%B5.mp4"
-								},
-								"materials": {
-									"en": [
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
-									],
-									"ru": [
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
-										"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
-									]
-								},
-								"access": "free"
-							},
-							{
-								"lessonId": 2,
-								"title": {
-									"en": "The author's professional path",
-									"ru": "Профессиональный путь автора"
-								},
-								"video": {
-									"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%E2%9C%8D%EF%B8%8F%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BF%D1%83%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0.mp4",
-									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%E2%9C%8D%EF%B8%8F%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BF%D1%83%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0.mp4"
-								},
-								"access": "free"
-							},
-							{
-								"lessonId": 3,
-								"title": {
-									"en": "What is ABA?",
-									"ru": "Что такое АВА?"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "free"
-							},
-							{
-								"lessonId": 4,
-								"title": {
-									"en": "Author's method of Olga Filistovich",
-									"ru": "Авторская методика Ольги Филистович"
-								},
-								"video": {
-									"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/2.%20%F0%9F%93%9A%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8%20%D0%A4%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B8%D1%87.mp4",
-									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/2.%20%F0%9F%93%9A%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8%20%D0%A4%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B8%D1%87.mp4"
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 5,
-								"title": {
-									"en": "Preparing for ABA therapy",
-									"ru": "Подготовка к АВА-терапии"
-								},
-								"video": {
-									"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/3.%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%20%D0%90%D0%92%D0%90-%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D0%B8.mp4",
-									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/3.%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%20%D0%90%D0%92%D0%90-%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D0%B8.mp4"
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 6,
-								"title": {
-									"en": "Preparing the environment",
-									"ru": "Подготовка среды"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 7,
-								"title": {
-									"en": "Intervention",
-									"ru": "Вмешательство"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 8,
-								"title": {
-									"en": "Significant incentives",
-									"ru": "Значимые стимулы"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 9,
-								"title": {
-									"en": "Motivators",
-									"ru": "Мотиваторы"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 10,
-								"title": {
-									"en": "Alternative communication system",
-									"ru": "Альтернативная система коммуникации"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 11,
-								"title": {
-									"en": "Eye contact",
-									"ru": "Зрительный контакт"
-								},
-								"video": {
-									"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/9.%20%D0%97%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.mp4",
-									"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/9.%20%D0%97%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.mp4"
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 12,
-								"title": {
-									"en": "Token system",
-									"ru": "Система жетонов"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 13,
-								"title": {
-									"en": "What are rhythm patterns?",
-									"ru": "Что такое Аверсивный стимул"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 14,
-								"title": {
-									"en": "Application of an aversive stimulus",
-									"ru": "Применение аверсивного стимула"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 15,
-								"title": {
-									"en": "Aversive Stimulus and Speech Triggering",
-									"ru": "Аверсивный стимул и Запуск речи"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 16,
-								"title": {
-									"en": "Seat at the table",
-									"ru": "Усадить за стол"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 17,
-								"title": {
-									"en": "Gymnastics",
-									"ru": "Гимнастика"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 18,
-								"title": {
-									"en": "First and then",
-									"ru": "Сначала-потом"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 19,
-								"title": {
-									"en": "Public places",
-									"ru": "Общественные места"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 20,
-								"title": {
-									"en": "Environment",
-									"ru": "Окружение"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 21,
-								"title": {
-									"en": "Family of a special child",
-									"ru": "Семья особенного ребенка"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 22,
-								"title": {
-									"en": "Eating behavior",
-									"ru": "Пищевое поведение"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
-				{
-					"id": 2,
-					"title": {
-						"en": "Behavior Correction",
-						"ru": "Коррекция Поведения"
-					},
-					"subtitle": {
-						"en": "Block 2. Behavior Correction",
-						"ru": "Блок 2. Коррекция Поведения"
-					},
-					"image": "https://i.ibb.co/n8Yn3sYB/block-2.jpg",
-					"isCompleted": false,
-					"price": 15,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [
-							{
-								"lessonId": 23,
-								"title": {
-									"en": "Strategy",
-									"ru": "Стратегия"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "free"
-							},
-
-							{
-								"lessonId": 24,
-								"title": {
-									"en": "Three functions",
-									"ru": "Три функции"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 25,
-								"title": {
-									"en": "Avoiding Demands",
-									"ru": "Избегание требований"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 26,
-								"title": {
-									"en": "Access to what you want",
-									"ru": "Доступ к желаемому"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 27,
-								"title": {
-									"en": "Why do children run away from their parents?",
-									"ru": "Почему дети убегают от родителей"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 28,
-								"title": {
-									"en": "What will they think of me?",
-									"ru": "Что обо мне подумают"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
-				{
-					"id": 3,
-					"title": {
-						"en": "Speech launch system",
-						"ru": "Система запуска речи"
-					},
-					"subtitle": {
-						"en": "Block 3. Speech launch system",
-						"ru": "Блок 3. Система запуска речи"
-					},
-					"image": "https://i.ibb.co/ymq1V5H4/block-3.jpg",
-					"isCompleted": false,
-					"price": 20,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [
-							{
-								"lessonId": 29,
-								"title": {
-									"en": "Rhythm schemes",
-									"ru": "Ритмосхемы"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 30,
-								"title": {
-									"en": "Imitation",
-									"ru": "Имитация"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 31,
-								"title": {
-									"en": "Echo schemes",
-									"ru": "Эхо-схемы"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 32,
-								"title": {
-									"en": "Drum complex",
-									"ru": "Барабанный комплекс"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 33,
-								"title": {
-									"en": "Independent work at home",
-									"ru": "Самостоятельная работа дома"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 34,
-								"title": {
-									"en": "Acceptance of the diagnosis",
-									"ru": "Принятие диагноза"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
-				{
-					"id": 4,
-					"title": {
-						"en": "Structure of developmental disorders",
-						"ru": "Структура нарушений развития"
-					},
-					"subtitle": {
-						"en": "Block 4. Structure of developmental disorders",
-						"ru": "Блок 4. Структура нарушений развития"
-					},
-					"image": "https://i.ibb.co/RpG7Bt4P/block-4.jpg",
-					"isCompleted": false,
-					"price": 25,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [
-							{
-								"lessonId": 35,
-								"title": {
-									"en": "Why the child does not speak",
-									"ru": "Почему ребенок не разговаривает"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "free"
-							},
-							{
-								"lessonId": 36,
-								"title": {
-									"en": "Autism, alalia or schizophrenia",
-									"ru": "Аутизм, алалия или шизофрения"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 37,
-								"title": {
-									"en": "Bilingualism or which language to start speech in",
-									"ru": "Билингвизм или на каком языке запускать речь"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 38,
-								"title": {
-									"en": "A child who does not speak",
-									"ru": "Неговорящий ребенок"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 39,
-								"title": {
-									"en": "The Non-Speaking Child. Alalia",
-									"ru": "Неговорящий ребенок. Алалия"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 40,
-								"title": {
-									"en": "The Non-Speaking Child. Alalia 2",
-									"ru": "Неговорящий ребенок. Алалия 2"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 41,
-								"title": {
-									"en": "The Non-Speaking Child. Root",
-									"ru": "Неговорящий ребенок. Корень"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 42,
-								"title": {
-									"en": "The Silent Child. The Trunk",
-									"ru": "Неговорящий ребенок. Ствол"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 43,
-								"title": {
-									"en": "Massage",
-									"ru": "Массаж"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 44,
-								"title": {
-									"en": "Masturbation",
-									"ru": "Мастурбация"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 45,
-								"title": {
-									"en": "Breastfeeding children",
-									"ru": "Грудное вскармливание детей"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 46,
-								"title": {
-									"en": "The Non-Speaking Child. Twigs",
-									"ru": "Неговорящий ребенок. Веточки"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
-				{
-					"id": 5,
-					"title": {
-						"en": "Speech initiation and development",
-						"ru": "Запуск и развитие речи"
-					},
-					"subtitle": {
-						"en": "Block 5. Speech initiation and development",
-						"ru": "Блок 5. Запуск и развитие речи"
-					},
-					"image": "https://i.ibb.co/rRBPRkqx/block-5.jpg",
-					"isCompleted": false,
-					"price": 30,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"lessons": [
-							{
-								"lessonId": 47,
-								"title": {
-									"en": "Sounds",
-									"ru": "Звуки"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 48,
-								"title": {
-									"en": "Onomatopoeia",
-									"ru": "Звукоподражание"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 49,
-								"title": {
-									"en": "Stages of speech development of a child",
-									"ru": " Этапы речевого развития ребёнка"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 50,
-								"title": {
-									"en": "Speaking",
-									"ru": "Говорение"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 51,
-								"title": {
-									"en": "Socialization",
-									"ru": "Социализация"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 52,
-								"title": {
-									"en": "Why Children with ASD Don't Want to Make Friends",
-									"ru": "Почему дети с РАС не хотят дружить"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
-				{
-					"id": 6,
-					"title": {
-						"en": "Development prospects",
-						"ru": "Перспектива развития"
-					},
-					"subtitle": {
-						"en": "Block 6. Development prospects",
-						"ru": "Блок 6. Перспектива развития"
-					},
-					"image": "https://i.ibb.co/SXhphkZN/block-6.jpg",
-					"isCompleted": false,
-					"price": 35,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [
-							{
-								"lessonId": 53,
-								"title": {
-									"en": "The child lines everything up",
-									"ru": "Ребенок выстраивает все в ряд"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 54,
-								"title": {
-									"en": "Check",
-									"ru": "Счет"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 55,
-								"title": {
-									"en": "Should a non-speaking child be taught to read?",
-									"ru": "Нужно ли неговорящего ребенка учить читать?"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 56,
-								"title": {
-									"en": "Playing with letters",
-									"ru": "Игра с буквами"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 57,
-								"title": {
-									"en": "Reading by example",
-									"ru": "Чтение по образцу"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 58,
-								"title": {
-									"en": "Mnemonic diagrams",
-									"ru": "Мнемосхемы"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 59,
-								"title": {
-									"en": "Choosing a Profession for Special Children",
-									"ru": "Выбор профессии для особенных детей"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 60,
-								"title": {
-									"en": "Giftedness of children with autism",
-									"ru": "Одаренность детей с аутизмом"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 61,
-								"title": {
-									"en": "How to choose a kindergarten and school",
-									"ru": "Как выбрать детский сад и школу"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 62,
-								"title": {
-									"en": "Why supervision is necessary",
-									"ru": "Почему нужна супервизия"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							},
-							{
-								"lessonId": 63,
-								"title": {
-									"en": "What is an offline intensive?",
-									"ru": "Что такое офлайн-интенсив?"
-								},
-								"video": {
-									"en": "",
-									"ru": ""
-								},
-								"access": "locked"
-							}
-						]
-					}
-				},
 				{
 					"id": 7,
 					"title": {
@@ -1093,7 +168,16 @@
 							}
 						]
 					}
-				},
+				}
+			]
+		},
+		{
+			"id": "echoSchemes",
+			"title": {
+				"ru": "Эхо-схемы",
+				"en": "Echo schemes"
+			},
+			"courses": [
 				{
 					"id": 8,
 					"title": {
@@ -1110,7 +194,7 @@
 					"details": {
 						"description": {
 							"en": "The didactic manual \"Echo Schemes\" is intended for children and their parents, as well as for special education teachers, speech therapists, psychologists, and musicians. The method consists of a set of 25 musical correction exercises aimed at initiating and correcting speech in children with alalia, speech delay, autism, and other disorders.\n\n16 exercises focus on activating the speech apparatus and are performed using graphic panels (Echo Schemes), and 9 exercises involve playing percussion instruments (darbuka or djembe) and are performed using a visual score depicting palms, letters, and symbols for sound imitation.",
-							"ru": "Дидактическое пособие «Эхо-схемы» предназначено для детей и их родителей, а также для учителей-дефектологов, логопедов, психологов и музыкантов. Методика представляет собой комплекс из 25 музыкальных коррекционных упражнений, направленных на запуск и коррекцию речи у детей с алалией, задержкой речи, аутизмом и другими нарушениями.\n\n16 упражнений направлены на активизацию речевого аппарата и исполняются с помощью графических панелей (Эхосхем), а 9 упражнений предполагают игру на ударных инструментах (дарбука или дjembe) и исполняются с помощью визуальной партитуры с изображением ладошек, букв и символов на звукоподражание."
+							"ru": "Дидактическое пособие «Эхо-схемы» предназначено для детей и их родителей, а также для учителей-дефектологов, логопедов, психологов и музыкантов. Методика представляет собой комплекс из 25 музыкальных коррекционных упражнений, направленных на запуск и коррекцию речи у детей с алалией, задержкой речи, аутизмом и другими нарушениями.\n\n16 упражнений направлены на активизацию речевого аппарата и исполняются с помощью графических панелей (Эхосхем), а 9 упражнений предполагают игру на ударных инструментах (дарбука или djembe) и исполняются с помощью визуальной партитуры с изображением ладошек, букв и символов на звукоподражание."
 						},
 						"video": {
 							"en": "",
@@ -1122,112 +206,2604 @@
 						},
 						"lessons": []
 					}
+				}
+			]
+		},
+		{
+			"id": "drumComplex",
+			"title": {
+				"ru": "Барабанный комплекс",
+				"en": "Drum complex"
+			},
+			"courses": []
+		},
+			{
+				"id": "makatop",
+				"title": {
+					"ru": "Макатоп (песенки+библиотека символов с возможность составлять предложения из символов)",
+					"en": "Makatop (songs + symbol library with the ability to build sentences from symbols)"
 				},
-				{
-					"id": 9,
-					"title": {
-						"en": "Additional Materials",
-						"ru": "Дополнительные материалы"
+				"courses": [],
+				"subsections": [
+					{
+						"id": "songs",
+						"title": {
+							"ru": "Песенки",
+							"en": "Songs"
 					},
-					"subtitle": {
-						"en": "Block 9. Additional Materials",
-						"ru": "Блок 9. Дополнительные материалы"
-					},
-					"image": "https://i.ibb.co/4wW2qX8d/block-9.jpg",
-					"isCompleted": false,
-					"price": 50,
-					"details": {
-						"description": {
-							"en": "The drum complex can be performed sitting opposite the child or by placing the child on your lap in front of a mirror (so the child can see their own and your reflection). The adult secures the drum with their legs.\n\nThus, during the exercises, while positioned behind the child, the adult can provide full or partial physical guidance to the child if needed.",
-							"ru": "Барабанный комплекс можно выполнять сидя напротив ребёнка или усадив ребёнка себе на колени перед зеркалом (чтобы ребёнок видел в зеркало своё и Ваше отражение). При этом взрослый фиксирует барабан своими ногами.\n\nТаким образом, в процессе выполнения заданий, находясь за спиной у ребёнка, взрослый способен (при необходимости) оказать полную или частичную физическую подсказку ребёнку."
-						},
-						"video": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"lessons": [],
-						"audio": []
+					"subsections": [
+						{
+							"id": "meAndMyFamily",
+							"title": {
+								"ru": "Я И МОЯ СЕМЬЯ",
+								"en": "Me and my family"
+							},
+							"items": [
+								{
+									"id": "family",
+									"title": {
+										"ru": "СЕМЬЯ",
+										"en": "Family"
+									}
+								},
+								{
+									"id": "mother",
+									"title": {
+										"ru": "МАМА",
+										"en": "Mom"
+									}
+								},
+								{
+									"id": "father",
+									"title": {
+										"ru": "ПАПА",
+										"en": "Dad"
+									}
+								},
+								{
+									"id": "brother",
+									"title": {
+										"ru": "БРАТ",
+										"en": "Brother"
+									}
+								},
+								{
+									"id": "sister",
+									"title": {
+										"ru": "СЕСТРА",
+										"en": "Sister"
+									}
+								},
+								{
+									"id": "aunt",
+									"title": {
+										"ru": "ТЕТЯ",
+										"en": "Aunt"
+									}
+								},
+								{
+									"id": "uncle",
+									"title": {
+										"ru": "ДЯДЯ",
+										"en": "Uncle"
+									}
+								},
+								{
+									"id": "grandfather",
+									"title": {
+										"ru": "ДЕДУШКА",
+										"en": "Grandfather"
+									}
+								},
+								{
+									"id": "grandmother",
+									"title": {
+										"ru": "БАБУШКА",
+										"en": "Grandmother"
+						}
 					}
+				]
+			},
+						{
+							"id": "pronouns",
+							"title": {
+								"ru": "МЕСТОИМЕНИЯ",
+								"en": "Pronouns"
+							},
+							"items": [
+								{
+									"id": "iMe",
+									"title": {
+										"ru": "Я,МНЕ",
+										"en": "I/Me"
+									}
+								},
+								{
+									"id": "youYou",
+									"title": {
+										"ru": "ТЫ,ТЕБЕ",
+										"en": "You/To you"
+									}
+								},
+								{
+									"id": "weUs",
+									"title": {
+										"ru": "МЫ/НАМ",
+										"en": "We/Us"
+									}
+								},
+								{
+									"id": "youPlural",
+									"title": {
+										"ru": "ВЫ/ВАМ",
+										"en": "You (plural)/to you"
+									}
+								},
+								{
+									"id": "my",
+									"title": {
+										"ru": "МОЙ.МОЯ.МОЕ",
+										"en": "My (masc/fem/neut)"
+									}
+								},
+								{
+									"id": "your",
+									"title": {
+										"ru": "ТВОЙ",
+										"en": "Your"
+									}
+								}
+							]
+						},
+						{
+							"id": "need",
+							"title": {
+								"ru": "НУЖНО.НУЖЕН,НУЖНА",
+								"en": "Need"
+							}
+						},
+						{
+							"id": "allowedForbidden",
+							"title": {
+								"ru": "МОЖНО-НЕЛЬЗЯ",
+								"en": "Allowed/Forbidden"
+							}
+						},
+						{
+							"id": "prepositions",
+							"title": {
+								"ru": "ПРЕЛОГИ",
+								"en": "Prepositions"
+							},
+							"items": [
+								{
+									"id": "za",
+									"title": {
+										"ru": "ЗА",
+										"en": "Behind"
+									}
+								},
+								{
+									"id": "na",
+									"title": {
+										"ru": "НА",
+										"en": "On"
+									}
+								},
+								{
+									"id": "v",
+									"title": {
+										"ru": "В",
+										"en": "In"
+									}
+								},
+								{
+									"id": "k",
+									"title": {
+										"ru": "К",
+										"en": "To"
+									}
+								},
+								{
+									"id": "pod",
+									"title": {
+										"ru": "ПОД",
+										"en": "Under"
+									}
+								}
+							]
+						},
+						{
+							"id": "ageCategories",
+							"title": {
+								"ru": "ВОЗРАСТНЫЕ КАТЕГОРИИ",
+								"en": "Age categories"
+							},
+							"items": [
+								{
+									"id": "childrenChild",
+									"title": {
+										"ru": "ДЕТИ/РЕБЕНОК",
+										"en": "Children/child"
+									}
+								},
+								{
+									"id": "adults",
+									"title": {
+										"ru": "ВЗРОСЛЫЕ",
+										"en": "Adults"
+									}
+								},
+								{
+									"id": "boy",
+									"title": {
+										"ru": "МАЛЬЧИК",
+										"en": "Boy"
+									}
+								},
+								{
+									"id": "girl",
+									"title": {
+										"ru": "ДЕВОЧКА",
+										"en": "Girl"
+									}
+								},
+								{
+									"id": "toddler",
+									"title": {
+										"ru": "МАЛЫШ",
+										"en": "Toddler"
+									}
+								},
+								{
+									"id": "kids",
+									"title": {
+										"ru": "РЕБЯТА",
+										"en": "Kids"
+									}
+								}
+							]
+						},
+						{
+							"id": "peopleAndProfessions",
+							"title": {
+								"ru": "ЛЮДИ/ПРОФЕССИ",
+								"en": "People/Professions"
+							},
+							"items": [
+								{
+									"id": "personPeople",
+									"title": {
+										"ru": "ЧЕЛОВЕК(люди)",
+										"en": "Person (people)"
+									}
+								},
+								{
+									"id": "neighbor",
+									"title": {
+										"ru": "СОСЕД",
+										"en": "Neighbor"
+									}
+								},
+								{
+									"id": "guests",
+									"title": {
+										"ru": "ГОСТИ",
+										"en": "Guests"
+									}
+								},
+								{
+									"id": "trumpeter",
+									"title": {
+										"ru": "ТРУБАЧ",
+										"en": "Trumpeter"
+									}
+								},
+								{
+									"id": "teacher",
+									"title": {
+										"ru": "УЧИТЕЛЬ",
+										"en": "Teacher"
+									}
+								},
+								{
+									"id": "artist",
+									"title": {
+										"ru": "АРТИСТ",
+										"en": "Artist"
+									}
+								},
+								{
+									"id": "master",
+									"title": {
+										"ru": "МАСТЕР",
+										"en": "Master"
+									}
+								},
+								{
+									"id": "nanny",
+									"title": {
+										"ru": "НЯНЯ",
+										"en": "Nanny"
+									}
+								},
+								{
+									"id": "educator",
+									"title": {
+										"ru": "ВОСПИТАТЕЛЬ",
+										"en": "Caregiver"
+									}
+								},
+								{
+									"id": "driver",
+									"title": {
+										"ru": "ВОДИТЕЛЬ",
+										"en": "Driver"
+									}
+								},
+								{
+									"id": "builder",
+									"title": {
+										"ru": "СТРОИТЕЛЬ",
+										"en": "Builder"
+									}
+								},
+								{
+									"id": "name",
+									"title": {
+										"ru": "ИМЯ",
+										"en": "Name"
+									}
+								},
+								{
+									"id": "friendFriendsGirlfriend",
+									"title": {
+										"ru": "ДРУГ/ДРУЗЬЯ/ПОДРУЖКА",
+										"en": "Friend/friends/girlfriend"
+									}
+								}
+							]
+						},
+						{
+							"id": "transport",
+							"title": {
+								"ru": "ТРАНСПОРТ И СРЕДСТВА ПЕРЕДВИЖЕНИЯ",
+								"en": "Transport and means of transportation"
+							},
+							"items": [
+								{
+									"id": "car",
+									"title": {
+										"ru": "МАШИНА",
+										"en": "Car"
+									}
+								},
+								{
+									"id": "bus",
+									"title": {
+										"ru": "АВТОБУС",
+										"en": "Bus"
+									}
+								},
+								{
+									"id": "ship",
+									"title": {
+										"ru": "КОРАБЛЬ",
+										"en": "Ship"
+									}
+								},
+								{
+									"id": "train",
+									"title": {
+										"ru": "ПОЕЗД",
+										"en": "Train"
+									}
+								},
+								{
+									"id": "plane",
+									"title": {
+										"ru": "САМОЛЕТ",
+										"en": "Plane"
+									}
+								},
+								{
+									"id": "bicycle",
+									"title": {
+										"ru": "ВЕЛОСИПЕД",
+										"en": "Bicycle"
+									}
+								},
+								{
+									"id": "metro",
+									"title": {
+										"ru": "МЕТРО",
+										"en": "Metro"
+									}
+								},
+								{
+									"id": "tram",
+									"title": {
+										"ru": "ТРАМВАЙ",
+										"en": "Tram"
+									}
+								},
+								{
+									"id": "trolleybus",
+									"title": {
+										"ru": "ТРОЛЛЕЙБУС",
+										"en": "Trolleybus"
+									}
+								},
+								{
+									"id": "scooter",
+									"title": {
+										"ru": "САМОКАТ",
+										"en": "Scooter"
+									}
+								},
+								{
+									"id": "trafficLight",
+									"title": {
+										"ru": "светофор",
+										"en": "traffic light"
+									}
+								}
+							]
+						},
+						{
+							"id": "geographicObjectsAndPublicPlaces",
+							"title": {
+								"ru": "ГЕГРАФИЧЕСКИЕ ОБЪЕКТЫ И ОБЩЕСТВЕННЫЕ МЕСТА",
+								"en": "Geographic objects and public places"
+							},
+							"items": [
+								{
+									"id": "home",
+									"title": {
+										"ru": "ДОМ",
+										"en": "Home"
+									}
+								},
+								{
+									"id": "yard",
+									"title": {
+										"ru": "ДВОР",
+										"en": "Yard"
+									}
+								},
+								{
+									"id": "city",
+									"title": {
+										"ru": "ГОРОД",
+										"en": "City"
+									}
+								},
+								{
+									"id": "shop",
+									"title": {
+										"ru": "МАГАЗИН",
+										"en": "Shop"
+									}
+								},
+								{
+									"id": "kindergarten",
+									"title": {
+										"ru": "ДЕТСКИЙ САД",
+										"en": "Kindergarten"
+									}
+								},
+								{
+									"id": "schoolPlace",
+									"title": {
+										"ru": "ШКОЛА",
+										"en": "School"
+									}
+								},
+								{
+									"id": "work",
+									"title": {
+										"ru": "РАБОТА",
+										"en": "Work"
+									}
+								}
+							]
+						},
+						{
+							"id": "worldAround",
+							"title": {
+								"ru": "ОКРУЖАЮЩИЙ МИР",
+								"en": "World around us"
+							},
+							"items": [
+								{
+									"id": "bush",
+									"title": {
+										"ru": "КУСТ",
+										"en": "Bush"
+									}
+								},
+								{
+									"id": "forest",
+									"title": {
+										"ru": "ЛЕС",
+										"en": "Forest"
+									}
+								},
+								{
+									"id": "burrow",
+									"title": {
+										"ru": "НОРКА",
+										"en": "Burrow"
+									}
+								},
+								{
+									"id": "pond",
+									"title": {
+										"ru": "ПРУД",
+										"en": "Pond"
+									}
+								},
+								{
+									"id": "tree",
+									"title": {
+										"ru": "ДЕРЕВО",
+										"en": "Tree"
+									}
+								},
+								{
+									"id": "river",
+									"title": {
+										"ru": "РЕКА",
+										"en": "River"
+									}
+								},
+								{
+									"id": "flower",
+									"title": {
+										"ru": "ЦВЕТОК",
+										"en": "Flower"
+									}
+								},
+								{
+									"id": "moth",
+									"title": {
+										"ru": "МОТЫЛЕК",
+										"en": "Butterfly"
+									}
+								},
+								{
+									"id": "wind",
+									"title": {
+										"ru": "ВЕТЕР",
+										"en": "Wind"
+									}
+								},
+								{
+									"id": "rain",
+									"title": {
+										"ru": "ДОЖДЬ",
+										"en": "Rain"
+									}
+								},
+								{
+									"id": "clouds",
+									"title": {
+										"ru": "облака",
+										"en": "clouds"
+									}
+								},
+								{
+									"id": "sky",
+									"title": {
+										"ru": "небо",
+										"en": "sky"
+									}
+								},
+								{
+									"id": "rainbow",
+									"title": {
+										"ru": "РАДУГА",
+										"en": "Rainbow"
+									}
+								},
+								{
+									"id": "thunder",
+									"title": {
+										"ru": "гром",
+										"en": "thunder"
+									}
+								},
+								{
+									"id": "kennel",
+									"title": {
+										"ru": "БУДКА",
+										"en": "Kennel"
+									}
+								}
+							]
+						},
+						{
+							"id": "school",
+							"title": {
+								"ru": "УЧЕБА/ШКОЛЬНЫЕ ПРИНАДЛЕЖНОСТИ",
+								"en": "School/School supplies"
+							},
+							"items": [
+								{
+									"id": "lessons",
+									"title": {
+										"ru": "УРОКИ",
+										"en": "Lessons"
+									}
+								},
+								{
+									"id": "pen",
+									"title": {
+										"ru": "РУЧКА",
+										"en": "Pen"
+									}
+								},
+								{
+									"id": "pencil",
+									"title": {
+										"ru": "КАРАНДАШ",
+										"en": "Pencil"
+									}
+								},
+								{
+									"id": "booklet",
+									"title": {
+										"ru": "КНИЖКА",
+										"en": "Book"
+									}
+								},
+								{
+									"id": "paper",
+									"title": {
+										"ru": "БУМАГА",
+										"en": "Paper"
+									}
+								},
+								{
+									"id": "notebook",
+									"title": {
+										"ru": "ТЕТРАДЬ",
+										"en": "Notebook"
+									}
+								},
+								{
+									"id": "backpack",
+									"title": {
+										"ru": "РЮКЗАК",
+										"en": "Backpack"
+									}
+								},
+								{
+									"id": "song",
+									"title": {
+										"ru": "ПЕСНЯ",
+										"en": "Song"
+									}
+								},
+								{
+									"id": "music",
+									"title": {
+										"ru": "МУЗЫКА",
+										"en": "Music"
+									}
+								},
+								{
+									"id": "album",
+									"title": {
+										"ru": "АЛЬБОМ",
+										"en": "Album"
+									}
+								},
+								{
+									"id": "scissors",
+									"title": {
+										"ru": "НОЖНИЦЫ",
+										"en": "Scissors"
+									}
+								},
+								{
+									"id": "paints",
+									"title": {
+										"ru": "КРАСКИ",
+										"en": "Paints"
+									}
+								},
+								{
+									"id": "plasticine",
+									"title": {
+										"ru": "ПЛАСТИЛИН",
+										"en": "Plasticine"
+									}
+								},
+								{
+									"id": "brushes",
+									"title": {
+										"ru": "КИСТИ",
+										"en": "Brushes"
+									}
+								},
+								{
+									"id": "glue",
+									"title": {
+										"ru": "КЛЕЙ",
+										"en": "Glue"
+									}
+								},
+								{
+									"id": "craft",
+									"title": {
+										"ru": "ПОДЕЛКА",
+										"en": "Craft"
+									}
+								},
+								{
+									"id": "drawing",
+									"title": {
+										"ru": "РИСУНОК",
+										"en": "Drawing"
+									}
+								}
+							]
+						},
+						{
+							"id": "leisureGames",
+							"title": {
+								"ru": "ДОСУГ(ИГРЫ)",
+								"en": "Leisure (games)"
+							},
+							"items": [
+								{
+									"id": "doll",
+									"title": {
+										"ru": "КУКЛА",
+										"en": "Doll"
+									}
+								},
+								{
+									"id": "blocks",
+									"title": {
+										"ru": "КУБИКИ",
+										"en": "Blocks"
+									}
+								},
+								{
+									"id": "phone",
+									"title": {
+										"ru": "ТЕЛЕФОН",
+										"en": "Phone"
+									}
+								},
+								{
+									"id": "slide",
+									"title": {
+										"ru": "ГОРКА",
+										"en": "Slide"
+									}
+								},
+								{
+									"id": "sandbox",
+									"title": {
+										"ru": "ПЕСОЧНИЦА",
+										"en": "Sandbox"
+									}
+								},
+								{
+									"id": "swings",
+									"title": {
+										"ru": "КАЧЕЛИ",
+										"en": "Swings"
+									}
+								},
+								{
+									"id": "ball",
+									"title": {
+										"ru": "МЯЧ",
+										"en": "Ball"
+									}
+								},
+								{
+									"id": "hideAndSeek",
+									"title": {
+										"ru": "ПРЯТКИ",
+										"en": "Hide and seek"
+									}
+								},
+								{
+									"id": "fairyTales",
+									"title": {
+										"ru": "СКАЗКИ",
+										"en": "Fairy tales"
+									}
+								},
+								{
+									"id": "games",
+									"title": {
+										"ru": "ИГРЫ",
+										"en": "Games"
+									}
+								},
+								{
+									"id": "teddyBearToy",
+									"title": {
+										"ru": "МИШКА(игрушка)",
+										"en": "Teddy bear (toy)"
+									}
+								}
+							]
+						},
+						{
+							"id": "objectsAndThings",
+							"title": {
+								"ru": "ПРЕДМЕТЫ/ВЕЩИ",
+								"en": "Objects/Things"
+							},
+							"items": [
+								{
+									"id": "picture",
+									"title": {
+										"ru": "КАРТИНА",
+										"en": "Picture"
+									}
+								},
+								{
+									"id": "needle",
+									"title": {
+										"ru": "ИГОЛКА",
+										"en": "Needle"
+									}
+								},
+								{
+									"id": "thread",
+									"title": {
+										"ru": "НИТКА",
+										"en": "Thread"
+									}
+								},
+								{
+									"id": "boxMaybe",
+									"title": {
+										"ru": "КОРОБКА?",
+										"en": "Box?"
+									}
+								},
+								{
+									"id": "basket",
+									"title": {
+										"ru": "КОРЗИНА",
+										"en": "Basket"
+									}
+								},
+								{
+									"id": "key",
+									"title": {
+										"ru": "КЛЮЧ",
+										"en": "Key"
+									}
+								},
+								{
+									"id": "pipe",
+									"title": {
+										"ru": "ТРУБА",
+										"en": "Pipe"
+									}
+								},
+								{
+									"id": "success",
+									"title": {
+										"ru": "УСПЕХ",
+										"en": "Success"
+									}
+								},
+								{
+									"id": "money",
+									"title": {
+										"ru": "ДЕНЬГИ",
+										"en": "Money"
+									}
+								}
+							]
+						},
+						{
+							"id": "foodAndDrinks",
+							"title": {
+								"ru": "ЕДА И НАПИТКИ",
+								"en": "Food and drinks"
+							},
+							"items": [
+								{
+									"id": "food",
+									"title": {
+										"ru": "ЕДА",
+										"en": "Food"
+									}
+								},
+								{
+									"id": "water",
+									"title": {
+										"ru": "ВОДА",
+										"en": "Water"
+									}
+								},
+								{
+									"id": "vegetables",
+									"title": {
+										"ru": "ОВОЩИ",
+										"en": "Vegetables"
+									}
+								},
+								{
+									"id": "fruits",
+									"title": {
+										"ru": "ФРУКТЫ",
+										"en": "Fruits"
+									}
+								},
+								{
+									"id": "berries",
+									"title": {
+										"ru": "ЯГОДЫ",
+										"en": "Berries"
+									}
+								},
+								{
+									"id": "mushrooms",
+									"title": {
+										"ru": "ГРИБЫ",
+										"en": "Mushrooms"
+									}
+								}
+							],
+							"subsections": [
+								{
+									"id": "lunch",
+									"title": {
+										"ru": "ОБЕД",
+										"en": "Lunch"
+									},
+									"items": [
+										{
+											"id": "borscht",
+											"title": {
+												"ru": "БОРЩ",
+												"en": "Borscht"
+											}
+										},
+										{
+											"id": "cutlet",
+											"title": {
+												"ru": "КОТЛЕТА",
+												"en": "Cutlet"
+											}
+										},
+										{
+											"id": "chicken",
+											"title": {
+												"ru": "КУРИЦА",
+												"en": "Chicken"
+											}
+										},
+										{
+											"id": "mayonnaise",
+											"title": {
+												"ru": "МАЙОНЕЗ",
+												"en": "Mayonnaise"
+											}
+										},
+										{
+											"id": "meat",
+											"title": {
+												"ru": "МЯСО",
+												"en": "Meat"
+											}
+										},
+										{
+											"id": "soup",
+											"title": {
+												"ru": "СУП",
+												"en": "Soup"
+											}
+										},
+										{
+											"id": "pasta",
+											"title": {
+												"ru": "МАКАРОНЫ",
+												"en": "Pasta"
+											}
+										},
+										{
+											"id": "potato",
+											"title": {
+												"ru": "КАРТОШКА",
+												"en": "Potato"
+											}
+										},
+										{
+											"id": "sausages",
+											"title": {
+												"ru": "СОСИСКИ",
+												"en": "Sausages"
+											}
+										},
+										{
+											"id": "rice",
+											"title": {
+												"ru": "РИС",
+												"en": "Rice"
+											}
+										},
+										{
+											"id": "salad",
+											"title": {
+												"ru": "САЛАТ",
+												"en": "Salad"
+											}
+										}
+									]
+								},
+								{
+									"id": "breakfast",
+									"title": {
+										"ru": "ЗАВТРАК",
+										"en": "Breakfast"
+									},
+									"items": [
+										{
+											"id": "sandwich",
+											"title": {
+												"ru": "БУТЕРБРОД",
+												"en": "Sandwich"
+											}
+										},
+										{
+											"id": "sausage",
+											"title": {
+												"ru": "КОЛБАСА",
+												"en": "Sausage"
+											}
+										},
+										{
+											"id": "butter",
+											"title": {
+												"ru": "МАСЛО",
+												"en": "Butter"
+											}
+										},
+										{
+											"id": "pancakes",
+											"title": {
+												"ru": "блинчики",
+												"en": "pancakes"
+											}
+										},
+										{
+											"id": "bread",
+											"title": {
+												"ru": "ХЛЕБ",
+												"en": "Bread"
+											}
+										},
+										{
+											"id": "porridge",
+											"title": {
+												"ru": "КАША",
+												"en": "Porridge"
+											}
+										},
+										{
+											"id": "egg",
+											"title": {
+												"ru": "ЯЙЦО",
+												"en": "Egg"
+											}
+										},
+										{
+											"id": "omelet",
+											"title": {
+												"ru": "омлет",
+												"en": "omelet"
+											}
+										},
+										{
+											"id": "rusks",
+											"title": {
+												"ru": "СУХАРЬ",
+												"en": "Rusk"
+											}
+										},
+										{
+											"id": "gingerbread",
+											"title": {
+												"ru": "пряник",
+												"en": "gingerbread"
+											}
+										},
+										{
+											"id": "cheese",
+											"title": {
+												"ru": "СЫР",
+												"en": "Cheese"
+											}
+										},
+										{
+											"id": "cottageCheese",
+											"title": {
+												"ru": "ТВОРОГ",
+												"en": "Cottage cheese"
+											}
+										},
+										{
+											"id": "flour",
+											"title": {
+												"ru": "МУКА",
+												"en": "Flour"
+											}
+										},
+										{
+											"id": "sugar",
+											"title": {
+												"ru": "САХАР",
+												"en": "Sugar"
+											}
+										},
+										{
+											"id": "sourCream",
+											"title": {
+												"ru": "СМЕТАНА",
+												"en": "Sour cream"
+											}
+										},
+										{
+											"id": "salt",
+											"title": {
+												"ru": "СОЛЬ",
+												"en": "Salt"
+											}
+										}
+									]
+								},
+								{
+									"id": "dinner",
+									"title": {
+										"ru": "УЖИН",
+										"en": "Dinner"
+									}
+								},
+								{
+									"id": "drinks",
+									"title": {
+										"ru": "НАПИТКИ",
+										"en": "Drinks"
+									},
+									"items": [
+										{
+											"id": "tea",
+											"title": {
+												"ru": "ЧАЙ",
+												"en": "Tea"
+											}
+										},
+										{
+											"id": "kefir",
+											"title": {
+												"ru": "КЕФИР",
+												"en": "Kefir"
+											}
+										},
+										{
+											"id": "milk",
+											"title": {
+												"ru": "МОЛОКО",
+												"en": "Milk"
+											}
+										},
+										{
+											"id": "juice",
+											"title": {
+												"ru": "СОК",
+												"en": "Juice"
+											}
+										},
+										{
+											"id": "compote",
+											"title": {
+												"ru": "КОМПОТ",
+												"en": "Compote"
+											}
+										},
+										{
+											"id": "cola",
+											"title": {
+												"ru": "КОЛА",
+												"en": "Cola"
+											}
+										}
+									]
+								},
+								{
+									"id": "dessert",
+									"title": {
+										"ru": "ДЕСЕРТ",
+										"en": "Dessert"
+									},
+									"items": [
+										{
+											"id": "cookies",
+											"title": {
+												"ru": "ПЕЧЕНЬЕ",
+												"en": "Cookies"
+											}
+										},
+										{
+											"id": "candy",
+											"title": {
+												"ru": "КОНФЕТА",
+												"en": "Candy"
+											}
+										},
+										{
+											"id": "chocolate",
+											"title": {
+												"ru": "ШОКОЛАД",
+												"en": "Chocolate"
+											}
+										},
+										{
+											"id": "iceCream",
+											"title": {
+												"ru": "МОРОЖЕНОЕ",
+												"en": "Ice cream"
+											}
+										},
+										{
+											"id": "cake",
+											"title": {
+												"ru": "ТОРТ",
+												"en": "Cake"
+											}
+										},
+										{
+											"id": "honey",
+											"title": {
+												"ru": "МЕД",
+												"en": "Honey"
+											}
+										},
+										{
+											"id": "yogurt",
+											"title": {
+												"ru": "ЙОГУРТ",
+												"en": "Yogurt"
+											}
+										},
+										{
+											"id": "pie",
+											"title": {
+												"ru": "ПИРОГ",
+												"en": "Pie"
+											}
+										},
+										{
+											"id": "jam",
+											"title": {
+												"ru": "ВАРЕНЬЕ",
+												"en": "Jam"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "homeFurnitureAppliances",
+							"title": {
+								"ru": "ЖИЛЬЕ,МЕБЕЛЬ,БЫТ.ТЕХНИКА",
+								"en": "Housing, furniture, appliances"
+							},
+							"items": [
+								{
+									"id": "bed",
+									"title": {
+										"ru": "КРОВАТЬ",
+										"en": "Bed"
+									}
+								},
+								{
+									"id": "chair",
+									"title": {
+										"ru": "СТУЛ",
+										"en": "Chair"
+									}
+								},
+								{
+									"id": "table",
+									"title": {
+										"ru": "СТОЛ",
+										"en": "Table"
+									}
+								},
+								{
+									"id": "sofa",
+									"title": {
+										"ru": "ДИВАН",
+										"en": "Sofa"
+									}
+								},
+								{
+									"id": "wardrobe",
+									"title": {
+										"ru": "ШКАФ",
+										"en": "Wardrobe"
+									}
+								},
+								{
+									"id": "room",
+									"title": {
+										"ru": "КОМНАТА",
+										"en": "Room"
+									}
+								},
+								{
+									"id": "kitchen",
+									"title": {
+										"ru": "КУХНЯ",
+										"en": "Kitchen"
+									}
+								},
+								{
+									"id": "workshop",
+									"title": {
+										"ru": "МАСТЕРСКАЯ",
+										"en": "Workshop"
+									}
+								},
+								{
+									"id": "shower",
+									"title": {
+										"ru": "ДУШ",
+										"en": "Shower"
+									}
+								},
+								{
+									"id": "bath",
+									"title": {
+										"ru": "ВАННА",
+										"en": "Bathtub"
+									}
+								},
+								{
+									"id": "sauna",
+									"title": {
+										"ru": "БАНЯ",
+										"en": "Bathhouse"
+									}
+								},
+								{
+									"id": "toilet",
+									"title": {
+										"ru": "ТУАЛЕТ",
+										"en": "Toilet"
+									}
+								},
+								{
+									"id": "stove",
+									"title": {
+										"ru": "ПЕЧКА",
+										"en": "Stove"
+									}
+								},
+								{
+									"id": "cooker",
+									"title": {
+										"ru": "ПЛИТА",
+										"en": "Stove"
+									}
+								},
+								{
+									"id": "microwave",
+									"title": {
+										"ru": "МИКРОВОЛНОВАЯ ПЕЧЬ",
+										"en": "Microwave oven"
+									}
+								},
+								{
+									"id": "tv",
+									"title": {
+										"ru": "ТЕЛЕВИЗОР",
+										"en": "TV"
+									}
+								},
+								{
+									"id": "tap",
+									"title": {
+										"ru": "КРАН",
+										"en": "Tap"
+									}
+								},
+								{
+									"id": "sink",
+									"title": {
+										"ru": "РАКОВИНА",
+										"en": "Sink"
+									}
+								},
+								{
+									"id": "stairs",
+									"title": {
+										"ru": "ЛЕСТНИЦА",
+										"en": "Stairs"
+									}
+								},
+								{
+									"id": "door",
+									"title": {
+										"ru": "ДВЕРЬ",
+										"en": "Door"
+									}
+								},
+								{
+									"id": "window",
+									"title": {
+										"ru": "ОКНО",
+										"en": "Window"
+									}
+								},
+								{
+									"id": "lightLamp",
+									"title": {
+										"ru": "СВЕТ/ЛАМПА",
+										"en": "Light/Lamp"
+									}
+								}
+							]
+						},
+						{
+							"id": "tableware",
+							"title": {
+								"ru": "ПОСУДА",
+								"en": "Tableware"
+							},
+							"items": [
+								{
+									"id": "tableware",
+									"title": {
+										"ru": "ПОСУДА",
+										"en": "Tableware"
+									}
+								},
+								{
+									"id": "knife",
+									"title": {
+										"ru": "НОЖ",
+										"en": "Knife"
+									}
+								},
+								{
+									"id": "fork",
+									"title": {
+										"ru": "ВИЛКА",
+										"en": "Fork"
+									}
+								},
+								{
+									"id": "spoon",
+									"title": {
+										"ru": "ЛОЖКА",
+										"en": "Spoon"
+									}
+								},
+								{
+									"id": "plate",
+									"title": {
+										"ru": "ТАРЕЛКА",
+										"en": "Plate"
+									}
+								},
+								{
+									"id": "cup",
+									"title": {
+										"ru": "ЧАШКА",
+										"en": "Cup"
+									}
+								}
+							]
+						},
+						{
+							"id": "clothesAndHygiene",
+							"title": {
+								"ru": "ОДЕЖДА И ГИГИЕНА",
+								"en": "Clothes and hygiene"
+							},
+							"items": [
+								{
+									"id": "soap",
+									"title": {
+										"ru": "МЫЛО",
+										"en": "Soap"
+									}
+								},
+								{
+									"id": "towel",
+									"title": {
+										"ru": "ПОЛОТЕНЦЕ",
+										"en": "Towel"
+									}
+								},
+								{
+									"id": "potty",
+									"title": {
+										"ru": "ГОРШОК",
+										"en": "Potty"
+									}
+								},
+								{
+									"id": "diaper",
+									"title": {
+										"ru": "ПОДГУЗНИК(ПАМПЕРС)",
+										"en": "Diaper"
+									}
+								},
+								{
+									"id": "clothes",
+									"title": {
+										"ru": "ОДЕЖДА",
+										"en": "Clothes"
+									}
+								}
+							]
+						},
+						{
+							"id": "bodyParts",
+							"title": {
+								"ru": "ЧАСТИ ТЕЛА",
+								"en": "Body parts"
+							},
+							"items": [
+								{
+									"id": "eyes",
+									"title": {
+										"ru": "ГЛАЗА",
+										"en": "Eyes"
+									}
+								},
+								{
+									"id": "palm",
+									"title": {
+										"ru": "ЛАДОШКА",
+										"en": "Palm"
+									}
+								},
+								{
+									"id": "back",
+									"title": {
+										"ru": "СПИНА",
+										"en": "Back"
+									}
+								},
+								{
+									"id": "throat",
+									"title": {
+										"ru": "ГОРЛО",
+										"en": "Throat"
+									}
+								},
+								{
+									"id": "hands",
+									"title": {
+										"ru": "РУКИ",
+										"en": "Hands"
+									}
+								},
+								{
+									"id": "legs",
+									"title": {
+										"ru": "ноги/ножки",
+										"en": "legs"
+									}
+								},
+								{
+									"id": "mouth",
+									"title": {
+										"ru": "РОТ",
+										"en": "Mouth"
+									}
+								},
+								{
+									"id": "beardAnimal",
+									"title": {
+										"ru": "борода(у животного)",
+										"en": "beard (animal)"
+									}
+								},
+								{
+									"id": "horns",
+									"title": {
+										"ru": "рожки",
+										"en": "horns"
+									}
+								},
+								{
+									"id": "tail",
+									"title": {
+										"ru": "хвост",
+										"en": "tail"
+									}
+								},
+								{
+									"id": "side",
+									"title": {
+										"ru": "БОЧОК",
+										"en": "Side"
+									}
+								}
+							]
+						},
+						{
+							"id": "numbers",
+							"title": {
+								"ru": "ЧИСЛА",
+								"en": "Numbers"
+							}
+						},
+						{
+							"id": "onomatopoeia",
+							"title": {
+								"ru": "ЗВУКОПОДРАЖАНИЕ",
+								"en": "Sounds/Imitation"
+							},
+							"items": [
+								{
+									"id": "whereTo",
+									"title": {
+										"ru": "КУДА?",
+										"en": "Where to?"
+									}
+								},
+								{
+									"id": "who",
+									"title": {
+										"ru": "КТО?",
+										"en": "Who?"
+									}
+								},
+								{
+									"id": "thereTo",
+									"title": {
+										"ru": "ТУДА",
+										"en": "There"
+									}
+								},
+								{
+									"id": "where",
+									"title": {
+										"ru": "ГДЕ?",
+										"en": "Where?"
+									}
+								},
+								{
+									"id": "what",
+									"title": {
+										"ru": "ЧТО?",
+										"en": "What?"
+									}
+								},
+								{
+									"id": "here",
+									"title": {
+										"ru": "ЗДЕСЬ(ТУТ)",
+										"en": "Here"
+									}
+								},
+								{
+									"id": "there",
+									"title": {
+										"ru": "ТАМ",
+										"en": "There"
+									}
+								},
+								{
+									"id": "goodWellDone",
+									"title": {
+										"ru": "ХОРОШО(МОЛОДЕЦ)",
+										"en": "Good (well done)"
+									}
+								},
+								{
+									"id": "bad",
+									"title": {
+										"ru": "ПЛОХО",
+										"en": "Bad"
+									}
+								},
+								{
+									"id": "hiBye",
+									"title": {
+										"ru": "ПРИВЕТ/ПОКА",
+										"en": "Hi/Bye"
+									}
+								},
+								{
+									"id": "thanksPlease",
+									"title": {
+										"ru": "СПАСИБО/ПОЖАЛУЙСТА",
+										"en": "Thank you/Please"
+									}
+								},
+								{
+									"id": "helloFormal",
+									"title": {
+										"ru": "ЗДРАВСТВУЙТЕ",
+										"en": "Hello"
+									}
+								},
+								{
+									"id": "sorry",
+									"title": {
+										"ru": "ИЗВИНИТЕ",
+										"en": "Sorry"
+									}
+								},
+								{
+									"id": "howAreYou",
+									"title": {
+										"ru": "КАК ДЕЛА ?",
+										"en": "How are you?"
+									}
+								},
+								{
+									"id": "birthday",
+									"title": {
+										"ru": "ДЕНЬ РОЖДЕНИЯ",
+										"en": "Birthday"
+									}
+								}
+							]
+						},
+						{
+							"id": "animalsAndBirds",
+							"title": {
+								"ru": "ЖИВОТНЫЕ/ПТИЦЫ",
+								"en": "Animals/Birds"
+							},
+							"subsections": [
+								{
+									"id": "momBaby",
+									"title": {
+										"ru": "МАМА-МАЛЫШ",
+										"en": "Mom & Baby"
+									},
+									"items": [
+										{
+											"id": "pigPiglet",
+											"title": {
+												"ru": "СВИНЬЯ- поросенок",
+												"en": "Pig - piglet"
+											}
+										},
+										{
+											"id": "henChick",
+											"title": {
+												"ru": "КУРИЦА-цыпленок",
+												"en": "Hen - chick"
+											}
+										},
+										{
+											"id": "dogPuppy",
+											"title": {
+												"ru": "СОБАКА-ЩЕНОК",
+												"en": "Dog - puppy"
+											}
+										},
+										{
+											"id": "bunnyBunny",
+											"title": {
+												"ru": "ЗАЙКА-зайчонок",
+												"en": "Bunny - baby bunny"
+											}
+										},
+										{
+											"id": "mouseMouse",
+											"title": {
+												"ru": "МЫШЬ-мышонок",
+												"en": "Mouse - mouselet"
+											}
+										}
+									]
+								}
+							],
+							"items": [
+								{
+									"id": "bear",
+									"title": {
+										"ru": "МЕДВЕДЬ",
+										"en": "Bear"
+									}
+								},
+								{
+									"id": "cow",
+									"title": {
+										"ru": "КОРОВА",
+										"en": "Cow"
+									}
+								},
+								{
+									"id": "horse",
+									"title": {
+										"ru": "ЛОШАДЬ(конь)",
+										"en": "Horse"
+									}
+								},
+								{
+									"id": "cat",
+									"title": {
+										"ru": "КОШКА(киска)",
+										"en": "Cat (kitty)"
+									}
+								},
+								{
+									"id": "bee",
+									"title": {
+										"ru": "ПЧЕЛА",
+										"en": "Bee"
+									}
+								},
+								{
+									"id": "elephant",
+									"title": {
+										"ru": "СЛОН",
+										"en": "Elephant"
+									}
+								},
+								{
+									"id": "fish",
+									"title": {
+										"ru": "РЫБА",
+										"en": "Fish"
+									}
+								},
+								{
+									"id": "goat",
+									"title": {
+										"ru": "КОЗА",
+										"en": "Goat"
+									}
+								},
+								{
+									"id": "duck",
+									"title": {
+										"ru": "УТКА",
+										"en": "Duck"
+									}
+								},
+								{
+									"id": "rooster",
+									"title": {
+										"ru": "ПЕТУХ",
+										"en": "Rooster"
+									}
+								},
+								{
+									"id": "penguin",
+									"title": {
+										"ru": "ПИНГВИН",
+										"en": "Penguin"
+									}
+								},
+								{
+									"id": "bird",
+									"title": {
+										"ru": "ПТИЦА",
+										"en": "Bird"
+									}
+								}
+							]
+						},
+						{
+							"id": "time",
+							"title": {
+								"ru": "ВРЕМЯ",
+								"en": "Time"
+							},
+							"items": [
+								{
+									"id": "today",
+									"title": {
+										"ru": "СЕГОДНЯ",
+										"en": "Today"
+									}
+								},
+								{
+									"id": "tomorrow",
+									"title": {
+										"ru": "ЗАВТРА",
+										"en": "Tomorrow"
+									}
+								},
+								{
+									"id": "yesterday",
+									"title": {
+										"ru": "ВЧЕРА",
+										"en": "Yesterday"
+									}
+								}
+							]
+						},
+						{
+							"id": "adjectives",
+							"title": {
+								"ru": "ПРИЛАГАТЕЛЬНЫЕ",
+								"en": "Adjectives"
+							},
+							"subsections": [
+								{
+									"id": "colors",
+									"title": {
+										"ru": "ЦВЕТА",
+										"en": "Colors"
+									}
+								},
+								{
+									"id": "sizes",
+									"title": {
+										"ru": "РАЗМЕРЫ",
+										"en": "Sizes"
+									},
+									"items": [
+										{
+											"id": "small",
+											"title": {
+												"ru": "маленький",
+												"en": "small"
+											}
+										},
+										{
+											"id": "big",
+											"title": {
+												"ru": "большой",
+												"en": "big"
+											}
+										},
+										{
+											"id": "long",
+											"title": {
+												"ru": "длинный",
+												"en": "long"
+											}
+										},
+										{
+											"id": "short",
+											"title": {
+												"ru": "короткий",
+												"en": "short"
+											}
+										}
+									]
+								},
+								{
+									"id": "feelingsQuality",
+									"title": {
+										"ru": "ОЩУЩЕНИЯ(Качество)",
+										"en": "Sensations (quality)"
+									},
+									"items": [
+										{
+											"id": "hot",
+											"title": {
+												"ru": "горячий",
+												"en": "hot"
+											}
+										},
+										{
+											"id": "cold",
+											"title": {
+												"ru": "холодный",
+												"en": "cold"
+											}
+										},
+										{
+											"id": "tasty",
+											"title": {
+												"ru": "вкусный",
+												"en": "tasty"
+											}
+										},
+										{
+											"id": "sweet",
+											"title": {
+												"ru": "сладкий",
+												"en": "sweet"
+											}
+										},
+										{
+											"id": "healthy",
+											"title": {
+												"ru": "полезный",
+												"en": "healthy"
+											}
+										}
+									]
+								},
+								{
+									"id": "appearanceState",
+									"title": {
+										"ru": "ВНЕШНОСТЬ/СОСТОЯНИЕ",
+										"en": "Appearance/Condition"
+									},
+									"items": [
+										{
+											"id": "beautiful",
+											"title": {
+												"ru": "красивый",
+												"en": "beautiful"
+											}
+										},
+										{
+											"id": "new",
+											"title": {
+												"ru": "новый",
+												"en": "new"
+											}
+										},
+										{
+											"id": "clean",
+											"title": {
+												"ru": "чистый",
+												"en": "clean"
+											}
+										},
+										{
+											"id": "dirty",
+											"title": {
+												"ru": "грязный",
+												"en": "dirty"
+											}
+										}
+									]
+								},
+								{
+									"id": "emotionsCharacter",
+									"title": {
+										"ru": "ЭМОЦИИ/ХАРАКТЕР",
+										"en": "Emotions/Character"
+									},
+									"items": [
+										{
+											"id": "cheerful",
+											"title": {
+												"ru": "веселый",
+												"en": "cheerful"
+											}
+										},
+										{
+											"id": "brave",
+											"title": {
+												"ru": "смелый",
+												"en": "brave"
+											}
+										},
+										{
+											"id": "smart",
+											"title": {
+												"ru": "умный",
+												"en": "smart"
+											}
+										},
+										{
+											"id": "good",
+											"title": {
+												"ru": "хороший",
+												"en": "good"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
 				},
 				{
-					"id": 10,
+					"id": "symbolLibrary",
 					"title": {
-						"en": "Audio cours",
-						"ru": "Аудио курс"
-					},
-					"subtitle": {
-						"en": "Block 10. Audio cours",
-						"ru": "Блок 10. Аудио курс"
-					},
-					"image": "",
-					"isCompleted": false,
-					"price": 55,
-					"details": {
-						"description": {
-							"en": "",
-							"ru": ""
-						},
-						"video": {
-							"en": "",
-							"ru": ""
-						},
-						"materials": {
-							"en": [],
-							"ru": []
-						},
-						"audio": [
-							{
-								"audioId": 1,
-								"title": {
-									"en": "Slap slap slap plus",
-									"ru": "Шлёп шлёп шлёп плюс"
-								},
-								"audio": {
-									"en": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3",
-									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3"
-								}
-							},
-							{
-								"audioId": 2,
-								"title": {
-									"en": "Slap slap slap minus",
-									"ru": "Шлёп шлёп шлёп минус"
-								},
-								"audio": {
-									"en": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3",
-									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3"
-								}
-							},
-							{
-								"audioId": 3,
-								"title": {
-									"en": "Slap slap slap plus",
-									"ru": "Шлёп шлёп шлёп плюс"
-								},
-								"audio": {
-									"en": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3",
-									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BF%D0%BB%D1%8E%D1%81.mp3"
-								}
-							},
-							{
-								"audioId": 4,
-								"title": {
-									"en": "Slap slap slap minus",
-									"ru": "Шлёп шлёп шлёп минус"
-								},
-								"audio": {
-									"en": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3",
-									"ru": "https://pub-0e2017d85dee4ba9a595b74d9e1bb0d0.r2.dev/1_%D0%A8%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D1%88%D0%BB%D0%B5%CC%88%D0%BF_%D0%BC%D0%B8%D0%BD%D1%83%D1%81.mp3"
-								}
-							}
-						]
+						"ru": "Библиотека символов с возможность составлять предложения из символов",
+						"en": "Symbol library with the ability to build sentences from symbols"
 					}
 				}
 			]
+		},
+		{
+			"id": "interactiveVerbs",
+			"title": {
+				"ru": "Интерактивные глаголы",
+				"en": "Interactive verbs"
+			},
+			"subsections": [
+				{
+					"id": "verbs",
+					"title": {
+						"ru": "ГЛАГОЛЫ",
+						"en": "Verbs"
+					},
+					"items": [
+						{
+							"id": "eat",
+							"title": {
+								"ru": "КУШАТЬ,ЕСТЬ,ПОКУШАТЬ",
+								"en": "Eat, have a meal"
+							}
+						},
+						{
+							"id": "drink",
+							"title": {
+								"ru": "ПИТЬ,ПОПИТЬ",
+								"en": "Drink, have a drink"
+							}
+						},
+						{
+							"id": "watchSee",
+							"title": {
+								"ru": "СМОТРЕТЬ(ВИДЕТЬ)",
+								"en": "Watch (see)"
+							}
+						},
+						{
+							"id": "beWill",
+							"title": {
+								"ru": "БУДУ,БЫТЬ,БУДЕМ",
+								"en": "Will be, to be, we will be"
+							}
+						},
+						{
+							"id": "become",
+							"title": {
+								"ru": "СТАТЬ.СТАНУ",
+								"en": "Become. I will become"
+							}
+						},
+						{
+							"id": "want",
+							"title": {
+								"ru": "ХОТЕТЬ",
+								"en": "Want"
+							}
+						},
+						{
+							"id": "sleep",
+							"title": {
+								"ru": "СПАТЬ",
+								"en": "Sleep"
+							}
+						},
+						{
+							"id": "lieDown",
+							"title": {
+								"ru": "ЛЕЖАТЬ",
+								"en": "Lie down"
+							}
+						},
+						{
+							"id": "run",
+							"title": {
+								"ru": "БЕЖАТЬ",
+								"en": "Run"
+							}
+						},
+						{
+							"id": "walkGoStepCame",
+							"title": {
+								"ru": "ХОДИТЬ,ИДТИ,ШАГАТЬ,ПРИШЕЛ",
+								"en": "Walk, go, step, came"
+							}
+						},
+						{
+							"id": "sit",
+							"title": {
+								"ru": "СИДЕТЬ",
+								"en": "Sit"
+							}
+						},
+						{
+							"id": "jump",
+							"title": {
+								"ru": "ПРЫГАТЬ/СКАКАТЬ",
+								"en": "Jump"
+							}
+						},
+						{
+							"id": "stand",
+							"title": {
+								"ru": "СТОЯТЬ",
+								"en": "Stand"
+							}
+						},
+						{
+							"id": "swim",
+							"title": {
+								"ru": "ПЛАВАТЬ.ПЛЫТЬ",
+								"en": "Swim"
+							}
+						},
+						{
+							"id": "rideGo",
+							"title": {
+								"ru": "ЕДЕТ.ЕХАТЬ",
+								"en": "Goes/ride"
+							}
+						},
+						{
+							"id": "rush",
+							"title": {
+								"ru": "МЧИТЬСЯ",
+								"en": "Rush"
+							}
+						},
+						{
+							"id": "hurry",
+							"title": {
+								"ru": "СПЕШИТ",
+								"en": "Hurries"
+							}
+						},
+						{
+							"id": "fly",
+							"title": {
+								"ru": "ЛЕТЕТЬ",
+								"en": "Fly"
+							}
+						},
+						{
+							"id": "do",
+							"title": {
+								"ru": "ДЕЛАТЬ",
+								"en": "Do"
+							}
+						},
+						{
+							"id": "teach",
+							"title": {
+								"ru": "УЧИТЬ",
+								"en": "Teach"
+							}
+						},
+						{
+							"id": "study",
+							"title": {
+								"ru": "УЧИТЬСЯ",
+								"en": "Study"
+							}
+						},
+						{
+							"id": "read",
+							"title": {
+								"ru": "ЧИТАТЬ",
+								"en": "Read"
+							}
+						},
+						{
+							"id": "write",
+							"title": {
+								"ru": "ПИСАТЬ",
+								"en": "Write"
+							}
+						},
+						{
+							"id": "count",
+							"title": {
+								"ru": "СЧИТАТЬ",
+								"en": "Count"
+							}
+						},
+						{
+							"id": "glue",
+							"title": {
+								"ru": "КЛЕИТЬ",
+								"en": "Glue"
+							}
+						},
+						{
+							"id": "sculpt",
+							"title": {
+								"ru": "ЛЕПИТЬ",
+								"en": "Sculpt"
+							}
+						},
+						{
+							"id": "draw",
+							"title": {
+								"ru": "РИСОВАТЬ",
+								"en": "Draw"
+							}
+						},
+						{
+							"id": "color",
+							"title": {
+								"ru": "КРАСИТЬ/РАСКРАШИВАТЬ",
+								"en": "Color/Paint"
+							}
+						},
+						{
+							"id": "playWalk",
+							"title": {
+								"ru": "ИГРАТЬ,ГУЛЯТЬ",
+								"en": "Play, walk"
+							}
+						},
+						{
+							"id": "know",
+							"title": {
+								"ru": "ЗНАТЬ",
+								"en": "Know"
+							}
+						},
+						{
+							"id": "can",
+							"title": {
+								"ru": "УМЕТЬ.МОГУ",
+								"en": "Can (I can)"
+							}
+						},
+						{
+							"id": "speakSay",
+							"title": {
+								"ru": "ГОВОРИТЬ,СКАЖИ",
+								"en": "Speak, say"
+							}
+						},
+						{
+							"id": "cutScissors",
+							"title": {
+								"ru": "РЕЗАТЬ (НОЖНИЦЫ)",
+								"en": "Cut (scissors)"
+							}
+						},
+						{
+							"id": "cutKnife",
+							"title": {
+								"ru": "РЕЗАТЬ(ножом)",
+								"en": "Cut (knife)"
+							}
+						},
+						{
+							"id": "close",
+							"title": {
+								"ru": "ЗАКРЫТЬ",
+								"en": "Close"
+							}
+						},
+						{
+							"id": "open",
+							"title": {
+								"ru": "ОТКРЫТЬ",
+								"en": "Open"
+							}
+						},
+						{
+							"id": "putLay",
+							"title": {
+								"ru": "ЛОЖИТЬ,ПОЛОЖИТЬ,КЛАСТЬ",
+								"en": "Put, place"
+							}
+						},
+						{
+							"id": "give",
+							"title": {
+								"ru": "ДАВАТЬ",
+								"en": "Give"
+							}
+						},
+						{
+							"id": "takeWillTake",
+							"title": {
+								"ru": "БРАТЬ,ВОЗЬМУ",
+								"en": "Take, I will take"
+							}
+						},
+						{
+							"id": "ask",
+							"title": {
+								"ru": "ПРОСИТЬ",
+								"en": "Ask"
+							}
+						},
+						{
+							"id": "loveDislike",
+							"title": {
+								"ru": "ЛЮБИТЬ/НЕ ЛЮБИТЬ",
+								"en": "Love/Don't love"
+							}
+						},
+						{
+							"id": "live",
+							"title": {
+								"ru": "ЖИТЬ",
+								"en": "Live"
+							}
+						},
+						{
+							"id": "beHealthy",
+							"title": {
+								"ru": "Здоровым быть ?",
+								"en": "Be healthy?"
+							}
+						},
+						{
+							"id": "washBath",
+							"title": {
+								"ru": "МЫТЬСЯ,ПОМЫТЬСЯ,КУПАТЬСЯ",
+								"en": "Wash, wash up, bathe"
+							}
+						},
+						{
+							"id": "pour",
+							"title": {
+								"ru": "ЛИТЬ,НАЛИТЬ",
+								"en": "Pour"
+							}
+						},
+						{
+							"id": "think",
+							"title": {
+								"ru": "ДУМАТЬ",
+								"en": "Think"
+							}
+						},
+						{
+							"id": "dance",
+							"title": {
+								"ru": "ТАНЦЕВАТЬ",
+								"en": "Dance"
+							}
+						},
+						{
+							"id": "sing",
+							"title": {
+								"ru": "ПЕТЬ",
+								"en": "Sing"
+							}
+						},
+						{
+							"id": "cookPrepareBoilBake",
+							"title": {
+								"ru": "ГОТОВИТЬ,ПРИГОТОВИТЬ,ВАРИТЬ,ИСПЕЧЬ",
+								"en": "Cook, prepare, boil, bake"
+							}
+						},
+						{
+							"id": "find",
+							"title": {
+								"ru": "НАЙТИ",
+								"en": "Find"
+							}
+						},
+						{
+							"id": "listen",
+							"title": {
+								"ru": "СЛУШАТЬ",
+								"en": "Listen"
+							}
+						},
+						{
+							"id": "carryBring",
+							"title": {
+								"ru": "НОСИТЬ,НЕСТИ",
+								"en": "Carry"
+							}
+						},
+						{
+							"id": "wait",
+							"title": {
+								"ru": "ЖДАТЬ",
+								"en": "Wait"
+							}
+						},
+						{
+							"id": "sew",
+							"title": {
+								"ru": "ШИТЬ",
+								"en": "Sew"
+							}
+						},
+						{
+							"id": "getUp",
+							"title": {
+								"ru": "ВСТАВАТЬ",
+								"en": "Get up"
+							}
+						},
+						{
+							"id": "build",
+							"title": {
+								"ru": "СТРОИТЬ",
+								"en": "Build"
+							}
+						},
+						{
+							"id": "drive",
+							"title": {
+								"ru": "ВОДИТЬ",
+								"en": "Drive"
+							}
+						},
+						{
+							"id": "buy",
+							"title": {
+								"ru": "КУПИТЬ",
+								"en": "Buy"
+							}
+						},
+						{
+							"id": "getScaredAfraid",
+							"title": {
+								"ru": "ИСПУГАТЬСЯ,БОЯТЬСЯ",
+								"en": "Get scared, be afraid"
+							}
+						},
+						{
+							"id": "fall",
+							"title": {
+								"ru": "УПАСТЬ",
+								"en": "Fall"
+							}
+						},
+						{
+							"id": "callRing",
+							"title": {
+								"ru": "ЗВОНИТЬ",
+								"en": "Call"
+							}
+						},
+						{
+							"id": "throw",
+							"title": {
+								"ru": "БРОСАТЬ",
+								"en": "Throw"
+							}
+						},
+						{
+							"id": "dig",
+							"title": {
+								"ru": "КОПАТЬ",
+								"en": "Dig"
+							}
+						},
+						{
+							"id": "setTable",
+							"title": {
+								"ru": "НАКРЫВАТЬ НА СТОЛ",
+								"en": "Set the table"
+							}
+						}
+					]
+				}
+			],
+			"courses": []
+		},
+		{
+			"id": "articulationGymnastics",
+			"title": {
+				"ru": "Артикуляционная гимнастика",
+				"en": "Articulation gymnastics"
+			},
+			"courses": []
+		},
+		{
+			"id": "readingTutor",
+			"title": {
+				"ru": "Самоучитель по чтению",
+				"en": "Reading self-study tutor"
+			},
+			"courses": []
+		},
+		{
+			"id": "noteTutor",
+			"title": {
+				"ru": "Самоучитель игры по ноткам",
+				"en": "Note-playing self-study tutor"
+			},
+			"courses": []
 		}
 	]
 }

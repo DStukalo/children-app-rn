@@ -1,10 +1,23 @@
 import { NavigatorScreenParams } from "@react-navigation/native";
+
+export type SectionId =
+	| "rhythmSchemes"
+	| "echoSchemes"
+	| "drumComplex"
+	| "makatop"
+	| "interactiveVerbs"
+	| "articulationGymnastics"
+	| "readingTutor"
+	| "noteTutor";
+
 export type MainStackParamList = {
 	HomeScreen: undefined;
 	ChooseStageScreen: undefined;
 	StageScreen: { stageId: number };
 	CourseScreen: { id: number };
 	LessonScreen: { lessonId: number; courseId: number };
+	SectionScreen: { sectionId: SectionId };
+	SubsectionScreen: { sectionId: SectionId; subsectionPath: string[] };
 	ProfileScreen: undefined;
 	PaymentScreen: {
 		courseId?: number | string;

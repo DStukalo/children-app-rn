@@ -141,10 +141,25 @@ export default {
 		dontHaveCourses: "Нет доступных этапов",
 		profile: "Профиль",
 		main: "Главная",
+		sections: "Разделы приложения",
 		btnRedirect1: "ПОМОЩЬ КУРАТОРОВ В ОБУЧЕНИИ, подать заявку",
 		btnRedirect2: "Официальный сайт автора методики",
 		btnRedirect3: "Обучение специалистов и родителей",
 		btnRedirect4: "Официальный сайт автора методики",
+	},
+	sections: {
+		comingSoon: "В разработке",
+		rhythmSchemes: { title: "Ритмосхемы" },
+		echoSchemes: { title: "Эхо-схемы" },
+		drumComplex: { title: "Барабанный комплекс" },
+		makatop: {
+			title:
+				"Макатоп (песенки + библиотека символов с возможностью составлять предложения из символов)",
+		},
+		interactiveVerbs: { title: "Интерактивные глаголы" },
+		articulationGymnastics: { title: "Артикуляционная гимнастика" },
+		readingTutor: { title: "Самоучитель по чтению" },
+		noteTutor: { title: "Самоучитель игры по ноткам" },
 	},
 
 	customVideoPlayer: {

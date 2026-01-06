@@ -51,7 +51,10 @@ export default function ChooseStageScreen() {
 							</Text>
 							<Text style={styles.stageMeta}>
 								{t("choose-stage.courseCount", {
-									count: stage.courses.length,
+									count:
+										stage.courses.length > 0
+											? stage.courses.length
+											: stage.subsections?.length ?? 0,
 								})}
 							</Text>
 						</TouchableOpacity>

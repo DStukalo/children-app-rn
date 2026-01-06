@@ -140,10 +140,25 @@ export default {
 		dontHaveCourses: "No available courses",
 		profile: "Profile",
 		main: "Main",
+		sections: "App Sections",
 		btnRedirect1: "ASSISTANCE FROM CURATORS IN TRAINING, submit an application",
 		btnRedirect2: "Official website of the author of the methodology",
 		btnRedirect3: "Training for professionals and parents",
 		btnRedirect4: "Official website of the author of the methodology",
+	},
+	sections: {
+		comingSoon: "Coming soon",
+		rhythmSchemes: { title: "Rhythm schemes" },
+		echoSchemes: { title: "Echo schemes" },
+		drumComplex: { title: "Drum complex" },
+		makatop: {
+			title:
+				"Makatop (songs + symbol library with the ability to build sentences from symbols)",
+		},
+		interactiveVerbs: { title: "Interactive verbs" },
+		articulationGymnastics: { title: "Articulation gymnastics" },
+		readingTutor: { title: "Reading self-study tutor" },
+		noteTutor: { title: "Note-playing self-study tutor" },
 	},
 
 	customVideoPlayer: {

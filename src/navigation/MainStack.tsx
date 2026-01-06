@@ -12,10 +12,16 @@ import { MainStackParamList } from "./types";
 import RegisterScreen from '../screens/RegisterScreen';
 import StageScreen from "../screens/StageScreen";
 import WebPayScreen from "../screens/WebPayScreen";
+import SectionScreen from "../screens/SectionScreen";
+import { useTranslation } from "react-i18next";
+import SubsectionScreen from "../screens/SubsectionScreen";
+import { findSubsectionByPath } from "../utils/sectionsData";
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
 export default function MainStack() {
+	const { t, i18n } = useTranslation();
+	const currentLanguage = i18n.language === "ru" ? "ru" : "en";
 	return (
 		<Stack.Navigator>
 			<Stack.Screen
@@ -63,6 +69,32 @@ export default function MainStack() {
 				name='LessonScreen'
 				component={LessonScreen}
 				options={{ headerShown: true }}
+			/>
+			<Stack.Screen
+				name='SectionScreen'
+				component={SectionScreen}
+				options={({ route }) => ({
+					headerShown: true,
+					title: t(`sections.${route.params.sectionId}.title`),
+				})}
+			/>
+			<Stack.Screen
+				name='SubsectionScreen'
+				component={SubsectionScreen}
+				options={({ route }) => {
+					const subsection = findSubsectionByPath(
+						route.params.sectionId,
+						route.params.subsectionPath
+					);
+					const localizedTitle =
+						subsection?.title?.[currentLanguage] || subsection?.title?.ru;
+					return {
+						headerShown: true,
+						title:
+							localizedTitle ??
+							route.params.subsectionPath[route.params.subsectionPath.length - 1],
+					};
+				}}
 			/>
 			<Stack.Screen
 				name='CheckLoginWhenPayScreen'

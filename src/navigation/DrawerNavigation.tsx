@@ -10,21 +10,26 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MainStack from "./MainStack";
 import { CustomTabBar } from "../components/CustomTabBar";
 import { useTranslation } from "react-i18next";
-import { getStages } from "../utils/courseData";
-import { Dropdown } from "../components/Dropdown";
 import { Linking } from "react-native";
+import type { SectionId } from "./types";
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
 
-type Lang = "en" | "ru";
-
 export function CustomDrawerContent(props: any) {
 	const navigation = useNavigation<any>();
 
-	const { i18n, t } = useTranslation();
-	const currentLang: Lang = i18n.language === "ru" ? "ru" : "en";
-	const stages = getStages();
+	const { t } = useTranslation();
+	const sectionIds: SectionId[] = [
+		"rhythmSchemes",
+		"echoSchemes",
+		"drumComplex",
+		"makatop",
+		"interactiveVerbs",
+		"articulationGymnastics",
+		"readingTutor",
+		"noteTutor",
+	];
 
 	return (
 		<DrawerContentScrollView {...props}>
@@ -37,59 +42,22 @@ export function CustomDrawerContent(props: any) {
 				labelStyle={styles.drawerTitle}
 			/>
 			<View style={styles.divider} />
-			<DrawerItem
-				label={t("drawerNav.courses")}
-				onPress={() => {
-					props.navigation.closeDrawer();
-					navigation.navigate("ChooseStageScreen");
-				}}
-				labelStyle={styles.drawerTitle}
-			/>
+			<View style={styles.drawerHeader}>
+				<Text style={styles.drawerTitle}>{t("drawerNav.sections")}</Text>
+			</View>
 			<View style={styles.stagesContainer}>
-				{stages.map((stage) => {
-					const stageTitle = stage.title[currentLang] || stage.title.ru;
-					return (
-						<View
-							key={stage.id}
-							style={styles.stageSection}
-						>
-							<Dropdown
-								item={stage}
-								renderLabel={(stageItem) => (
-									<TouchableOpacity
-										style={styles.stageLabelRow}
-										onPress={() => {
-											props.navigation.closeDrawer();
-											navigation.navigate("StageScreen", {
-												stageId: stageItem.id,
-											});
-										}}
-									>
-										<Text style={styles.stageTitle}>{stageTitle}</Text>
-									</TouchableOpacity>
-								)}
-								renderContent={(stageItem) => (
-									<View style={styles.stageCourses}>
-										{stageItem.courses.map((course) => (
-											<DrawerItem
-												key={`${stageItem.id}-${course.id}`}
-												label={course.title[currentLang] || course.title.ru}
-												onPress={() => {
-													props.navigation.closeDrawer();
-													navigation.navigate("CourseScreen", {
-														id: course.id,
-													});
-												}}
-												labelStyle={styles.stageCourseTitle}
-												style={styles.stageCourseItem}
-											/>
-										))}
-									</View>
-								)}
-							/>
-						</View>
-					);
-				})}
+				{sectionIds.map((sectionId) => (
+					<DrawerItem
+						key={sectionId}
+						label={t(`sections.${sectionId}.title`)}
+						onPress={() => {
+							props.navigation.closeDrawer();
+							navigation.navigate("SectionScreen", { sectionId });
+						}}
+						labelStyle={styles.stageCourseTitle}
+						style={styles.stageCourseItem}
+					/>
+				))}
 			</View>
 			<View style={styles.divider} />
 			<DrawerItem
@@ -247,19 +215,6 @@ const styles = StyleSheet.create({
 	},
 	stagesContainer: {
 		paddingLeft: 18,
-	},
-	stageSection: {
-		marginBottom: 12,
-	},
-	stageLabelRow: {
-		paddingVertical: 8,
-	},
-	stageTitle: {
-		fontSize: 16,
-		color: "#111",
-	},
-	stageCourses: {
-		paddingLeft: 0,
 	},
 	stageCourseItem: {
 		marginVertical: 0,

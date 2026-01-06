@@ -198,75 +198,97 @@ export default function StageScreen() {
 				<Text style={styles.sectionTitle}>{t("stageScreen.coursesTitle")}</Text>
 
 				<View style={styles.courseList}>
-					{stage.courses.map((course) => {
-						const isPurchased = user
-							? isCoursePurchased(user, course.id)
-							: false;
+					{stage.courses.length > 0
+						? stage.courses.map((course) => {
+								const isPurchased = user
+									? isCoursePurchased(user, course.id)
+									: false;
 
-						return (
-							<TouchableOpacity
-								key={course.id}
-								style={styles.courseCard}
-								onPress={() => handleCoursePress(course.id)}
-								activeOpacity={0.85}
-							>
-								<View style={styles.courseImageContainer}>
-									{course.image ? (
-										<Image
-											source={{ uri: course.image }}
-											style={styles.courseImage}
-											resizeMode='cover'
-										/>
-									) : (
-										<View style={styles.placeholder}>
-											<Text style={styles.placeholderText}>
-												{t("stageScreen.noImage")}
+								return (
+									<TouchableOpacity
+										key={course.id}
+										style={styles.courseCard}
+										onPress={() => handleCoursePress(course.id)}
+										activeOpacity={0.85}
+									>
+										<View style={styles.courseImageContainer}>
+											{course.image ? (
+												<Image
+													source={{ uri: course.image }}
+													style={styles.courseImage}
+													resizeMode='cover'
+												/>
+											) : (
+												<View style={styles.placeholder}>
+													<Text style={styles.placeholderText}>
+														{t("stageScreen.noImage")}
+													</Text>
+												</View>
+											)}
+										</View>
+										<View style={styles.courseContent}>
+											<Text style={styles.courseTitle}>
+												{course.title[currentLanguage] || course.title.ru}
+											</Text>
+											<View style={styles.courseMetaRow}>
+												<Text style={styles.coursePrice}>
+													{t("stageScreen.coursePriceLabel", {
+														price: formatPrice(course.price),
+													})}
+												</Text>
+												<Text
+													style={[
+														styles.statusBadge,
+														isPurchased
+															? styles.statusBadgePurchased
+															: styles.statusBadgeLocked,
+													]}
+												>
+													{isPurchased
+														? t("stageScreen.coursePurchasedLabel")
+														: t("stageScreen.courseLockedLabel")}
+												</Text>
+											</View>
+											{!isPurchased && (
+												<TouchableOpacity
+													style={styles.courseBuyButton}
+													onPress={() => handleCoursePurchase(course.id)}
+												>
+													<Text style={styles.courseBuyButtonText}>
+														{t("stageScreen.courseBuyButton", {
+															price: formatPrice(course.price),
+														})}
+													</Text>
+												</TouchableOpacity>
+											)}
+										</View>
+									</TouchableOpacity>
+								);
+						  })
+						: stage.subsections?.length
+							? stage.subsections.map((subsection) => (
+									<TouchableOpacity
+										key={subsection.id}
+										style={styles.courseCard}
+										activeOpacity={0.85}
+										disabled={!stage.sectionId}
+										onPress={() => {
+											if (!stage.sectionId) return;
+											navigation.navigate("SubsectionScreen", {
+												sectionId: stage.sectionId,
+												subsectionPath: [subsection.id],
+											});
+										}}
+									>
+										<View style={styles.courseContent}>
+											<Text style={styles.courseTitle}>
+												{subsection.title[currentLanguage] ||
+													subsection.title.ru}
 											</Text>
 										</View>
-									)}
-								</View>
-								<View style={styles.courseContent}>
-									<Text style={styles.courseTitle}>
-										{course.title[currentLanguage] || course.title.ru}
-									</Text>
-									{/* <Text style={styles.courseSubtitle}>
-										{course.subtitle[currentLanguage] || course.subtitle.ru}
-									</Text> */}
-									<View style={styles.courseMetaRow}>
-										<Text style={styles.coursePrice}>
-											{t("stageScreen.coursePriceLabel", {
-												price: formatPrice(course.price),
-											})}
-										</Text>
-										<Text
-											style={[
-												styles.statusBadge,
-												isPurchased
-													? styles.statusBadgePurchased
-													: styles.statusBadgeLocked,
-											]}
-										>
-											{isPurchased
-												? t("stageScreen.coursePurchasedLabel")
-												: t("stageScreen.courseLockedLabel")}
-										</Text>
-									</View>
-									{!isPurchased && (
-										<TouchableOpacity
-											style={styles.courseBuyButton}
-											onPress={() => handleCoursePurchase(course.id)}
-										>
-											<Text style={styles.courseBuyButtonText}>
-												{t("stageScreen.courseBuyButton", {
-													price: formatPrice(course.price),
-												})}
-											</Text>
-										</TouchableOpacity>
-									)}
-								</View>
-							</TouchableOpacity>
-						);
-					})}
+									</TouchableOpacity>
+							  ))
+							: null}
 				</View>
 			</ScrollView>
 		</SafeAreaView>
