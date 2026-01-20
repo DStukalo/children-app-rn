@@ -32,6 +32,7 @@ export default {
 		coursesTitle: "Courses in this stage",
 		viewCourse: "View course",
 		noImage: "Preview unavailable",
+		imageComingSoon: "No image yet — we’ll upload it shortly.",
 		notFound: "Stage not found",
 		stagePriceLabel: "Stage price: {{price}}",
 		stageProgress: "{{purchased}} of {{total}} purchased",

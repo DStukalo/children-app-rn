@@ -15,6 +15,7 @@ import {
 	useFocusEffect,
 } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import { getStages } from "../utils/courseData";
 import { MainStackParamList } from "../navigation/types";
 import {
@@ -34,6 +35,9 @@ export default function StageScreen() {
 	const { i18n, t } = useTranslation();
 	const currentLanguage = i18n.language === "ru" ? "ru" : "en";
 	const [user, setUser] = useState<UserWithPurchases | null>(null);
+	const [failedCourseImages, setFailedCourseImages] = useState<Set<number>>(
+		() => new Set()
+	);
 	const stageId = route.params?.stageId;
 
 	const stage = useMemo(() => {
@@ -151,6 +155,15 @@ export default function StageScreen() {
 	const stagePrice = calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
 	const allCoursesPurchased = purchasedCourses === totalCourses;
 
+	const handleCourseImageError = useCallback((courseId: number) => {
+		setFailedCourseImages((prev) => {
+			if (prev.has(courseId)) return prev;
+			const next = new Set(prev);
+			next.add(courseId);
+			return next;
+		});
+	}, []);
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
@@ -212,16 +225,22 @@ export default function StageScreen() {
 										activeOpacity={0.85}
 									>
 										<View style={styles.courseImageContainer}>
-											{course.image ? (
+											{course.image && !failedCourseImages.has(course.id) ? (
 												<Image
 													source={{ uri: course.image }}
 													style={styles.courseImage}
 													resizeMode='cover'
+													onError={() => handleCourseImageError(course.id)}
 												/>
 											) : (
-												<View style={styles.placeholder}>
-													<Text style={styles.placeholderText}>
-														{t("stageScreen.noImage")}
+												<View style={styles.courseImagePlaceholder}>
+													<Ionicons
+														name='image-outline'
+														size={56}
+														color='#9CA3AF'
+													/>
+													<Text style={styles.courseImagePlaceholderText}>
+														{t("stageScreen.imageComingSoon")}
 													</Text>
 												</View>
 											)}
@@ -280,6 +299,18 @@ export default function StageScreen() {
 											});
 										}}
 									>
+										<View style={styles.courseImageContainer}>
+											<View style={styles.courseImagePlaceholder}>
+												<Ionicons
+													name='image-outline'
+													size={56}
+													color='#9CA3AF'
+												/>
+												<Text style={styles.courseImagePlaceholderText}>
+													{t("stageScreen.imageComingSoon")}
+												</Text>
+											</View>
+										</View>
 										<View style={styles.courseContent}>
 											<Text style={styles.courseTitle}>
 												{subsection.title[currentLanguage] ||
@@ -390,6 +421,20 @@ const styles = StyleSheet.create({
 	courseImage: {
 		width: "100%",
 		height: "100%",
+	},
+	courseImagePlaceholder: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+		paddingHorizontal: 16,
+		gap: 10,
+		backgroundColor: "#E5E7EB",
+	},
+	courseImagePlaceholderText: {
+		color: "#6B7280",
+		fontSize: 13,
+		fontFamily: "Inter-Medium",
+		textAlign: "center",
 	},
 	placeholder: {
 		flex: 1,

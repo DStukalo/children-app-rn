@@ -33,6 +33,7 @@ export default function Course() {
 	const hasCourseAccess = useHasCourseAccess(id);
 
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const [imageLoadFailed, setImageLoadFailed] = useState(false);
 	const handleNext = (index: number) => {
 		const audios = course?.details?.audio;
 		if (!audios || index >= audios.length - 1) return;
@@ -106,10 +107,24 @@ export default function Course() {
 							}
 						/>
 					) : (
-						<Image
-							source={{ uri: course.image }}
-							style={styles.courseImage}
-						/>
+						!imageLoadFailed && course.image ? (
+							<Image
+								source={{ uri: course.image }}
+								style={styles.courseImage}
+								onError={() => setImageLoadFailed(true)}
+							/>
+						) : (
+							<View style={styles.courseImagePlaceholder}>
+								<Ionicons
+									name='image-outline'
+									size={64}
+									color='#9CA3AF'
+								/>
+								<Text style={styles.courseImagePlaceholderText}>
+									{t("stageScreen.imageComingSoon")}
+								</Text>
+							</View>
+						)
 					)}
 				</View>
 
@@ -250,11 +265,26 @@ const styles = StyleSheet.create({
 		position: "relative",
 		height: 200,
 		overflow: "hidden",
+		backgroundColor: "#E5E7EB",
 	},
 	courseImage: {
 		width: "100%",
 		height: "100%",
 		resizeMode: "cover",
+	},
+	courseImagePlaceholder: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+		paddingHorizontal: 24,
+		gap: 12,
+		backgroundColor: "#E5E7EB",
+	},
+	courseImagePlaceholderText: {
+		color: "#6B7280",
+		fontSize: 14,
+		fontFamily: "Inter-Medium",
+		textAlign: "center",
 	},
 	courseInfo: {
 		backgroundColor: "#FFFFFF",
