@@ -71,7 +71,7 @@ export function CustomDrawerContent(props: any) {
 					style={styles.btnRedirect}
 					onPress={() => {
 						props.navigation.closeDrawer();
-						Linking.openURL("https://example.com");
+						Linking.openURL("https://aba-centr.by");
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
@@ -82,7 +82,7 @@ export function CustomDrawerContent(props: any) {
 					style={styles.btnRedirect}
 					onPress={() => {
 						props.navigation.closeDrawer();
-						Linking.openURL("https://aba-centr.by");
+						Linking.openURL("https://aba-minks.by");
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
@@ -94,22 +94,11 @@ export function CustomDrawerContent(props: any) {
 					style={styles.btnRedirect}
 					onPress={() => {
 						props.navigation.closeDrawer();
-						Linking.openURL("https://aba-minks.by");
-					}}
-				>
-					<Text style={styles.btnRedirectText}>
-						{t("drawerNav.btnRedirect3")}
-					</Text>
-				</TouchableOpacity>
-				<TouchableOpacity
-					style={styles.btnRedirect}
-					onPress={() => {
-						props.navigation.closeDrawer();
 						Linking.openURL("https://filistovich.com");
 					}}
 				>
 					<Text style={styles.btnRedirectText}>
-						{t("drawerNav.btnRedirect4")}
+						{t("drawerNav.btnRedirect3")}
 					</Text>
 				</TouchableOpacity>
 			</View>
@@ -240,11 +229,11 @@ const styles = StyleSheet.create({
 
 	btnRedirect: {
 		backgroundColor: "#F7543E",
-		paddingHorizontal: 6,
-		paddingVertical: 6,
+		paddingHorizontal: 4,
+		paddingVertical: 4,
 		borderRadius: 8,
-		marginVertical: 10,
-		height: 60,
+		marginVertical: 4,
+		height: 50,
 		alignItems: "center",
 		justifyContent: "center",
 	},

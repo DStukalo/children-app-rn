@@ -84,7 +84,8 @@ export default {
 		purchaseSuccess: "Платеж успешно обработан",
 		paymentFailed: "Платеж не был обработан",
 		confirmClose: "Закрыть оплату?",
-		confirmCloseMessage: "Оплата еще не завершена. Вы уверены, что хотите закрыть?",
+		confirmCloseMessage:
+			"Оплата еще не завершена. Вы уверены, что хотите закрыть?",
 		cancel: "Отмена",
 		close: "Закрыть",
 		coursePurchaseSuccess: "Курс успешно открыт.",
@@ -143,11 +144,12 @@ export default {
 		profile: "Профиль",
 		main: "Главная",
 		sections: "Разделы приложения",
-		btnRedirect1: "ПОМОЩЬ КУРАТОРОВ В ОБУЧЕНИИ, подать заявку",
-		btnRedirect2: "Официальный сайт автора методики",
-		btnRedirect3: "Обучение специалистов и родителей",
-		btnRedirect4: "Официальный сайт автора методики",
+		btnRedirect1: "Обучение родителей",
+		btnRedirect2: "Обучение специалистов",
+		btnRedirect3: "Консультация",
 	},
+
+	// 		btnRedirect1: Обучение родителей",
 	sections: {
 		comingSoon: "В разработке",
 		rhythmSchemes: { title: "Ритмосхемы" },

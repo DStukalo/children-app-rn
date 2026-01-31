@@ -217,19 +217,19 @@
 			},
 			"courses": []
 		},
-			{
-				"id": "makatop",
-				"title": {
-					"ru": "Макатоп (песенки+библиотека символов с возможность составлять предложения из символов)",
-					"en": "Makatop (songs + symbol library with the ability to build sentences from symbols)"
-				},
-				"courses": [],
-				"subsections": [
-					{
-						"id": "songs",
-						"title": {
-							"ru": "Песенки",
-							"en": "Songs"
+		{
+			"id": "makatop",
+			"title": {
+				"ru": "Макатоп (песенки)",
+				"en": "Makatop (songs)"
+			},
+			"courses": [],
+			"subsections": [
+				{
+					"id": "songs",
+					"title": {
+						"ru": "Песенки",
+						"en": "Songs"
 					},
 					"subsections": [
 						{
@@ -300,10 +300,10 @@
 									"title": {
 										"ru": "БАБУШКА",
 										"en": "Grandmother"
-						}
-					}
-				]
-			},
+									}
+								}
+							]
+						},
 						{
 							"id": "pronouns",
 							"title": {

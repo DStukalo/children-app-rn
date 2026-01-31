@@ -10,12 +10,12 @@ export default {
 		methodicSectionTitle: "These techniques will help you",
 		methodicSectionBlock1:
 			"Are you concerned that your child does not communicate much with peers, is overly tearful, and sensitive?",
-	methodicSectionBlock2:
-		"A non-verbal child aged 1.5–12 years old with a \"bunch of diagnoses,\" but it is still unclear when the child will start talking and what to do to achieve this;",
+		methodicSectionBlock2:
+			'A non-verbal child aged 1.5–12 years old with a "bunch of diagnoses," but it is still unclear when the child will start talking and what to do to achieve this;',
 		methodicSectionBlock3:
 			"A child aged between 2 and 18 years old has behavioral disorders: tantrums, masturbation, aggression and self-aggression, poor hygiene and self-care skills, and picky eating habits.",
-	methodicSectionBlock4:
-		"Child aged 1-4 years old. Something is bothering you, but everyone advises you to \"relax,\" and you still feel uneasy because your child is not responding to you properly and hardly looks you in the eye.",
+		methodicSectionBlock4:
+			'Child aged 1-4 years old. Something is bothering you, but everyone advises you to "relax," and you still feel uneasy because your child is not responding to you properly and hardly looks you in the eye.',
 		methodicSectionBlock5:
 			"A child with any developmental disorder. You are not interested in the diagnosis, but you are concerned about why there is no positive progress in their development. You notice that your child selectively understands everyday instructions and tends to guess what you want from them.",
 	},
@@ -83,7 +83,8 @@ export default {
 		purchaseSuccess: "Payment processed successfully",
 		paymentFailed: "Payment was not processed",
 		confirmClose: "Close payment?",
-		confirmCloseMessage: "Payment is not completed yet. Are you sure you want to close?",
+		confirmCloseMessage:
+			"Payment is not completed yet. Are you sure you want to close?",
 		cancel: "Cancel",
 		close: "Close",
 		coursePurchaseSuccess: "Course successfully unlocked.",
@@ -92,7 +93,7 @@ export default {
 		errorGeneric: "Unable to complete the purchase. Please try again.",
 		prerequisiteTitle: "Previous course required",
 		prerequisiteDescription:
-			"Please purchase \"{{course}}\" before buying this course.",
+			'Please purchase "{{course}}" before buying this course.',
 	},
 
 	profile: {
@@ -142,10 +143,9 @@ export default {
 		profile: "Profile",
 		main: "Main",
 		sections: "App Sections",
-		btnRedirect1: "ASSISTANCE FROM CURATORS IN TRAINING, submit an application",
-		btnRedirect2: "Official website of the author of the methodology",
-		btnRedirect3: "Training for professionals and parents",
-		btnRedirect4: "Official website of the author of the methodology",
+		btnRedirect1: "Parent training",
+		btnRedirect2: "Professional training",
+		btnRedirect3: "Consultation,",
 	},
 	sections: {
 		comingSoon: "Coming soon",
