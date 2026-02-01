@@ -305,169 +305,9 @@
 							]
 						},
 						{
-							"id": "pronouns",
-							"title": {
-								"ru": "МЕСТОИМЕНИЯ",
-								"en": "Pronouns"
-							},
-							"items": [
-								{
-									"id": "iMe",
-									"title": {
-										"ru": "Я,МНЕ",
-										"en": "I/Me"
-									}
-								},
-								{
-									"id": "youYou",
-									"title": {
-										"ru": "ТЫ,ТЕБЕ",
-										"en": "You/To you"
-									}
-								},
-								{
-									"id": "weUs",
-									"title": {
-										"ru": "МЫ/НАМ",
-										"en": "We/Us"
-									}
-								},
-								{
-									"id": "youPlural",
-									"title": {
-										"ru": "ВЫ/ВАМ",
-										"en": "You (plural)/to you"
-									}
-								},
-								{
-									"id": "my",
-									"title": {
-										"ru": "МОЙ.МОЯ.МОЕ",
-										"en": "My (masc/fem/neut)"
-									}
-								},
-								{
-									"id": "your",
-									"title": {
-										"ru": "ТВОЙ",
-										"en": "Your"
-									}
-								}
-							]
-						},
-						{
-							"id": "need",
-							"title": {
-								"ru": "НУЖНО.НУЖЕН,НУЖНА",
-								"en": "Need"
-							}
-						},
-						{
-							"id": "allowedForbidden",
-							"title": {
-								"ru": "МОЖНО-НЕЛЬЗЯ",
-								"en": "Allowed/Forbidden"
-							}
-						},
-						{
-							"id": "prepositions",
-							"title": {
-								"ru": "ПРЕЛОГИ",
-								"en": "Prepositions"
-							},
-							"items": [
-								{
-									"id": "za",
-									"title": {
-										"ru": "ЗА",
-										"en": "Behind"
-									}
-								},
-								{
-									"id": "na",
-									"title": {
-										"ru": "НА",
-										"en": "On"
-									}
-								},
-								{
-									"id": "v",
-									"title": {
-										"ru": "В",
-										"en": "In"
-									}
-								},
-								{
-									"id": "k",
-									"title": {
-										"ru": "К",
-										"en": "To"
-									}
-								},
-								{
-									"id": "pod",
-									"title": {
-										"ru": "ПОД",
-										"en": "Under"
-									}
-								}
-							]
-						},
-						{
-							"id": "ageCategories",
-							"title": {
-								"ru": "ВОЗРАСТНЫЕ КАТЕГОРИИ",
-								"en": "Age categories"
-							},
-							"items": [
-								{
-									"id": "childrenChild",
-									"title": {
-										"ru": "ДЕТИ/РЕБЕНОК",
-										"en": "Children/child"
-									}
-								},
-								{
-									"id": "adults",
-									"title": {
-										"ru": "ВЗРОСЛЫЕ",
-										"en": "Adults"
-									}
-								},
-								{
-									"id": "boy",
-									"title": {
-										"ru": "МАЛЬЧИК",
-										"en": "Boy"
-									}
-								},
-								{
-									"id": "girl",
-									"title": {
-										"ru": "ДЕВОЧКА",
-										"en": "Girl"
-									}
-								},
-								{
-									"id": "toddler",
-									"title": {
-										"ru": "МАЛЫШ",
-										"en": "Toddler"
-									}
-								},
-								{
-									"id": "kids",
-									"title": {
-										"ru": "РЕБЯТА",
-										"en": "Kids"
-									}
-								}
-							]
-						},
-						{
 							"id": "peopleAndProfessions",
 							"title": {
-								"ru": "ЛЮДИ/ПРОФЕССИ",
+								"ru": "ЛЮДИ/ПРОФФЕССИ",
 								"en": "People/Professions"
 							},
 							"items": [
@@ -565,6 +405,196 @@
 							]
 						},
 						{
+							"id": "ageCategories",
+							"title": {
+								"ru": "ВОЗРАСТНЫЕ КАТЕГОРИИ",
+								"en": "Age categories"
+							},
+							"items": [
+								{
+									"id": "childrenChild",
+									"title": {
+										"ru": "ДЕТИ/РЕБЕНОК",
+										"en": "Children/child"
+									}
+								},
+								{
+									"id": "adults",
+									"title": {
+										"ru": "ВЗРОСЛЫЕ",
+										"en": "Adults"
+									}
+								},
+								{
+									"id": "boy",
+									"title": {
+										"ru": "МАЛЬЧИК",
+										"en": "Boy"
+									}
+								},
+								{
+									"id": "girl",
+									"title": {
+										"ru": "ДЕВОЧКА",
+										"en": "Girl"
+									}
+								},
+								{
+									"id": "toddler",
+									"title": {
+										"ru": "МАЛЫШ",
+										"en": "Toddler"
+									}
+								},
+								{
+									"id": "kids",
+									"title": {
+										"ru": "РЕБЯТА",
+										"en": "Kids"
+									}
+								}
+							]
+						},
+						{
+							"id": "animalsAndBirds",
+							"title": {
+								"ru": "животные /птицы /насекомые",
+								"en": "Animals/Birds"
+							},
+							"subsections": [
+								{
+									"id": "momBaby",
+									"title": {
+										"ru": "МАМА-МАЛЫШ",
+										"en": "Mom & Baby"
+									},
+									"items": [
+										{
+											"id": "pigPiglet",
+											"title": {
+												"ru": "СВИНЬЯ- поросенок",
+												"en": "Pig - piglet"
+											}
+										},
+										{
+											"id": "henChick",
+											"title": {
+												"ru": "КУРИЦА-цыпленок",
+												"en": "Hen - chick"
+											}
+										},
+										{
+											"id": "dogPuppy",
+											"title": {
+												"ru": "СОБАКА-ЩЕНОК",
+												"en": "Dog - puppy"
+											}
+										},
+										{
+											"id": "bunnyBunny",
+											"title": {
+												"ru": "ЗАЙКА-зайчонок",
+												"en": "Bunny - baby bunny"
+											}
+										},
+										{
+											"id": "mouseMouse",
+											"title": {
+												"ru": "МЫШЬ-мышонок",
+												"en": "Mouse - mouselet"
+											}
+										}
+									]
+								}
+							],
+							"items": [
+								{
+									"id": "bear",
+									"title": {
+										"ru": "МЕДВЕДЬ",
+										"en": "Bear"
+									}
+								},
+								{
+									"id": "cow",
+									"title": {
+										"ru": "КОРОВА",
+										"en": "Cow"
+									}
+								},
+								{
+									"id": "horse",
+									"title": {
+										"ru": "ЛОШАДЬ(конь)",
+										"en": "Horse"
+									}
+								},
+								{
+									"id": "cat",
+									"title": {
+										"ru": "КОШКА(киска)",
+										"en": "Cat (kitty)"
+									}
+								},
+								{
+									"id": "bee",
+									"title": {
+										"ru": "ПЧЕЛА",
+										"en": "Bee"
+									}
+								},
+								{
+									"id": "elephant",
+									"title": {
+										"ru": "СЛОН",
+										"en": "Elephant"
+									}
+								},
+								{
+									"id": "fish",
+									"title": {
+										"ru": "РЫБА",
+										"en": "Fish"
+									}
+								},
+								{
+									"id": "goat",
+									"title": {
+										"ru": "КОЗА",
+										"en": "Goat"
+									}
+								},
+								{
+									"id": "duck",
+									"title": {
+										"ru": "УТКА",
+										"en": "Duck"
+									}
+								},
+								{
+									"id": "rooster",
+									"title": {
+										"ru": "ПЕТУХ",
+										"en": "Rooster"
+									}
+								},
+								{
+									"id": "penguin",
+									"title": {
+										"ru": "ПИНГВИН",
+										"en": "Penguin"
+									}
+								},
+								{
+									"id": "bird",
+									"title": {
+										"ru": "ПТИЦА",
+										"en": "Bird"
+									}
+								}
+							]
+						},
+						{
 							"id": "transport",
 							"title": {
 								"ru": "ТРАНСПОРТ И СРЕДСТВА ПЕРЕДВИЖЕНИЯ",
@@ -651,10 +681,10 @@
 							]
 						},
 						{
-							"id": "geographicObjectsAndPublicPlaces",
+							"id": "graphicObjectsAndPublicPlaces",
 							"title": {
-								"ru": "ГЕГРАФИЧЕСКИЕ ОБЪЕКТЫ И ОБЩЕСТВЕННЫЕ МЕСТА",
-								"en": "Geographic objects and public places"
+								"ru": "ГРАФИЧЕСКИЕ ОБЪЕКТЫ И ОБЩЕСТВЕННЫЕ МЕСТА",
+								"en": "graphic objects and public places"
 							},
 							"items": [
 								{
@@ -823,6 +853,92 @@
 							]
 						},
 						{
+							"id": "leisureGames",
+							"title": {
+								"ru": "ДОСУГ(игры и игрушки)",
+								"en": "Leisure (games)"
+							},
+							"items": [
+								{
+									"id": "doll",
+									"title": {
+										"ru": "КУКЛА",
+										"en": "Doll"
+									}
+								},
+								{
+									"id": "blocks",
+									"title": {
+										"ru": "КУБИКИ",
+										"en": "Blocks"
+									}
+								},
+								{
+									"id": "phone",
+									"title": {
+										"ru": "ТЕЛЕФОН",
+										"en": "Phone"
+									}
+								},
+								{
+									"id": "slide",
+									"title": {
+										"ru": "ГОРКА",
+										"en": "Slide"
+									}
+								},
+								{
+									"id": "sandbox",
+									"title": {
+										"ru": "ПЕСОЧНИЦА",
+										"en": "Sandbox"
+									}
+								},
+								{
+									"id": "swings",
+									"title": {
+										"ru": "КАЧЕЛИ",
+										"en": "Swings"
+									}
+								},
+								{
+									"id": "ball",
+									"title": {
+										"ru": "МЯЧ",
+										"en": "Ball"
+									}
+								},
+								{
+									"id": "hideAndSeek",
+									"title": {
+										"ru": "ПРЯТКИ",
+										"en": "Hide and seek"
+									}
+								},
+								{
+									"id": "fairyTales",
+									"title": {
+										"ru": "СКАЗКИ",
+										"en": "Fairy tales"
+									}
+								},
+								{
+									"id": "games",
+									"title": {
+										"ru": "ИГРЫ",
+										"en": "Games"
+									}
+								},
+								{
+									"id": "teddyBearToy",
+									"title": {
+										"ru": "МИШКА(игрушка)",
+										"en": "Teddy bear (toy)"
+									}
+								}
+							]
+						},
+						{
 							"id": "school",
 							"title": {
 								"ru": "УЧЕБА/ШКОЛЬНЫЕ ПРИНАДЛЕЖНОСТИ",
@@ -951,92 +1067,6 @@
 							]
 						},
 						{
-							"id": "leisureGames",
-							"title": {
-								"ru": "ДОСУГ(ИГРЫ)",
-								"en": "Leisure (games)"
-							},
-							"items": [
-								{
-									"id": "doll",
-									"title": {
-										"ru": "КУКЛА",
-										"en": "Doll"
-									}
-								},
-								{
-									"id": "blocks",
-									"title": {
-										"ru": "КУБИКИ",
-										"en": "Blocks"
-									}
-								},
-								{
-									"id": "phone",
-									"title": {
-										"ru": "ТЕЛЕФОН",
-										"en": "Phone"
-									}
-								},
-								{
-									"id": "slide",
-									"title": {
-										"ru": "ГОРКА",
-										"en": "Slide"
-									}
-								},
-								{
-									"id": "sandbox",
-									"title": {
-										"ru": "ПЕСОЧНИЦА",
-										"en": "Sandbox"
-									}
-								},
-								{
-									"id": "swings",
-									"title": {
-										"ru": "КАЧЕЛИ",
-										"en": "Swings"
-									}
-								},
-								{
-									"id": "ball",
-									"title": {
-										"ru": "МЯЧ",
-										"en": "Ball"
-									}
-								},
-								{
-									"id": "hideAndSeek",
-									"title": {
-										"ru": "ПРЯТКИ",
-										"en": "Hide and seek"
-									}
-								},
-								{
-									"id": "fairyTales",
-									"title": {
-										"ru": "СКАЗКИ",
-										"en": "Fairy tales"
-									}
-								},
-								{
-									"id": "games",
-									"title": {
-										"ru": "ИГРЫ",
-										"en": "Games"
-									}
-								},
-								{
-									"id": "teddyBearToy",
-									"title": {
-										"ru": "МИШКА(игрушка)",
-										"en": "Teddy bear (toy)"
-									}
-								}
-							]
-						},
-						{
 							"id": "objectsAndThings",
 							"title": {
 								"ru": "ПРЕДМЕТЫ/ВЕЩИ",
@@ -1107,6 +1137,115 @@
 									}
 								}
 							]
+						},
+						{
+							"id": "tableware",
+							"title": {
+								"ru": "ПОСУДА",
+								"en": "Tableware"
+							},
+							"items": [
+								{
+									"id": "tableware",
+									"title": {
+										"ru": "ПОСУДА",
+										"en": "Tableware"
+									}
+								},
+								{
+									"id": "knife",
+									"title": {
+										"ru": "НОЖ",
+										"en": "Knife"
+									}
+								},
+								{
+									"id": "fork",
+									"title": {
+										"ru": "ВИЛКА",
+										"en": "Fork"
+									}
+								},
+								{
+									"id": "spoon",
+									"title": {
+										"ru": "ЛОЖКА",
+										"en": "Spoon"
+									}
+								},
+								{
+									"id": "plate",
+									"title": {
+										"ru": "ТАРЕЛКА",
+										"en": "Plate"
+									}
+								},
+								{
+									"id": "cup",
+									"title": {
+										"ru": "ЧАШКА",
+										"en": "Cup"
+									}
+								}
+							]
+						},
+						{
+							"id": "clothesAndHygiene",
+							"title": {
+								"ru": "предметы/ ОДЕЖДА И ГИГИЕНА",
+								"en": "Clothes and hygiene"
+							},
+							"items": [
+								{
+									"id": "soap",
+									"title": {
+										"ru": "МЫЛО",
+										"en": "Soap"
+									}
+								},
+								{
+									"id": "towel",
+									"title": {
+										"ru": "ПОЛОТЕНЦЕ",
+										"en": "Towel"
+									}
+								},
+								{
+									"id": "potty",
+									"title": {
+										"ru": "ГОРШОК",
+										"en": "Potty"
+									}
+								},
+								{
+									"id": "diaper",
+									"title": {
+										"ru": "ПОДГУЗНИК(ПАМПЕРС)",
+										"en": "Diaper"
+									}
+								},
+								{
+									"id": "clothes",
+									"title": {
+										"ru": "ОДЕЖДА",
+										"en": "Clothes"
+									}
+								}
+							]
+						},
+						{
+							"id": "need",
+							"title": {
+								"ru": "НУЖНО.НУЖЕН,НУЖНА",
+								"en": "Need"
+							}
+						},
+						{
+							"id": "allowedForbidden",
+							"title": {
+								"ru": "МОЖНО-НЕЛЬЗЯ",
+								"en": "Allowed/Forbidden"
+							}
 						},
 						{
 							"id": "foodAndDrinks",
@@ -1501,7 +1640,7 @@
 						{
 							"id": "homeFurnitureAppliances",
 							"title": {
-								"ru": "ЖИЛЬЕ,МЕБЕЛЬ,БЫТ.ТЕХНИКА",
+								"ru": "ЖИЛЬЕ, МЕБЕЛЬ, БЫТ.ТЕХНИКА",
 								"en": "Housing, furniture, appliances"
 							},
 							"items": [
@@ -1657,101 +1796,6 @@
 									"title": {
 										"ru": "СВЕТ/ЛАМПА",
 										"en": "Light/Lamp"
-									}
-								}
-							]
-						},
-						{
-							"id": "tableware",
-							"title": {
-								"ru": "ПОСУДА",
-								"en": "Tableware"
-							},
-							"items": [
-								{
-									"id": "tableware",
-									"title": {
-										"ru": "ПОСУДА",
-										"en": "Tableware"
-									}
-								},
-								{
-									"id": "knife",
-									"title": {
-										"ru": "НОЖ",
-										"en": "Knife"
-									}
-								},
-								{
-									"id": "fork",
-									"title": {
-										"ru": "ВИЛКА",
-										"en": "Fork"
-									}
-								},
-								{
-									"id": "spoon",
-									"title": {
-										"ru": "ЛОЖКА",
-										"en": "Spoon"
-									}
-								},
-								{
-									"id": "plate",
-									"title": {
-										"ru": "ТАРЕЛКА",
-										"en": "Plate"
-									}
-								},
-								{
-									"id": "cup",
-									"title": {
-										"ru": "ЧАШКА",
-										"en": "Cup"
-									}
-								}
-							]
-						},
-						{
-							"id": "clothesAndHygiene",
-							"title": {
-								"ru": "ОДЕЖДА И ГИГИЕНА",
-								"en": "Clothes and hygiene"
-							},
-							"items": [
-								{
-									"id": "soap",
-									"title": {
-										"ru": "МЫЛО",
-										"en": "Soap"
-									}
-								},
-								{
-									"id": "towel",
-									"title": {
-										"ru": "ПОЛОТЕНЦЕ",
-										"en": "Towel"
-									}
-								},
-								{
-									"id": "potty",
-									"title": {
-										"ru": "ГОРШОК",
-										"en": "Potty"
-									}
-								},
-								{
-									"id": "diaper",
-									"title": {
-										"ru": "ПОДГУЗНИК(ПАМПЕРС)",
-										"en": "Diaper"
-									}
-								},
-								{
-									"id": "clothes",
-									"title": {
-										"ru": "ОДЕЖДА",
-										"en": "Clothes"
 									}
 								}
 							]
@@ -1964,140 +2008,96 @@
 							]
 						},
 						{
-							"id": "animalsAndBirds",
+							"id": "pronouns",
 							"title": {
-								"ru": "ЖИВОТНЫЕ/ПТИЦЫ",
-								"en": "Animals/Birds"
+								"ru": "МЕСТОИМЕНИЯ",
+								"en": "Pronouns"
 							},
-							"subsections": [
-								{
-									"id": "momBaby",
-									"title": {
-										"ru": "МАМА-МАЛЫШ",
-										"en": "Mom & Baby"
-									},
-									"items": [
-										{
-											"id": "pigPiglet",
-											"title": {
-												"ru": "СВИНЬЯ- поросенок",
-												"en": "Pig - piglet"
-											}
-										},
-										{
-											"id": "henChick",
-											"title": {
-												"ru": "КУРИЦА-цыпленок",
-												"en": "Hen - chick"
-											}
-										},
-										{
-											"id": "dogPuppy",
-											"title": {
-												"ru": "СОБАКА-ЩЕНОК",
-												"en": "Dog - puppy"
-											}
-										},
-										{
-											"id": "bunnyBunny",
-											"title": {
-												"ru": "ЗАЙКА-зайчонок",
-												"en": "Bunny - baby bunny"
-											}
-										},
-										{
-											"id": "mouseMouse",
-											"title": {
-												"ru": "МЫШЬ-мышонок",
-												"en": "Mouse - mouselet"
-											}
-										}
-									]
-								}
-							],
 							"items": [
 								{
-									"id": "bear",
+									"id": "iMe",
 									"title": {
-										"ru": "МЕДВЕДЬ",
-										"en": "Bear"
+										"ru": "Я,МНЕ",
+										"en": "I/Me"
 									}
 								},
 								{
-									"id": "cow",
+									"id": "youYou",
 									"title": {
-										"ru": "КОРОВА",
-										"en": "Cow"
+										"ru": "ТЫ,ТЕБЕ",
+										"en": "You/To you"
 									}
 								},
 								{
-									"id": "horse",
+									"id": "weUs",
 									"title": {
-										"ru": "ЛОШАДЬ(конь)",
-										"en": "Horse"
+										"ru": "МЫ/НАМ",
+										"en": "We/Us"
 									}
 								},
 								{
-									"id": "cat",
+									"id": "youPlural",
 									"title": {
-										"ru": "КОШКА(киска)",
-										"en": "Cat (kitty)"
+										"ru": "ВЫ/ВАМ",
+										"en": "You (plural)/to you"
 									}
 								},
 								{
-									"id": "bee",
+									"id": "my",
 									"title": {
-										"ru": "ПЧЕЛА",
-										"en": "Bee"
+										"ru": "МОЙ.МОЯ.МОЕ",
+										"en": "My (masc/fem/neut)"
 									}
 								},
 								{
-									"id": "elephant",
+									"id": "your",
 									"title": {
-										"ru": "СЛОН",
-										"en": "Elephant"
+										"ru": "ТВОЙ",
+										"en": "Your"
+									}
+								}
+							]
+						},
+						{
+							"id": "prepositions",
+							"title": {
+								"ru": "ПРЕЛОГИ",
+								"en": "Prepositions"
+							},
+							"items": [
+								{
+									"id": "za",
+									"title": {
+										"ru": "ЗА",
+										"en": "Behind"
 									}
 								},
 								{
-									"id": "fish",
+									"id": "na",
 									"title": {
-										"ru": "РЫБА",
-										"en": "Fish"
+										"ru": "НА",
+										"en": "On"
 									}
 								},
 								{
-									"id": "goat",
+									"id": "v",
 									"title": {
-										"ru": "КОЗА",
-										"en": "Goat"
+										"ru": "В",
+										"en": "In"
 									}
 								},
 								{
-									"id": "duck",
+									"id": "k",
 									"title": {
-										"ru": "УТКА",
-										"en": "Duck"
+										"ru": "К",
+										"en": "To"
 									}
 								},
 								{
-									"id": "rooster",
+									"id": "pod",
 									"title": {
-										"ru": "ПЕТУХ",
-										"en": "Rooster"
-									}
-								},
-								{
-									"id": "penguin",
-									"title": {
-										"ru": "ПИНГВИН",
-										"en": "Penguin"
-									}
-								},
-								{
-									"id": "bird",
-									"title": {
-										"ru": "ПТИЦА",
-										"en": "Bird"
+										"ru": "ПОД",
+										"en": "Under"
 									}
 								}
 							]
@@ -2302,8 +2302,7 @@
 									]
 								}
 							]
-						}
-					]
+						}]
 				},
 				{
 					"id": "symbolLibrary",
