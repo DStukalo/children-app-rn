@@ -9,6 +9,8 @@ export type AppSubsection = {
 	items?: Array<{
 		id: string;
 		title: LocalizedString;
+		video?: LocalizedString;
+		sectionTags?: number[];
 	}>;
 };
 

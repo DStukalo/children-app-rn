@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
@@ -14,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
+    do {
+      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
+      try AVAudioSession.sharedInstance().setActive(true)
+    } catch {
+      print("Failed to configure AVAudioSession: \(error)")
+    }
+
     let delegate = ReactNativeDelegate()
     let factory = RCTReactNativeFactory(delegate: delegate)
     delegate.dependencyProvider = RCTAppDependencyProvider()

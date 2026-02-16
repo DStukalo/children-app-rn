@@ -88,7 +88,7 @@ export default function LessonScreen({ route, navigation }: Props) {
 							const isVideoLocked =
 								lesson.access === "locked" &&
 								!isPremiumUser &&
-								!hasPartialPremiumAccess;
+								!hasCourseAccess;
 							return (
 								<View key={vid.videoId}>
 									{isVideoLocked ? (
@@ -123,15 +123,13 @@ export default function LessonScreen({ route, navigation }: Props) {
 											</View>
 										</View>
 									) : (
-										<View style={{ aspectRatio: 16 / 9 }}>
-											<CustomVideoPlayer
-												videoSource={getLocalizedValue(
-													vid.video,
-													currentLanguage,
-													"ru"
-												)}
-											/>
-										</View>
+										<CustomVideoPlayer
+											videoSource={getLocalizedValue(
+												vid.video,
+												currentLanguage,
+												"ru"
+											)}
+										/>
 									)}
 								</View>
 							);
@@ -171,15 +169,13 @@ export default function LessonScreen({ route, navigation }: Props) {
 								</View>
 							</View>
 						) : (
-							<View style={{ aspectRatio: 16 / 9 }}>
-								<CustomVideoPlayer
-									videoSource={`${
-										lesson?.video[
-											(currentLanguage as keyof typeof lesson.video) || "ru"
-										]
-									}`}
-								/>
-							</View>
+							<CustomVideoPlayer
+								videoSource={`${
+									lesson?.video[
+										(currentLanguage as keyof typeof lesson.video) || "ru"
+									]
+								}`}
+							/>
 						)}
 					</View>
 				) : null}

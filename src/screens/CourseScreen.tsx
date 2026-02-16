@@ -60,6 +60,12 @@ export default function Course() {
 		);
 	}
 
+	const courseVideoSource =
+		course.details.video?.[
+			currentLanguage as keyof NonNullable<typeof course.details.video>
+		] || course.details.video?.ru;
+	const hasCourseVideo = Boolean(courseVideoSource);
+
 	const handleLessonPress = (
 		lessonId: number,
 		isLocked: boolean,
@@ -95,16 +101,15 @@ export default function Course() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<View style={styles.courseImageContainer}>
-					{course.details.video?.[
-						currentLanguage as keyof typeof course.details.video
-					] ? (
+				<View
+					style={[
+						styles.courseImageContainer,
+						hasCourseVideo ? styles.courseVideoContainer : null,
+					]}
+				>
+					{hasCourseVideo ? (
 						<CustomVideoPlayer
-							videoSource={
-								course.details.video[
-									currentLanguage as keyof typeof course.details.video
-								] || course.details.video["ru"]
-							}
+							videoSource={courseVideoSource || ""}
 						/>
 					) : (
 						!imageLoadFailed && course.image ? (
@@ -266,6 +271,11 @@ const styles = StyleSheet.create({
 		height: 200,
 		overflow: "hidden",
 		backgroundColor: "#E5E7EB",
+	},
+	courseVideoContainer: {
+		height: "auto",
+		overflow: "visible",
+		backgroundColor: "#FFFFFF",
 	},
 	courseImage: {
 		width: "100%",

@@ -37,6 +37,7 @@
     "react-native-system-navigation-bar": "^2.6.4",
     "react-native-vector-icons": "^10.3.0",
     "react-native-video": "^6.16.1",
+    "react-native-vlc-media-player": "^1.0.98",
     "react-native-webview": "^13.13.5",
     "react-native-youtube-iframe": "^2.4.1"
   },
