@@ -170,11 +170,11 @@ export default function LessonScreen({ route, navigation }: Props) {
 							</View>
 						) : (
 							<CustomVideoPlayer
-								videoSource={`${
-									lesson?.video[
-										(currentLanguage as keyof typeof lesson.video) || "ru"
-									]
-								}`}
+								videoSource={getLocalizedValue(
+									lesson.video,
+									currentLanguage,
+									"ru"
+								)}
 							/>
 						)}
 					</View>

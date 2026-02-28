@@ -92,11 +92,25 @@ ifeq ($(IS_EXPO),true)
 	@echo "Use 'make expo-android' for Expo projects"
 else
 	@echo "Detecting connected Android device..."
-	DEVICE_ID=$$(adb devices | grep 'device$$' | awk 'NR==1{print $$1}') && \
+	@SDK_DIR=""; \
+	if [ -n "$$ANDROID_HOME" ]; then \
+		SDK_DIR="$$ANDROID_HOME"; \
+	elif [ -n "$$ANDROID_SDK_ROOT" ]; then \
+		SDK_DIR="$$ANDROID_SDK_ROOT"; \
+	elif [ -d "$$HOME/Library/Android/sdk" ]; then \
+		SDK_DIR="$$HOME/Library/Android/sdk"; \
+	fi; \
+	if [ -n "$$SDK_DIR" ]; then \
+		printf "sdk.dir=%s\n" "$$SDK_DIR" > android/local.properties; \
+		echo "✅ Android SDK path configured: $$SDK_DIR"; \
+	else \
+		echo "⚠️  Android SDK path not found. Set ANDROID_HOME or ANDROID_SDK_ROOT."; \
+	fi
+	@DEVICE_ID=$$(adb devices | grep 'device$$' | awk 'NR==1{print $$1}') && \
 	if [ -z "$$DEVICE_ID" ]; then \
 		echo "❌ No Android device or emulator detected."; \
 	else \
 		echo "✅ Using device ID: $$DEVICE_ID"; \
-		npx react-native run-android --deviceId $$DEVICE_ID; \
+		npx react-native run-android --device $$DEVICE_ID; \
 	fi
 endif
