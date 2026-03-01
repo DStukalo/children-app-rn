@@ -216,6 +216,8 @@ export default function StageScreen() {
 								const isPurchased = user
 									? isCoursePurchased(user, course.id)
 									: false;
+								const isFreeCourse = (course.price ?? 0) <= 0;
+								const isAccessible = isPurchased || isFreeCourse;
 
 								return (
 									<TouchableOpacity
@@ -258,17 +260,17 @@ export default function StageScreen() {
 												<Text
 													style={[
 														styles.statusBadge,
-														isPurchased
+														isAccessible
 															? styles.statusBadgePurchased
 															: styles.statusBadgeLocked,
 													]}
 												>
-													{isPurchased
+													{isAccessible
 														? t("stageScreen.coursePurchasedLabel")
 														: t("stageScreen.courseLockedLabel")}
 												</Text>
 											</View>
-											{!isPurchased && (
+											{!isAccessible && (
 												<TouchableOpacity
 													style={styles.courseBuyButton}
 													onPress={() => handleCoursePurchase(course.id)}

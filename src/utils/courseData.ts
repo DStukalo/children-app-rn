@@ -56,10 +56,14 @@ export type StageSubsection = {
 	id: string;
 	title: LocalizedString;
 	subsections?: StageSubsection[];
-	items?: Array<{
-		id: string;
-		title: LocalizedString;
-	}>;
+	items?: StageSubsectionItem[];
+};
+
+export type StageSubsectionItem = {
+	id: string;
+	title: LocalizedString;
+	video?: LocalizedString;
+	description?: LocalizedString;
 };
 
 export type Stage = {
@@ -97,6 +101,59 @@ const data = rawData as Partial<StageData & SectionsData>;
 const stagesFromStages: Stage[] = data.stages ?? [];
 const sections: Section[] = data.sections ?? [];
 
+const flattenSubsectionItems = (
+	subsections: StageSubsection[]
+): StageSubsectionItem[] => {
+	return subsections.flatMap((subsection) => [
+		...(subsection.items ?? []),
+		...(subsection.subsections
+			? flattenSubsectionItems(subsection.subsections)
+			: []),
+	]);
+};
+
+const createDrumComplexCourse = (
+	section: Section,
+	stageId: number
+): Course | null => {
+	if (section.id !== "drumComplex" || !section.subsections?.length) {
+		return null;
+	}
+
+	const lessonBaseId = stageId * 1000;
+	const lessons = flattenSubsectionItems(section.subsections).map(
+		(item, index): Lesson => ({
+			lessonId: lessonBaseId + index + 1,
+			title: item.title,
+			description: item.description,
+			video: item.video ?? { en: "", ru: "" },
+			access: "free",
+		})
+	);
+
+	if (!lessons.length) {
+		return null;
+	}
+
+	const firstLessonVideo = lessons[0].video;
+
+	return {
+		id: stageId * 100,
+		title: section.title,
+		subtitle: { en: "", ru: "" },
+		image: "",
+		isCompleted: false,
+		price: 0,
+		details: {
+			description: { en: "", ru: "" },
+			lessons,
+			video: Array.isArray(firstLessonVideo)
+				? { en: "", ru: "" }
+				: firstLessonVideo,
+		},
+	};
+};
+
 const stages: Stage[] =
 	stagesFromStages.length > 0
 		? stagesFromStages
@@ -104,7 +161,16 @@ const stages: Stage[] =
 				id: index + 1,
 				title: section.title,
 				subtitle: { en: "", ru: "" },
-				courses: section.courses ?? [],
+				courses:
+					section.courses && section.courses.length > 0
+						? section.courses
+						: (() => {
+								const synthesizedCourse = createDrumComplexCourse(
+									section,
+									index + 1
+								);
+								return synthesizedCourse ? [synthesizedCourse] : [];
+						  })(),
 				sectionId: section.id,
 				subsections: section.subsections ?? [],
 		  }));
