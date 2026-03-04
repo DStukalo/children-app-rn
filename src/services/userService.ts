@@ -59,6 +59,7 @@ const requestUser = async (
 		...data.user,
 		openCategories: data.user.open_categories ?? data.user.openCategories,
 		purchasedStages: data.user.purchased_stages ?? data.user.purchasedStages,
+		isSuperAdmin: (data.user as any).isSuperAdmin,
 	});
 };
 

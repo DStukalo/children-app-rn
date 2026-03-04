@@ -45,4 +45,5 @@ export type UserData = {
 	avatar: string;
 	openCategories?: number[];
 	purchasedStages?: number[];
+	isSuperAdmin?: boolean;
 };

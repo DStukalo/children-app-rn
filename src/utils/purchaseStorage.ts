@@ -102,14 +102,14 @@ export const isCoursePurchased = (
 	user: UserWithPurchases | null,
 	courseId: number
 ) => {
-	return user?.openCategories.includes(courseId) ?? false;
+	return !!(user?.isSuperAdmin || user?.openCategories?.includes(courseId));
 };
 
 export const isStagePurchased = (
 	user: UserWithPurchases | null,
 	stageId: number
 ) => {
-	return user?.purchasedStages.includes(stageId) ?? false;
+	return !!(user?.isSuperAdmin || user?.purchasedStages?.includes(stageId));
 };
 
 export const getMissingPrerequisiteCourses = (

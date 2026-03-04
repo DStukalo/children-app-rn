@@ -25,7 +25,11 @@ export function useIsPremiumUser() {
 				return;
 			}
 
-			// Check if user has "Premium User" role
+			if (storedUser.isSuperAdmin) {
+				setIsPremiumUser(true);
+				return;
+			}
+
 			if (storedUser.role === "Premium User") {
 				setIsPremiumUser(true);
 				return;
@@ -77,6 +81,10 @@ export function useHasCourseAccess(courseId: number) {
 
 		try {
 			const storedUser = await getStoredUser();
+			if (storedUser?.isSuperAdmin) {
+				setHasAccess(true);
+				return;
+			}
 			const purchasedIds = storedUser?.openCategories ?? [];
 			setHasAccess(purchasedIds.includes(courseId));
 		} catch (err) {

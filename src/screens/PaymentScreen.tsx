@@ -418,10 +418,22 @@ export default function PaymentScreen() {
 		navigation.setOptions({ title: t("payment.title") });
 	}, [navigation, t]);
 
+	if (user?.isSuperAdmin) {
+		return (
+			<SafeAreaView style={styles.container}>
+				<View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 24 }}>
+					<Ionicons name="checkmark-circle" size={48} color="#10B981" />
+					<Text style={{ marginTop: 16, fontSize: 16, textAlign: "center" }}>
+						{t("profile.fullAccess") || "Full access activated"}
+					</Text>
+				</View>
+			</SafeAreaView>
+		);
+	}
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				{/* <Text>{user && JSON.stringify(user, null, 2)}</Text> */}
 				{stage && unpurchasedCoursesInStage > 0 && (
 					<View style={styles.paymentCard}>
 						<View style={styles.paymentHeader}>
