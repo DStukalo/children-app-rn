@@ -15,6 +15,20 @@ import { useNavigation } from "@react-navigation/native";
 
 type Props = NativeStackScreenProps<MainStackParamList, "SectionScreen">;
 
+const getLessonLabel = (count: number, language: "ru" | "en") => {
+	if (language === "en") {
+		return count === 1 ? "lesson" : "lessons";
+	}
+
+	const lastDigit = count % 10;
+	const lastTwoDigits = count % 100;
+	if (lastDigit === 1 && lastTwoDigits !== 11) return "урок";
+	if (lastDigit >= 2 && lastDigit <= 4 && (lastTwoDigits < 12 || lastTwoDigits > 14)) {
+		return "урока";
+	}
+	return "уроков";
+};
+
 export default function SectionScreen({ route }: Props) {
 	const { t, i18n } = useTranslation();
 	const { sectionId } = route.params;
@@ -52,21 +66,24 @@ export default function SectionScreen({ route }: Props) {
 					</View>
 				) : section?.courses?.length ? (
 					<View style={styles.courseList}>
-						{section.courses.map((course) => (
-							<TouchableOpacity
-								key={course.id}
-								style={styles.courseCard}
-								activeOpacity={0.85}
-								onPress={() => navigation.navigate("CourseScreen", { id: course.id })}
-							>
-								<Text style={styles.courseTitle}>
-									{course.title[currentLanguage] || course.title.ru}
-								</Text>
-								<Text style={styles.courseSubtitle}>
-									{course.subtitle?.[currentLanguage] || course.subtitle?.ru || ""}
-								</Text>
-							</TouchableOpacity>
-						))}
+						{section.courses.map((course) => {
+							const lessonCount = course.details?.lessons?.length ?? 0;
+							return (
+								<TouchableOpacity
+									key={course.id}
+									style={styles.courseCard}
+									activeOpacity={0.85}
+									onPress={() => navigation.navigate("CourseScreen", { id: course.id })}
+								>
+									<Text style={styles.courseTitle}>
+										{course.title[currentLanguage] || course.title.ru}
+									</Text>
+									<Text style={styles.courseSubtitle}>
+										{`${lessonCount} ${getLessonLabel(lessonCount, currentLanguage)}`}
+									</Text>
+								</TouchableOpacity>
+							);
+						})}
 					</View>
 				) : (
 					<Text style={styles.subtitle}>{t("sections.comingSoon")}</Text>
