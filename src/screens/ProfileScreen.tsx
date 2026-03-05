@@ -44,8 +44,8 @@ const ProfileScreen = () => {
 	const allCourseIds = useMemo(() => allCourses.map(c => c.id), [allCourses]);
 	
 	const purchasedCourseIds = user?.openCategories ?? [];
-	const hasAllCourses = allCourseIds.length > 0 && purchasedCourseIds.length > 0 && allCourseIds.every(id => purchasedCourseIds.includes(id));
-	const hasSomeCourses = purchasedCourseIds.length > 0;
+	const hasAllCourses = user?.isSuperAdmin || (allCourseIds.length > 0 && purchasedCourseIds.length > 0 && allCourseIds.every(id => purchasedCourseIds.includes(id)));
+	const hasSomeCourses = user?.isSuperAdmin || purchasedCourseIds.length > 0;
 	const unpurchasedCount = allCourseIds.filter(id => !purchasedCourseIds.includes(id)).length;
 
 	const displayRole = hasAllCourses ? "Premium User" : user?.role;

@@ -13,7 +13,6 @@ type AuthResult = {
 	user: UserData;
 };
 
-// Use production server
 const AUTH_BASE_URL = "https://children-server.onrender.com";
 const LOGIN_PATH = "/login";
 const REGISTER_PATH = "/register";
@@ -34,6 +33,7 @@ const normalizeUser = (user: ServerUser): UserData => ({
 	purchasedStages: [
 		...(user.purchasedStages ?? (user as any).purchased_stages ?? []),
 	],
+	isSuperAdmin: !!(user as any).isSuperAdmin,
 });
 
 const parseAuthResponse = async (response: Response) => {

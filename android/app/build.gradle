@@ -128,7 +128,7 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
  * By default you don't need to apply any configuration, just uncomment the lines you need.
  */
 react {
-    /* Autolinking */
+    nodeExecutableAndArgs = ["/home/ryurov/.nvm/versions/node/v24.8.0/bin/node"]
     autolinkLibrariesWithApp()
 }
 

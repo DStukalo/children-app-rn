@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-native-vlc-media-player/VLCPlayer.js b/node_modules/react-native-vlc-media-player/VLCPlayer.js
+index 9b91442..592a906 100755
+--- a/node_modules/react-native-vlc-media-player/VLCPlayer.js
++++ b/node_modules/react-native-vlc-media-player/VLCPlayer.js
+@@ -171,7 +171,10 @@ export default class VLCPlayer extends Component {
+     /* const {
+      source
+      } = this.props;*/
+-    const source = resolveAssetSource(this.props.source) || {};
++    const rawSource = resolveAssetSource(this.props.source) || this.props.source || {};
++    const source = typeof rawSource === 'object' && rawSource !== null
++      ? { ...rawSource }
++      : { uri: String(rawSource) };
+ 
+     let uri = source.uri || "";
+     if (uri && uri.match(/^\//)) {
