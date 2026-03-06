@@ -13,6 +13,7 @@ import type { MainStackParamList } from "../navigation/types";
 import { findSubsectionByPath } from "../utils/sectionsData";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
 
 type Props = NativeStackScreenProps<MainStackParamList, "SubsectionScreen">;
 
@@ -25,15 +26,26 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	const { t, i18n } = useTranslation();
 	const { sectionId, subsectionPath } = route.params;
 	const currentLanguage = i18n.language === "ru" ? "ru" : "en";
+	const isPremiumUser = useIsPremiumUser();
 	const subsection = findSubsectionByPath(sectionId, subsectionPath);
 	const [activeVideo, setActiveVideo] = useState<{
 		id: string;
 		title: string;
 		source: string;
 	} | null>(null);
+	const isSongsSubsection =
+		sectionId === "makatop" && subsectionPath[0] === "songs";
+	const isLockedItem = (
+		item: { access?: "free" | "locked" },
+		index: number
+	) =>
+		(item.access === "locked" || (isSongsSubsection && index > 0)) &&
+		!isPremiumUser;
 	const playableItems =
 		subsection?.items?.filter(
-			(item) => !!(item.video?.[currentLanguage] || item.video?.ru)
+			(item, index) =>
+				!!(item.video?.[currentLanguage] || item.video?.ru) &&
+				!isLockedItem(item, index)
 		) ?? [];
 	const activePlayableIndex = playableItems.findIndex(
 		(item) => item.id === activeVideo?.id
@@ -60,7 +72,9 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 		}
 
 		const firstSong = subsection.items.find(
-			(item) => item.video?.[currentLanguage] || item.video?.ru
+			(item, index) =>
+				(item.video?.[currentLanguage] || item.video?.ru) &&
+				!isLockedItem(item, index)
 		);
 		if (!firstSong) {
 			setActiveVideo(null);
@@ -80,7 +94,7 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 			),
 			source,
 		});
-	}, [subsection?.id, currentLanguage]);
+	}, [subsection?.id, currentLanguage, isPremiumUser]);
 
 	return (
 		<SafeAreaView style={styles.container}>
@@ -140,19 +154,27 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 						) : null}
 
 						<View style={styles.lessonsBlock}>
-							{subsection.items.map((item) => {
+							{subsection.items.map((item, index) => {
 								const isActive = activeVideo?.id === item.id;
+								const isLocked = isLockedItem(item, index);
+								const videoSource =
+									item.video?.[currentLanguage] || item.video?.ru;
+								const canOpen = !!videoSource && !isLocked;
 
 								return (
 									<TouchableOpacity
 										key={item.id}
-										style={styles.lessonItem}
-										activeOpacity={item.video ? 0.85 : 1}
-										disabled={!item.video}
+										style={[
+											styles.lessonItem,
+											isLocked ? styles.lockedLessonItem : null,
+										]}
+										activeOpacity={canOpen ? 0.85 : 1}
+										disabled={!canOpen}
 										onPress={() => {
-											const videoSource =
-												item.video?.[currentLanguage] || item.video?.ru;
 											if (!videoSource) {
+												return;
+											}
+											if (isLocked) {
 												return;
 											}
 
@@ -166,13 +188,20 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 										}}
 									>
 										<Ionicons
-											name={isActive ? "book" : "play-outline"}
+											name={
+												isLocked
+													? "lock-closed-outline"
+													: isActive
+													? "book"
+													: "play-outline"
+											}
 											size={20}
-											color={isActive ? "#F7543E" : "#1F2937"}
+											color={isLocked ? "#9CA3AF" : isActive ? "#F7543E" : "#1F2937"}
 										/>
 										<Text
 											style={[
 												styles.lessonItemText,
+												isLocked ? styles.lockedLessonItemText : null,
 												isActive ? styles.currentLessonItemText : null,
 											]}
 										>
@@ -251,11 +280,17 @@ const styles = StyleSheet.create({
 		backgroundColor: "#F3F4F6",
 		marginBottom: 8,
 	},
+	lockedLessonItem: {
+		opacity: 0.65,
+	},
 	lessonItemText: {
 		fontSize: 16,
 		fontFamily: "Nunito-Regular",
 		color: "#1F2937",
 		marginLeft: 8,
+	},
+	lockedLessonItemText: {
+		color: "#6B7280",
 	},
 	currentLessonItemText: {
 		color: "#F7543E",

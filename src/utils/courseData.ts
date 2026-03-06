@@ -55,6 +55,7 @@ export type Course = {
 export type StageSubsection = {
 	id: string;
 	title: LocalizedString;
+	price?: number;
 	subsections?: StageSubsection[];
 	items?: StageSubsectionItem[];
 };
@@ -83,6 +84,7 @@ type StageData = {
 type Section = {
 	id: SectionId;
 	title: LocalizedString;
+	price?: number;
 	courses?: Course[];
 	subsections?: StageSubsection[];
 };
@@ -159,6 +161,7 @@ const stages: Stage[] =
 		? stagesFromStages
 		: sections.map((section, index) => ({
 				id: index + 1,
+				price: section.price,
 				title: section.title,
 				subtitle: { en: "", ru: "" },
 				courses:

@@ -16,7 +16,7 @@ import {
 } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { getStages } from "../utils/courseData";
+import { getStages, StageSubsection } from "../utils/courseData";
 import { MainStackParamList } from "../navigation/types";
 import {
 	getStoredUser,
@@ -144,6 +144,22 @@ export default function StageScreen() {
 	const purchasedCourseIds = user?.openCategories ?? [];
 	const stagePurchased =
 		stage && user ? isStagePurchased(user, stage.id) : false;
+	const hasCourses = stage.courses.length > 0;
+	const stageSubsectionsPrice = useMemo(() => {
+		const sumSubsectionsPrice = (
+			subsections?: StageSubsection[]
+		): number => {
+			if (!subsections?.length) return 0;
+			return subsections.reduce(
+				(sum, subsection) =>
+					sum +
+					(subsection.price ?? 0) +
+					sumSubsectionsPrice(subsection.subsections),
+				0
+			);
+		};
+		return sumSubsectionsPrice(stage.subsections);
+	}, [stage.subsections]);
 	const totalCourses = stage.courses.length;
 	const purchasedCourses =
 		stage && user
@@ -151,9 +167,18 @@ export default function StageScreen() {
 					.length
 			: 0;
 	
-	// Calculate dynamic stage price based on remaining courses
-	const stagePrice = calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
-	const allCoursesPurchased = purchasedCourses === totalCourses;
+	// For stages without courses (subsection-only), fallback to stage-level price.
+	const stagePrice = hasCourses
+		? calculateRemainingStagePrice(stage.courses, purchasedCourseIds)
+		: stage.price ??
+		  (stageSubsectionsPrice > 0
+				? stageSubsectionsPrice
+				: stage.sectionId === "makatop"
+				? 45
+				: 0);
+	const allCoursesPurchased = hasCourses
+		? purchasedCourses === totalCourses
+		: stagePurchased || stagePrice <= 0;
 
 	const handleCourseImageError = useCallback((courseId: number) => {
 		setFailedCourseImages((prev) => {
@@ -318,6 +343,13 @@ export default function StageScreen() {
 												{subsection.title[currentLanguage] ||
 													subsection.title.ru}
 											</Text>
+											{subsection.price != null ? (
+												<Text style={styles.coursePrice}>
+													{t("stageScreen.coursePriceLabel", {
+														price: formatPrice(subsection.price),
+													})}
+												</Text>
+											) : null}
 										</View>
 									</TouchableOpacity>
 							  ))

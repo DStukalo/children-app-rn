@@ -25,6 +25,7 @@ import {
 	getStages,
 	getAllCourses,
 	LocalizedString,
+	StageSubsection,
 } from "../utils/courseData";
 import { useAuthCheck } from "../hooks/useAuthCheck";
 import {
@@ -167,13 +168,39 @@ export default function PaymentScreen() {
 	// Calculate dynamic prices based on purchased courses
 	const stageRemainingPrice = useMemo(() => {
 		if (!stage) return 0;
-		return calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
+		if (stage.courses.length > 0) {
+			return calculateRemainingStagePrice(stage.courses, purchasedCourseIds);
+		}
+		const sumSubsectionsPrice = (
+			subsections?: StageSubsection[]
+		): number => {
+			if (!subsections?.length) return 0;
+			return subsections.reduce(
+				(sum, subsection) =>
+					sum +
+					(subsection.price ?? 0) +
+					sumSubsectionsPrice(subsection.subsections),
+				0
+			);
+		};
+		const subsectionFallback = sumSubsectionsPrice(stage.subsections);
+		return (
+			stage.price ??
+			(subsectionFallback > 0
+				? subsectionFallback
+				: stage.sectionId === "makatop"
+				? 45
+				: 0)
+		);
 	}, [stage, purchasedCourseIds]);
 
 	const unpurchasedCoursesInStage = useMemo(() => {
 		if (!stage) return 0;
+		if (stage.courses.length === 0) {
+			return stageRemainingPrice > 0 ? 1 : 0;
+		}
 		return stage.courses.filter(c => !purchasedCourseIds.includes(c.id)).length;
-	}, [stage, purchasedCourseIds]);
+	}, [stage, purchasedCourseIds, stageRemainingPrice]);
 
 	const allCourses = useMemo(() => getAllCourses(), []);
 	const fullAccessPrice = useMemo(() => {

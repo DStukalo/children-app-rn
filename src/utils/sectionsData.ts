@@ -5,12 +5,14 @@ import type { Course, LocalizedString } from "./courseData";
 export type AppSubsection = {
 	id: string;
 	title: LocalizedString;
+	price?: number;
 	subsections?: AppSubsection[];
 	items?: Array<{
 		id: string;
 		title: LocalizedString;
 		video?: LocalizedString;
 		sectionTags?: number[];
+		access?: "free" | "locked";
 	}>;
 };
 
