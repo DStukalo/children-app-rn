@@ -5,6 +5,7 @@ import type { Course, LocalizedString } from "./courseData";
 export type AppSubsection = {
 	id: string;
 	title: LocalizedString;
+	image?: string;
 	price?: number;
 	subsections?: AppSubsection[];
 	items?: Array<{

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+	Image,
 	SafeAreaView,
 	ScrollView,
 	StyleSheet,
@@ -22,6 +23,11 @@ const capitalizeFirstLetter = (value?: string) => {
 	return value.charAt(0).toUpperCase() + value.slice(1);
 };
 
+const songsRootTitleByLanguage = {
+	ru: "Розділи",
+	en: "Sections",
+};
+
 export default function SubsectionScreen({ route, navigation }: Props) {
 	const { t, i18n } = useTranslation();
 	const { sectionId, subsectionPath } = route.params;
@@ -35,6 +41,8 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	} | null>(null);
 	const isSongsSubsection =
 		sectionId === "makatop" && subsectionPath[0] === "songs";
+	const isSongsRootSubsection =
+		sectionId === "makatop" && subsectionPath.length === 1 && subsectionPath[0] === "songs";
 	const isLockedItem = (
 		item: { access?: "free" | "locked" },
 		index: number
@@ -103,7 +111,8 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 				showsVerticalScrollIndicator={false}
 			>
 				<Text style={styles.title}>
-					{subsection?.title?.[currentLanguage] ||
+					{(isSongsRootSubsection ? songsRootTitleByLanguage[currentLanguage] : null) ||
+						subsection?.title?.[currentLanguage] ||
 						subsection?.title?.ru ||
 						subsectionPath[subsectionPath.length - 1]}
 				</Text>
@@ -122,11 +131,25 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 									})
 								}
 							>
-								<Text style={styles.cardTitle}>
-									{capitalizeFirstLetter(
-										child.title[currentLanguage] || child.title.ru
+								<View style={styles.cardImageWrap}>
+									{child.image ? (
+										<Image source={{ uri: child.image }} style={styles.cardImage} />
+									) : (
+										<View style={styles.placeholderImage}>
+											<Ionicons name='image-outline' size={24} color='#9CA3AF' />
+											<Text style={styles.placeholderText}>
+												No image yet - we'll upload it shortly.
+											</Text>
+										</View>
 									)}
-								</Text>
+								</View>
+								<View style={styles.cardTextWrap}>
+									<Text style={styles.cardTitle}>
+										{capitalizeFirstLetter(
+											child.title[currentLanguage] || child.title.ru
+										)}
+									</Text>
+								</View>
 							</TouchableOpacity>
 						))}
 					</View>
@@ -159,7 +182,22 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 								const isLocked = isLockedItem(item, index);
 								const videoSource =
 									item.video?.[currentLanguage] || item.video?.ru;
+								const hasVideo = !!videoSource;
 								const canOpen = !!videoSource && !isLocked;
+								const iconName = isLocked
+									? "lock-closed-outline"
+									: !hasVideo
+									? "videocam-off-outline"
+									: isActive
+									? "book"
+									: "play-outline";
+								const iconColor = isLocked
+									? "#9CA3AF"
+									: !hasVideo
+									? "#9CA3AF"
+									: isActive
+									? "#F7543E"
+									: "#1F2937";
 
 								return (
 									<TouchableOpacity
@@ -188,20 +226,15 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 										}}
 									>
 										<Ionicons
-											name={
-												isLocked
-													? "lock-closed-outline"
-													: isActive
-													? "book"
-													: "play-outline"
-											}
+											name={iconName}
 											size={20}
-											color={isLocked ? "#9CA3AF" : isActive ? "#F7543E" : "#1F2937"}
+											color={iconColor}
 										/>
 										<Text
 											style={[
 												styles.lessonItemText,
 												isLocked ? styles.lockedLessonItemText : null,
+												!hasVideo ? styles.missingVideoLessonItemText : null,
 												isActive ? styles.currentLessonItemText : null,
 											]}
 										>
@@ -257,9 +290,43 @@ const styles = StyleSheet.create({
 		backgroundColor: "#FFFFFF",
 		borderRadius: 14,
 		paddingHorizontal: 16,
-		paddingVertical: 14,
+		paddingVertical: 12,
 		borderWidth: 1,
 		borderColor: "#E5E7EB",
+		minHeight: 112,
+		flexDirection: "row",
+		alignItems: "center",
+		gap: 12,
+	},
+	cardImageWrap: {
+		width: 82,
+		height: 82,
+		borderRadius: 12,
+		overflow: "hidden",
+		backgroundColor: "#E5E7EB",
+	},
+	cardImage: {
+		width: "100%",
+		height: "100%",
+	},
+	placeholderImage: {
+		width: "100%",
+		height: "100%",
+		backgroundColor: "#E5E7EB",
+		alignItems: "center",
+		justifyContent: "center",
+		paddingHorizontal: 6,
+		gap: 4,
+	},
+	placeholderText: {
+		fontSize: 10,
+		lineHeight: 12,
+		textAlign: "center",
+		color: "#6B7280",
+		fontFamily: "Nunito-Regular",
+	},
+	cardTextWrap: {
+		flex: 1,
 	},
 	cardTitle: {
 		fontSize: 16,
@@ -290,6 +357,9 @@ const styles = StyleSheet.create({
 		marginLeft: 8,
 	},
 	lockedLessonItemText: {
+		color: "#6B7280",
+	},
+	missingVideoLessonItemText: {
 		color: "#6B7280",
 	},
 	currentLessonItemText: {

@@ -33,6 +33,7 @@ export default {
 		viewCourse: "View course",
 		noImage: "Preview unavailable",
 		imageComingSoon: "No image yet — we’ll upload it shortly.",
+		noCourses: "No courses yet — we'll add them shortly.",
 		notFound: "Stage not found",
 		stagePriceLabel: "Stage price: {{price}}",
 		stageProgress: "{{purchased}} of {{total}} purchased",

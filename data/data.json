@@ -1551,7 +1551,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/48%20%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20.mov",
 										"en": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/48%20%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20.mov"
 									},
-									"sectionTags": [2, 1, 10],
+									"sectionTags": [15, 1, 10],
 									"access": "locked"
 								},
 								{
@@ -2030,8 +2030,8 @@
 								{
 									"id": "song-204-troleybus",
 									"title": {
-										"ru": "Тролейбус",
-										"en": "Тролейбус"
+										"ru": "Троллейбус",
+										"en": "Троллейбус"
 									},
 									"video": {
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/114%20%D0%A2%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D1%83%D1%81%20.mov",
@@ -2988,7 +2988,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/127%20%20%D0%9E%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE.mov",
 										"en": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/127%20%20%D0%9E%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE.mov"
 									},
-									"sectionTags": [10],
+									"sectionTags": [14, 10],
 									"access": "locked"
 								}
 							]
@@ -3981,7 +3981,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/45.%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE.mov",
 										"en": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/45.%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE.mov"
 									},
-									"sectionTags": [15],
+									"sectionTags": [10],
 									"access": "locked"
 								},
 								{
@@ -4007,7 +4007,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/44%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0.movv",
 										"en": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/44%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0.movv"
 									},
-									"sectionTags": [15],
+									"sectionTags": [10],
 									"access": "locked"
 								},
 								{

@@ -353,7 +353,11 @@ export default function StageScreen() {
 										</View>
 									</TouchableOpacity>
 							  ))
-							: null}
+							: (
+								<Text style={styles.emptyCoursesText}>
+									{t("stageScreen.noCourses")}
+								</Text>
+							)}
 				</View>
 			</ScrollView>
 		</SafeAreaView>
@@ -376,6 +380,13 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		color: "#6B7280",
 		textAlign: "center",
+	},
+	emptyCoursesText: {
+		fontSize: 16,
+		color: "#6B7280",
+		textAlign: "center",
+		paddingVertical: 24,
+		fontFamily: "Inter-Medium",
 	},
 	header: {
 		paddingHorizontal: 20,

@@ -34,6 +34,7 @@ export default {
 		viewCourse: "Перейти к курсу",
 		noImage: "Нет изображения",
 		imageComingSoon: "Изображения пока нет — скоро загрузим.",
+		noCourses: "Курсов пока нет — скоро добавим.",
 		notFound: "Этап не найден",
 		stagePriceLabel: "Цена этапа: {{price}}",
 		stageProgress: "Приобретено {{purchased}} из {{total}}",
