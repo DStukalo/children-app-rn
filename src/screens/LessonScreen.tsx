@@ -256,13 +256,15 @@ export default function LessonScreen({ route, navigation }: Props) {
 						renderContent={() =>
 							course.details.lessons?.map((l) => {
 								const isCurrent = l.lessonId === Number(lessonId);
+								const isLessonLocked =
+									l.access === "locked" && !isPremiumUser && !hasCourseAccess;
 
 								return (
 									<TouchableOpacity
 										key={l.lessonId}
-										disabled={isCurrent}
+										disabled={isCurrent || isLessonLocked}
 										onPress={() => {
-											if (!isCurrent) {
+											if (!isCurrent && !isLessonLocked) {
 												navigation.navigate("LessonScreen", {
 													lessonId: l.lessonId,
 													courseId: courseId,
@@ -273,18 +275,31 @@ export default function LessonScreen({ route, navigation }: Props) {
 											styles.lessonItem,
 											// isCurrent && styles.currentLessonItem,
 										]}
-									>
-										<Ionicons
-											name={isCurrent ? "book" : "play-outline"}
-											size={20}
-											color={isCurrent ? "#F7543E" : "#1F2937"}
-										/>
-										<Text
-											style={[
-												styles.lessonItemText,
-												isCurrent && styles.currentLessonItemText,
-											]}
 										>
+											<Ionicons
+												name={
+													isLessonLocked
+														? "lock-closed-outline"
+														: isCurrent
+														? "book"
+														: "play-outline"
+												}
+												size={20}
+												color={
+													isLessonLocked
+														? "#9CA3AF"
+														: isCurrent
+														? "#F7543E"
+														: "#1F2937"
+												}
+											/>
+											<Text
+												style={[
+													styles.lessonItemText,
+													isLessonLocked && styles.lockedLessonItemText,
+													isCurrent && styles.currentLessonItemText,
+												]}
+											>
 											{l.title[currentLanguage as keyof typeof l.title] ||
 												l.title["ru"]}
 										</Text>
@@ -405,6 +420,9 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		color: "#1F2937",
 		marginLeft: 8,
+	},
+	lockedLessonItemText: {
+		color: "#6B7280",
 	},
 	currentLessonItem: {
 		backgroundColor: "#F7543E",
