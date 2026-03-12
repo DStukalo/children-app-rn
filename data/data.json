@@ -17,7 +17,7 @@
 						"en": "Block 7. Rhythm patterns",
 						"ru": "Блок 7. Ритмосхемы"
 					},
-					"image": "https://i.ibb.co/fGyvRz23/block-7.jpg",
+					"image": "https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/images/IMG_4171.jpg",
 					"isCompleted": false,
 					"price": 40,
 					"details": {
@@ -26,19 +26,19 @@
 							"ru": "Подготовьте материалы и расположитесь за спиной ребёнка. Ребёнок сидит за столом. Перед ним разместите планшетку с жетонами, полусферу и соответствующую номеру урока планшетку.\n\nПродемонстрируйте ребёнку первый видеоурок, помогая ему выполнять все движения «рука в руку» под музыку. *Упражнения демонстрируются в зеркальном отображении. Используется файл с голосом.\n\nВыполните упражнение без видео и отвлекающих звуков. Пусть ребёнок слышит только ваш голос. Для этого сядьте напротив ребёнка за столом, возьмите его ведущую руку и с помощью указательного жеста проводите рукой ребёнка по планшетке слева направо, последовательно указывая на символы и изображая их.\n\nПовторите то же второй рукой слева направо. Ребёнок должен запомнить звучание и понять символы, изображённые на панелях. *Если в вашей культуре принято писать справа налево, сообщите нам и мы отправим вам соответствующее видео, поскольку в процессе выполнения ритмосхем закладываются основы чтения и письма.\n\nПовторите упражнение, следуя инструкциям видеоурока, используя аудиотреки с голосом и караоке."
 						},
 						"video": {
-							"en": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4",
-							"ru": "https://pub-01313710b19a4189af4d97c7fc2e2c79.r2.dev/%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.mp4"
+							"en": "https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/rhytm.mp4",
+							"ru": "https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/rhytm.mp4"
 						},
 						"materials": {
 							"en": [
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
 							],
 							"ru": [
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
-								"https://pub-f9bbea1516584e13940bc03fedfc44b7.r2.dev/course%201/lesson%201/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D1%8B.pdf",
+								"https://pub-0e41d270a6a24d8eb8545dd42ceaf033.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%20%D0%A0%D0%B8%D1%82%D0%BC%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0%D0%BC.pdf"
 							]
 						},
 						"lessons": [
@@ -481,7 +481,7 @@
 						"en": "Block 8. Echo circuits",
 						"ru": "Блок 8. Эхо-схемы"
 					},
-					"image": "https://i.ibb.co/8gGGMTRz/block-8.jpg",
+					"image": "https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/images/IMG_1315.jpg",
 					"isCompleted": false,
 					"price": 45,
 					"details": {
@@ -490,12 +490,20 @@
 							"ru": "Дидактическое пособие «Эхо-схемы» предназначено для детей и их родителей, а также для учителей-дефектологов, логопедов, психологов и музыкантов. Методика представляет собой комплекс из 25 музыкальных коррекционных упражнений, направленных на запуск и коррекцию речи у детей с алалией, задержкой речи, аутизмом и другими нарушениями.\n\n16 упражнений направлены на активизацию речевого аппарата и исполняются с помощью графических панелей (Эхосхем), а 9 упражнений предполагают игру на ударных инструментах (дарбука или djembe) и исполняются с помощью визуальной партитуры с изображением ладошек, букв и символов на звукоподражание."
 						},
 						"video": {
-							"en": "",
-							"ru": ""
+							"en": "https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/echo.mp4",
+							"ru": "https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/echo.mp4"
 						},
 						"materials": {
-							"en": [],
-							"ru": []
+							"en": [
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%AD%D1%85%D0%BE%D0%A1%D1%85%D0%B5%D0%BC%D1%8B_%D0%904.pdf",
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE.pdf"
+							],
+							"ru": [
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%96%D0%B5%D1%82%D0%BE%D0%BD%D1%8B.jpg",
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%90%D0%92%D0%90_%D0%AD%D1%85%D0%BE%D0%A1%D1%85%D0%B5%D0%BC%D1%8B_%D0%904.pdf",
+								"https://pub-d17487cb7c744e4ab690815422fced0e.r2.dev/materials/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE.pdf"
+							]
 						},
 						"lessons": [
 							{
@@ -737,6 +745,63 @@
 				"ru": "Барабанный комплекс",
 				"en": "Drum complex"
 			},
+
+			"video": {
+				"en": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/drum.mp4",
+				"ru": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/drum.mp4"
+			},
+			"materials": {
+				"en": [
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D1%82%D1%83%D1%80%D0%B0.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/%D0%B6%D0%B5%D1%82%D0%BE%D0%BD%D1%8B%20%D0%BA%D0%BE%D0%BF%D0%B0%D1%82%D1%8B%D1%87.pdf",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/1.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/10.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/11.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/12.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/13.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/14.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/15.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/16.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/17.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/18.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/19.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/2.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/20.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/3.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/4.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/5.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/6.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/7.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/8.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/9.jpg"
+				],
+				"ru": [
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D1%82%D1%83%D1%80%D0%B0.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/%D0%B6%D0%B5%D1%82%D0%BE%D0%BD%D1%8B%20%D0%BA%D0%BE%D0%BF%D0%B0%D1%82%D1%8B%D1%87.pdf",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/1.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/10.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/11.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/12.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/13.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/14.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/15.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/16.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/17.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/18.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/19.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/2.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/20.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/3.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/4.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/5.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/6.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/7.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/8.jpg",
+					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/9.jpg"
+				]
+			},
+
+			"image": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/images/IMG_4173.jpg",
 			"courses": [],
 			"subsections": [
 				{
@@ -744,6 +809,10 @@
 					"title": {
 						"ru": "1. Т К Т К",
 						"en": "1. T K T K"
+					},
+					"video": {
+						"en": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/drum.mp4",
+						"ru": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/drum.mp4"
 					},
 					"items": [
 						{
@@ -858,8 +927,8 @@
 								"en": "4. T K Dum"
 							},
 							"video": {
-								"ru": "",
-								"en": ""
+								"ru": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/%D1%82%D0%BA%20%D0%B4%D1%83%D0%BC.mp4",
+								"en": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/%D1%82%D0%BA%20%D0%B4%D1%83%D0%BC.mp4"
 							},
 							"description": {
 								"en": "",
@@ -930,8 +999,8 @@
 								"en": "7. Waltz"
 							},
 							"video": {
-								"ru": "",
-								"en": ""
+								"ru": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/%D0%B2%D0%B0%D0%BB%D1%8C%D1%81.mp4",
+								"en": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/%D0%B2%D0%B0%D0%BB%D1%8C%D1%81.mp4"
 							},
 							"description": {
 								"en": "",
