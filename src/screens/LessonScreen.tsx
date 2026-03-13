@@ -178,11 +178,20 @@ export default function LessonScreen({ route, navigation }: Props) {
 							/>
 						)}
 					</View>
-				) : null}
+					) : null}
 
-				{"audio" in lesson &&
-					Array.isArray(lesson.audio) &&
-					lesson.audio.length > 0 && (
+					{lesson.description &&
+						(lesson.description.ru?.trim() || lesson.description.en?.trim()) && (
+							<View style={styles.lessonDescriptionBlock}>
+								<Text style={styles.lessonDescriptionText}>
+									{getLocalizedValue(lesson.description, currentLanguage, "ru")}
+								</Text>
+							</View>
+						)}
+
+					{"audio" in lesson &&
+						Array.isArray(lesson.audio) &&
+						lesson.audio.length > 0 && (
 						<View style={styles.materialsBlock}>
 							{lesson.audio.map((track) => (
 								<View
@@ -363,6 +372,18 @@ const styles = StyleSheet.create({
 		marginBottom: 12,
 		borderRadius: 12,
 		overflow: "hidden",
+	},
+	lessonDescriptionBlock: {
+		backgroundColor: "#FFF",
+		padding: 16,
+		marginHorizontal: 12,
+		marginTop: 8,
+		borderRadius: 12,
+	},
+	lessonDescriptionText: {
+		fontSize: 15,
+		color: "#374151",
+		lineHeight: 22,
 	},
 	materialsBlock: {
 		backgroundColor: "#FFF",

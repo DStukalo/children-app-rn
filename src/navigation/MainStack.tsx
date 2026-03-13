@@ -9,7 +9,7 @@ import CourseScreen from "../screens/CourseScreen";
 import LessonScreen from "../screens/LessonScreen";
 import CheckLoginWhenPayScreen from "../screens/CheckLoginWhenPayScreen";
 import { MainStackParamList } from "./types";
-import RegisterScreen from '../screens/RegisterScreen';
+import RegisterScreen from "../screens/RegisterScreen";
 import StageScreen from "../screens/StageScreen";
 import WebPayScreen from "../screens/WebPayScreen";
 import SectionScreen from "../screens/SectionScreen";
@@ -19,7 +19,7 @@ import { findSubsectionByPath } from "../utils/sectionsData";
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 const songsRootTitleByLanguage = {
-	ru: "Розділи",
+	ru: "Разделы",
 	en: "Sections",
 };
 
@@ -92,17 +92,21 @@ export default function MainStack() {
 						route.params.subsectionPath[0] === "songs";
 					const subsection = findSubsectionByPath(
 						route.params.sectionId,
-						route.params.subsectionPath
+						route.params.subsectionPath,
 					);
 					const localizedTitle =
-						(isSongsRootSubsection ? songsRootTitleByLanguage[currentLanguage] : null) ||
+						(isSongsRootSubsection
+							? songsRootTitleByLanguage[currentLanguage]
+							: null) ||
 						subsection?.title?.[currentLanguage] ||
 						subsection?.title?.ru;
 					return {
 						headerShown: true,
 						title:
 							localizedTitle ??
-							route.params.subsectionPath[route.params.subsectionPath.length - 1],
+							route.params.subsectionPath[
+								route.params.subsectionPath.length - 1
+							],
 					};
 				}}
 			/>

@@ -24,7 +24,7 @@ const capitalizeFirstLetter = (value?: string) => {
 };
 
 const songsRootTitleByLanguage = {
-	ru: "Розділи",
+	ru: "Разделы",
 	en: "Sections",
 };
 

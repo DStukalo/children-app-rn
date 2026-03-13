@@ -85,6 +85,10 @@ type Section = {
 	id: SectionId;
 	title: LocalizedString;
 	price?: number;
+	image?: string;
+	video?: LocalizedString;
+	materials?: LessonMaterials;
+	description?: LocalizedString;
 	courses?: Course[];
 	subsections?: StageSubsection[];
 };
@@ -138,20 +142,24 @@ const createDrumComplexCourse = (
 	}
 
 	const firstLessonVideo = lessons[0].video;
+	const firstLessonDescription =
+		lessons.find((lesson) => lesson.description?.ru || lesson.description?.en)
+			?.description ?? { en: "", ru: "" };
 
 	return {
 		id: stageId * 100,
 		title: section.title,
 		subtitle: { en: "", ru: "" },
-		image: "",
+		image: section.image ?? "",
 		isCompleted: false,
 		price: 0,
 		details: {
-			description: { en: "", ru: "" },
+			description: section.description ?? firstLessonDescription,
 			lessons,
+			materials: section.materials,
 			video: Array.isArray(firstLessonVideo)
-				? { en: "", ru: "" }
-				: firstLessonVideo,
+				? section.video ?? { en: "", ru: "" }
+				: section.video ?? firstLessonVideo,
 		},
 	};
 };
