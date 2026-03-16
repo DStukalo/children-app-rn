@@ -65,6 +65,7 @@ export type StageSubsectionItem = {
 	title: LocalizedString;
 	video?: LocalizedString;
 	description?: LocalizedString;
+	access?: "free" | "locked";
 };
 
 export type Stage = {
@@ -133,7 +134,7 @@ const createDrumComplexCourse = (
 			title: item.title,
 			description: item.description,
 			video: item.video ?? { en: "", ru: "" },
-			access: "free",
+			access: item.access ?? (index === 0 ? "free" : "locked"),
 		})
 	);
 

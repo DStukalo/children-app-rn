@@ -26,7 +26,7 @@ export default function Course() {
 	const course = findCourseById(id);
 
 	const { i18n, t } = useTranslation();
-	const currentLanguage = i18n.language;
+	const currentLanguage: "en" | "ru" = i18n.language === "ru" ? "ru" : "en";
 
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
@@ -60,10 +60,7 @@ export default function Course() {
 		);
 	}
 
-	const courseVideoSource =
-		course.details.video?.[
-			currentLanguage as keyof NonNullable<typeof course.details.video>
-		] || course.details.video?.ru;
+	const courseVideoSource = course.details.video?.[currentLanguage]?.trim() ?? "";
 	const hasCourseVideo = Boolean(courseVideoSource);
 
 	const handleLessonPress = (

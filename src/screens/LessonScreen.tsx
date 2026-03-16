@@ -32,10 +32,18 @@ const getLocalizedValue = <T extends Record<string, any>>(
 	return obj[lang as keyof T] || obj[fallback];
 };
 
+const getLessonVideoSource = (
+	video: Record<"en" | "ru", string>,
+	lang: "en" | "ru"
+): string => {
+	const value = video[lang];
+	return typeof value === "string" ? value.trim() : "";
+};
+
 export default function LessonScreen({ route, navigation }: Props) {
 	const { lessonId, courseId } = route.params;
 	const { i18n, t } = useTranslation();
-	const currentLanguage = i18n.language;
+	const currentLanguage: "en" | "ru" = i18n.language === "ru" ? "ru" : "en";
 
 	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
@@ -124,10 +132,9 @@ export default function LessonScreen({ route, navigation }: Props) {
 										</View>
 									) : (
 										<CustomVideoPlayer
-											videoSource={getLocalizedValue(
+											videoSource={getLessonVideoSource(
 												vid.video,
-												currentLanguage,
-												"ru"
+												currentLanguage
 											)}
 										/>
 									)}
@@ -170,10 +177,9 @@ export default function LessonScreen({ route, navigation }: Props) {
 							</View>
 						) : (
 							<CustomVideoPlayer
-								videoSource={getLocalizedValue(
+								videoSource={getLessonVideoSource(
 									lesson.video,
-									currentLanguage,
-									"ru"
+									currentLanguage
 								)}
 							/>
 						)}

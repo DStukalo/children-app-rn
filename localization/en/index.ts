@@ -165,7 +165,7 @@ export default {
 
 	customVideoPlayer: {
 		loading: "Loading...",
-		notFound: "Video not found",
+		notFound: "Video unavailable",
 	},
 
 	checkLogin: {

@@ -11,7 +11,7 @@ import {
 import { useTranslation } from "react-i18next";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import type { MainStackParamList } from "../navigation/types";
-import { findSubsectionByPath } from "../utils/sectionsData";
+import { findSectionById, findSubsectionByPath } from "../utils/sectionsData";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useIsPremiumUser } from "../hooks/useIsPremiumUser";
@@ -33,6 +33,7 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	const { sectionId, subsectionPath } = route.params;
 	const currentLanguage = i18n.language === "ru" ? "ru" : "en";
 	const isPremiumUser = useIsPremiumUser();
+	const section = findSectionById(sectionId);
 	const subsection = findSubsectionByPath(sectionId, subsectionPath);
 	const [activeVideo, setActiveVideo] = useState<{
 		id: string;
@@ -49,11 +50,14 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	) =>
 		(item.access === "locked" || (isSongsSubsection && index > 0)) &&
 		!isPremiumUser;
+	const getItemVideoSource = (item: { video?: { en?: string; ru?: string } }) => {
+		const value = item.video?.[currentLanguage];
+		return typeof value === "string" ? value.trim() : "";
+	};
 	const playableItems =
 		subsection?.items?.filter(
 			(item, index) =>
-				!!(item.video?.[currentLanguage] || item.video?.ru) &&
-				!isLockedItem(item, index)
+				!!getItemVideoSource(item) && !isLockedItem(item, index)
 		) ?? [];
 	const activePlayableIndex = playableItems.findIndex(
 		(item) => item.id === activeVideo?.id
@@ -62,7 +66,7 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	const selectPlayableByIndex = (index: number) => {
 		if (index < 0 || index >= playableItems.length) return;
 		const nextItem = playableItems[index];
-		const nextSource = nextItem.video?.[currentLanguage] || nextItem.video?.ru;
+		const nextSource = getItemVideoSource(nextItem);
 		if (!nextSource) return;
 		setActiveVideo({
 			id: nextItem.id,
@@ -81,15 +85,14 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 
 		const firstSong = subsection.items.find(
 			(item, index) =>
-				(item.video?.[currentLanguage] || item.video?.ru) &&
-				!isLockedItem(item, index)
+				!!getItemVideoSource(item) && !isLockedItem(item, index)
 		);
 		if (!firstSong) {
 			setActiveVideo(null);
 			return;
 		}
 
-		const source = firstSong.video?.[currentLanguage] || firstSong.video?.ru;
+		const source = getItemVideoSource(firstSong);
 		if (!source) {
 			setActiveVideo(null);
 			return;
@@ -174,14 +177,31 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 									/>
 								</View>
 							</View>
-						) : null}
+						) : (
+							<View style={styles.videoCard}>
+								<View style={styles.mediaImageWrap}>
+									{subsection?.image || section?.image ? (
+										<Image
+											source={{ uri: subsection?.image || section?.image }}
+											style={styles.mediaImage}
+										/>
+									) : (
+										<View style={styles.placeholderImage}>
+											<Ionicons name='image-outline' size={24} color='#9CA3AF' />
+											<Text style={styles.placeholderText}>
+												No image yet - we'll upload it shortly.
+											</Text>
+										</View>
+									)}
+								</View>
+							</View>
+						)}
 
 						<View style={styles.lessonsBlock}>
 							{subsection.items.map((item, index) => {
 								const isActive = activeVideo?.id === item.id;
 								const isLocked = isLockedItem(item, index);
-								const videoSource =
-									item.video?.[currentLanguage] || item.video?.ru;
+								const videoSource = getItemVideoSource(item);
 								const hasVideo = !!videoSource;
 								const canOpen = !!videoSource && !isLocked;
 								const iconName = isLocked
@@ -285,6 +305,17 @@ const styles = StyleSheet.create({
 	},
 	videoContainer: {
 		width: "100%",
+	},
+	mediaImageWrap: {
+		width: "100%",
+		aspectRatio: 16 / 9,
+		borderRadius: 8,
+		overflow: "hidden",
+		backgroundColor: "#E5E7EB",
+	},
+	mediaImage: {
+		width: "100%",
+		height: "100%",
 	},
 	card: {
 		backgroundColor: "#FFFFFF",

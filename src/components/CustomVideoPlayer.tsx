@@ -43,7 +43,11 @@ export default function CustomVideoPlayer({
 	if (!videoSource) {
 		return (
 			<View style={styles.contentContainer}>
-				<Text>{t("customVideoPlayer.notFound")}</Text>
+				<View style={styles.videoUnavailableShell}>
+					<Text style={styles.videoUnavailableText}>
+						{t("customVideoPlayer.notFound")}
+					</Text>
+				</View>
 			</View>
 		);
 	}
@@ -194,6 +198,21 @@ const styles = StyleSheet.create({
 		backgroundColor: "black",
 		borderRadius: 8,
 		overflow: "hidden",
+	},
+	videoUnavailableShell: {
+		width: "100%",
+		aspectRatio: 16 / 9,
+		backgroundColor: "#111827",
+		borderRadius: 8,
+		alignItems: "center",
+		justifyContent: "center",
+		paddingHorizontal: 16,
+	},
+	videoUnavailableText: {
+		color: "#F3F4F6",
+		fontSize: 16,
+		fontWeight: "600",
+		textAlign: "center",
 	},
 	controlsRow: {
 		marginTop: 8,

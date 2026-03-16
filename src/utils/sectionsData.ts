@@ -42,6 +42,7 @@ const flattenSubsectionItems = (
 	title: LocalizedString;
 	video?: LocalizedString;
 	description?: LocalizedString;
+	access?: "free" | "locked";
 }> =>
 	subsections.flatMap((subsection) => [
 		...(subsection.items ?? []),
@@ -64,7 +65,7 @@ const createDrumComplexCourse = (
 		title: item.title,
 		description: item.description,
 		video: item.video ?? { en: "", ru: "" },
-		access: "free" as const,
+		access: item.access ?? (index === 0 ? "free" : "locked"),
 	}));
 
 	if (!lessons.length) {
