@@ -18,10 +18,6 @@ import SubsectionScreen from "../screens/SubsectionScreen";
 import { findSubsectionByPath } from "../utils/sectionsData";
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
-const songsRootTitleByLanguage = {
-	ru: "Разделы",
-	en: "Sections",
-};
 
 export default function MainStack() {
 	const { t, i18n } = useTranslation();
@@ -86,18 +82,11 @@ export default function MainStack() {
 				name='SubsectionScreen'
 				component={SubsectionScreen}
 				options={({ route }) => {
-					const isSongsRootSubsection =
-						route.params.sectionId === "makatop" &&
-						route.params.subsectionPath.length === 1 &&
-						route.params.subsectionPath[0] === "songs";
 					const subsection = findSubsectionByPath(
 						route.params.sectionId,
 						route.params.subsectionPath,
 					);
 					const localizedTitle =
-						(isSongsRootSubsection
-							? songsRootTitleByLanguage[currentLanguage]
-							: null) ||
 						subsection?.title?.[currentLanguage] ||
 						subsection?.title?.ru;
 					return {

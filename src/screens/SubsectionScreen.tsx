@@ -23,11 +23,6 @@ const capitalizeFirstLetter = (value?: string) => {
 	return value.charAt(0).toUpperCase() + value.slice(1);
 };
 
-const songsRootTitleByLanguage = {
-	ru: "Разделы",
-	en: "Sections",
-};
-
 export default function SubsectionScreen({ route, navigation }: Props) {
 	const { t, i18n } = useTranslation();
 	const { sectionId, subsectionPath } = route.params;
@@ -41,9 +36,7 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 		source: string;
 	} | null>(null);
 	const isSongsSubsection =
-		sectionId === "makatop" && subsectionPath[0] === "songs";
-	const isSongsRootSubsection =
-		sectionId === "makatop" && subsectionPath.length === 1 && subsectionPath[0] === "songs";
+		sectionId === "makatop" && subsection?.id === "songs";
 	const isLockedItem = (
 		item: { access?: "free" | "locked" },
 		index: number
@@ -114,8 +107,7 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 				showsVerticalScrollIndicator={false}
 			>
 				<Text style={styles.title}>
-					{(isSongsRootSubsection ? songsRootTitleByLanguage[currentLanguage] : null) ||
-						subsection?.title?.[currentLanguage] ||
+					{subsection?.title?.[currentLanguage] ||
 						subsection?.title?.ru ||
 						subsectionPath[subsectionPath.length - 1]}
 				</Text>

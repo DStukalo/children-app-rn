@@ -737,12 +737,10 @@
 				"ru": "Барабанный комплекс",
 				"en": "Drum complex"
 			},
-
 			"description": {
 				"en": "Requirements. The drum set can be practiced while sitting opposite the child, or with the child on your lap in front of a mirror (so the child can see both their reflection and yours). The adult fixes the drum with their legs. This way, while performing tasks behind the child's back, the adult can provide full or partial physical prompts when needed.",
 				"ru": "Требования. Барабанный комплекс можно выполнять сидя напротив ребёнка или усадив ребёнка себе на колени перед зеркалом (чтобы ребёнок видел в зеркало своё и Ваше отражение). При этом взрослый фиксирует барабан своими ногами.Таким образом, в процессе выполнения заданий, находясь за спиной у ребёнка, взрослый способен (при необходимости) оказать полную или частичную физическую подсказку ребёнку."
 			},
-
 			"video": {
 				"en": "",
 				"ru": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/drum.mp4"
@@ -774,7 +772,6 @@
 					"https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/materials/cards/9.jpg"
 				]
 			},
-
 			"image": "https://pub-ed71c916957544bc8d0e2e7363a064d7.r2.dev/images/IMG_4173.jpg",
 			"courses": [],
 			"subsections": [
@@ -1045,23 +1042,23 @@
 		{
 			"id": "makatop",
 			"title": {
-				"ru": "Макатоп (песенки)",
-				"en": "Makatop (songs)"
+				"ru": "Макатоп",
+				"en": "Makatop"
 			},
 			"courses": [],
 			"subsections": [
 				{
-					"id": "songs",
+					"id": "meAndMyFamily",
 					"title": {
-						"ru": "Песенки",
-						"en": "Songs"
+						"ru": "я и моя семья",
+						"en": "Me and my family"
 					},
 					"subsections": [
 						{
-							"id": "meAndMyFamily",
+							"id": "songs",
 							"title": {
-								"ru": "я и моя семья",
-								"en": "Me and my family"
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -1075,7 +1072,11 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [1, 10, 12]
+									"sectionTags": [
+										1,
+										10,
+										12
+									]
 								},
 								{
 									"id": "song-031-moya-semya",
@@ -1087,7 +1088,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/22.%20%D0%9C%D0%BE%D1%8F%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 2, 20],
+									"sectionTags": [
+										1,
+										2,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -1100,7 +1105,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/5%20%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10],
+									"sectionTags": [
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1113,7 +1121,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/31.%D0%A2%D0%B8%D1%85%D0%BE%20%D1%81%D0%B8%D0%B4%D0%B5%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [1],
+									"sectionTags": [
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -1126,7 +1136,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/4.%20%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9%20%D0%B1%D1%80%D0%B0%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [1],
+									"sectionTags": [
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -1139,7 +1151,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/17.%20%D0%9C%D0%B0%D0%BC%D1%83%20%D1%8F%20%D0%BB%D1%8E%D0%B1%D0%BB%D1%8E.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10],
+									"sectionTags": [
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1152,7 +1167,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/78.%20%D0%91%D1%83%D0%B4%D1%83%20%D0%B7%D0%B2%D0%BE%D0%BD%D0%B8%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10],
+									"sectionTags": [
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1165,7 +1183,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/157.%20%D0%A7%D0%B8%D1%82%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1178,7 +1199,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/2.%20%D0%BF%D0%B0%D0%BF%D0%B0%20%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [1],
+									"sectionTags": [
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -1191,7 +1214,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/95.%20%D0%94%D0%B0%D0%B9%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10, 11],
+									"sectionTags": [
+										1,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1204,7 +1231,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/50.%20%D1%82%D0%B5%D1%82%D1%8F%20%D0%BC%D0%B0%D0%BC%D0%B8%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [1],
+									"sectionTags": [
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -1217,7 +1246,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/184.%20%D0%B4%D0%B5%D0%B4%D1%83%D1%88%D0%BA%D0%B0%20%D0%B8%20%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 20],
+									"sectionTags": [
+										1,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -1230,7 +1262,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/25%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B8%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10, 11],
+									"sectionTags": [
+										1,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1243,7 +1279,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/39%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D0%BE%20%D1%8F%20%D0%BA%D1%83%D1%88%D0%B0%D1%8E.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10],
+									"sectionTags": [
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1256,7 +1295,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/40%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10, 11],
+									"sectionTags": [
+										1,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1269,7 +1312,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/49%20%D0%94%D1%8F%D0%B4%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 2, 10],
+									"sectionTags": [
+										1,
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1282,7 +1329,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/55%20%D0%9A%D1%83%D1%88%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BA%D0%B0%D1%88%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10, 11],
+									"sectionTags": [
+										1,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1295,7 +1346,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/143%20%D0%9C%D0%B0%D0%BC%D0%B0%20%D0%BF%D0%B5%D1%81%D0%BD%D1%8E%20%D0%BD%D0%B0%D0%BF%D0%B5%D0%B2%D0%B0%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 8, 10],
+									"sectionTags": [
+										1,
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1308,7 +1363,9 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/124%20%D0%95%D0%B4%D0%B5%D1%82%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [1],
+									"sectionTags": [
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -1321,16 +1378,206 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/24%20%D0%A1%D0%BF%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [1, 10, 18],
+									"sectionTags": [
+										1,
+										10,
+										18
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "peopleAndProfessions",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "люди/профессии",
-								"en": "People and professions"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							},
+							"items": [
+								{
+									"id": "symbol-brothers",
+									"title": {
+										"ru": "Братья",
+										"en": "Brothers"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%91%D1%80%D0%B0%D1%82%D1%8C%D1%8F.mp4",
+										"en": ""
+									},
+									"access": "free"
+								},
+								{
+									"id": "symbol-grandson",
+									"title": {
+										"ru": "Внук",
+										"en": "Grandson"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%92%D0%BD%D1%83%D0%BA.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-all",
+									"title": {
+										"ru": "Все",
+										"en": "All"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%92%D1%81%D0%B5.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-whole-family",
+									"title": {
+										"ru": "Вся семья",
+										"en": "Whole family"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%92%D1%81%D1%8F%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F%20.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-grandpa-short",
+									"title": {
+										"ru": "Дед",
+										"en": "Grandpa"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%94%D0%B5%D0%B4.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-grandfather",
+									"title": {
+										"ru": "Дедушка",
+										"en": "Grandfather"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%94%D0%B5%D0%B4%D1%83%D1%88%D0%BA%D0%B0.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-uncle",
+									"title": {
+										"ru": "Дядя",
+										"en": "Uncle"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%94%D1%8F%D0%B4%D1%8F.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-mom",
+									"title": {
+										"ru": "Мама",
+										"en": "Mom"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%9C%D0%B0%D0%BC%D0%B0.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-mommy",
+									"title": {
+										"ru": "Мамочка",
+										"en": "Mommy"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%9C%D0%B0%D0%BC%D0%BE%D1%87%D0%BA%D0%B0.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-our-family",
+									"title": {
+										"ru": "Наша семья",
+										"en": "Our family"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%9D%D0%B0%D1%88%D0%B0%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-dad",
+									"title": {
+										"ru": "Папа",
+										"en": "Dad"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%9F%D0%B0%D0%BF%D0%B0.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-family",
+									"title": {
+										"ru": "Семья",
+										"en": "Family"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%A1%D0%B5%D0%BC%D1%8C%D1%8F.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-sister",
+									"title": {
+										"ru": "Сестра",
+										"en": "Sister"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%A1%D0%B5%D1%81%D1%82%D1%80%D0%B0.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								},
+								{
+									"id": "symbol-aunt",
+									"title": {
+										"ru": "Тётя",
+										"en": "Aunt"
+									},
+									"video": {
+										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%A2%D1%91%D1%82%D1%8F.mp4",
+										"en": ""
+									},
+									"access": "locked"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "peopleAndProfessions",
+					"title": {
+						"ru": "люди/профессии",
+						"en": "People and professions"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -1344,7 +1591,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [2, 9]
+									"sectionTags": [
+										2,
+										9
+									]
 								},
 								{
 									"id": "song-016-podguznik",
@@ -1356,7 +1606,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/214.%20%D0%9F%D0%BE%D0%B4%D0%B3%D1%83%D0%B7%D0%BD%D0%B8%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 9],
+									"sectionTags": [
+										2,
+										9
+									],
 									"access": "locked"
 								},
 								{
@@ -1369,7 +1622,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/218%20%D0%92%20%D0%B1%D0%B0%D0%BD%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 12],
+									"sectionTags": [
+										2,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -1382,7 +1639,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/231%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9%20.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 12],
+									"sectionTags": [
+										2,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -1395,7 +1656,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/36.%20%D0%92%20%D1%81%D0%B0%D0%B4%D0%B8%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 5, 10, 20],
+									"sectionTags": [
+										2,
+										5,
+										10,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -1408,7 +1674,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/20.%20%D0%92%20%D0%BF%D1%80%D1%8F%D1%82%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1421,7 +1690,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/77.%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 7, 10],
+									"sectionTags": [
+										2,
+										7,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1434,7 +1707,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/177%20%D0%BC%D1%8B%20%D0%BD%D0%B5%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 8],
+									"sectionTags": [
+										2,
+										8
+									],
 									"access": "locked"
 								},
 								{
@@ -1447,7 +1723,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/156.%20%D1%83%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1460,7 +1739,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/90%20%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B9%20%D1%87%D0%B0%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 11],
+									"sectionTags": [
+										2,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1473,7 +1755,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/93.%20%D0%B3%D1%80%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D1%80%D0%BE%D1%81%D0%B5%D0%BD%D0%BE%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 3],
+									"sectionTags": [
+										2,
+										3
+									],
 									"access": "locked"
 								},
 								{
@@ -1486,7 +1771,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/94.%20%D0%A2%D1%8B%20%D0%B8%20%D1%8F-%D0%B4%D1%80%D1%83%D0%B7%D1%8C%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [2],
+									"sectionTags": [
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -1499,7 +1786,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/168.%20%D0%90%D1%80%D1%82%D0%B8%D1%81%D1%82%D0%BE%D0%BC%20%D1%81%D1%82%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1512,7 +1802,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/185.%20%D0%9D%D1%8F%D0%BD%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 7, 10, 12],
+									"sectionTags": [
+										2,
+										7,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -1525,7 +1820,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/186.%20%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 1, 5, 10],
+									"sectionTags": [
+										2,
+										1,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1538,7 +1838,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/8%20%D0%92%D0%BE%D0%B4%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 11],
+									"sectionTags": [
+										2,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1551,7 +1855,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/9%20%D0%A2%D1%83%D0%B0%D0%BB%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 12],
+									"sectionTags": [
+										2,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -1564,7 +1872,10 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/28%20%D0%94%D1%80%D1%83%D0%B3%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 18],
+									"sectionTags": [
+										2,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -1577,7 +1888,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/37%20%D0%98%D0%B4%D0%B8%20%D1%81%D1%8E%D0%B4%D0%B0%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1590,7 +1904,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/46%20%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 13],
+									"sectionTags": [
+										2,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -1603,7 +1921,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/48%20%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20.mov",
 										"en": ""
 									},
-									"sectionTags": [15, 1, 10],
+									"sectionTags": [
+										15,
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1616,7 +1938,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/52%20%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0%20%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%20%D0%BA%D0%BD%D0%B8%D0%B6%D0%BA%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 3, 8, 10],
+									"sectionTags": [
+										2,
+										3,
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1629,7 +1956,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/53%20%D0%A1%D0%BF%D0%B8%D1%82%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%20.mov",
 										"en": ""
 									},
-									"sectionTags": [2],
+									"sectionTags": [
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -1642,7 +1971,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/132%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%80%D0%B0%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [2],
+									"sectionTags": [
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -1655,7 +1986,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/116%20%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1668,7 +2002,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/121%20%20%D0%AF%20%D0%B8%D0%B3%D1%80%D0%B0%D1%8E%20%D0%BD%D0%B0%20%D1%82%D1%80%D1%83%D0%B1%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 9, 10],
+									"sectionTags": [
+										2,
+										9,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1681,7 +2019,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/123%20%D0%9A%D0%BE%D0%BF%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 11, 10],
+									"sectionTags": [
+										2,
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1694,7 +2036,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/126%20%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%20%20%D1%83%D0%BF%D0%B0%D0%BB.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1707,7 +2052,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/135%20%D0%A3%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10],
+									"sectionTags": [
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1720,7 +2068,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/136%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [2],
+									"sectionTags": [
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -1733,7 +2083,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/138%20%D0%94%D0%B5%D1%82%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 11],
+									"sectionTags": [
+										2,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1746,7 +2100,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/97%20%D0%9C%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 11],
+									"sectionTags": [
+										2,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1759,16 +2117,36 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/117%20%D0%92%D0%BE%D0%B4%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [2, 10, 11],
+									"sectionTags": [
+										2,
+										10,
+										11
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "animalsBirdsInsects",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "животные /птицы /насекомые",
-								"en": "Animals / birds / insects"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "animalsBirdsInsects",
+					"title": {
+						"ru": "животные /птицы /насекомые",
+						"en": "Animals / birds / insects"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -1782,7 +2160,12 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [3, 10, 11, 14]
+									"sectionTags": [
+										3,
+										10,
+										11,
+										14
+									]
 								},
 								{
 									"id": "song-125-mama-chitaet",
@@ -1794,7 +2177,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/1%20%D0%9C%D0%B0%D0%BC%D0%B0%20%20%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 1, 8, 10],
+									"sectionTags": [
+										3,
+										1,
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1807,7 +2195,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/180%20%D0%9F%D1%87%D0%B5%D0%BB%D0%B0%20.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 6, 10],
+									"sectionTags": [
+										3,
+										6,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1820,7 +2212,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/79%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 5, 14],
+									"sectionTags": [
+										3,
+										5,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -1833,7 +2229,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/80%20%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 10],
+									"sectionTags": [
+										3,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1846,7 +2245,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/98%20%D0%9C%D0%B8%D1%88%D0%BA%D0%B0%20%D0%B5%D1%81%D1%82%20%D0%BC%D0%B0%D0%BB%D0%B8%D0%BD%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 10, 11],
+									"sectionTags": [
+										3,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -1859,7 +2262,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/100%20%D0%9B%D0%BE%D1%88%D0%B0%D0%B4%D1%8C%20%D1%81%D0%BA%D0%B0%D1%87%D0%B5%D1%82%20.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 13],
+									"sectionTags": [
+										3,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -1872,7 +2278,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/101%20%D0%A0%D1%8B%D0%B1%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 6, 14],
+									"sectionTags": [
+										3,
+										6,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -1885,7 +2295,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/102%20%D0%A3%20%D0%BA%D0%BE%D0%B7%D1%8B%20.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 13, 14],
+									"sectionTags": [
+										3,
+										13,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -1898,7 +2312,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/103%20%D0%A1%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 5, 10, 14],
+									"sectionTags": [
+										3,
+										5,
+										10,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -1911,7 +2330,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/104%20%D0%9F%D0%B5%D1%82%D1%83%D1%85%20.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 10, 14, 18],
+									"sectionTags": [
+										3,
+										10,
+										14,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -1924,7 +2348,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/105%20%D0%9C%D0%B0%D0%BC%D0%B0%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 14],
+									"sectionTags": [
+										3,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -1937,7 +2364,10 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/81%20%D0%9F%D1%82%D0%B8%D1%86%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 10],
+									"sectionTags": [
+										3,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -1950,7 +2380,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/137%20%20%D0%9C%D0%BE%D0%B9%20%D1%89%D0%B5%D0%BD%D0%BE%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 2, 10, 20],
+									"sectionTags": [
+										3,
+										2,
+										10,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -1963,16 +2398,37 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/129%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BC%D1%8B%D1%88%D0%BE%D0%BD%D0%BE%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [3, 6, 10, 14],
+									"sectionTags": [
+										3,
+										6,
+										10,
+										14
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "transportAndVehicles",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "транспорт и средства передвижения",
-								"en": "Transport and vehicles"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "transportAndVehicles",
+					"title": {
+						"ru": "транспорт и средства передвижения",
+						"en": "Transport and vehicles"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -1986,7 +2442,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [4, 14]
+									"sectionTags": [
+										4,
+										14
+									]
 								},
 								{
 									"id": "song-133-mashina",
@@ -1998,7 +2457,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/15%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 10],
+									"sectionTags": [
+										4,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2011,7 +2473,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/108%20%D0%9A%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B8%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 18, 20],
+									"sectionTags": [
+										4,
+										18,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -2024,7 +2490,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/109%20%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 14],
+									"sectionTags": [
+										4,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -2037,7 +2506,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/110%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 3],
+									"sectionTags": [
+										4,
+										3
+									],
 									"access": "locked"
 								},
 								{
@@ -2050,7 +2522,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/111%20%D0%92%D0%B5%D0%BB%D0%BE%D1%81%D0%B8%D0%BF%D0%B5%D0%B4.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 1],
+									"sectionTags": [
+										4,
+										1
+									],
 									"access": "locked"
 								},
 								{
@@ -2063,7 +2538,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/112%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [4],
+									"sectionTags": [
+										4
+									],
 									"access": "locked"
 								},
 								{
@@ -2076,7 +2553,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/113%20%D0%A2%D1%80%D0%B0%D0%BC%D0%B2%D0%B0%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 1, 5, 10],
+									"sectionTags": [
+										4,
+										1,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2089,7 +2571,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/114%20%D0%A2%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D1%83%D1%81%20.mov",
 										"en": ""
 									},
-									"sectionTags": [4],
+									"sectionTags": [
+										4
+									],
 									"access": "locked"
 								},
 								{
@@ -2102,16 +2586,35 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/130%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%20.mov",
 										"en": ""
 									},
-									"sectionTags": [4, 3],
+									"sectionTags": [
+										4,
+										3
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "graphicObjectsAndPublicPlaces",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "графические объекты и общественные места",
-								"en": "Graphic objects and public places"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "graphicObjectsAndPublicPlaces",
+					"title": {
+						"ru": "графические объекты и общественные места",
+						"en": "Graphic objects and public places"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -2125,7 +2628,12 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [5, 1, 10, 20]
+									"sectionTags": [
+										5,
+										1,
+										10,
+										20
+									]
 								},
 								{
 									"id": "song-049-sok-fruktovyy",
@@ -2137,7 +2645,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/65.%20%D0%A1%D0%BE%D0%BA%20%D1%84%D1%80%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [5, 10, 11, 14],
+									"sectionTags": [
+										5,
+										10,
+										11,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -2150,7 +2663,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/229%20%D0%98%D0%B4%D1%83%20%D0%B2%20%D1%88%D0%BA%D0%BE%D0%BB%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [8],
+									"sectionTags": [
+										8
+									],
 									"access": "locked"
 								},
 								{
@@ -2163,7 +2678,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/14%20%D0%94%D0%BE%D0%BC.mov",
 										"en": ""
 									},
-									"sectionTags": [5],
+									"sectionTags": [
+										5
+									],
 									"access": "locked"
 								},
 								{
@@ -2176,7 +2693,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/18%20%D0%92%20%D1%88%D0%BA%D0%BE%D0%BB%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [5, 10],
+									"sectionTags": [
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2189,7 +2709,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/141%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20.mov",
 										"en": ""
 									},
-									"sectionTags": [5],
+									"sectionTags": [
+										5
+									],
 									"access": "locked"
 								},
 								{
@@ -2202,7 +2724,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/91%20%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%B6%D0%B4%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [5, 6],
+									"sectionTags": [
+										5,
+										6
+									],
 									"access": "locked"
 								},
 								{
@@ -2215,16 +2740,35 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/128%20%D0%94%D0%BE%D0%BC%20%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [5, 10],
+									"sectionTags": [
+										5,
+										10
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "worldAround",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "окружающий мир",
-								"en": "World around us"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "worldAround",
+					"title": {
+						"ru": "окружающий мир",
+						"en": "World around us"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -2238,7 +2782,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [6, 20]
+									"sectionTags": [
+										6,
+										20
+									]
 								},
 								{
 									"id": "song-034-lyublyu-smotret",
@@ -2250,7 +2797,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/27.%D0%9B%D1%8E%D0%B1%D0%BB%D1%8E%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 10],
+									"sectionTags": [
+										6,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2263,7 +2813,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/161.%20%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 8, 10],
+									"sectionTags": [
+										6,
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2276,7 +2830,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/181%20%D0%A1%D0%B8%D0%B4%D0%B8%D1%82%20%D0%B7%D0%B0%D0%B9%D0%BA%D0%B0%20.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 3, 13],
+									"sectionTags": [
+										6,
+										3,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2289,7 +2847,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/82%20%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 20],
+									"sectionTags": [
+										6,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -2302,7 +2863,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/89%20%D0%A2%D0%B5%D0%BF%D0%BB%D1%8B%D0%B9%20%D0%B2%D0%B5%D1%82%D0%B5%D1%80%20.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 10],
+									"sectionTags": [
+										6,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2315,7 +2879,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/179%20%D0%A1%D0%BF%D1%80%D1%8F%D1%82%D0%B0%D0%BB%D1%81%D1%8F%20%D1%89%D0%B5%D0%BD%D0%BE%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 3, 13],
+									"sectionTags": [
+										6,
+										3,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2328,7 +2896,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/83%20%D0%9C%D0%BE%D1%82%D1%8B%D0%BB%D0%B5%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [6],
+									"sectionTags": [
+										6
+									],
 									"access": "locked"
 								},
 								{
@@ -2341,7 +2911,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/107%20%D0%A3%D1%82%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 11],
+									"sectionTags": [
+										6,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -2354,7 +2927,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/120%20%D0%93%D1%83%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B2%20%D0%BB%D0%B5%D1%81%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 20],
+									"sectionTags": [
+										6,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -2367,7 +2943,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/115%20%D0%9A%D0%B0%D1%87%D0%B5%D0%BB%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 7],
+									"sectionTags": [
+										6,
+										7
+									],
 									"access": "locked"
 								},
 								{
@@ -2380,7 +2959,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/118%20%D0%9E%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 20],
+									"sectionTags": [
+										6,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -2393,16 +2975,37 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/119%20%D0%91%D0%B5%D0%B6%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [6, 2, 5, 10],
+									"sectionTags": [
+										6,
+										2,
+										5,
+										10
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "leisureGamesAndToys",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "досуг (игры и игрушки)",
-								"en": "Leisure (games and toys)"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "leisureGamesAndToys",
+					"title": {
+						"ru": "досуг (игры и игрушки)",
+						"en": "Leisure (games and toys)"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -2416,7 +3019,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [7, 10]
+									"sectionTags": [
+										7,
+										10
+									]
 								},
 								{
 									"id": "song-007-dumat",
@@ -2428,7 +3034,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/175%20%D0%B4%D1%83%D0%BC%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 10],
+									"sectionTags": [
+										7,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2441,7 +3050,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/232%20%D0%A1%20%D0%B3%D0%BE%D1%80%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 2],
+									"sectionTags": [
+										7,
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -2454,7 +3066,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/233%20%D0%B2%20%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B5%20.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 2, 20],
+									"sectionTags": [
+										7,
+										2,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -2467,7 +3083,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/178.%20%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%80%D0%B5%D0%B1%D1%8F%D1%82%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 2, 10],
+									"sectionTags": [
+										7,
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2480,7 +3100,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/173.%20%D0%94%D0%B5%D0%BD%D1%8C%20%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 10, 18],
+									"sectionTags": [
+										7,
+										10,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -2493,7 +3117,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/88%20%D0%9C%D1%8F%D1%87%D0%B8%D0%BA.mov",
 										"en": ""
 									},
-									"sectionTags": [7],
+									"sectionTags": [
+										7
+									],
 									"access": "locked"
 								},
 								{
@@ -2506,7 +3132,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/85%20%D0%9C%D0%B8%D1%88%D0%BA%D0%B0%20.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 10, 18],
+									"sectionTags": [
+										7,
+										10,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -2519,7 +3149,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/87%20%D0%9A%D1%83%D0%B1%D0%B8%D0%BA%D0%B8%20.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 10],
+									"sectionTags": [
+										7,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2532,7 +3165,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/86%20%D0%9A%D1%83%D0%BA%D0%BB%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [7, 2],
+									"sectionTags": [
+										7,
+										2
+									],
 									"access": "locked"
 								},
 								{
@@ -2545,16 +3181,34 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/122%20%D0%9A%D0%B0%D1%87%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D0%BE%20.mov",
 										"en": ""
 									},
-									"sectionTags": [7],
+									"sectionTags": [
+										7
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "studyAndSchoolSupplies",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "учеба/школьные принадлежности",
-								"en": "Study / school supplies"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "studyAndSchoolSupplies",
+					"title": {
+						"ru": "учеба/школьные принадлежности",
+						"en": "Study / school supplies"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -2568,7 +3222,12 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [8, 2, 10, 14]
+									"sectionTags": [
+										8,
+										2,
+										10,
+										14
+									]
 								},
 								{
 									"id": "song-008-belka-podelka",
@@ -2580,7 +3239,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/176%20%D0%91%D0%B5%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4%D0%B5%D0%BB%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 1, 5, 10],
+									"sectionTags": [
+										8,
+										1,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2593,7 +3257,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/35.%20%D0%91%D1%80%D0%B0%D1%82%D0%B8%D1%88%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2606,7 +3273,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/148.%20%D0%9D%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2619,7 +3289,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/149%20%D0%9A%D1%80%D0%B0%D1%81%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 5, 10],
+									"sectionTags": [
+										8,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2632,7 +3306,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/158.%20%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2645,7 +3322,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/159.%20%D0%A0%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2658,7 +3338,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/160.%20%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2671,7 +3354,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/162.%20%D1%80%D0%B5%D0%B6%D1%83%2C%20%D1%80%D0%B5%D0%B6%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2684,7 +3370,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/163.%20%D0%9A%D0%BB%D0%B5%D0%B8%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2697,7 +3386,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/164.%20%D0%9B%D0%B5%D0%BF%D0%BB%D1%8E.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2710,7 +3402,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/150.%20%D0%BA%D0%BB%D0%B5%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2723,7 +3418,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/155.%20%D0%A3%D1%80%D0%BE%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10],
+									"sectionTags": [
+										8,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2736,7 +3434,13 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/140%20%D0%B4%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0%20%D0%B8%D0%B4%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 2, 5, 10, 13],
+									"sectionTags": [
+										8,
+										2,
+										5,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2749,7 +3453,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/147%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88%20.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 10, 13],
+									"sectionTags": [
+										8,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2762,7 +3470,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/84%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 12],
+									"sectionTags": [
+										8,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -2775,7 +3486,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/139%20%D0%98%D0%BC%D1%8F%20.mov",
 										"en": ""
 									},
-									"sectionTags": [8, 2, 10],
+									"sectionTags": [
+										8,
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2788,7 +3503,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/146%20%D0%A0%D1%83%D1%87%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [8],
+									"sectionTags": [
+										8
+									],
 									"access": "locked"
 								},
 								{
@@ -2801,16 +3518,34 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/234%20%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [8],
+									"sectionTags": [
+										8
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "objectsClothesAndHygiene",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "предметы/одежда и гигиена",
-								"en": "Objects / clothes and hygiene"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "objectsClothesAndHygiene",
+					"title": {
+						"ru": "предметы/одежда и гигиена",
+						"en": "Objects / clothes and hygiene"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -2824,7 +3559,11 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [9, 2, 10]
+									"sectionTags": [
+										9,
+										2,
+										10
+									]
 								},
 								{
 									"id": "song-002-klyuch",
@@ -2836,7 +3575,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/154%20%D0%9A%D0%BB%D1%8E%D1%87.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10, 12, 18],
+									"sectionTags": [
+										9,
+										10,
+										12,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -2849,7 +3593,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/212%20%D0%9F%D0%BE%D0%BB%D0%BE%D1%82%D0%B5%D0%BD%D1%86%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10, 13],
+									"sectionTags": [
+										9,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2862,7 +3610,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/224%20%D0%BC%D1%83%D1%81%D0%BE%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10],
+									"sectionTags": [
+										9,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2875,7 +3626,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/32.%20%D0%A0%D1%83%D0%BA%D0%B8%20%D1%81%20%D0%BC%D1%8B%D0%BB%D0%BE%D0%BC%20%D0%BC%D1%8B%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10, 13],
+									"sectionTags": [
+										9,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -2888,7 +3643,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/151.%20%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10, 11],
+									"sectionTags": [
+										9,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -2901,7 +3660,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/152.%20%D0%98%D0%B3%D0%BE%D0%BB%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%88%D0%B8%D1%82%D1%8C%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10],
+									"sectionTags": [
+										9,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2914,7 +3676,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/169.%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B1%D1%83%D0%B4%D1%83.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10],
+									"sectionTags": [
+										9,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2927,7 +3692,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/170%20%D0%9F%D1%80%D0%B8%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [9],
+									"sectionTags": [
+										9
+									],
 									"access": "locked"
 								},
 								{
@@ -2940,7 +3707,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/33%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%BC%D1%8B%D1%82%D1%8C%D1%81%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10, 12],
+									"sectionTags": [
+										9,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -2953,7 +3724,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/41%20%D0%9F%D0%BB%D0%BE%D1%85%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10],
+									"sectionTags": [
+										9,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2966,7 +3740,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/144%20%D0%92%20%D1%88%D0%BA%D0%B0%D1%84%D1%83%20.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 12],
+									"sectionTags": [
+										9,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -2979,7 +3756,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/145%20%D0%92%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D1%83%20.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 7, 10],
+									"sectionTags": [
+										9,
+										7,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -2992,16 +3773,35 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/211%20%D0%9C%D1%8B%D0%BB%D0%BE%20.mov",
 										"en": ""
 									},
-									"sectionTags": [9, 10],
+									"sectionTags": [
+										9,
+										10
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "verbs",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "глаголы",
-								"en": "Verbs"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "verbs",
+					"title": {
+						"ru": "глаголы",
+						"en": "Verbs"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -3015,7 +3815,11 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [10, 9, 11]
+									"sectionTags": [
+										10,
+										9,
+										11
+									]
 								},
 								{
 									"id": "song-213-prygat",
@@ -3027,7 +3831,9 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/125%20%D0%9F%D1%80%D1%8B%D0%B3%D0%B0%D1%82%D1%8C%20.mov",
 										"en": ""
 									},
-									"sectionTags": [10],
+									"sectionTags": [
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3040,16 +3846,35 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/127%20%20%D0%9E%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [14, 10],
+									"sectionTags": [
+										14,
+										10
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "foodAndDrinks",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "еда и напитки",
-								"en": "Food and drinks"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "foodAndDrinks",
+					"title": {
+						"ru": "еда и напитки",
+						"en": "Food and drinks"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -3063,7 +3888,11 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [11, 10, 18]
+									"sectionTags": [
+										11,
+										10,
+										18
+									]
 								},
 								{
 									"id": "song-010-sol",
@@ -3075,7 +3904,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/203%20%D0%A1%D0%BE%D0%BB%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3088,7 +3919,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/198%20%D0%9F%D0%BE%D0%BC%D0%B8%D0%B4%D0%BE%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3101,7 +3934,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/207.%20%D0%A2%D0%B2%D0%BE%D1%80%D0%BE%D0%B3.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3114,7 +3949,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/209.%20%D1%84%D1%80%D1%83%D0%BA%D1%82%D1%8B.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3127,7 +3964,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/21.%D0%90%D0%B1%D1%80%D0%B8%D0%BA%D0%BE%D1%81.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3140,7 +3980,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/220%20%D0%BF%D0%BB%D0%B8%D1%82%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 12],
+									"sectionTags": [
+										11,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3153,7 +3997,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/26.%20%D0%9A%D0%B0%D1%88%D1%83%20%D1%81%D1%8A%D0%B5%D1%81%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3166,7 +4012,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/43.%20%D0%9D%D0%95%D0%A2.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 1, 10, 15],
+									"sectionTags": [
+										11,
+										1,
+										10,
+										15
+									],
 									"access": "locked"
 								},
 								{
@@ -3179,7 +4030,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/59.%20%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%BD%D1%8B.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3192,7 +4046,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/60.%20%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3205,7 +4062,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/62.%20%D1%8F%D0%B9%D1%86%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3218,7 +4077,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/61.%20%D0%99%D0%BE%D0%B3%D1%83%D1%80%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 2, 10],
+									"sectionTags": [
+										11,
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3231,7 +4094,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/71.%20%D0%9E%D0%B3%D1%83%D1%80%D0%B5%D1%86.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 12],
+									"sectionTags": [
+										11,
+										10,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3244,7 +4111,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/208.%20%D1%82%D0%BE%D1%80%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3257,7 +4126,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/210%20%D0%AF%D0%B3%D0%BE%D0%B4%D1%8B.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 13],
+									"sectionTags": [
+										11,
+										10,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -3270,7 +4143,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/221.%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 12],
+									"sectionTags": [
+										11,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3283,7 +4159,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/191.%20%D0%9A%D0%BE%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BB%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 18],
+									"sectionTags": [
+										11,
+										10,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -3296,7 +4176,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/192.%20%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 5, 10, 18],
+									"sectionTags": [
+										11,
+										5,
+										10,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -3309,7 +4194,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/199.%20%D0%A0%D0%B8%D1%81.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3322,7 +4210,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/204.%20%D1%81%D0%BE%D1%81%D0%B8%D1%81%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 3, 12],
+									"sectionTags": [
+										11,
+										3,
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3335,7 +4227,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/205.%20%D0%A1%D1%83%D1%85%D0%B0%D1%80%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3348,7 +4242,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/206%20%D0%A1%D0%AB%D0%A0.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3361,7 +4257,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/58.%20%D0%B1%D0%B0%D0%BD%D0%B0%D0%BD.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3374,7 +4272,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/197.%20%D0%9C%D1%8F%D1%81%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3387,7 +4288,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/200.%20%D0%A1%D0%B0%D0%BB%D0%B0%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3400,7 +4303,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/201%20%D0%A1%D0%B0%D1%85%D0%B0%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 5, 10],
+									"sectionTags": [
+										11,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3413,7 +4320,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/96.%20%D0%A1%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B9%20%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3426,7 +4335,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/188.%20%D0%B1%D1%83%D1%82%D0%B5%D1%80%D0%B1%D1%80%D0%BE%D0%B4.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 13, 14],
+									"sectionTags": [
+										11,
+										10,
+										13,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -3439,7 +4353,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/189.%20%D0%92%D0%B0%D1%80%D0%B5%D0%BD%D1%8C%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3452,7 +4369,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/193.%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3465,7 +4385,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/194.%20%D0%BA%D1%83%D1%88%D0%B0%D1%82%D1%8C%20%D0%B2%20%D0%BE%D0%B1%D0%B5%D0%B4.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3478,7 +4400,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/195.%20%D0%9C%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5%D0%B7.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3491,7 +4415,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/196.%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 13],
+									"sectionTags": [
+										11,
+										13
+									],
 									"access": "locked"
 								},
 								{
@@ -3504,7 +4431,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/66.%20%D0%A7%D0%B0%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3517,7 +4447,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/171.%20%D1%83%D0%B6%D0%B8%D0%BD.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 1, 10],
+									"sectionTags": [
+										11,
+										1,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3530,7 +4464,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/3%20%D0%91%D0%B0%D0%B1%D1%83%D1%88%D0%BA%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3543,7 +4480,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/6%20%D0%9F%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3556,7 +4495,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/7%20%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0%D1%8F%20%D0%B5%D0%B4%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 14, 18],
+									"sectionTags": [
+										11,
+										14,
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -3569,7 +4512,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/34%20%D0%9F%D1%80%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%20%D0%B4%D1%83%D1%88.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10, 14],
+									"sectionTags": [
+										11,
+										10,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -3582,7 +4529,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/38%20%D0%94%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B5%D1%89%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3595,7 +4545,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/54%20%D0%A5%D0%BB%D0%B5%D0%B1.mov",
 										"en": ""
 									},
-									"sectionTags": [11],
+									"sectionTags": [
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3608,7 +4560,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/56%20%D0%A1%D1%83%D0%BF%20%D0%B8%D0%B7%20%D0%BE%D0%B2%D0%BE%D1%89%D0%B5%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 2, 10],
+									"sectionTags": [
+										11,
+										2,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3621,7 +4577,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/63%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D1%8C%D0%B5%D0%BC.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3634,7 +4593,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/190%20%D0%9A%D0%B5%D1%84%D0%B8%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 10],
+									"sectionTags": [
+										11,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3647,16 +4609,37 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/99%20%D0%9C%D1%8B%D1%87%D0%B8%D1%82%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%20.mov",
 										"en": ""
 									},
-									"sectionTags": [11, 2, 3, 14],
+									"sectionTags": [
+										11,
+										2,
+										3,
+										14
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "housingFurnitureAppliances",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "жилье, мебель, быт.техника",
-								"en": "Housing, furniture, appliances"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "housingFurnitureAppliances",
+					"title": {
+						"ru": "жилье, мебель, быт.техника",
+						"en": "Housing, furniture, appliances"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -3670,7 +4653,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [12, 10]
+									"sectionTags": [
+										12,
+										10
+									]
 								},
 								{
 									"id": "song-020-v-pechke",
@@ -3682,7 +4668,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/219.%20%D0%92%20%D0%9F%D0%B5%D1%87%D0%BA%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3695,7 +4683,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/226%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D0%B5%20.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3708,7 +4698,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/67.%20%D0%9D%D0%BE%D0%B6.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 10],
+									"sectionTags": [
+										12,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3721,7 +4714,12 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/69.%20%D0%92%D0%B8%D0%BB%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 1, 10, 11],
+									"sectionTags": [
+										12,
+										1,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3734,7 +4732,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/70.%20%D0%9B%D0%BE%D0%B6%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 7, 11],
+									"sectionTags": [
+										12,
+										7,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3747,7 +4749,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/73.%20%D0%94%D0%B2%D0%B5%D1%80%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 10, 20],
+									"sectionTags": [
+										12,
+										10,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -3760,7 +4766,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/74.%20%D0%9E%D0%BA%D0%BD%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3773,7 +4781,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/222.%20%D0%9F%D0%BE%D1%81%D1%83%D0%B4%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 11],
+									"sectionTags": [
+										12,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3786,7 +4797,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/228%20%D0%92%20%D0%BA%D1%83%D1%85%D0%BD%D0%B5.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 20],
+									"sectionTags": [
+										12,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -3799,7 +4813,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/183.%20%D0%B2%D0%BD%D0%B8%D0%B7%20%D0%BF%D0%BE%20%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B5%20.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 20],
+									"sectionTags": [
+										12,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -3812,7 +4829,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/10%20%D0%9A%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 14],
+									"sectionTags": [
+										12,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -3825,7 +4845,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/11%20%D0%A1%D1%82%D1%83%D0%BB.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3838,7 +4860,9 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/12%20%D0%A1%D1%82%D0%BE%D0%BB.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								},
 								{
@@ -3851,7 +4875,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/13%20%D0%9A%D1%80%D0%B0%D0%BD.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 11],
+									"sectionTags": [
+										12,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3864,7 +4891,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/75%20%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 5, 10],
+									"sectionTags": [
+										12,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3877,7 +4908,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/72%20%D0%A7%D0%B0%D1%88%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 10, 11],
+									"sectionTags": [
+										12,
+										10,
+										11
+									],
 									"access": "locked"
 								},
 								{
@@ -3890,7 +4925,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/76%20%D0%A1%D0%B2%D0%B5%D1%82.mov",
 										"en": ""
 									},
-									"sectionTags": [12, 5],
+									"sectionTags": [
+										12,
+										5
+									],
 									"access": "locked"
 								},
 								{
@@ -3903,16 +4941,34 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/227%20%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [12],
+									"sectionTags": [
+										12
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "bodyParts",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "части тела",
-								"en": "Body parts"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "bodyParts",
+					"title": {
+						"ru": "части тела",
+						"en": "Body parts"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -3926,7 +4982,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [13, 2]
+									"sectionTags": [
+										13,
+										2
+									]
 								},
 								{
 									"id": "song-094-rezat",
@@ -3938,7 +4997,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/68%20%D0%A0%D0%B5%D0%B7%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [13, 10],
+									"sectionTags": [
+										13,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -3951,7 +5013,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/182.%20%D0%B2%D0%B2%D0%B5%D1%80%D1%85%20%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B5%D0%BC%20%D1%80%D1%83%D0%BA%D0%B8.mov",
 										"en": ""
 									},
-									"sectionTags": [13, 10, 20],
+									"sectionTags": [
+										13,
+										10,
+										20
+									],
 									"access": "locked"
 								},
 								{
@@ -3964,7 +5030,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/57%20%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%20.mov",
 										"en": ""
 									},
-									"sectionTags": [13, 19],
+									"sectionTags": [
+										13,
+										19
+									],
 									"access": "locked"
 								},
 								{
@@ -3977,7 +5046,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/106%20%D0%9C%D1%8B%D1%88%D0%BA%D0%B0%20%20%D1%81%D0%B5%D1%80%D0%B0%D1%8F.mov",
 										"en": ""
 									},
-									"sectionTags": [13, 14],
+									"sectionTags": [
+										13,
+										14
+									],
 									"access": "locked"
 								},
 								{
@@ -3990,24 +5062,59 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/133%20%D0%91%D0%BE%D0%BB%D0%B8%D1%82%20%D0%B3%D0%BE%D1%80%D0%BB%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [13, 10, 14],
+									"sectionTags": [
+										13,
+										10,
+										14
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "numbersLettersSounds",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "числа, буквы, звуки",
-								"en": "Numbers, letters, sounds"
-							},
-							"items": []
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "numbersLettersSounds",
+					"title": {
+						"ru": "числа, буквы, звуки",
+						"en": "Numbers, letters, sounds"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							}
 						},
 						{
-							"id": "questionsAndCommunication",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "вопросы и коммуникативные выражения",
-								"en": "Questions and communication"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "questionsAndCommunication",
+					"title": {
+						"ru": "вопросы и коммуникативные выражения",
+						"en": "Questions and communication"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -4021,7 +5128,9 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [15]
+									"sectionTags": [
+										15
+									]
 								},
 								{
 									"id": "song-039-spasibo",
@@ -4033,7 +5142,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/45.%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [10],
+									"sectionTags": [
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4046,7 +5157,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/42%20%D0%94%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [15, 10],
+									"sectionTags": [
+										15,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4059,7 +5173,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/44%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0.movv",
 										"en": ""
 									},
-									"sectionTags": [10],
+									"sectionTags": [
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4072,7 +5188,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/47%20%D0%9F%D0%BE%D0%BA%D0%B0.mov",
 										"en": ""
 									},
-									"sectionTags": [15],
+									"sectionTags": [
+										15
+									],
 									"access": "locked"
 								},
 								{
@@ -4085,24 +5203,57 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/134%20%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20.mov",
 										"en": ""
 									},
-									"sectionTags": [15],
+									"sectionTags": [
+										15
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "pronouns",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "местоимения",
-								"en": "Pronouns"
-							},
-							"items": []
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "pronouns",
+					"title": {
+						"ru": "местоимения",
+						"en": "Pronouns"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							}
 						},
 						{
-							"id": "prepositions",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "предлоги",
-								"en": "Prepositions"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "prepositions",
+					"title": {
+						"ru": "предлоги",
+						"en": "Prepositions"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -4116,15 +5267,34 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [17, 10]
+									"sectionTags": [
+										17,
+										10
+									]
 								}
 							]
 						},
 						{
-							"id": "calendarTime",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "календарь, время",
-								"en": "Calendar and time"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "calendarTime",
+					"title": {
+						"ru": "календарь, время",
+						"en": "Calendar and time"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -4138,7 +5308,10 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [18, 10]
+									"sectionTags": [
+										18,
+										10
+									]
 								},
 								{
 									"id": "song-096-chistyy-i-opryatnyy",
@@ -4150,7 +5323,9 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/92.%20%D1%87%D0%B8%D1%81%D1%82%D1%8B%D0%B9%20%D0%B8%20%D0%BE%D0%BF%D1%80%D1%8F%D1%82%D0%BD%D1%8B%D0%B9.mov",
 										"en": ""
 									},
-									"sectionTags": [18],
+									"sectionTags": [
+										18
+									],
 									"access": "locked"
 								},
 								{
@@ -4163,7 +5338,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/19%20%D0%93%D1%83%D0%BB%D1%8F%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B9%D0%B4%D0%B5%D1%88%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [18, 10],
+									"sectionTags": [
+										18,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4176,7 +5354,10 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/29%20%D0%9F%D1%80%D1%8B%D0%B3%D0%B0%D1%82%D1%8C%20%D0%B8%20%D0%B8%D0%B3%D1%80%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [18, 10],
+									"sectionTags": [
+										18,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4189,7 +5370,11 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/30%20%D0%A0%D0%B0%D0%BD%D0%BE%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D1%8C.mov",
 										"en": ""
 									},
-									"sectionTags": [18, 5, 10],
+									"sectionTags": [
+										18,
+										5,
+										10
+									],
 									"access": "locked"
 								},
 								{
@@ -4202,16 +5387,35 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/142%20%D0%A1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B8%20%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE.mov",
 										"en": ""
 									},
-									"sectionTags": [18, 20],
+									"sectionTags": [
+										18,
+										20
+									],
 									"access": "locked"
 								}
 							]
 						},
 						{
-							"id": "adjectives",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "прилагательные",
-								"en": "Adjectives"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "adjectives",
+					"title": {
+						"ru": "прилагательные",
+						"en": "Adjectives"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -4225,15 +5429,34 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [19, 3]
+									"sectionTags": [
+										19,
+										3
+									]
 								}
 							]
 						},
 						{
-							"id": "spatialOrientation",
+							"id": "symbolLibrary",
 							"title": {
-								"ru": "пространственные ориентиры",
-								"en": "Spatial orientation"
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "spatialOrientation",
+					"title": {
+						"ru": "пространственные ориентиры",
+						"en": "Spatial orientation"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
 							},
 							"items": [
 								{
@@ -4247,7 +5470,12 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [20, 10, 11, 12]
+									"sectionTags": [
+										20,
+										10,
+										11,
+										12
+									]
 								},
 								{
 									"id": "song-120-drug",
@@ -4259,20 +5487,287 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/187.%20%D0%94%D1%80%D1%83%D0%B3.mov",
 										"en": ""
 									},
-									"sectionTags": [20, 2, 10],
+									"sectionTags": [
+										20,
+										2,
+										10
+									],
 									"access": "locked"
 								}
 							]
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
 						}
-					],
-					"price": 45
+					]
 				},
 				{
-					"id": "symbolLibrary",
+					"id": "ageCategories",
 					"title": {
-						"ru": "Библиотека символов с возможность составлять предложения из символов",
-						"en": "Symbol library with the ability to build sentences from symbols"
-					}
+						"ru": "возрастные категории",
+						"en": "Age categories"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "grammar",
+					"title": {
+						"ru": "грамматика",
+						"en": "Grammar"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "additionalSymbols",
+					"title": {
+						"ru": "дополнительные символы",
+						"en": "Additional symbols"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "adverbs",
+					"title": {
+						"ru": "наречия",
+						"en": "Adverbs"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "dishes",
+					"title": {
+						"ru": "посуда",
+						"en": "Dishes"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "sentence",
+					"title": {
+						"ru": "предложение",
+						"en": "Sentence"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "colors",
+					"title": {
+						"ru": "цвета",
+						"en": "Colors"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "feelingsEmotionsBehavior",
+					"title": {
+						"ru": "чувства, эмоции, поведение",
+						"en": "Feelings, emotions, behavior"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "birds",
+					"title": {
+						"ru": "птицы",
+						"en": "Birds"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "objectsThings",
+					"title": {
+						"ru": "предметы, вещи",
+						"en": "Objects, things"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
+				},
+				{
+					"id": "clothesPersonalHygiene",
+					"title": {
+						"ru": "одежда, личные вещи, гигиена",
+						"en": "Clothes, personal items, hygiene"
+					},
+					"subsections": [
+						{
+							"id": "songs",
+							"title": {
+								"ru": "Песенки",
+								"en": "Songs"
+							},
+							"items": []
+						},
+						{
+							"id": "symbolLibrary",
+							"title": {
+								"ru": "Библиотека символов с возможность составлять предложения из символов",
+								"en": "Symbol library with the ability to build sentences from symbols"
+							}
+						}
+					]
 				}
 			],
 			"price": 45
