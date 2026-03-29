@@ -1069,15 +1069,11 @@
 									},
 									"video": {
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/223%20%D0%9D%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%20%D0%BC%D0%B0%D0%BC%D0%B0%20%D1%81%D1%82%D0%BE%D0%BB.mp4",
-										
+
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										1,
-										10,
-										12
-									]
+									"sectionTags": [1, 10, 12]
 								},
 								{
 									"id": "song-031-moya-semya",
@@ -1089,11 +1085,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/22.%20%D0%9C%D0%BE%D1%8F%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										2,
-										20
-									],
+									"sectionTags": [1, 2, 20],
 									"access": "locked"
 								},
 								{
@@ -1106,10 +1098,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/5%20%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10
-									],
+									"sectionTags": [1, 10],
 									"access": "locked"
 								},
 								{
@@ -1122,9 +1111,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/31.%D0%A2%D0%B8%D1%85%D0%BE%20%D1%81%D0%B8%D0%B4%D0%B5%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1
-									],
+									"sectionTags": [1],
 									"access": "locked"
 								},
 								{
@@ -1137,9 +1124,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/4.%20%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9%20%D0%B1%D1%80%D0%B0%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1
-									],
+									"sectionTags": [1],
 									"access": "locked"
 								},
 								{
@@ -1152,10 +1137,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/17.%20%D0%9C%D0%B0%D0%BC%D1%83%20%D1%8F%20%D0%BB%D1%8E%D0%B1%D0%BB%D1%8E.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10
-									],
+									"sectionTags": [1, 10],
 									"access": "locked"
 								},
 								{
@@ -1168,10 +1150,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/78.%20%D0%91%D1%83%D0%B4%D1%83%20%D0%B7%D0%B2%D0%BE%D0%BD%D0%B8%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10
-									],
+									"sectionTags": [1, 10],
 									"access": "locked"
 								},
 								{
@@ -1184,10 +1163,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/157.%20%D0%A7%D0%B8%D1%82%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -1200,9 +1176,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/2.%20%D0%BF%D0%B0%D0%BF%D0%B0%20%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1
-									],
+									"sectionTags": [1],
 									"access": "locked"
 								},
 								{
@@ -1215,11 +1189,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/95.%20%D0%94%D0%B0%D0%B9%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10,
-										11
-									],
+									"sectionTags": [1, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -1232,9 +1202,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/50.%20%D1%82%D0%B5%D1%82%D1%8F%20%D0%BC%D0%B0%D0%BC%D0%B8%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1
-									],
+									"sectionTags": [1],
 									"access": "locked"
 								},
 								{
@@ -1247,10 +1215,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/184.%20%D0%B4%D0%B5%D0%B4%D1%83%D1%88%D0%BA%D0%B0%20%D0%B8%20%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										20
-									],
+									"sectionTags": [1, 20],
 									"access": "locked"
 								},
 								{
@@ -1263,11 +1228,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/25%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B8%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10,
-										11
-									],
+									"sectionTags": [1, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -1280,10 +1241,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/39%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D0%BE%20%D1%8F%20%D0%BA%D1%83%D1%88%D0%B0%D1%8E.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10
-									],
+									"sectionTags": [1, 10],
 									"access": "locked"
 								},
 								{
@@ -1296,11 +1254,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/40%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10,
-										11
-									],
+									"sectionTags": [1, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -1313,11 +1267,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/49%20%D0%94%D1%8F%D0%B4%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										2,
-										10
-									],
+									"sectionTags": [1, 2, 10],
 									"access": "locked"
 								},
 								{
@@ -1330,11 +1280,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/55%20%D0%9A%D1%83%D1%88%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BA%D0%B0%D1%88%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10,
-										11
-									],
+									"sectionTags": [1, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -1347,11 +1293,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/143%20%D0%9C%D0%B0%D0%BC%D0%B0%20%D0%BF%D0%B5%D1%81%D0%BD%D1%8E%20%D0%BD%D0%B0%D0%BF%D0%B5%D0%B2%D0%B0%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										8,
-										10
-									],
+									"sectionTags": [1, 8, 10],
 									"access": "locked"
 								},
 								{
@@ -1364,9 +1306,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/124%20%D0%95%D0%B4%D0%B5%D1%82%20%D1%81%D0%B5%D0%BC%D1%8C%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1
-									],
+									"sectionTags": [1],
 									"access": "locked"
 								},
 								{
@@ -1379,11 +1319,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/24%20%D0%A1%D0%BF%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										1,
-										10,
-										18
-									],
+									"sectionTags": [1, 10, 18],
 									"access": "locked"
 								}
 							]
@@ -1592,10 +1528,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										2,
-										9
-									]
+									"sectionTags": [2, 9]
 								},
 								{
 									"id": "song-016-podguznik",
@@ -1607,10 +1540,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/214.%20%D0%9F%D0%BE%D0%B4%D0%B3%D1%83%D0%B7%D0%BD%D0%B8%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										9
-									],
+									"sectionTags": [2, 9],
 									"access": "locked"
 								},
 								{
@@ -1623,11 +1553,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/218%20%D0%92%20%D0%B1%D0%B0%D0%BD%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										12
-									],
+									"sectionTags": [2, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -1640,11 +1566,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/231%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										12
-									],
+									"sectionTags": [2, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -1657,12 +1579,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/36.%20%D0%92%20%D1%81%D0%B0%D0%B4%D0%B8%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										5,
-										10,
-										20
-									],
+									"sectionTags": [2, 5, 10, 20],
 									"access": "locked"
 								},
 								{
@@ -1675,10 +1592,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/20.%20%D0%92%20%D0%BF%D1%80%D1%8F%D1%82%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -1691,11 +1605,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/77.%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										7,
-										10
-									],
+									"sectionTags": [2, 7, 10],
 									"access": "locked"
 								},
 								{
@@ -1708,10 +1618,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/177%20%D0%BC%D1%8B%20%D0%BD%D0%B5%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										8
-									],
+									"sectionTags": [2, 8],
 									"access": "locked"
 								},
 								{
@@ -1724,10 +1631,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/156.%20%D1%83%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -1740,10 +1644,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/90%20%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B9%20%D1%87%D0%B0%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										11
-									],
+									"sectionTags": [2, 11],
 									"access": "locked"
 								},
 								{
@@ -1756,10 +1657,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/93.%20%D0%B3%D1%80%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D1%80%D0%BE%D1%81%D0%B5%D0%BD%D0%BE%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										3
-									],
+									"sectionTags": [2, 3],
 									"access": "locked"
 								},
 								{
@@ -1772,9 +1670,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/94.%20%D0%A2%D1%8B%20%D0%B8%20%D1%8F-%D0%B4%D1%80%D1%83%D0%B7%D1%8C%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2
-									],
+									"sectionTags": [2],
 									"access": "locked"
 								},
 								{
@@ -1787,10 +1683,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/168.%20%D0%90%D1%80%D1%82%D0%B8%D1%81%D1%82%D0%BE%D0%BC%20%D1%81%D1%82%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -1803,12 +1696,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/185.%20%D0%9D%D1%8F%D0%BD%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										7,
-										10,
-										12
-									],
+									"sectionTags": [2, 7, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -1821,12 +1709,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/186.%20%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										1,
-										5,
-										10
-									],
+									"sectionTags": [2, 1, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -1839,11 +1722,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/8%20%D0%92%D0%BE%D0%B4%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										11
-									],
+									"sectionTags": [2, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -1856,11 +1735,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/9%20%D0%A2%D1%83%D0%B0%D0%BB%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										12
-									],
+									"sectionTags": [2, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -1873,10 +1748,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/28%20%D0%94%D1%80%D1%83%D0%B3%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										18
-									],
+									"sectionTags": [2, 18],
 									"access": "locked"
 								},
 								{
@@ -1889,10 +1761,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/37%20%D0%98%D0%B4%D0%B8%20%D1%81%D1%8E%D0%B4%D0%B0%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -1905,11 +1774,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/46%20%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										13
-									],
+									"sectionTags": [2, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -1922,11 +1787,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/48%20%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										15,
-										1,
-										10
-									],
+									"sectionTags": [15, 1, 10],
 									"access": "locked"
 								},
 								{
@@ -1939,12 +1800,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/52%20%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0%20%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%20%D0%BA%D0%BD%D0%B8%D0%B6%D0%BA%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										3,
-										8,
-										10
-									],
+									"sectionTags": [2, 3, 8, 10],
 									"access": "locked"
 								},
 								{
@@ -1957,9 +1813,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/53%20%D0%A1%D0%BF%D0%B8%D1%82%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2
-									],
+									"sectionTags": [2],
 									"access": "locked"
 								},
 								{
@@ -1972,9 +1826,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/132%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%80%D0%B0%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2
-									],
+									"sectionTags": [2],
 									"access": "locked"
 								},
 								{
@@ -1987,10 +1839,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/116%20%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -2003,11 +1852,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/121%20%20%D0%AF%20%D0%B8%D0%B3%D1%80%D0%B0%D1%8E%20%D0%BD%D0%B0%20%D1%82%D1%80%D1%83%D0%B1%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										9,
-										10
-									],
+									"sectionTags": [2, 9, 10],
 									"access": "locked"
 								},
 								{
@@ -2020,11 +1865,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/123%20%D0%9A%D0%BE%D0%BF%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										11,
-										10
-									],
+									"sectionTags": [2, 11, 10],
 									"access": "locked"
 								},
 								{
@@ -2037,10 +1878,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/126%20%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%20%20%D1%83%D0%BF%D0%B0%D0%BB.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -2053,10 +1891,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/135%20%D0%A3%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10
-									],
+									"sectionTags": [2, 10],
 									"access": "locked"
 								},
 								{
@@ -2069,9 +1904,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/136%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2
-									],
+									"sectionTags": [2],
 									"access": "locked"
 								},
 								{
@@ -2084,11 +1917,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/138%20%D0%94%D0%B5%D1%82%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										11
-									],
+									"sectionTags": [2, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -2101,11 +1930,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/97%20%D0%9C%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										11
-									],
+									"sectionTags": [2, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -2118,11 +1943,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/117%20%D0%92%D0%BE%D0%B4%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										2,
-										10,
-										11
-									],
+									"sectionTags": [2, 10, 11],
 									"access": "locked"
 								}
 							]
@@ -2403,12 +2224,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										3,
-										10,
-										11,
-										14
-									]
+									"sectionTags": [3, 10, 11, 14]
 								},
 								{
 									"id": "song-125-mama-chitaet",
@@ -2420,12 +2236,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/1%20%D0%9C%D0%B0%D0%BC%D0%B0%20%20%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										1,
-										8,
-										10
-									],
+									"sectionTags": [3, 1, 8, 10],
 									"access": "locked"
 								},
 								{
@@ -2438,11 +2249,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/180%20%D0%9F%D1%87%D0%B5%D0%BB%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										6,
-										10
-									],
+									"sectionTags": [3, 6, 10],
 									"access": "locked"
 								},
 								{
@@ -2455,11 +2262,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/79%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										5,
-										14
-									],
+									"sectionTags": [3, 5, 14],
 									"access": "locked"
 								},
 								{
@@ -2472,10 +2275,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/80%20%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										10
-									],
+									"sectionTags": [3, 10],
 									"access": "locked"
 								},
 								{
@@ -2488,11 +2288,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/98%20%D0%9C%D0%B8%D1%88%D0%BA%D0%B0%20%D0%B5%D1%81%D1%82%20%D0%BC%D0%B0%D0%BB%D0%B8%D0%BD%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										10,
-										11
-									],
+									"sectionTags": [3, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -2505,10 +2301,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/100%20%D0%9B%D0%BE%D1%88%D0%B0%D0%B4%D1%8C%20%D1%81%D0%BA%D0%B0%D1%87%D0%B5%D1%82%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										13
-									],
+									"sectionTags": [3, 13],
 									"access": "locked"
 								},
 								{
@@ -2521,11 +2314,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/101%20%D0%A0%D1%8B%D0%B1%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										6,
-										14
-									],
+									"sectionTags": [3, 6, 14],
 									"access": "locked"
 								},
 								{
@@ -2538,11 +2327,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/102%20%D0%A3%20%D0%BA%D0%BE%D0%B7%D1%8B%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										13,
-										14
-									],
+									"sectionTags": [3, 13, 14],
 									"access": "locked"
 								},
 								{
@@ -2555,12 +2340,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/103%20%D0%A1%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										5,
-										10,
-										14
-									],
+									"sectionTags": [3, 5, 10, 14],
 									"access": "locked"
 								},
 								{
@@ -2573,12 +2353,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/104%20%D0%9F%D0%B5%D1%82%D1%83%D1%85%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										10,
-										14,
-										18
-									],
+									"sectionTags": [3, 10, 14, 18],
 									"access": "locked"
 								},
 								{
@@ -2591,10 +2366,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/105%20%D0%9C%D0%B0%D0%BC%D0%B0%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										14
-									],
+									"sectionTags": [3, 14],
 									"access": "locked"
 								},
 								{
@@ -2607,10 +2379,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/81%20%D0%9F%D1%82%D0%B8%D1%86%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										10
-									],
+									"sectionTags": [3, 10],
 									"access": "locked"
 								},
 								{
@@ -2623,12 +2392,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/137%20%20%D0%9C%D0%BE%D0%B9%20%D1%89%D0%B5%D0%BD%D0%BE%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										2,
-										10,
-										20
-									],
+									"sectionTags": [3, 2, 10, 20],
 									"access": "locked"
 								},
 								{
@@ -2641,12 +2405,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/129%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BC%D1%8B%D1%88%D0%BE%D0%BD%D0%BE%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										3,
-										6,
-										10,
-										14
-									],
+									"sectionTags": [3, 6, 10, 14],
 									"access": "locked"
 								}
 							]
@@ -2668,7 +2427,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%91%D0%B5%D0%BB%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-animal-zayka",
@@ -2879,10 +2638,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										4,
-										14
-									]
+									"sectionTags": [4, 14]
 								},
 								{
 									"id": "song-133-mashina",
@@ -2894,10 +2650,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/15%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										10
-									],
+									"sectionTags": [4, 10],
 									"access": "locked"
 								},
 								{
@@ -2910,11 +2663,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/108%20%D0%9A%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B8%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										18,
-										20
-									],
+									"sectionTags": [4, 18, 20],
 									"access": "locked"
 								},
 								{
@@ -2927,10 +2676,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/109%20%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										14
-									],
+									"sectionTags": [4, 14],
 									"access": "locked"
 								},
 								{
@@ -2943,10 +2689,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/110%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										3
-									],
+									"sectionTags": [4, 3],
 									"access": "locked"
 								},
 								{
@@ -2959,10 +2702,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/111%20%D0%92%D0%B5%D0%BB%D0%BE%D1%81%D0%B8%D0%BF%D0%B5%D0%B4.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										1
-									],
+									"sectionTags": [4, 1],
 									"access": "locked"
 								},
 								{
@@ -2975,9 +2715,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/112%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4
-									],
+									"sectionTags": [4],
 									"access": "locked"
 								},
 								{
@@ -2990,12 +2728,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/113%20%D0%A2%D1%80%D0%B0%D0%BC%D0%B2%D0%B0%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										1,
-										5,
-										10
-									],
+									"sectionTags": [4, 1, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -3008,9 +2741,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/114%20%D0%A2%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D1%83%D1%81%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4
-									],
+									"sectionTags": [4],
 									"access": "locked"
 								},
 								{
@@ -3023,10 +2754,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/130%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										4,
-										3
-									],
+									"sectionTags": [4, 3],
 									"access": "locked"
 								}
 							]
@@ -3259,12 +2987,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										5,
-										1,
-										10,
-										20
-									]
+									"sectionTags": [5, 1, 10, 20]
 								},
 								{
 									"id": "song-049-sok-fruktovyy",
@@ -3276,12 +2999,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/65.%20%D0%A1%D0%BE%D0%BA%20%D1%84%D1%80%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5,
-										10,
-										11,
-										14
-									],
+									"sectionTags": [5, 10, 11, 14],
 									"access": "locked"
 								},
 								{
@@ -3294,9 +3012,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/229%20%D0%98%D0%B4%D1%83%20%D0%B2%20%D1%88%D0%BA%D0%BE%D0%BB%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8
-									],
+									"sectionTags": [8],
 									"access": "locked"
 								},
 								{
@@ -3309,9 +3025,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/14%20%D0%94%D0%BE%D0%BC.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5
-									],
+									"sectionTags": [5],
 									"access": "locked"
 								},
 								{
@@ -3324,10 +3038,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/18%20%D0%92%20%D1%88%D0%BA%D0%BE%D0%BB%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5,
-										10
-									],
+									"sectionTags": [5, 10],
 									"access": "locked"
 								},
 								{
@@ -3340,9 +3051,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/141%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5
-									],
+									"sectionTags": [5],
 									"access": "locked"
 								},
 								{
@@ -3355,10 +3064,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/91%20%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%B6%D0%B4%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5,
-										6
-									],
+									"sectionTags": [5, 6],
 									"access": "locked"
 								},
 								{
@@ -3371,10 +3077,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/128%20%D0%94%D0%BE%D0%BC%20%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										5,
-										10
-									],
+									"sectionTags": [5, 10],
 									"access": "locked"
 								}
 							]
@@ -3631,10 +3334,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										6,
-										20
-									]
+									"sectionTags": [6, 20]
 								},
 								{
 									"id": "song-034-lyublyu-smotret",
@@ -3646,10 +3346,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/27.%D0%9B%D1%8E%D0%B1%D0%BB%D1%8E%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										10
-									],
+									"sectionTags": [6, 10],
 									"access": "locked"
 								},
 								{
@@ -3662,11 +3359,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/161.%20%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										8,
-										10
-									],
+									"sectionTags": [6, 8, 10],
 									"access": "locked"
 								},
 								{
@@ -3679,11 +3372,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/181%20%D0%A1%D0%B8%D0%B4%D0%B8%D1%82%20%D0%B7%D0%B0%D0%B9%D0%BA%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										3,
-										13
-									],
+									"sectionTags": [6, 3, 13],
 									"access": "locked"
 								},
 								{
@@ -3696,10 +3385,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/82%20%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										20
-									],
+									"sectionTags": [6, 20],
 									"access": "locked"
 								},
 								{
@@ -3712,10 +3398,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/89%20%D0%A2%D0%B5%D0%BF%D0%BB%D1%8B%D0%B9%20%D0%B2%D0%B5%D1%82%D0%B5%D1%80%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										10
-									],
+									"sectionTags": [6, 10],
 									"access": "locked"
 								},
 								{
@@ -3728,11 +3411,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/179%20%D0%A1%D0%BF%D1%80%D1%8F%D1%82%D0%B0%D0%BB%D1%81%D1%8F%20%D1%89%D0%B5%D0%BD%D0%BE%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										3,
-										13
-									],
+									"sectionTags": [6, 3, 13],
 									"access": "locked"
 								},
 								{
@@ -3745,9 +3424,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/83%20%D0%9C%D0%BE%D1%82%D1%8B%D0%BB%D0%B5%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6
-									],
+									"sectionTags": [6],
 									"access": "locked"
 								},
 								{
@@ -3760,10 +3437,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/107%20%D0%A3%D1%82%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										11
-									],
+									"sectionTags": [6, 11],
 									"access": "locked"
 								},
 								{
@@ -3776,10 +3450,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/120%20%D0%93%D1%83%D0%BB%D1%8F%D1%82%D1%8C%20%D0%B2%20%D0%BB%D0%B5%D1%81%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										20
-									],
+									"sectionTags": [6, 20],
 									"access": "locked"
 								},
 								{
@@ -3792,10 +3463,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/115%20%D0%9A%D0%B0%D1%87%D0%B5%D0%BB%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										7
-									],
+									"sectionTags": [6, 7],
 									"access": "locked"
 								},
 								{
@@ -3808,10 +3476,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/118%20%D0%9E%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										20
-									],
+									"sectionTags": [6, 20],
 									"access": "locked"
 								},
 								{
@@ -3824,12 +3489,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/119%20%D0%91%D0%B5%D0%B6%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										6,
-										2,
-										5,
-										10
-									],
+									"sectionTags": [6, 2, 5, 10],
 									"access": "locked"
 								}
 							]
@@ -4158,10 +3818,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										7,
-										10
-									]
+									"sectionTags": [7, 10]
 								},
 								{
 									"id": "song-007-dumat",
@@ -4173,10 +3830,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/175%20%D0%B4%D1%83%D0%BC%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										10
-									],
+									"sectionTags": [7, 10],
 									"access": "locked"
 								},
 								{
@@ -4189,10 +3843,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/232%20%D0%A1%20%D0%B3%D0%BE%D1%80%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										2
-									],
+									"sectionTags": [7, 2],
 									"access": "locked"
 								},
 								{
@@ -4205,11 +3856,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/233%20%D0%B2%20%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B5%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										2,
-										20
-									],
+									"sectionTags": [7, 2, 20],
 									"access": "locked"
 								},
 								{
@@ -4222,11 +3869,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/178.%20%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%80%D0%B5%D0%B1%D1%8F%D1%82%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										2,
-										10
-									],
+									"sectionTags": [7, 2, 10],
 									"access": "locked"
 								},
 								{
@@ -4239,11 +3882,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/173.%20%D0%94%D0%B5%D0%BD%D1%8C%20%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										10,
-										18
-									],
+									"sectionTags": [7, 10, 18],
 									"access": "locked"
 								},
 								{
@@ -4256,9 +3895,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/88%20%D0%9C%D1%8F%D1%87%D0%B8%D0%BA.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7
-									],
+									"sectionTags": [7],
 									"access": "locked"
 								},
 								{
@@ -4271,11 +3908,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/85%20%D0%9C%D0%B8%D1%88%D0%BA%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										10,
-										18
-									],
+									"sectionTags": [7, 10, 18],
 									"access": "locked"
 								},
 								{
@@ -4288,10 +3921,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/87%20%D0%9A%D1%83%D0%B1%D0%B8%D0%BA%D0%B8%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										10
-									],
+									"sectionTags": [7, 10],
 									"access": "locked"
 								},
 								{
@@ -4304,10 +3934,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/86%20%D0%9A%D1%83%D0%BA%D0%BB%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7,
-										2
-									],
+									"sectionTags": [7, 2],
 									"access": "locked"
 								},
 								{
@@ -4320,9 +3947,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/122%20%D0%9A%D0%B0%D1%87%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D0%BE%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										7
-									],
+									"sectionTags": [7],
 									"access": "locked"
 								}
 							]
@@ -4519,12 +4144,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										8,
-										2,
-										10,
-										14
-									]
+									"sectionTags": [8, 2, 10, 14]
 								},
 								{
 									"id": "song-008-belka-podelka",
@@ -4536,12 +4156,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/176%20%D0%91%D0%B5%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4%D0%B5%D0%BB%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										1,
-										5,
-										10
-									],
+									"sectionTags": [8, 1, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -4554,10 +4169,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/35.%20%D0%91%D1%80%D0%B0%D1%82%D0%B8%D1%88%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4570,10 +4182,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/148.%20%D0%9D%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4586,11 +4195,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/149%20%D0%9A%D1%80%D0%B0%D1%81%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										5,
-										10
-									],
+									"sectionTags": [8, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -4603,10 +4208,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/158.%20%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4619,10 +4221,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/159.%20%D0%A0%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4635,10 +4234,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/160.%20%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4651,10 +4247,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/162.%20%D1%80%D0%B5%D0%B6%D1%83%2C%20%D1%80%D0%B5%D0%B6%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4667,10 +4260,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/163.%20%D0%9A%D0%BB%D0%B5%D0%B8%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4683,10 +4273,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/164.%20%D0%9B%D0%B5%D0%BF%D0%BB%D1%8E.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4699,10 +4286,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/150.%20%D0%BA%D0%BB%D0%B5%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4715,10 +4299,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/155.%20%D0%A3%D1%80%D0%BE%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10
-									],
+									"sectionTags": [8, 10],
 									"access": "locked"
 								},
 								{
@@ -4731,13 +4312,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/140%20%D0%B4%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0%20%D0%B8%D0%B4%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										2,
-										5,
-										10,
-										13
-									],
+									"sectionTags": [8, 2, 5, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -4750,11 +4325,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/147%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										10,
-										13
-									],
+									"sectionTags": [8, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -4767,10 +4338,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/84%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										12
-									],
+									"sectionTags": [8, 12],
 									"access": "locked"
 								},
 								{
@@ -4783,11 +4351,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/139%20%D0%98%D0%BC%D1%8F%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8,
-										2,
-										10
-									],
+									"sectionTags": [8, 2, 10],
 									"access": "locked"
 								},
 								{
@@ -4800,9 +4364,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/146%20%D0%A0%D1%83%D1%87%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8
-									],
+									"sectionTags": [8],
 									"access": "locked"
 								},
 								{
@@ -4815,9 +4377,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/234%20%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										8
-									],
+									"sectionTags": [8],
 									"access": "locked"
 								}
 							]
@@ -5074,11 +4634,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										9,
-										2,
-										10
-									]
+									"sectionTags": [9, 2, 10]
 								},
 								{
 									"id": "song-002-klyuch",
@@ -5090,12 +4646,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/154%20%D0%9A%D0%BB%D1%8E%D1%87.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10,
-										12,
-										18
-									],
+									"sectionTags": [9, 10, 12, 18],
 									"access": "locked"
 								},
 								{
@@ -5108,11 +4659,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/212%20%D0%9F%D0%BE%D0%BB%D0%BE%D1%82%D0%B5%D0%BD%D1%86%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10,
-										13
-									],
+									"sectionTags": [9, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -5125,10 +4672,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/224%20%D0%BC%D1%83%D1%81%D0%BE%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10
-									],
+									"sectionTags": [9, 10],
 									"access": "locked"
 								},
 								{
@@ -5141,11 +4685,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/32.%20%D0%A0%D1%83%D0%BA%D0%B8%20%D1%81%20%D0%BC%D1%8B%D0%BB%D0%BE%D0%BC%20%D0%BC%D1%8B%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10,
-										13
-									],
+									"sectionTags": [9, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -5158,11 +4698,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/151.%20%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10,
-										11
-									],
+									"sectionTags": [9, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -5175,10 +4711,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/152.%20%D0%98%D0%B3%D0%BE%D0%BB%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%88%D0%B8%D1%82%D1%8C%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10
-									],
+									"sectionTags": [9, 10],
 									"access": "locked"
 								},
 								{
@@ -5191,10 +4724,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/169.%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B1%D1%83%D0%B4%D1%83.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10
-									],
+									"sectionTags": [9, 10],
 									"access": "locked"
 								},
 								{
@@ -5207,9 +4737,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/170%20%D0%9F%D1%80%D0%B8%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9
-									],
+									"sectionTags": [9],
 									"access": "locked"
 								},
 								{
@@ -5222,11 +4750,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/33%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%BC%D1%8B%D1%82%D1%8C%D1%81%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10,
-										12
-									],
+									"sectionTags": [9, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -5239,10 +4763,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/41%20%D0%9F%D0%BB%D0%BE%D1%85%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10
-									],
+									"sectionTags": [9, 10],
 									"access": "locked"
 								},
 								{
@@ -5255,10 +4776,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/144%20%D0%92%20%D1%88%D0%BA%D0%B0%D1%84%D1%83%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										12
-									],
+									"sectionTags": [9, 12],
 									"access": "locked"
 								},
 								{
@@ -5271,11 +4789,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/145%20%D0%92%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D1%83%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										7,
-										10
-									],
+									"sectionTags": [9, 7, 10],
 									"access": "locked"
 								},
 								{
@@ -5288,10 +4802,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/211%20%D0%9C%D1%8B%D0%BB%D0%BE%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										9,
-										10
-									],
+									"sectionTags": [9, 10],
 									"access": "locked"
 								}
 							]
@@ -5330,11 +4841,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										10,
-										9,
-										11
-									]
+									"sectionTags": [10, 9, 11]
 								},
 								{
 									"id": "song-213-prygat",
@@ -5346,9 +4853,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/125%20%D0%9F%D1%80%D1%8B%D0%B3%D0%B0%D1%82%D1%8C%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										10
-									],
+									"sectionTags": [10],
 									"access": "locked"
 								},
 								{
@@ -5361,10 +4866,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/127%20%20%D0%9E%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										14,
-										10
-									],
+									"sectionTags": [14, 10],
 									"access": "locked"
 								}
 							]
@@ -7457,11 +6959,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										11,
-										10,
-										18
-									]
+									"sectionTags": [11, 10, 18]
 								},
 								{
 									"id": "song-010-sol",
@@ -7473,9 +6971,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/203%20%D0%A1%D0%BE%D0%BB%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7488,9 +6984,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/198%20%D0%9F%D0%BE%D0%BC%D0%B8%D0%B4%D0%BE%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7503,9 +6997,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/207.%20%D0%A2%D0%B2%D0%BE%D1%80%D0%BE%D0%B3.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7518,9 +7010,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/209.%20%D1%84%D1%80%D1%83%D0%BA%D1%82%D1%8B.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7533,10 +7023,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/21.%D0%90%D0%B1%D1%80%D0%B8%D0%BA%D0%BE%D1%81.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7549,11 +7036,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/220%20%D0%BF%D0%BB%D0%B8%D1%82%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										12
-									],
+									"sectionTags": [11, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -7566,9 +7049,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/26.%20%D0%9A%D0%B0%D1%88%D1%83%20%D1%81%D1%8A%D0%B5%D1%81%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7581,12 +7062,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/43.%20%D0%9D%D0%95%D0%A2.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										1,
-										10,
-										15
-									],
+									"sectionTags": [11, 1, 10, 15],
 									"access": "locked"
 								},
 								{
@@ -7599,10 +7075,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/59.%20%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%BD%D1%8B.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7615,10 +7088,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/60.%20%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7631,9 +7101,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/62.%20%D1%8F%D0%B9%D1%86%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7646,11 +7114,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/61.%20%D0%99%D0%BE%D0%B3%D1%83%D1%80%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										2,
-										10
-									],
+									"sectionTags": [11, 2, 10],
 									"access": "locked"
 								},
 								{
@@ -7663,11 +7127,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/71.%20%D0%9E%D0%B3%D1%83%D1%80%D0%B5%D1%86.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										12
-									],
+									"sectionTags": [11, 10, 12],
 									"access": "locked"
 								},
 								{
@@ -7680,9 +7140,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/208.%20%D1%82%D0%BE%D1%80%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7695,11 +7153,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/210%20%D0%AF%D0%B3%D0%BE%D0%B4%D1%8B.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										13
-									],
+									"sectionTags": [11, 10, 13],
 									"access": "locked"
 								},
 								{
@@ -7712,10 +7166,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/221.%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										12
-									],
+									"sectionTags": [11, 12],
 									"access": "locked"
 								},
 								{
@@ -7728,11 +7179,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/191.%20%D0%9A%D0%BE%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BB%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										18
-									],
+									"sectionTags": [11, 10, 18],
 									"access": "locked"
 								},
 								{
@@ -7745,12 +7192,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/192.%20%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										5,
-										10,
-										18
-									],
+									"sectionTags": [11, 5, 10, 18],
 									"access": "locked"
 								},
 								{
@@ -7763,10 +7205,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/199.%20%D0%A0%D0%B8%D1%81.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7779,11 +7218,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/204.%20%D1%81%D0%BE%D1%81%D0%B8%D1%81%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										3,
-										12
-									],
+									"sectionTags": [11, 3, 12],
 									"access": "locked"
 								},
 								{
@@ -7796,9 +7231,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/205.%20%D0%A1%D1%83%D1%85%D0%B0%D1%80%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7811,9 +7244,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/206%20%D0%A1%D0%AB%D0%A0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7826,9 +7257,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/58.%20%D0%B1%D0%B0%D0%BD%D0%B0%D0%BD.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7841,10 +7270,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/197.%20%D0%9C%D1%8F%D1%81%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7857,9 +7283,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/200.%20%D0%A1%D0%B0%D0%BB%D0%B0%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7872,11 +7296,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/201%20%D0%A1%D0%B0%D1%85%D0%B0%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										5,
-										10
-									],
+									"sectionTags": [11, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -7889,9 +7309,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/96.%20%D0%A1%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B9%20%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7904,12 +7322,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/188.%20%D0%B1%D1%83%D1%82%D0%B5%D1%80%D0%B1%D1%80%D0%BE%D0%B4.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										13,
-										14
-									],
+									"sectionTags": [11, 10, 13, 14],
 									"access": "locked"
 								},
 								{
@@ -7922,10 +7335,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/189.%20%D0%92%D0%B0%D1%80%D0%B5%D0%BD%D1%8C%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7938,10 +7348,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/193.%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -7954,9 +7361,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/194.%20%D0%BA%D1%83%D1%88%D0%B0%D1%82%D1%8C%20%D0%B2%20%D0%BE%D0%B1%D0%B5%D0%B4.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7969,9 +7374,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/195.%20%D0%9C%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5%D0%B7.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -7984,10 +7387,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/196.%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										13
-									],
+									"sectionTags": [11, 13],
 									"access": "locked"
 								},
 								{
@@ -8000,10 +7400,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/66.%20%D0%A7%D0%B0%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -8016,11 +7413,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/171.%20%D1%83%D0%B6%D0%B8%D0%BD.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										1,
-										10
-									],
+									"sectionTags": [11, 1, 10],
 									"access": "locked"
 								},
 								{
@@ -8033,10 +7426,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/3%20%D0%91%D0%B0%D0%B1%D1%83%D1%88%D0%BA%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -8049,9 +7439,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/6%20%D0%9F%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -8064,11 +7452,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/7%20%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0%D1%8F%20%D0%B5%D0%B4%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										14,
-										18
-									],
+									"sectionTags": [11, 14, 18],
 									"access": "locked"
 								},
 								{
@@ -8081,11 +7465,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/34%20%D0%9F%D1%80%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%20%D0%B4%D1%83%D1%88.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10,
-										14
-									],
+									"sectionTags": [11, 10, 14],
 									"access": "locked"
 								},
 								{
@@ -8098,10 +7478,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/38%20%D0%94%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B5%D1%89%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -8114,9 +7491,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/54%20%D0%A5%D0%BB%D0%B5%D0%B1.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11
-									],
+									"sectionTags": [11],
 									"access": "locked"
 								},
 								{
@@ -8129,11 +7504,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/56%20%D0%A1%D1%83%D0%BF%20%D0%B8%D0%B7%20%D0%BE%D0%B2%D0%BE%D1%89%D0%B5%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										2,
-										10
-									],
+									"sectionTags": [11, 2, 10],
 									"access": "locked"
 								},
 								{
@@ -8146,10 +7517,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/63%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D1%8C%D0%B5%D0%BC.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -8162,10 +7530,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/190%20%D0%9A%D0%B5%D1%84%D0%B8%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										10
-									],
+									"sectionTags": [11, 10],
 									"access": "locked"
 								},
 								{
@@ -8178,12 +7543,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/99%20%D0%9C%D1%8B%D1%87%D0%B8%D1%82%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										11,
-										2,
-										3,
-										14
-									],
+									"sectionTags": [11, 2, 3, 14],
 									"access": "locked"
 								}
 							]
@@ -8205,7 +7565,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%90%D0%B1%D1%80%D0%B8%D0%BA%D0%BE%D1%81%20.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-food-banan",
@@ -9028,10 +8388,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										12,
-										10
-									]
+									"sectionTags": [12, 10]
 								},
 								{
 									"id": "song-020-v-pechke",
@@ -9043,9 +8400,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/219.%20%D0%92%20%D0%9F%D0%B5%D1%87%D0%BA%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								},
 								{
@@ -9058,9 +8413,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/226%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D0%B5%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								},
 								{
@@ -9073,10 +8426,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/67.%20%D0%9D%D0%BE%D0%B6.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										10
-									],
+									"sectionTags": [12, 10],
 									"access": "locked"
 								},
 								{
@@ -9089,12 +8439,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/69.%20%D0%92%D0%B8%D0%BB%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										1,
-										10,
-										11
-									],
+									"sectionTags": [12, 1, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -9107,11 +8452,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/70.%20%D0%9B%D0%BE%D0%B6%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										7,
-										11
-									],
+									"sectionTags": [12, 7, 11],
 									"access": "locked"
 								},
 								{
@@ -9124,11 +8465,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/73.%20%D0%94%D0%B2%D0%B5%D1%80%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										10,
-										20
-									],
+									"sectionTags": [12, 10, 20],
 									"access": "locked"
 								},
 								{
@@ -9141,9 +8478,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/74.%20%D0%9E%D0%BA%D0%BD%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								},
 								{
@@ -9156,10 +8491,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/222.%20%D0%9F%D0%BE%D1%81%D1%83%D0%B4%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										11
-									],
+									"sectionTags": [12, 11],
 									"access": "locked"
 								},
 								{
@@ -9172,10 +8504,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/228%20%D0%92%20%D0%BA%D1%83%D1%85%D0%BD%D0%B5.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										20
-									],
+									"sectionTags": [12, 20],
 									"access": "locked"
 								},
 								{
@@ -9188,10 +8517,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/183.%20%D0%B2%D0%BD%D0%B8%D0%B7%20%D0%BF%D0%BE%20%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B5%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										20
-									],
+									"sectionTags": [12, 20],
 									"access": "locked"
 								},
 								{
@@ -9204,10 +8530,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/10%20%D0%9A%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										14
-									],
+									"sectionTags": [12, 14],
 									"access": "locked"
 								},
 								{
@@ -9220,9 +8543,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/11%20%D0%A1%D1%82%D1%83%D0%BB.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								},
 								{
@@ -9235,9 +8556,7 @@
 										"ru": "hhttps://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/12%20%D0%A1%D1%82%D0%BE%D0%BB.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								},
 								{
@@ -9250,10 +8569,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/13%20%D0%9A%D1%80%D0%B0%D0%BD.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										11
-									],
+									"sectionTags": [12, 11],
 									"access": "locked"
 								},
 								{
@@ -9266,11 +8582,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/75%20%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										5,
-										10
-									],
+									"sectionTags": [12, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -9283,11 +8595,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/72%20%D0%A7%D0%B0%D1%88%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										10,
-										11
-									],
+									"sectionTags": [12, 10, 11],
 									"access": "locked"
 								},
 								{
@@ -9300,10 +8608,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/76%20%D0%A1%D0%B2%D0%B5%D1%82.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12,
-										5
-									],
+									"sectionTags": [12, 5],
 									"access": "locked"
 								},
 								{
@@ -9316,9 +8621,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/227%20%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										12
-									],
+									"sectionTags": [12],
 									"access": "locked"
 								}
 							]
@@ -9340,7 +8643,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%91%D0%B0%D0%BD%D1%8F.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-housing-vanna",
@@ -9635,10 +8938,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										13,
-										2
-									]
+									"sectionTags": [13, 2]
 								},
 								{
 									"id": "song-094-rezat",
@@ -9650,10 +8950,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/68%20%D0%A0%D0%B5%D0%B7%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										13,
-										10
-									],
+									"sectionTags": [13, 10],
 									"access": "locked"
 								},
 								{
@@ -9666,11 +8963,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/182.%20%D0%B2%D0%B2%D0%B5%D1%80%D1%85%20%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B5%D0%BC%20%D1%80%D1%83%D0%BA%D0%B8.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										13,
-										10,
-										20
-									],
+									"sectionTags": [13, 10, 20],
 									"access": "locked"
 								},
 								{
@@ -9683,10 +8976,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/57%20%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										13,
-										19
-									],
+									"sectionTags": [13, 19],
 									"access": "locked"
 								},
 								{
@@ -9699,10 +8989,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/106%20%D0%9C%D1%8B%D1%88%D0%BA%D0%B0%20%20%D1%81%D0%B5%D1%80%D0%B0%D1%8F.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										13,
-										14
-									],
+									"sectionTags": [13, 14],
 									"access": "locked"
 								},
 								{
@@ -9715,11 +9002,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/133%20%D0%91%D0%BE%D0%BB%D0%B8%D1%82%20%D0%B3%D0%BE%D1%80%D0%BB%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										13,
-										10,
-										14
-									],
+									"sectionTags": [13, 10, 14],
 									"access": "locked"
 								}
 							]
@@ -9892,29 +9175,6 @@
 					]
 				},
 				{
-					"id": "numbersLettersSounds",
-					"title": {
-						"ru": "числа, буквы, звуки",
-						"en": "Numbers, letters, sounds"
-					},
-					"subsections": [
-						{
-							"id": "songs",
-							"title": {
-								"ru": "Песенки",
-								"en": "Songs"
-							}
-						},
-						{
-							"id": "symbolLibrary",
-							"title": {
-								"ru": "Библиотека символов с возможность составлять предложения из символов",
-								"en": "Symbol library with the ability to build sentences from symbols"
-							}
-						}
-					]
-				},
-				{
 					"id": "questionsAndCommunication",
 					"title": {
 						"ru": "вопросы и коммуникативные выражения",
@@ -9939,9 +9199,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										15
-									]
+									"sectionTags": [15]
 								},
 								{
 									"id": "song-039-spasibo",
@@ -9953,9 +9211,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/45.%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										10
-									],
+									"sectionTags": [10],
 									"access": "locked"
 								},
 								{
@@ -9968,10 +9224,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/42%20%D0%94%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										15,
-										10
-									],
+									"sectionTags": [15, 10],
 									"access": "locked"
 								},
 								{
@@ -9984,9 +9237,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/44%20%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0.mp4v",
 										"en": ""
 									},
-									"sectionTags": [
-										10
-									],
+									"sectionTags": [10],
 									"access": "locked"
 								},
 								{
@@ -9999,9 +9250,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/47%20%D0%9F%D0%BE%D0%BA%D0%B0.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										15
-									],
+									"sectionTags": [15],
 									"access": "locked"
 								},
 								{
@@ -10014,9 +9263,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/134%20%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										15
-									],
+									"sectionTags": [15],
 									"access": "locked"
 								}
 							]
@@ -10430,10 +9677,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										17,
-										10
-									]
+									"sectionTags": [17, 10]
 								}
 							]
 						},
@@ -10557,10 +9801,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										18,
-										10
-									]
+									"sectionTags": [18, 10]
 								},
 								{
 									"id": "song-096-chistyy-i-opryatnyy",
@@ -10572,9 +9813,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/92.%20%D1%87%D0%B8%D1%81%D1%82%D1%8B%D0%B9%20%D0%B8%20%D0%BE%D0%BF%D1%80%D1%8F%D1%82%D0%BD%D1%8B%D0%B9.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										18
-									],
+									"sectionTags": [18],
 									"access": "locked"
 								},
 								{
@@ -10587,10 +9826,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/19%20%D0%93%D1%83%D0%BB%D1%8F%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B9%D0%B4%D0%B5%D1%88%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										18,
-										10
-									],
+									"sectionTags": [18, 10],
 									"access": "locked"
 								},
 								{
@@ -10603,10 +9839,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/29%20%D0%9F%D1%80%D1%8B%D0%B3%D0%B0%D1%82%D1%8C%20%D0%B8%20%D0%B8%D0%B3%D1%80%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										18,
-										10
-									],
+									"sectionTags": [18, 10],
 									"access": "locked"
 								},
 								{
@@ -10619,11 +9852,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/30%20%D0%A0%D0%B0%D0%BD%D0%BE%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D1%8C.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										18,
-										5,
-										10
-									],
+									"sectionTags": [18, 5, 10],
 									"access": "locked"
 								},
 								{
@@ -10636,10 +9865,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/142%20%D0%A1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B8%20%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										18,
-										20
-									],
+									"sectionTags": [18, 20],
 									"access": "locked"
 								}
 							]
@@ -10836,10 +10062,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										19,
-										3
-									]
+									"sectionTags": [19, 3]
 								}
 							]
 						},
@@ -10860,7 +10083,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%90%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D0%BE%D0%B5.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-adjectives-bolshoy",
@@ -11395,12 +10618,7 @@
 										"en": ""
 									},
 									"access": "free",
-									"sectionTags": [
-										20,
-										10,
-										11,
-										12
-									]
+									"sectionTags": [20, 10, 11, 12]
 								},
 								{
 									"id": "song-120-drug",
@@ -11412,11 +10630,7 @@
 										"ru": "https://pub-1b5062e396cf422c9e52beddf0bbad5b.r2.dev/187.%20%D0%94%D1%80%D1%83%D0%B3.mp4",
 										"en": ""
 									},
-									"sectionTags": [
-										20,
-										2,
-										10
-									],
+									"sectionTags": [20, 2, 10],
 									"access": "locked"
 								}
 							]
@@ -12924,7 +12138,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%92%D0%B8%D0%BB%D0%BA%D0%B0%202.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-dishes-vilka",
@@ -13034,7 +12248,7 @@
 										"ru": "https://pub-5b48d99184cf40268f2afe95bad06ff0.r2.dev/%D0%9A%D0%B0%D0%BA%20%D0%BA%D0%B2%D0%BE%D1%85%D1%87%D0%B5%D1%82%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B0.mp4",
 										"en": ""
 									},
-									"access": "locked"
+									"access": "free"
 								},
 								{
 									"id": "symbol-sentence-kak-murlychet-koshka",

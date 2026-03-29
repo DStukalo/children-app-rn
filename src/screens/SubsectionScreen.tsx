@@ -30,6 +30,22 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 	const isPremiumUser = useIsPremiumUser();
 	const section = findSectionById(sectionId);
 	const subsection = findSubsectionByPath(sectionId, subsectionPath);
+	const parentSubsection =
+		subsectionPath.length > 1
+			? findSubsectionByPath(sectionId, subsectionPath.slice(0, -1))
+			: undefined;
+	const subsectionTitle =
+		subsection?.title?.[currentLanguage] ||
+		subsection?.title?.ru ||
+		subsectionPath[subsectionPath.length - 1];
+	const categoryTitle =
+		parentSubsection?.title?.[currentLanguage] ||
+		parentSubsection?.title?.ru ||
+		section?.title?.[currentLanguage] ||
+		section?.title?.ru ||
+		subsectionTitle;
+	const sectionTitle =
+		section?.title?.[currentLanguage] || section?.title?.ru || subsectionTitle;
 	const [activeVideo, setActiveVideo] = useState<{
 		id: string;
 		title: string;
@@ -107,9 +123,9 @@ export default function SubsectionScreen({ route, navigation }: Props) {
 				showsVerticalScrollIndicator={false}
 			>
 				<Text style={styles.title}>
-					{subsection?.title?.[currentLanguage] ||
-						subsection?.title?.ru ||
-						subsectionPath[subsectionPath.length - 1]}
+					{capitalizeFirstLetter(
+						subsection?.subsections?.length ? sectionTitle : categoryTitle
+					)}
 				</Text>
 
 				{subsection?.subsections?.length ? (
