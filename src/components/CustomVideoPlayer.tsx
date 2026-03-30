@@ -7,6 +7,7 @@ import { VLCPlayer } from "react-native-vlc-media-player";
 
 type Props = {
 	videoSource: string;
+	autoPlay?: boolean;
 	onEnd?: () => void;
 	onPrev?: () => void;
 	onNext?: () => void;
@@ -16,6 +17,7 @@ type Props = {
 
 export default function CustomVideoPlayer({
 	videoSource,
+	autoPlay = true,
 	onEnd,
 	onPrev,
 	onNext,
@@ -24,6 +26,7 @@ export default function CustomVideoPlayer({
 }: Props) {
 	const { t } = useTranslation();
 	const playerRef = useRef<any>(null);
+	const sliderRef = useRef<any>(null);
 	const [paused, setPaused] = useState(false);
 	const [currentTimeMs, setCurrentTimeMs] = useState(0);
 	const [durationMs, setDurationMs] = useState(0);
@@ -32,13 +35,22 @@ export default function CustomVideoPlayer({
 	const [sliderWidth, setSliderWidth] = useState(0);
 
 	useEffect(() => {
-		setPaused(false);
+		setPaused(!autoPlay);
 		setCurrentTimeMs(0);
 		setDurationMs(0);
 		setPositionRatio(0);
-	}, [videoSource]);
+		setIsSeeking(false);
+		setSliderWidth(0);
+	}, [autoPlay, videoSource]);
 
 	const source = useMemo(() => ({ uri: videoSource }), [videoSource]);
+	const sliderValue = durationMs > 0 ? currentTimeMs / durationMs : positionRatio;
+
+	useEffect(() => {
+		if (sliderRef.current?.setNativeProps) {
+			sliderRef.current.setNativeProps({ value: sliderValue });
+		}
+	}, [sliderValue]);
 
 	if (!videoSource) {
 		return (
@@ -84,23 +96,35 @@ export default function CustomVideoPlayer({
 					style={styles.video}
 					source={source}
 					paused={paused}
-					autoplay={true}
+					autoplay={autoPlay}
 					repeat={false}
 					muted={false}
 					volume={100}
 					onLoad={(event: any) => {
-						if (typeof event?.duration === "number" && event.duration > 0) {
-							setDurationMs(event.duration);
+						const nextDurationMs =
+							typeof event?.duration === "number" && event.duration > 0
+								? event.duration
+								: 0;
+						if (nextDurationMs > 0) {
+							setDurationMs(nextDurationMs);
 						}
 					}}
 					onProgress={(event: any) => {
-						if (typeof event?.duration === "number" && event.duration > 0) {
-							setDurationMs(event.duration);
+						const nextDurationMs =
+							typeof event?.duration === "number" && event.duration > 0
+								? event.duration
+								: durationMs;
+						if (nextDurationMs > 0 && nextDurationMs !== durationMs) {
+							setDurationMs(nextDurationMs);
 						}
 						if (!isSeeking && typeof event?.currentTime === "number") {
 							setCurrentTimeMs(event.currentTime);
-						}
-						if (!isSeeking && typeof event?.position === "number") {
+							if (nextDurationMs > 0) {
+								setPositionRatio(event.currentTime / nextDurationMs);
+							} else if (typeof event?.position === "number") {
+								setPositionRatio(event.position);
+							}
+						} else if (!isSeeking && typeof event?.position === "number") {
 							setPositionRatio(event.position);
 						}
 					}}
@@ -153,10 +177,11 @@ export default function CustomVideoPlayer({
 				onLayout={(e) => setSliderWidth(e.nativeEvent.layout.width)}
 			>
 				<Slider
+					ref={sliderRef}
 					style={styles.slider}
 					minimumValue={0}
 					maximumValue={1}
-					value={positionRatio}
+					value={sliderValue}
 					minimumTrackTintColor='#F7543E'
 					maximumTrackTintColor='#D1D5DB'
 					thumbTintColor='#F7543E'

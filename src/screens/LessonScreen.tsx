@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
 	Dimensions,
 	SafeAreaView,
@@ -16,7 +16,6 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { MainStackParamList } from "../navigation/types";
 import { Dropdown } from "../components/Dropdown";
 import CustomVideoPlayer from "../components/CustomVideoPlayer";
-import { useAuthCheck } from "../hooks/useAuthCheck";
 import { useIsPremiumUser, useHasCourseAccess } from "../hooks/useIsPremiumUser";
 import { findCourseById } from "../utils/courseData";
 
@@ -45,12 +44,12 @@ export default function LessonScreen({ route, navigation }: Props) {
 	const { i18n, t } = useTranslation();
 	const currentLanguage: "en" | "ru" = i18n.language === "ru" ? "ru" : "en";
 
-	const { isAuthenticated } = useAuthCheck();
 	const isPremiumUser = useIsPremiumUser();
 	const hasCourseAccess = useHasCourseAccess(courseId);
 
 	const course = findCourseById(courseId);
 	const lesson = course?.details.lessons?.find((l) => l.lessonId === lessonId);
+	const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
 	const isLocked =
 		lesson?.access === "locked" && !isPremiumUser && !hasCourseAccess;
@@ -64,6 +63,26 @@ export default function LessonScreen({ route, navigation }: Props) {
 			});
 		}
 	}, [lessonId, currentLanguage]);
+
+	useEffect(() => {
+		setCurrentVideoIndex(0);
+	}, [currentLanguage, lessonId]);
+
+	const handleNextVideo = (index: number) => {
+		if (!Array.isArray(lesson?.video)) {
+			return;
+		}
+
+		if (index < lesson.video.length - 1) {
+			setCurrentVideoIndex(index + 1);
+		}
+	};
+
+	const handlePrevVideo = (index: number) => {
+		if (index > 0) {
+			setCurrentVideoIndex(index - 1);
+		}
+	};
 
 	const handleToPayment = () => {
 		// if (!isAuthenticated) {
@@ -87,12 +106,16 @@ export default function LessonScreen({ route, navigation }: Props) {
 		);
 	}
 
+	const lessonVideos = Array.isArray(lesson.video) ? lesson.video : null;
+	const singleLessonVideo =
+		lesson.video && !Array.isArray(lesson.video) ? lesson.video : null;
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				{Array.isArray(lesson.video) ? (
+				{lessonVideos ? (
 					<View style={styles.videoList}>
-						{lesson.video.map((vid) => {
+						{lessonVideos.map((vid, index) => {
 							const isVideoLocked =
 								lesson.access === "locked" &&
 								!isPremiumUser &&
@@ -130,19 +153,25 @@ export default function LessonScreen({ route, navigation }: Props) {
 												</TouchableOpacity>
 											</View>
 										</View>
-									) : (
+								) : (
 										<CustomVideoPlayer
 											videoSource={getLessonVideoSource(
 												vid.video,
 												currentLanguage
 											)}
+											autoPlay={index === currentVideoIndex}
+											hasPrev={index > 0}
+											hasNext={index < lessonVideos.length - 1}
+											onPrev={() => handlePrevVideo(index)}
+											onNext={() => handleNextVideo(index)}
+											onEnd={() => handleNextVideo(index)}
 										/>
 									)}
 								</View>
 							);
 						})}
 					</View>
-				) : lesson.video ? (
+				) : singleLessonVideo ? (
 					<View style={styles.videoList}>
 						{isLocked ? (
 							<View style={styles.lockedVideoContainer}>
@@ -178,7 +207,7 @@ export default function LessonScreen({ route, navigation }: Props) {
 						) : (
 							<CustomVideoPlayer
 								videoSource={getLessonVideoSource(
-									lesson.video,
+									singleLessonVideo,
 									currentLanguage
 								)}
 							/>
