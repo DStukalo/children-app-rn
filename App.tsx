@@ -7,10 +7,12 @@ import {
 	Linking,
 	Alert,
 } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import {
 	createNavigationContainerRef,
 	NavigationContainer,
+	type InitialState,
 } from "@react-navigation/native";
 import SystemNavigationBar from "react-native-system-navigation-bar";
 import { I18nextProvider } from "react-i18next";
@@ -19,6 +21,7 @@ import { DrawerNav } from "./src/navigation/DrawerNavigation";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export const navigationRef = createNavigationContainerRef();
+const NAVIGATION_STATE_KEY = "navigation_state";
 
 const linking = {
 	prefixes: ["childapp://"],
@@ -35,6 +38,9 @@ const linking = {
 
 export default function App() {
 	const [isI18nReady, setIsI18nReady] = useState(false);
+	const [isNavigationReady, setIsNavigationReady] = useState(false);
+	const [initialNavigationState, setInitialNavigationState] =
+		useState<InitialState | undefined>();
 	const isDarkMode = useColorScheme() === "dark";
 
 	useEffect(() => {
@@ -70,6 +76,28 @@ export default function App() {
 		};
 	}, []);
 
+	useEffect(() => {
+		const restoreNavigationState = async () => {
+			try {
+				const initialUrl = await Linking.getInitialURL();
+
+				if (!initialUrl) {
+					const savedState = await AsyncStorage.getItem(NAVIGATION_STATE_KEY);
+
+					if (savedState) {
+						setInitialNavigationState(JSON.parse(savedState) as InitialState);
+					}
+				}
+			} catch (error) {
+				console.warn("Failed to restore navigation state:", error);
+			} finally {
+				setIsNavigationReady(true);
+			}
+		};
+
+		restoreNavigationState();
+	}, []);
+
 	// useEffect(() => {
 	// 	SystemNavigationBar.stickyImmersive();
 	// 	return () => {
@@ -77,7 +105,7 @@ export default function App() {
 	// 	};
 	// }, []);
 
-	if (!isI18nReady) {
+	if (!isI18nReady || !isNavigationReady) {
 		return (
 			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
 				<ActivityIndicator size='large' />
@@ -90,13 +118,25 @@ export default function App() {
 			<SafeAreaProvider>
 				<SafeAreaView
 					style={{ flex: 1 }}
-					edges={["left", "right", "bottom"]}
+					edges={["top", "left", "right", "bottom"]}
 				>
 					<StatusBar
 						barStyle={isDarkMode ? "light-content" : "dark-content"}
 						backgroundColor={isDarkMode ? "#000" : "#fff"}
 					/>
-				<NavigationContainer ref={navigationRef} linking={linking}>
+				<NavigationContainer
+					ref={navigationRef}
+					linking={linking}
+					initialState={initialNavigationState}
+					onStateChange={(state) => {
+						AsyncStorage.setItem(
+							NAVIGATION_STATE_KEY,
+							JSON.stringify(state),
+						).catch((error) => {
+							console.warn("Failed to persist navigation state:", error);
+						});
+					}}
+				>
 					<DrawerNav />
 				</NavigationContainer>
 				</SafeAreaView>

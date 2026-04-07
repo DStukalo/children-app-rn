@@ -4,7 +4,14 @@ import {
 	DrawerContentScrollView,
 	DrawerItem,
 } from "@react-navigation/drawer";
-import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
+import {
+	View,
+	StyleSheet,
+	TouchableOpacity,
+	Text,
+	Platform,
+	StatusBar,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MainStack from "./MainStack";
@@ -18,6 +25,8 @@ const Tab = createBottomTabNavigator();
 
 export function CustomDrawerContent(props: any) {
 	const navigation = useNavigation<any>();
+	const topOffset =
+		Platform.OS === "android" ? (StatusBar.currentHeight ?? 0) + 8 : 8;
 
 	const { t } = useTranslation();
 	const sectionIds: SectionId[] = [
@@ -32,7 +41,11 @@ export function CustomDrawerContent(props: any) {
 	];
 
 	return (
-		<DrawerContentScrollView {...props}>
+		<DrawerContentScrollView
+			{...props}
+			contentContainerStyle={styles.drawerContentContainer}
+			style={{ paddingTop: topOffset }}
+		>
 			<DrawerItem
 				label={t("drawerNav.main")}
 				onPress={() => {
@@ -156,6 +169,9 @@ const styles = StyleSheet.create({
 		marginTop: 10,
 		color: "#666",
 		fontSize: 14,
+	},
+	drawerContentContainer: {
+		paddingBottom: 12,
 	},
 	errorContainer: {
 		padding: 15,
